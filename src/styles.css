@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+h1 {
+  color: black;
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 500;
+  display: inline-block;
+}
+.nav-rap h3 {
+  font-family: Poppins;
+  color: black;
+  margin: 0;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 19px;
+}
+.nav-rap {
+  display: inline-block;
+  margin-left: 30%;
+
+}
+.nav_btn {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  font-style: normal;
+  margin-left: 15em;
+
+  border-radius: 32px;
+  padding: 5px 18px; 
+  background-color: rgba(211, 205, 205, 0.3);
+}
+.nav_btn h3{
+  color: white;
+}
