@@ -12,7 +12,7 @@ function Button() {
 
 export default function NAV() {
   return (
-    <div>
+    <div className="whole-nav">
       <h1>Rehan</h1>
       <div className="nav-rap">
         <h3>Rehan</h3>
