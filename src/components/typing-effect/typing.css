@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+.typing-div{
+    font-size: 4rem;
+    font-weight: 500;
+    /* color: #ff79cd; */
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    margin-bottom: 1.3rem;
+
+}
+@media (max-width: 600px){
+    .typing-div{
+        font-size: 3.5rem;
+    }
+}
