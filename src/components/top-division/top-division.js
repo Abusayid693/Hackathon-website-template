@@ -2,6 +2,13 @@ import React from "react";
 
 import "./top-division.css";
 import bgImage from "./hbg.png"
+import MytypedComponent from "../typing effect/typing.js"
+
+
+
+
+
+
 
 
 function Btn(props){
@@ -20,15 +27,13 @@ function About(){
 return (
      <div>
      <h1>Hey i am Rehan</h1>
-     <p>---------js responsive--------</p>
+     <MytypedComponent />
       <p>Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
       <Btn type="Contact me" overlay="abusayid693@gmail.com"/>
       <Btn class ="resume" type="Resume " overlay="pdf file" />
-
     </div>
     );
 }
-
 
 
 
@@ -48,6 +53,4 @@ export default function TopDivision(){
     </div>
   </div>
    )
-
-
 }

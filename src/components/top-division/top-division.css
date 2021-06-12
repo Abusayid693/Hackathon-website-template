@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
 
 
 .container{
@@ -76,6 +76,12 @@ margin-bottom: 3rem;
 }
 @media (max-width: 600px){
     .container .row{
-        width: 90%;
+        width: 100%;
+    }
+    .container .row .left {
+      margin-left: 2rem;
+      }
+      .container .row .resume{
+        margin-left: 0rem;
     }
 }
