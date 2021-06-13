@@ -1,17 +1,27 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
 
-
+.h1{
+  margin: 0;
+}
 .container{
-    width: 100%;
+  width: 100%;
   height: 85rem;
-    
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .container .row{
-    margin-top: 15em;
-    width: 70%;
+    margin-top: 7em;
+    width: 100%;
+ 
 }
-.container .row p{
+.container .row .left{
+
+}
+.container .row .right{
+  
+}
+.container .row .left p{
     line-height: 1.3;
     font-size: 2rem;
     font-weight: 300;
@@ -74,14 +84,59 @@ font-weight: 600;
 font-size: 5.2rem;
 margin-bottom: 3rem;
 }
+/* image */
+.profile-image img{
+  width: 32rem;
+  height: 64.5rem;
+ position: relative;
+ top: -7rem;
+ left: -2rem;
+ -webkit-animation: mover 1s infinite  alternate;
+ animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
+
 @media (max-width: 600px){
+  .container{
+    background-size: 100% 40px;
+  }
     .container .row{
-        width: 100%;
+        width: 106%;
+      
+    }
+    .container .row .left h1{
+      font-size: 3.5rem;
     }
     .container .row .left {
-      margin-left: 2rem;
+      margin-left: 0rem;
       }
       .container .row .resume{
         margin-left: 0rem;
     }
+
+}
+
+@media (max-width: 355px) {
+  p{
+    font-size: 18px;
+  }
+  .container .row .left h1{
+    font-size: 2.94rem;
+   
+  }
+}
+
+@media (min-width: 650px),(max-width : 1112px){
+  .container{
+    background-size: 100% 800px;
+  }
 }

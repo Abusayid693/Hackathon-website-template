@@ -10,6 +10,7 @@ h1 {
 .whole-nav{
   position: fixed;
   width: 100%;
+  /* background-color: white; */
 }
 .nav-rap h3,.nav_btn h3 {
   font-family: Poppins;

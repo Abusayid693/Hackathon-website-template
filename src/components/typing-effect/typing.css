@@ -9,8 +9,13 @@
     margin-bottom: 1.3rem;
 
 }
-@media (max-width: 600px){
+@media (max-width: 600px),(min-width: 355px){
     .typing-div{
         font-size: 3.5rem;
     }
 }
+@media (max-width: 355px) {
+    .typing-div{
+      font-size: 2.7rem;
+    }
+  }

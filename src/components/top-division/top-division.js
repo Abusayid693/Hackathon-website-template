@@ -1,9 +1,24 @@
 import React from "react";
+import {Container,Col,Row} from 'react-bootstrap';
+
+
+
 
 import "./top-division.css";
 import bgImage from "./hbg.png"
-import MytypedComponent from "../typing effect/typing.js"
+import mob from "./mob.png";
 
+
+import MytypedComponent from "../typing-effect/typing.js"
+
+
+function Image(props){
+  return(
+   <div className="profile-image">
+    <img className="" src={mob } />
+   </div>
+ );
+}
 
 
 
@@ -15,7 +30,7 @@ function Btn(props){
  return(  
 <button className={props.class}>{props.type}
     <div class="overlay">
-    <div class="overlay-text">{props.overlay}</div>
+     <div class="overlay-text">{props.overlay}</div>
     </div>
 </button>
     );
@@ -42,15 +57,24 @@ return (
 export default function TopDivision(){
    return (
     <div class="container" style={{ backgroundImage: `url(${bgImage})` }}>
+    <Container>
+    <Row>
     <div class="row">
-      <div class="left col-lg-8">
+     <Col sm={9}>
+      <div class="left col-lg-6">
       <About />
       </div>
-      <div class="right col-lg-4">
-   
+      </Col>
+      <Col sm={3}>
+      <div class="right col-lg-6">
+      <Image />
       </div>
-   
+      </Col>
     </div>
+    </Row>
+    </Container>
+
+
   </div>
    )
 }
