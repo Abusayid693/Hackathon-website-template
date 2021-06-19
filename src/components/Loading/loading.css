@@ -1,0 +1,29 @@
+@keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(90deg, #A643F4 0%, rgba(249, 89, 166, 0.9) 100%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 20000;
+  }
+  #spinner {
+    min-width: 60px;
+    min-height: 60px;
+    border: 5px solid #ccffff;
+    border-right: 5px solid #00eded;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+  }
+  
+  

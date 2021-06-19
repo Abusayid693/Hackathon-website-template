@@ -12,17 +12,20 @@
     <title>React App</title>
   </head>
 
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="nav-bar"></div>
-   
-
-
-
-
-
+  <body onload="removeLoader()">
+    <div id="loader"></div>
+    <div id="body"></div>
+  
+    <script src="../js/main.js"></script>
+    <script>
+      function removeLoader(){
+       setTimeout(function(){ 
+        document.getElementById("loader").style.opacity=0;  
+       }, 400);
+     }
+    </script>
   </body>
+
+
 </html>
 
