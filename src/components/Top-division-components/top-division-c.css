@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+
+.h1{
+    margin: 0;
+  }
+
+   
+  /* Over lay effect */
+  .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color:white;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .3s ease;
+      border-radius: 32px;
+  
+    }
+  
+    .overlay-text {
+      font-weight: 300;
+      color:#2C4677;
+      font-size: 17px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+  
+    button:hover .overlay {
+      width: 100%;
+      left: 0;
+    }  
+  
+
+  /* image */
+  /* .profile-image-lg img{
+ 
+   -webkit-animation: mover 1s infinite  alternate;
+   animation: mover 2s infinite  alternate;
+  }
+  @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  @keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  } */
+
