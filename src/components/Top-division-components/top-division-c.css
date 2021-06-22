@@ -1,8 +1,51 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
 .h1{
     margin: 0;
   }
+button{
+  width: 15rem;
+  height: 6rem;
+  border: none;
+  background-color: #FD7B7B;
+  border-radius: 12px;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+.resume{
+  margin-left: 3vh;
+}
+.AboutMe {
+  font-family: 'Nunito', sans-serif;
+}
+.AboutMe h1{
+  font-weight: 600;
+}
+p{ 
+  font-size: 2rem;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
   /* Over lay effect */
@@ -16,7 +59,7 @@
       width: 0;
       height: 100%;
       transition: .3s ease;
-      border-radius: 32px;
+      border-radius: 12px;
   
     }
   

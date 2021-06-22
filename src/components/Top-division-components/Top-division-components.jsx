@@ -4,14 +4,6 @@ import MytypedComponent from "../typing-effect/typing.js"
 import { useMediaPredicate } from "react-media-hook";
 
 
-
-  
-  
-
-
-
-
-
   function Btn(props){
     return(  
    <button className={props.class}>{props.type}
@@ -25,7 +17,7 @@ import { useMediaPredicate } from "react-media-hook";
 
    function About(){
     return (
-         <div>
+         <div className="AboutMe">
          <h1>Hey i am Rehan</h1>
          <MytypedComponent />
         </div>
@@ -35,10 +27,12 @@ import { useMediaPredicate } from "react-media-hook";
 
 
     
-function Myinfo(){
+ export default function Myinfo(){
     return (
-         <div className="para">
-           <p>Millions of companies of computer at age 3. now, i'm a software engineer who wants to pay it forward by providing others with opportunities to code. in my free time i run marathons, climb league solo queue, and drink loads of boba.all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
+         <div >
+         <About />
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+         </p>
            <Btn type="Contact me" overlay="abusayid693@gmail.com"/>
            <Btn class ="resume" type="Resume " overlay="pdf file" />
          </div>
@@ -56,4 +50,4 @@ function Myinfo(){
 
 
 
-    export { About , MyImage, Myinfo }    
+  

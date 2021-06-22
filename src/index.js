@@ -9,13 +9,15 @@ const loader = document.getElementById("loader");
 
 
 
-
+const mystyle={
+  // background: "linear-gradient(0deg, #FFE8E8, #FFE8E8);"
+};
 
 
 
 
 ReactDOM.render(
-  <div>
+  <div style={mystyle}>
 <NAV />
 </div>
 ,

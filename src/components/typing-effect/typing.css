@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
 .typing-div{
-    font-size: 4rem;
-    font-weight: 500;
-    /* color: #ff79cd; */
-    font-family: 'Nunito', sans-serif;
-    font-style: italic;
     margin-bottom: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+
 
 }
-@media (max-width: 600px),(min-width: 355px){
-    .typing-div{
-        font-size: 3.5rem;
-    }
+.typing-div h1{
+    font-size: 6.5rem;
+    font-weight: 600;
 }
-@media (max-width: 355px) {
-    .typing-div{
-      font-size: 2.7rem;
-    }
-  }

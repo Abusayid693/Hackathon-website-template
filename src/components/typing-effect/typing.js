@@ -7,7 +7,8 @@ import "./typing.css"
 export default function MytypedComponent(){
     return (
         <div className="typing-div">
-         <span>&lt;&quot;</span>
+         {/* <span>&lt;&quot;</span> */}
+         <h1>
             <Typed
                 strings={[
                 'A Developer',
@@ -18,7 +19,9 @@ export default function MytypedComponent(){
                 typeSpeed={80}
                 loop
             />
-          <span>&quot;/&gt;</span>
+         </h1>
+
+          {/* <span>&quot;/&gt;</span> */}
             
 
         
