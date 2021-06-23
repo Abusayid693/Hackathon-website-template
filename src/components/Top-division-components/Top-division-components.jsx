@@ -7,8 +7,8 @@ import { useMediaPredicate } from "react-media-hook";
   function Btn(props){
     return(  
    <button className={props.class}>{props.type}
-       <div class="overlay">
-        <div class="overlay-text">{props.overlay}</div>
+       <div className="overlay">
+        <div className="overlay-text">{props.overlay}</div>
        </div>
    </button>
        );
@@ -18,7 +18,7 @@ import { useMediaPredicate } from "react-media-hook";
    function About(){
     return (
          <div className="AboutMe">
-         <h1>Hey i am Rehan</h1>
+         <h1>Join Limbo Hacks</h1>
          <MytypedComponent />
         </div>
         );
@@ -31,10 +31,13 @@ import { useMediaPredicate } from "react-media-hook";
     return (
          <div >
          <About />
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-         </p>
-           <Btn type="Contact me" overlay="abusayid693@gmail.com"/>
-           <Btn class ="resume" type="Resume " overlay="pdf file" />
+        <p> Join us on 20th November 2021 with over 300 students from across the nation for 48 hours of creation, innovation, & fun.
+     
+        
+        
+          </p>
+           <Btn type="Sponsor us" overlay="sponsorlimbohack@gmail.com"/>
+           <Btn class="register" type="Register " overlay="Hackers registration" />
          </div>
 
 

@@ -5,9 +5,10 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import "./about.css"
 import Fade from 'react-reveal/Fade';
+import Footer from "../Footer/footer.jsx";
 
 
-
+{/* <Fade top></Fade> */}
 
 
 export default function AboutSection(props){
@@ -15,8 +16,8 @@ export default function AboutSection(props){
 <Container fluid>
   <Row className="Row">
 
-  <Fade top><Col className="info-div" sm={12} lg={6} md={5}><Myinfo /></Col></Fade>
-    <Col className="image-div" sm={12} lg={5} md={5}>sm=4</Col>
+  <Col className="info-div" sm={12} lg={6} md={5}><Myinfo /></Col>
+    <Col className="image-div" sm={12} lg={5} md={5}>Logo</Col>
   </Row>
 </Container>
  );

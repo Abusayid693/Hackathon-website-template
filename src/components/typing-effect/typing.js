@@ -11,9 +11,8 @@ export default function MytypedComponent(){
          <h1>
             <Typed
                 strings={[
-                'A Developer',
-                'A Researcher',
-                'AI Enthusiest'
+                '24 hours of creation',
+                'Win awesome prizes'
                 
                 ]}
                 typeSpeed={80}

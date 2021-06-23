@@ -21,13 +21,10 @@ export default function NAVBAR() {
               <Link to="/"><span className="links">Home </span> </Link>
             </li>
             <li>
-              <Link to="/contact"><span className="links">contact me </span> </Link>
+              <Link to="/contact"><span className="links">Sponsors </span> </Link>
             </li>
             <li>
-              <Link to="/projects"><span className="links">projects </span> </Link>
-            </li>
-            <li>
-              <Link to="/links"><span className="links">Links </span> </Link>
+              <Link to="/projects"><span className="links">More info </span> </Link>
             </li>
           </ul>
           <TOGGLE/>

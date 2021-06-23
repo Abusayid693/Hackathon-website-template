@@ -10,3 +10,13 @@
 .image-div{
     margin-left: 3vh;
 }
+
+@media  (max-width: 570px){
+    .info-div{
+        margin-left: 3vh;
+    
+    }
+    .image-div{
+        margin-left: 3vh;
+    }
+}

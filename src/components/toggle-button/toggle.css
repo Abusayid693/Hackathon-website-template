@@ -70,12 +70,12 @@ switch {
     }
 }
 
-@media  (max-width: 400px){
+/* @media  (max-width: 400px){
     label{
         position:fixed;
         top: 94vh;
 
     }
-}
+} */
 
   

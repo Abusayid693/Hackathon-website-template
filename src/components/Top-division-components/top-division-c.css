@@ -5,10 +5,11 @@
     margin: 0;
   }
 button{
-  width: 15rem;
+  width: 22rem;
   height: 6rem;
   border: none;
-  background-color: #FD7B7B;
+  /* background-color: #FD7B7B; */
+  background-color: #7785FF;
   border-radius: 12px;
   font-size: 2rem;
   color: white;
@@ -16,8 +17,8 @@ button{
   font-weight: 300;
   position: relative;
 }
-.resume{
-  margin-left: 3vh;
+.register{
+  margin-left: 9rem;
 }
 .AboutMe {
   font-family: 'Nunito', sans-serif;
@@ -33,21 +34,6 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
   /* Over lay effect */
   .overlay {
       position: absolute;
@@ -80,7 +66,26 @@ p{
       width: 100%;
       left: 0;
     }  
+  /* main targer */
+    @media  (max-width: 570px){
+    
+    .register{
+      margin-left: 0;
+      margin-top: 3vh;
+    }
+  }
   
+    /* more smaller */
+    @media  (max-width: 330px){
+    
+    .register{
+      margin-left: 0;
+      margin-top: 3vh;
+    }
+    .AboutMe h1{
+      font-size: 2.2em;
+    }
+  }
 
   /* image */
   /* .profile-image-lg img{
