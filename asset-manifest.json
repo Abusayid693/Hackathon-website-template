@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/limbohack/static/css/main.1591020d.chunk.css",
-    "main.js": "/limbohack/static/js/main.c547467c.chunk.js",
-    "main.js.map": "/limbohack/static/js/main.c547467c.chunk.js.map",
-    "runtime-main.js": "/limbohack/static/js/runtime-main.90183112.js",
-    "runtime-main.js.map": "/limbohack/static/js/runtime-main.90183112.js.map",
-    "static/js/2.bba6ed32.chunk.js": "/limbohack/static/js/2.bba6ed32.chunk.js",
-    "static/js/2.bba6ed32.chunk.js.map": "/limbohack/static/js/2.bba6ed32.chunk.js.map",
-    "index.html": "/limbohack/index.html",
-    "static/css/main.1591020d.chunk.css.map": "/limbohack/static/css/main.1591020d.chunk.css.map",
-    "static/js/2.bba6ed32.chunk.js.LICENSE.txt": "/limbohack/static/js/2.bba6ed32.chunk.js.LICENSE.txt"
+    "main.css": "/site/static/css/main.1591020d.chunk.css",
+    "main.js": "/site/static/js/main.c547467c.chunk.js",
+    "main.js.map": "/site/static/js/main.c547467c.chunk.js.map",
+    "runtime-main.js": "/site/static/js/runtime-main.3a580278.js",
+    "runtime-main.js.map": "/site/static/js/runtime-main.3a580278.js.map",
+    "static/js/2.bba6ed32.chunk.js": "/site/static/js/2.bba6ed32.chunk.js",
+    "static/js/2.bba6ed32.chunk.js.map": "/site/static/js/2.bba6ed32.chunk.js.map",
+    "index.html": "/site/index.html",
+    "static/css/main.1591020d.chunk.css.map": "/site/static/css/main.1591020d.chunk.css.map",
+    "static/js/2.bba6ed32.chunk.js.LICENSE.txt": "/site/static/js/2.bba6ed32.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.90183112.js",
+    "static/js/runtime-main.3a580278.js",
     "static/js/2.bba6ed32.chunk.js",
     "static/css/main.1591020d.chunk.css",
     "static/js/main.c547467c.chunk.js"
