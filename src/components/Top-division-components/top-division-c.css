@@ -8,8 +8,8 @@ button{
   width: 22rem;
   height: 6rem;
   border: none;
-  /* background-color: #FD7B7B; */
-  background-color: #7785FF;
+  background-color: #FD7B7B;
+  /* background-color: #7785FF; */
   border-radius: 12px;
   font-size: 2rem;
   color: white;
@@ -73,6 +73,15 @@ p{
       margin-left: 0;
       margin-top: 3vh;
     }
+    .Myinfo{
+      text-align: center;
+    }
+    .Myinfo p{
+      font-size: 1.9rem;
+    }
+    .AboutMe{
+      text-align: center;
+    }
   }
   
     /* more smaller */
@@ -84,6 +93,9 @@ p{
     }
     .AboutMe h1{
       font-size: 2.2em;
+    }
+    .Myinfo p{
+      font-size: 1.6rem;
     }
   }
 

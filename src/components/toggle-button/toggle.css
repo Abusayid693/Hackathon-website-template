@@ -70,6 +70,19 @@ switch {
     }
 }
 
+@media  (max-width: 350px){
+  .slider{
+    height: 3rem;
+  }
+  label{
+    top: 1rem;
+}
+.slider:before {
+  height: 23px;
+  width: 23px;
+}
+}
+
 /* @media  (max-width: 400px){
     label{
         position:fixed;

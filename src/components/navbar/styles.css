@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
  nav {
     list-style-type: none;
-    /* background-color:#FFD1D1; */
-     /* background-color: #7785FF; */
-
-background: linear-gradient(90deg, #F5AF88 0%, rgba(255, 126, 126, 0.8) 50%, #FFD1AF 100%);
+    background-color:#FFD1D1;
     height: 7vh;
     font-size: 1.8rem;
-    /* box-shadow: 0px 7px 15px 4px rgba(255, 229, 229, 0.85); */
-    /* box-shadow: 0px 12px 12px 8px #7785FF; */
-    box-shadow: 0px 7px 12px rgba(255, 193, 149, 0.8);
+    box-shadow: 0px 7px 15px 4px rgba(255, 229, 229, 0.85);
+
 }
 ul{
     /* background-color: blue; */
@@ -45,6 +41,9 @@ a:link {
 
     
     }
+    nav{
+        height: 8.5vh;
+    }
 }
 
 @media  (max-width: 380px){
@@ -54,15 +53,22 @@ a:link {
     
     }
 }
+
+
+/* Making navbar components into a rigid list */
 @media  (max-width: 370px){
     nav{
         font-size: 1.6rem;
     }
     nav ul li{
-        margin: 1.9rem 0rem 0 2.5rem;
+        display: block;
+        text-align: left;
+        background-color:#FFD1D1;
+        margin: 0;
+        padding: 2vh;
+        z-index: 5000;
     }
-    ul{
-        margin-left: -3%;
-        
-    }
+nav ul{
+    display:none;
+}
 }
