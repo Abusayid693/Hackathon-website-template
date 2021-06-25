@@ -1,22 +1,37 @@
 
-
 .Row{
-    margin-top: 20vh;
+    margin-top: 15vh;
+    text-align: center;
 }
-.info-div{
-    margin-left: 9vh;
+
+
+
+.logoSection{
+    text-align: center;
+    padding: 20vh 10vh 0 10vh ;
+    /* background-color: white; */
+}
+
+
+.prizesection{
+    text-align: center;
+    margin: 0 auto;
+    padding: 17vh 18vh 0 18vh ;
+    
 
 }
-.image-div{
-    margin-left: 3vh;
-}
+
 
 @media  (max-width: 570px){
-    .info-div{
-        margin-left:0;
+    .prizesection{
+
+        padding: 17vh 0 0 0 ;
     
     }
-    .image-div{
-        margin-left: 0;
+    .logoSection{
+        text-align: center;
+        padding: 20vh 0vh 0 0vh ;
+        /* background-color: white; */
     }
-}
+  }
+

@@ -2,9 +2,11 @@
  nav {
     list-style-type: none;
     background-color:#FFD1D1;
+    /* background-color: #a4e5e7; */
     height: 7vh;
     font-size: 1.8rem;
     box-shadow: 0px 7px 15px 4px rgba(255, 229, 229, 0.85);
+    /* box-shadow: 0px 12px 12px 8px #C8F3F4; */
 
 }
 ul{

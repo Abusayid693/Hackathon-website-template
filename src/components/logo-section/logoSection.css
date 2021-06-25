@@ -1,0 +1,16 @@
+.Logo{
+    width: 60%;
+    /* background-color: black; */
+    display: inline-block;
+    position: relative;
+}
+.LogoSectionAbout{
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+.LogoSectionAbout h1{
+    font-weight: 700;
+}
