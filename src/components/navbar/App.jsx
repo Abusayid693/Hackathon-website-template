@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.scss";
 // import MytypedComponent from "../typing-effect/typing.js"
 import TOGGLE from "../toggle-button/toggle";
 import AboutSection from "../About/about";
@@ -33,13 +33,15 @@ export default function NAVBAR() {
        {/* Keep parent route at bottom */}
         <Switch>
           <Route path="/contact">
-            <Contact />
+          <AboutSection />
+
           </Route>
           <Route path="/links">
-            <Links />
+          <AboutSection />
+
           </Route>
           <Route path="/projects">
-            <Projects />
+          <AboutSection />
           </Route>
           <Route path="/">
             <AboutSection />

@@ -7,13 +7,17 @@ import "./about.css"
 import { Logo , LogoSectionAbout } from "../logo-section/logoSection.jsx"
 import {FirstPrize , PrizeHeading} from "../prize tracks/prizes.jsx"
 import {Prizeinfo,Myicons} from "../prize tracks/prize-contents.jsx"
-
+import {DropDown,QA} from "../FAQ/faq.jsx"
+import {Sponsor,SponsorsHead} from "../Sponsors/sponsors.jsx"
+import {taskade,Replit , interviewC,echoAR,cfc } from "../Sponsors/logos.jsx"
+import Footer from "../Birds/birds.jsx";
+// import { useMediaPredicate } from "react-media-hook";
 
 
 export default function AboutSection(props){
  return( 
 <Container fluid>
-  <Row className="Row">
+  <Row className="Row info">
   <Col className="info-div" sm={12} lg={12} md={12}><Myinfo /></Col>
   </Row>
 
@@ -21,8 +25,19 @@ export default function AboutSection(props){
   <Row className=" logoSection">
   <Col className="info-div" sm={12} lg={8} md={8}><LogoSectionAbout /></Col>
   <Col className="info-div" sm={12} lg={4} md={4}><Logo /></Col>
+  </Row>
+
+
+  <Row className="faqsSection">
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[0].q} ans={QA[0].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[1].q} ans={QA[1].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[2].q} ans={QA[2].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[3].q} ans={QA[3].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[4].q} ans={QA[4].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[5].q} ans={QA[5].ans}/></Col>
 
   </Row>
+
 
   <Row className="prizesection">
   <PrizeHeading />
@@ -34,8 +49,23 @@ export default function AboutSection(props){
   <Col className="" sm={12} lg={4} md={6}><FirstPrize icon={Myicons[5]} type= {Prizeinfo[5].type} content={Prizeinfo[5].content}/></Col>
   <Col className="" sm={12} lg={4} md={6}><FirstPrize icon={Myicons[6]} type= {Prizeinfo[6].type} content={Prizeinfo[6].content}/></Col>
   </Row>
+  <Row className="sponsorSection">
+  <SponsorsHead/>
+  <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={cfc}/> </Col>
+  <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={taskade}/> </Col>
+  <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={Replit}/> </Col>
+  <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={interviewC}/> </Col>
+  <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={echoAR}/> </Col>
+
+  </Row>
+  <Footer top="0vh" left="0vh"/>
+  <Footer top="83vh" left="-26vh"/>
+  <Footer top="180vh" left="0vh" /> 
+  <Footer top="310vh" left="0vh" /> 
+
 
 </Container>
  );
 
 }
+

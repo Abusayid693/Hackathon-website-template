@@ -5,32 +5,32 @@ const Prizeinfo=[
     },
     {
         type:"overall Second",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"Second Overall prize will be given to the second best project of the hackathon"
     }
     ,
     {
         type:"Best Solo",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team"
     }
     ,
     {
         type:" Best Beginner",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"Your project will qualify for this category if atleast 50% "
     }
     ,
     {
         type:"Best Education",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"Built something related to education in order to qualify for this category"
     }
     ,
     {
         type:"Best AR/VR",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"Use any kind of AR/VR tech in your project to qualify for this category"
     }
     ,
     {
         type:"For everyone",
-        content:"First Overall prize will be given to a project that outstands all other submissions"
+        content:"All attendees will be receiving (more info will be revel later) "
     }
 ]
 

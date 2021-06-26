@@ -1,5 +1,5 @@
 import React from "react";
-import "./prizes.css"
+import "./prizes.scss"
 
 
 function PrizeHeading(){

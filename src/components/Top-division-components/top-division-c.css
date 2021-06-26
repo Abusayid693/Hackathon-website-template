@@ -4,12 +4,12 @@
 .h1{
     margin: 0;
   }
+
 button{
   width: 22rem;
   height: 6rem;
   border: none;
-  background-color: #FD7B7B;
-/* background-color: #3BCBD1; */
+  background-color: #00EAD3;
   border-radius: 12px;
   font-size: 2rem;
   color: white;
@@ -99,18 +99,4 @@ p{
     }
   }
 
-  /* image */
-  /* .profile-image-lg img{
- 
-   -webkit-animation: mover 1s infinite  alternate;
-   animation: mover 2s infinite  alternate;
-  }
-  @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-  }
-  @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-  } */
 

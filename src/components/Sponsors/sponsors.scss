@@ -1,0 +1,25 @@
+.Sponsor img{
+    width: 25rem;
+    margin-bottom: 8rem;
+}
+.shead{
+    font-size: 6rem;
+    margin-bottom: 6rem;
+}
+.Sponsor{
+    width: fit-content;
+}
+
+  .Sponsor img{
+ 
+   -webkit-animation: mover 1s infinite  alternate;
+   animation: mover 1s infinite  alternate;
+  }
+  @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+  @keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }

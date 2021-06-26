@@ -1,15 +1,17 @@
 
-.Row{
-    margin-top: 15vh;
-    text-align: center;
+ .Row{
+     text-align: center;
+ }
+
+.info{
+    margin-top: 20vh;
 }
-
-
 
 .logoSection{
     text-align: center;
     padding: 20vh 10vh 0 10vh ;
-    /* background-color: white; */
+    margin-top: 10vh;
+
 }
 
 
@@ -17,16 +19,39 @@
     text-align: center;
     margin: 0 auto;
     padding: 17vh 18vh 0 18vh ;
-    
+    margin-top: 10vh;
+
+}
+.sponsorSection{
+    padding: 17vh 18vh 0 18vh ;
+    margin-top: -10vh;
+    margin-top: 10vh;
 
 }
 
 
+.faqsSection{
+    text-align: center;
+    margin: 0 auto;
+    padding: 17vh 18vh 0 18vh ;
+    margin-top: 10vh;
+
+
+}
+
 @media  (max-width: 570px){
+    .faqsSection{
+        padding: 0 ;
+    
+    }
+    
     .prizesection{
 
         padding: 17vh 0 0 0 ;
     
+    }
+    .sponsorSection{
+        padding: 17vh 0 0 5vh ;
     }
     .logoSection{
         text-align: center;

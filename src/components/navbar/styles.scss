@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
  nav {
     list-style-type: none;
-    background-color:#FFD1D1;
-    /* background-color: #a4e5e7; */
+    background-color: #CAF7E3;
     height: 7vh;
     font-size: 1.8rem;
-    box-shadow: 0px 7px 15px 4px rgba(255, 229, 229, 0.85);
-    /* box-shadow: 0px 12px 12px 8px #C8F3F4; */
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0px 4px 4px rgba(202, 247, 227, 0.89);
 
 }
 ul{
-    /* background-color: blue; */
     display: inline;
     margin-left: 7%;
     
@@ -55,9 +55,6 @@ a:link {
     
     }
 }
-
-
-/* Making navbar components into a rigid list */
 @media  (max-width: 370px){
     nav{
         font-size: 1.6rem;

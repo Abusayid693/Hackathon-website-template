@@ -31,7 +31,7 @@ import CountDown from "../count-down/countDown";
     return (
          <div className="Myinfo">
          <About />
-        <p> Join us on 20th November 2021 with over 300 students from across the nation for 48 hours of creation, innovation, & fun.
+        <p> Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.
      
         
         
