@@ -32,6 +32,10 @@ p{
   font-family: 'Nunito', sans-serif;
 
 }
+.Myinfo p{
+  width: 50%;
+  margin: 0 auto;
+}
 
 
   /* Over lay effect */

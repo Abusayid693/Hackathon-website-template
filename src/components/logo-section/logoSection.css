@@ -16,7 +16,7 @@
 }
 
 
-img{
+.Logo{
 
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 2s infinite  alternate;

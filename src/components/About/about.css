@@ -1,4 +1,7 @@
-
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
  .Row{
      text-align: center;
  }
@@ -10,22 +13,26 @@
 .logoSection{
     text-align: center;
     padding: 20vh 10vh 0 10vh ;
-    margin-top: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 
 }
+.members{
+    padding: 20vh 10vh 0 10vh ;
 
+}
 
 .prizesection{
     text-align: center;
     margin: 0 auto;
     padding: 17vh 18vh 0 18vh ;
-    margin-top: 10vh;
+    margin-top: 4vh;
 
 }
 .sponsorSection{
     padding: 17vh 18vh 0 18vh ;
     margin-top: -10vh;
-    margin-top: 10vh;
+    margin-top: 0vh;
 
 }
 
@@ -34,7 +41,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 17vh 18vh 0 18vh ;
-    margin-top: 10vh;
+    margin-top: -16vh;
 
 
 }
@@ -42,7 +49,13 @@
 @media  (max-width: 570px){
     .faqsSection{
         padding: 0 ;
+    margin-top: 0vh;
+
     
+    }
+    .members{
+        margin: 0;
+        padding: 0;
     }
     
     .prizesection{
@@ -51,7 +64,10 @@
     
     }
     .sponsorSection{
-        padding: 17vh 0 0 5vh ;
+       
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
     }
     .logoSection{
         text-align: center;

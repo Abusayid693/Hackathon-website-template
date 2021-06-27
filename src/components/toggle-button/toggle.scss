@@ -1,0 +1,11 @@
+.toggle_btn{
+  position: absolute;
+  right: 0vh;
+  top: 1.6rem;
+}
+$breakpoint-tablet: 390px;
+@media (max-width: $breakpoint-tablet) { 
+.toggle_btn{
+  top: 1.2rem;
+}}
+  

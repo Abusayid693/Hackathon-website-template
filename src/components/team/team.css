@@ -1,0 +1,28 @@
+.member{
+    text-align: center;
+}
+.member img{
+    width: 55%;
+    border-radius: 50%;
+    display: block;
+   margin: 0 auto;
+   border: 5px solid #CAF7E3;
+}
+.members-link {
+text-align: center;
+
+}
+.members-link a{
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+@media (max-width:570px){
+    .member{
+        margin-top: 4rem;
+    }
+    .member img{
+        width: 75%;
+  
+    }
+}

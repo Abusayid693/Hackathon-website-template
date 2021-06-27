@@ -2,6 +2,7 @@
  nav {
     list-style-type: none;
     background-color: #CAF7E3;
+    // background: #3D3D75;
     height: 7vh;
     font-size: 1.8rem;
     position: fixed;
@@ -22,6 +23,8 @@ nav ul li{
 }
 .links{
     color:black;
+    // color: white;
+
     transition: 0.5s;
 }
 .links:hover{
@@ -36,7 +39,8 @@ a:link {
 @media  (max-width: 600px){
     ul{
        text-align: center;
-        
+       margin-right: 6rem;
+       margin-left: 0%;
     }
     nav ul li{
         margin: 2rem 1rem 0 1rem;
@@ -49,10 +53,7 @@ a:link {
 }
 
 @media  (max-width: 380px){
-    nav ul li{
-        margin: 1.9rem 0rem 0 1rem;
-
-    
+    nav ul{
     }
 }
 @media  (max-width: 370px){
@@ -68,6 +69,6 @@ a:link {
         z-index: 5000;
     }
 nav ul{
-    display:none;
+    // display:none;
 }
 }

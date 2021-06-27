@@ -10,7 +10,9 @@ import {Prizeinfo,Myicons} from "../prize tracks/prize-contents.jsx"
 import {DropDown,QA} from "../FAQ/faq.jsx"
 import {Sponsor,SponsorsHead} from "../Sponsors/sponsors.jsx"
 import {taskade,Replit , interviewC,echoAR,cfc } from "../Sponsors/logos.jsx"
-import Footer from "../Birds/birds.jsx";
+import Birds from "../Birds/birds.jsx";
+import Footer from "../footer/footer.jsx";
+import Member from "../team/team.jsx"
 // import { useMediaPredicate } from "react-media-hook";
 
 
@@ -31,8 +33,15 @@ export default function AboutSection(props){
   <Row className="faqsSection">
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[0].q} ans={QA[0].ans}/></Col>
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[1].q} ans={QA[1].ans}/></Col>
+  </Row>
+  <Row className="faqsSection">
+
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[2].q} ans={QA[2].ans}/></Col>
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[3].q} ans={QA[3].ans}/></Col>
+  </Row>
+
+  <Row className="faqsSection">
+
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[4].q} ans={QA[4].ans}/></Col>
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[5].q} ans={QA[5].ans}/></Col>
 
@@ -58,12 +67,24 @@ export default function AboutSection(props){
   <Col className="" sm={12} lg={4} md={6}> <Sponsor srcx={echoAR}/> </Col>
 
   </Row>
-  <Footer top="0vh" left="0vh"/>
-  <Footer top="83vh" left="-26vh"/>
-  <Footer top="180vh" left="0vh" /> 
-  <Footer top="310vh" left="0vh" /> 
+  <Birds top="0vh" left="0vh"/>
+  <Birds top="83vh" left="0vh"/>
+  <Birds top="180vh" left="0vh" /> 
+  <Birds top="310vh" left="0vh" /> 
 
 
+<h1>Our Team</h1>
+  <Row className="members">
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  </Row>
+  <Row className="members">
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  </Row>
+<Footer />
 </Container>
  );
 

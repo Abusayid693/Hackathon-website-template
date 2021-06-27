@@ -6,10 +6,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// min-height: 100vh;
 	min-height: 35rem;
     width: 100%;
-    // left: 0vh;
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
@@ -25,7 +23,6 @@
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
-	
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;

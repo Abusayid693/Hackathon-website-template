@@ -5,11 +5,19 @@
 .shead{
     font-size: 6rem;
     margin-bottom: 6rem;
-}
-.Sponsor{
-    width: fit-content;
+    margin-top: -3rem;
 }
 
+/* more smaller */
+@media  (max-width: 570px){
+  .shead{
+    margin-top:0;
+  }
+  .Sponsor img{
+
+  margin-bottom: 3rem;
+}
+}
   .Sponsor img{
  
    -webkit-animation: mover 1s infinite  alternate;
