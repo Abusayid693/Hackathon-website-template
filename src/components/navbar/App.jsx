@@ -3,7 +3,7 @@ import "./styles.scss";
 // import MytypedComponent from "../typing-effect/typing.js"
 import TOGGLE from "../toggle-button/toggle";
 import AboutSection from "../About/about";
-
+// import logo from "./logoo.png"
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +27,7 @@ export default function NAVBAR() {
               <Link to="/projects"><span className="links">More info </span> </Link>
             </li>
           </ul>
+          {/* <img className="myLogo" src={logo} /> */}
           <TOGGLE/>
         </nav>
 

@@ -8,9 +8,9 @@
     position: fixed;
     width: 100%;
     z-index: 10000;
-    box-shadow: 0px 4px 4px rgba(202, 247, 227, 0.89);
-
+    // box-shadow: 0px 4px 4px rgba(202, 247, 227, 0.89);
 }
+
 ul{
     display: inline;
     margin-left: 7%;
@@ -21,12 +21,12 @@ nav ul li{
     margin: 2rem 0 5rem 6rem;
 
 }
+
 .links{
     color:black;
-    // color: white;
-
     transition: 0.5s;
 }
+
 .links:hover{
     color: rgb(122, 122, 122);
 }
@@ -69,6 +69,6 @@ a:link {
         z-index: 5000;
     }
 nav ul{
-    // display:none;
+    display:none;
 }
 }

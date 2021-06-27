@@ -3,7 +3,7 @@ import "./sponsors.scss";
 
 function SponsorsHead(){
     return(
-        <h1 className="shead">Sponsors</h1>
+        <h1 className="shead">Sponsors & Partners</h1>
     );
 }
 

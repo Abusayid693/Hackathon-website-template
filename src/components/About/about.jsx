@@ -13,11 +13,13 @@ import {taskade,Replit , interviewC,echoAR,cfc } from "../Sponsors/logos.jsx"
 import Birds from "../Birds/birds.jsx";
 import Footer from "../footer/footer.jsx";
 import Member from "../team/team.jsx"
+import {TeamInfo,me,moon,Ryah,lyin,Pravallika,keshav} from "../team/teamdetails.jsx"
 // import { useMediaPredicate } from "react-media-hook";
 
 
 export default function AboutSection(props){
  return( 
+   <div>
 <Container fluid>
   <Row className="Row info">
   <Col className="info-div" sm={12} lg={12} md={12}><Myinfo /></Col>
@@ -46,6 +48,12 @@ export default function AboutSection(props){
   <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[5].q} ans={QA[5].ans}/></Col>
 
   </Row>
+  <Row className="faqsSection">
+
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[6].q} ans={QA[6].ans}/></Col>
+  <Col className="" sm={12} lg={6} md={6}><DropDown q={QA[7].q} ans={QA[7].ans}/></Col>
+
+  </Row>
 
 
   <Row className="prizesection">
@@ -71,22 +79,30 @@ export default function AboutSection(props){
   <Birds top="83vh" left="0vh"/>
   <Birds top="180vh" left="0vh" /> 
   <Birds top="310vh" left="0vh" /> 
+  <Birds top="400vh" left="0vh" /> 
 
 
 <h1>Our Team</h1>
   <Row className="members">
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[0].Name} role={TeamInfo[0].role} img={me}/></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[1].Name} role={TeamInfo[1].role} img={moon} /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[2].Name} role={TeamInfo[2].role} img={Ryah}/></Col>
   </Row>
   <Row className="members">
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
-  <Col className="" sm={12} lg={4} md={4}><Member /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[3].Name} role={TeamInfo[3].role} img={lyin} /></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[4].Name} role={TeamInfo[4].role} img={Pravallika}/></Col>
+  <Col className="" sm={12} lg={4} md={4}><Member name={TeamInfo[5].Name} role={TeamInfo[5].role} img={keshav} /></Col>
   </Row>
-<Footer />
 </Container>
+<Footer />
+   </div>
+
  );
 
 }
+// Name:"Rehan",
+// role:"Organizer",
+// github:"",
+// linkedin:"",
+// img:{me}
 

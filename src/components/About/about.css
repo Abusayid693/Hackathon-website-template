@@ -25,8 +25,12 @@ h1{
 .prizesection{
     text-align: center;
     margin: 0 auto;
-    padding: 17vh 18vh 0 18vh ;
+    padding: 0 4vh 0 4vh ;
+    margin: 17vh 14vh 0 14vh ;
+border-radius: 32px;
     margin-top: 4vh;
+    background-color: rgb(246, 246, 246);
+
 
 }
 .sponsorSection{
@@ -59,7 +63,7 @@ h1{
     }
     
     .prizesection{
-
+        margin:5vh 0 0 0;
         padding: 17vh 0 0 0 ;
     
     }

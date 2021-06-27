@@ -2,7 +2,8 @@
     text-align: center;
 }
 .member img{
-    width: 55%;
+    width: 25rem;
+   height: 25rem;
     border-radius: 50%;
     display: block;
    margin: 0 auto;
@@ -22,7 +23,8 @@ text-align: center;
         margin-top: 4rem;
     }
     .member img{
-        width: 75%;
+        width: 25rem;
+        height: 25rem;
   
     }
 }
