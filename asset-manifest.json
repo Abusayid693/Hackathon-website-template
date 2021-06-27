@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.7d7dc256.chunk.css",
-    "main.js": "/site/static/js/main.62810267.chunk.js",
-    "main.js.map": "/site/static/js/main.62810267.chunk.js.map",
+    "main.css": "/site/static/css/main.ac55f4b7.chunk.css",
+    "main.js": "/site/static/js/main.5bc74f35.chunk.js",
+    "main.js.map": "/site/static/js/main.5bc74f35.chunk.js.map",
     "runtime-main.js": "/site/static/js/runtime-main.3a580278.js",
     "runtime-main.js.map": "/site/static/js/runtime-main.3a580278.js.map",
-    "static/js/2.70085c6f.chunk.js": "/site/static/js/2.70085c6f.chunk.js",
-    "static/js/2.70085c6f.chunk.js.map": "/site/static/js/2.70085c6f.chunk.js.map",
+    "static/js/2.2b108f70.chunk.js": "/site/static/js/2.2b108f70.chunk.js",
+    "static/js/2.2b108f70.chunk.js.map": "/site/static/js/2.2b108f70.chunk.js.map",
     "index.html": "/site/index.html",
-    "static/css/main.7d7dc256.chunk.css.map": "/site/static/css/main.7d7dc256.chunk.css.map",
-    "static/js/2.70085c6f.chunk.js.LICENSE.txt": "/site/static/js/2.70085c6f.chunk.js.LICENSE.txt",
+    "static/css/main.ac55f4b7.chunk.css.map": "/site/static/css/main.ac55f4b7.chunk.css.map",
+    "static/js/2.2b108f70.chunk.js.LICENSE.txt": "/site/static/js/2.2b108f70.chunk.js.LICENSE.txt",
     "static/media/LIMBO.fcc7ebbf.png": "/site/static/media/LIMBO.fcc7ebbf.png",
+    "static/media/Ryah.92eb9a11.jpg": "/site/static/media/Ryah.92eb9a11.jpg",
     "static/media/cfc.6dbd3dc7.jpg": "/site/static/media/cfc.6dbd3dc7.jpg",
     "static/media/echoAR.4f66d3a4.png": "/site/static/media/echoAR.4f66d3a4.png",
     "static/media/interview-cake.37432cbb.jpg": "/site/static/media/interview-cake.37432cbb.jpg",
+    "static/media/keshav.3379e1fd.jpg": "/site/static/media/keshav.3379e1fd.jpg",
+    "static/media/lyin.ce4bedbc.jpg": "/site/static/media/lyin.ce4bedbc.jpg",
     "static/media/me.009524a1.png": "/site/static/media/me.009524a1.png",
+    "static/media/moon.8fc0d610.png": "/site/static/media/moon.8fc0d610.png",
+    "static/media/pravallika.78715d6f.jpg": "/site/static/media/pravallika.78715d6f.jpg",
     "static/media/replit.3c3b0ba7.png": "/site/static/media/replit.3c3b0ba7.png",
     "static/media/taskade.ac444bbc.png": "/site/static/media/taskade.ac444bbc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3a580278.js",
-    "static/js/2.70085c6f.chunk.js",
-    "static/css/main.7d7dc256.chunk.css",
-    "static/js/main.62810267.chunk.js"
+    "static/js/2.2b108f70.chunk.js",
+    "static/css/main.ac55f4b7.chunk.css",
+    "static/js/main.5bc74f35.chunk.js"
   ]
 }
