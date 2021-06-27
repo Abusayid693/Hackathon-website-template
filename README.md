@@ -1,3 +1,7 @@
+# References
+
+### Thanks [ella](https://github.com/eilla1) for design snippets
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
