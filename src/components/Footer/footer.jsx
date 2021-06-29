@@ -15,12 +15,12 @@ export default function Footer() {
           </a>
         </div>
         <div className="social-icon">
-          <a rel="noreferrer" target="_blank" href="">
+          <a rel="https://discord.gg/un2USMtv" target="_blank" href="">
             <img src={Dis} alt="" />
           </a>
         </div>
         <div className="social-icon">
-          <a rel="noreferrer" target="_blank" href="">
+          <a rel="https://www.linkedin.com/company/limbo-hacks/" target="_blank" href="">
             <img src={Linked} alt="" />
           </a>
         </div>
@@ -30,7 +30,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="social-icon">
-          <a rel="noreferrer" target="_blank" href="">
+          <a rel="https://limbo-hacks-12968.devpost.com/" target="_blank" href="">
             <img src={DevPost} alt="" />
           </a>
         </div>

@@ -38,7 +38,7 @@ import CountDown from "../count-down/countDown";
           </p>
           <CountDown />
           <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com"><Btn type="Sponsor us" overlay="Send a mail"/></a> 
-          <a href="https://3gr9zi3m6t7.typeform.com/to/SXgihcJa">  <Btn class="register" type="Register " overlay="Hackers registration" /></a>
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">  <Btn class="register" type="Register " overlay="Hackers registration" /></a>
          </div>
 
 
