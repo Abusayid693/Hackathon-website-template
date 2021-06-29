@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Limbo-hacks-website/static/css/main.1516278c.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.bd2b8222.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.bd2b8222.chunk.js.map",
-    "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.61d9550f.js",
-    "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.61d9550f.js.map",
-    "static/js/2.b5086825.chunk.js": "/Limbo-hacks-website/static/js/2.b5086825.chunk.js",
-    "static/js/2.b5086825.chunk.js.map": "/Limbo-hacks-website/static/js/2.b5086825.chunk.js.map",
+    "main.js": "/Limbo-hacks-website/static/js/main.d1824d08.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.d1824d08.chunk.js.map",
+    "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
+    "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
+    "static/js/2.1c403a0b.chunk.js": "/Limbo-hacks-website/static/js/2.1c403a0b.chunk.js",
+    "static/js/2.1c403a0b.chunk.js.map": "/Limbo-hacks-website/static/js/2.1c403a0b.chunk.js.map",
     "index.html": "/Limbo-hacks-website/index.html",
     "static/css/main.1516278c.chunk.css.map": "/Limbo-hacks-website/static/css/main.1516278c.chunk.css.map",
-    "static/js/2.b5086825.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.b5086825.chunk.js.LICENSE.txt",
+    "static/js/2.1c403a0b.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.1c403a0b.chunk.js.LICENSE.txt",
     "static/media/LIMBO.fcc7ebbf.png": "/Limbo-hacks-website/static/media/LIMBO.fcc7ebbf.png",
     "static/media/Ryah.92eb9a11.jpg": "/Limbo-hacks-website/static/media/Ryah.92eb9a11.jpg",
     "static/media/cfc.6dbd3dc7.jpg": "/Limbo-hacks-website/static/media/cfc.6dbd3dc7.jpg",
@@ -24,15 +24,16 @@
     "static/media/lyin.ce4bedbc.jpg": "/Limbo-hacks-website/static/media/lyin.ce4bedbc.jpg",
     "static/media/me.009524a1.png": "/Limbo-hacks-website/static/media/me.009524a1.png",
     "static/media/moon.8fc0d610.png": "/Limbo-hacks-website/static/media/moon.8fc0d610.png",
+    "static/media/pass.0d965fc3.png": "/Limbo-hacks-website/static/media/pass.0d965fc3.png",
     "static/media/pravallika.78715d6f.jpg": "/Limbo-hacks-website/static/media/pravallika.78715d6f.jpg",
     "static/media/replit.3c3b0ba7.png": "/Limbo-hacks-website/static/media/replit.3c3b0ba7.png",
     "static/media/taskade.ac444bbc.png": "/Limbo-hacks-website/static/media/taskade.ac444bbc.png",
     "static/media/zoha.8533bbde.png": "/Limbo-hacks-website/static/media/zoha.8533bbde.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.61d9550f.js",
-    "static/js/2.b5086825.chunk.js",
+    "static/js/runtime-main.e3e2ad22.js",
+    "static/js/2.1c403a0b.chunk.js",
     "static/css/main.1516278c.chunk.css",
-    "static/js/main.bd2b8222.chunk.js"
+    "static/js/main.d1824d08.chunk.js"
   ]
 }
