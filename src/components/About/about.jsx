@@ -17,7 +17,7 @@ import {
   cfc,
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
-import Footer from "../Footer/Footer.jsx";
+import Footer from "../Footer/footer.jsx";
 import Member from "../team/team.jsx";
 import {
   TeamInfo,
@@ -27,6 +27,7 @@ import {
   lyin,
   Pravallika,
   keshav,
+  zoha
 } from "../team/teamdetails.jsx";
 // import { useMediaPredicate } from "react-media-hook";
 
@@ -191,6 +192,13 @@ export default function AboutSection(props) {
               name={TeamInfo[3].Name}
               role={TeamInfo[3].role}
               img={lyin}
+            />
+          </Col>
+          <Col className="" sm={12} lg={4} md={4}>
+            <Member
+              name={TeamInfo[6].Name}
+              role={TeamInfo[6].role}
+              img={zoha}
             />
           </Col>
           <Col className="" sm={12} lg={4} md={4}>
