@@ -15,6 +15,7 @@ import {
   interviewC,
   echoAR,
   cfc,
+  pass
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -154,6 +155,10 @@ export default function AboutSection(props) {
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
             <Sponsor srcx={interviewC} />{" "}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+            <Sponsor srcx={pass} />{" "}
           </Col>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
