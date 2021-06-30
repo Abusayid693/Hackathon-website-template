@@ -4,12 +4,12 @@
 
 .typing-div{
     margin-bottom: 1.3rem;
-    font-family: 'Nunito', sans-serif
+    /* font-family: 'Nunito', sans-serif */
 
 }
 .typing-div h1{
     font-size: 6.5rem;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 @media  (max-width: 570px){

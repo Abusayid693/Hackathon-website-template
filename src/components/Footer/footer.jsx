@@ -35,6 +35,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <p>Contact us <a href="mailto:hello@limbohack.tech"><em>hello@limbohack.tech</em></a> </p>
+      <p>Made with ❤️ </p>
     </div>
   );
 }

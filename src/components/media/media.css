@@ -1,0 +1,26 @@
+.media{
+
+}
+.media img{
+    display: block;
+    margin: 0 auto;
+
+}
+.single img {
+    width: 22%;
+    margin-top: 20px;
+}
+
+
+@media (max-width:570px){
+    .single{
+        display: inline-block;
+    }
+    .single img {
+        width: 70%;
+        margin-top: 120px;
+        margin-left: 8px;
+        margin-right:8px ;
+    }
+}
+

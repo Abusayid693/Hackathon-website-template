@@ -1,13 +1,23 @@
 import React from "react";
 import { propTypes } from "react-bootstrap/esm/Image";
 import "./team.css";
+import {Btn} from "../Top-division-components/Top-division-components.jsx";
+
+
+
+function JoinTeam(){
+    return(
+        <div className="joinT">
+        <h3>Interested in joining our team </h3>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"><Btn type="Sponsor us" overlay="Fill the form"/></a> 
+        </div>
+    );
+}
 
 
 
 
-
-
-export default function Member(props){
+ function Member(props){
     return (
         <div className="member">
         <img src={props.img} ></img>
@@ -24,3 +34,4 @@ export default function Member(props){
 
 
 
+export {Member,JoinTeam}

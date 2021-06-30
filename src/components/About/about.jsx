@@ -1,5 +1,5 @@
 import React from "react";
-import Myinfo from "../Top-division-components/Top-division-components.jsx";
+import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -19,7 +19,7 @@ import {
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
-import Member from "../team/team.jsx";
+import {Member,JoinTeam} from "../team/team.jsx";
 import {
   TeamInfo,
   me,
@@ -28,17 +28,25 @@ import {
   lyin,
   Pravallika,
   keshav,
-  zoha
+  zoha,
+  kk
 } from "../team/teamdetails.jsx";
+
+import bg from "./Frame.png"
+import Media from "../media/media.jsx"
+
 // import { useMediaPredicate } from "react-media-hook";
 
 export default function AboutSection(props) {
   return (
-    <div>
+    <div className="Whole_div" style={{ backgroundImage: `url(${bg})` }}>
       <Container fluid>
         <Row className="Row info">
-          <Col className="info-div" sm={12} lg={12} md={12}>
+          <Col className="info-div" sm={12} lg={8} md={8}>
             <Myinfo />
+          </Col>
+          <Col className="" sm={12} lg={4} md={4}>
+            <Media />
           </Col>
         </Row>
 
@@ -166,12 +174,13 @@ export default function AboutSection(props) {
           </Col>
         </Row>
         <Birds top="0vh" left="0vh" />
-        <Birds top="83vh" left="0vh" />
+        <Birds top="97vh" left="0vh" />
         <Birds top="180vh" left="0vh" />
         <Birds top="310vh" left="0vh" />
         <Birds top="400vh" left="0vh" />
 
         <h1>Our Team</h1>
+        <JoinTeam/>
         <Row className="members">
           <Col className="" sm={12} lg={4} md={4}>
             <Member name={TeamInfo[0].Name} role={TeamInfo[0].role} img={me} />
@@ -209,14 +218,21 @@ export default function AboutSection(props) {
           <Col className="" sm={12} lg={4} md={4}>
             <Member
               name={TeamInfo[4].Name}
-              role={TeamInfo[4].role}
-              img={Pravallika}
+             role={TeamInfo[4].role}
+              img={kk}
             />
           </Col>
           <Col className="" sm={12} lg={4} md={4}>
             <Member
               name={TeamInfo[5].Name}
               role={TeamInfo[5].role}
+              img={Pravallika}
+            />
+          </Col>
+          <Col className="" sm={12} lg={4} md={4}>
+            <Member
+              name={TeamInfo[6].Name}
+              role={TeamInfo[6].role}
               img={keshav}
             />
           </Col>

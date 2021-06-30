@@ -8,7 +8,7 @@
     border-radius: 50%;
     display: block;
    margin: 0 auto;
-   border: 5px solid #CAF7E3;
+   border: 5px solid rgb(255, 194, 252);
 }
 .members-link {
 text-align: center;
@@ -18,7 +18,15 @@ text-align: center;
     margin: 0 7px;
     cursor: pointer;
 }
+.joinT{
+    text-align: center;
+}
+.joinT h3{
+display: inline-block;
+font-weight: 500;
+margin-right: 40px;
 
+}
 @media (max-width:570px){
     .member{
         margin-top: 4rem;
@@ -27,5 +35,8 @@ text-align: center;
         width: 25rem;
         height: 25rem;
   
+    }
+    .joinT h3{
+     margin-right: 0px;
     }
 }

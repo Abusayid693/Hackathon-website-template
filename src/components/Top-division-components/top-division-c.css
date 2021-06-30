@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap'); */
 
 .h1{
     margin: 0;
@@ -9,19 +9,19 @@ button{
   width: 22rem;
   height: 6rem;
   border: none;
-  background-color: #00EAD3;
-  border-radius: 12px;
+  background-color: white;
+  border-radius: 6px;
   font-size: 2rem;
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  color: black;
   font-weight: 300;
   position: relative;
+  border: 1px solid rgb(255, 194, 252);
 }
 .register{
   margin-left: 9rem;
 }
 .AboutMe {
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
 }
 .AboutMe h1{
   font-weight: 600;
@@ -29,7 +29,7 @@ button{
 p{ 
   font-size: 2rem;
   line-height: 1.6;
-  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
 
 }
 .Myinfo p{

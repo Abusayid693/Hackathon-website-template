@@ -6,6 +6,8 @@ import lyin from "./teami/lyin.jpg"
 import Pravallika from "./teami/pravallika.jpg"
 import keshav from "./teami/keshav.jpg"
 import zoha from "./teami/zoha.png"
+import kk from "./teami/kk.png"
+
 
 
 
@@ -41,6 +43,13 @@ const TeamInfo=[{
     img:{moon}
 },
 {
+    Name:"Karishma",
+    role:"Organizer",
+    github:"",
+    linkedin:"",
+    img:{moon}
+},
+{
     Name:"Pravallika",
     role:"Organizer",
     github:"",
@@ -64,4 +73,4 @@ const TeamInfo=[{
 }
 ]
 
-export {TeamInfo,me,moon,Ryah,lyin,Pravallika,keshav,zoha}
+export {TeamInfo,me,moon,Ryah,lyin,Pravallika,keshav,zoha,kk}

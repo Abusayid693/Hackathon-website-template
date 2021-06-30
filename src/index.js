@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 // import Footer from "./components/footer/footer.jsx";
 import NAV from "./components/navbar/App.jsx"
 import {faqCollapse} from "./components/FAQ/faq.jsx"
-import {NightView} from "./components/toggle-button/toggle";
+// import {NightView} from "./components/toggle-button/toggle";
 
 const rootElement = document.getElementById("body");
 const footer = document.getElementById("footer");
@@ -35,4 +35,7 @@ ReactDOM.render(
 
 
 // Dropdown function
+
+
+
 faqCollapse();

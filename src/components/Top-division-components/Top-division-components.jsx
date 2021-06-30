@@ -27,7 +27,7 @@ import CountDown from "../count-down/countDown";
 
 
     
- export default function Myinfo(){
+ function Myinfo(){
     return (
          <div className="Myinfo">
          <About />
@@ -46,7 +46,7 @@ import CountDown from "../count-down/countDown";
 }
 
 
-
+export {Btn,Myinfo}
 
 
 

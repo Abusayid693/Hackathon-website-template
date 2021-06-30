@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 // import MytypedComponent from "../typing-effect/typing.js"
-import TOGGLE from "../toggle-button/toggle";
+// import TOGGLE from "../toggle-button/toggle";
 import AboutSection from "../About/about";
 // import logo from "./logoo.png"
 import {
@@ -28,7 +28,7 @@ export default function NAVBAR() {
             </li>
           </ul>
           {/* <img className="myLogo" src={logo} /> */}
-          <TOGGLE/>
+          {/* <TOGGLE/> */}
         </nav>
 
        {/* Keep parent route at bottom */}
