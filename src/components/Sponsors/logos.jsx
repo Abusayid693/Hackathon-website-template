@@ -5,8 +5,10 @@ import interviewC from "./sponsorsLogos/interview-cake.jpg"
 import echoAR from "./sponsorsLogos/echoAR.png"
 import cfc from "./sponsorsLogos/cfc.jpg"
 import pass from "./sponsorsLogos/pass.png"
+import glimpse from "./sponsorsLogos/glimpse.png"
 
 
 
 
-export {taskade,Replit , interviewC,echoAR,cfc,pass }
+
+export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse }

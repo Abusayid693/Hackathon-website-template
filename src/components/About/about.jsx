@@ -15,7 +15,8 @@ import {
   interviewC,
   echoAR,
   cfc,
-  pass
+  pass,
+  glimpse
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -169,11 +170,15 @@ export default function AboutSection(props) {
           </Col>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
-            <Sponsor srcx={pass} />{" "}
+           <a href="https://1password.com"> <Sponsor srcx={pass} /></a>{" "}
           </Col>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
-            <Sponsor srcx={echoAR} />{" "}
+           <a href="https://www.echoar.xyz"> <Sponsor srcx={echoAR} /></a>{" "}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <a href=" https://joinglimpse.com " target="blank"> <Sponsor srcx={glimpse} /></a>{" "}
           </Col>
         </Row>
         <Birds top="0vh" left="0vh" />
