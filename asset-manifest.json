@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Limbo-hacks-website/static/css/main.e22b0810.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.4e6e69ca.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.4e6e69ca.chunk.js.map",
+    "main.js": "/Limbo-hacks-website/static/js/main.90273344.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.90273344.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.7332c41d.chunk.js": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Ryah.92eb9a11.jpg": "/Limbo-hacks-website/static/media/Ryah.92eb9a11.jpg",
     "static/media/cfc.6dbd3dc7.jpg": "/Limbo-hacks-website/static/media/cfc.6dbd3dc7.jpg",
     "static/media/echoAR.4f66d3a4.png": "/Limbo-hacks-website/static/media/echoAR.4f66d3a4.png",
+    "static/media/glimpse.57b2c35f.png": "/Limbo-hacks-website/static/media/glimpse.57b2c35f.png",
     "static/media/icons8-dev-post.61cef3a2.svg": "/Limbo-hacks-website/static/media/icons8-dev-post.61cef3a2.svg",
     "static/media/icons8-discord.1aa3d75f.svg": "/Limbo-hacks-website/static/media/icons8-discord.1aa3d75f.svg",
     "static/media/icons8-instagram.e5adfa9e.svg": "/Limbo-hacks-website/static/media/icons8-instagram.e5adfa9e.svg",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.7332c41d.chunk.js",
     "static/css/main.e22b0810.chunk.css",
-    "static/js/main.4e6e69ca.chunk.js"
+    "static/js/main.90273344.chunk.js"
   ]
 }
