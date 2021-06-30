@@ -9,7 +9,7 @@ function JoinTeam(){
     return(
         <div className="joinT">
         <h3>Interested in joining our team </h3>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"><Btn type="Sponsor us" overlay="Fill the form"/></a> 
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"><Btn type="Join our team" overlay="Fill the form"/></a> 
         </div>
     );
 }
