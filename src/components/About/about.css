@@ -92,7 +92,7 @@ border-radius: 32px;
 
 
   @media  (max-width: 1400px){
-  .Whole_div{
+  /* .Whole_div{
     background-size: 100vh 100vh;
-}
+} */
   }
