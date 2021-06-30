@@ -1,3 +1,6 @@
+
+
+
 @keyframes spinner {
     from {
       transform: rotate(0deg);
@@ -11,11 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  linear-gradient(90deg, #A643F4 0%, rgba(249, 89, 166, 0.9) 100%);
+    background:rgba(249, 89, 236, 1) ;
     height: 100%;
     width: 100%;
+    top: 0;
     position: fixed;
-    z-index: 20000;
+    z-index: 200000;
   }
   #spinner {
     min-width: 60px;

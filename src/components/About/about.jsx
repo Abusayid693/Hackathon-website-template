@@ -48,9 +48,9 @@ export default function AboutSection(props) {
         </Row>
 
        <Row className="mediaInfo">
-       <Col className="" sm={12} lg={12} md={12}>
+        <Col className="" sm={12} lg={12} md={12}>
             <Media />
-          </Col>
+         </Col>
        </Row>
 
         {/* Logo section  */}
