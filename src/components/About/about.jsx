@@ -42,13 +42,16 @@ export default function AboutSection(props) {
     <div className="Whole_div" style={{ backgroundImage: `url(${bg})` }}>
       <Container fluid>
         <Row className="Row info">
-          <Col className="info-div" sm={12} lg={8} md={8}>
+          <Col className="info-div" sm={12} lg={12} md={12}>
             <Myinfo />
           </Col>
-          <Col className="" sm={12} lg={4} md={4}>
+        </Row>
+
+       <Row className="mediaInfo">
+       <Col className="" sm={12} lg={12} md={12}>
             <Media />
           </Col>
-        </Row>
+       </Row>
 
         {/* Logo section  */}
         <Row className=" logoSection">

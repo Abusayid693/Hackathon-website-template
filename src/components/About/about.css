@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
 .Whole_div{
     background-repeat: no-repeat;
-    background-size: 120vh 100vh;
+    background-size: 100% 100vh;
     font-family: 'Montserrat', sans-serif;
 }
-
+.mediaInfo{
+    margin-top: 30vh;
+}
 h1{
     text-align: center;
     font-size: 5rem;
@@ -59,6 +61,12 @@ border-radius: 32px;
 }
 
 @media  (max-width: 570px){
+    .mediaInfo{
+        margin-top: 0;
+    }
+    .Whole_div{
+        background-size: 100vh 100vh;
+    }
 
     .faqsSection{
         padding: 0 ;

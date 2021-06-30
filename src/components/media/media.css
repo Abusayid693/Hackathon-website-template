@@ -6,8 +6,13 @@
     margin: 0 auto;
 
 }
+.single{
+    display: inline-block;
+}
 .single img {
-    width: 22%;
+    width: 16rem;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
