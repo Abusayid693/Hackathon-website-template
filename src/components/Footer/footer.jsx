@@ -6,6 +6,7 @@ import Linked from "./icons8-linkedin-2.svg";
 import Mail from "./icons8-mail.svg";
 import DevPost from "./icons8-dev-post.svg";
 import PrivacyPolicy from "./Privacy policy.pdf";
+import TermsOfUse from "./Terms of use.pdf";
 export default function Footer() {
   return (
     <div>
@@ -59,12 +60,7 @@ export default function Footer() {
         >
           <p>Privacy Policy</p>
         </a>
-        <a
-          href={PrivacyPolicy}
-          download
-          target="blank"
-          className="privacy-policy"
-        >
+        <a href={TermsOfUse} download target="blank" className="privacy-policy">
           <p>Terms of Use</p>
         </a>
         <p>Made with ❤️ </p>
