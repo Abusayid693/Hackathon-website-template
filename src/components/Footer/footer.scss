@@ -22,11 +22,17 @@
   width: 70%;
 }
 
-@media  (max-width: 570px){
+@media (max-width: 570px) {
   .social-icon {
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
+}
 
+.privacy-policy,
+.terms-of-use {
+  font-size: 1.2vh;
+  font-weight: 400;
+  text-decoration: underline;
 }
