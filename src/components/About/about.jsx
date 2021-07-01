@@ -218,8 +218,8 @@ export default function AboutSection(props) {
           </Col>
           <Col className="" sm={12} lg={4} md={4}>
             <Member
-              name={TeamInfo[6].Name}
-              role={TeamInfo[6].role}
+              name={TeamInfo[7].Name}
+              role={TeamInfo[7].role}
               img={zoha}
             />
           </Col>
