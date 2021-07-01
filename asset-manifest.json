@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Limbo-hacks-website/static/css/main.e22b0810.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.90273344.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.90273344.chunk.js.map",
+    "main.css": "/Limbo-hacks-website/static/css/main.f2b4663f.chunk.css",
+    "main.js": "/Limbo-hacks-website/static/js/main.5603890d.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.5603890d.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.7332c41d.chunk.js": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js",
     "static/js/2.7332c41d.chunk.js.map": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js.map",
     "index.html": "/Limbo-hacks-website/index.html",
-    "static/css/main.e22b0810.chunk.css.map": "/Limbo-hacks-website/static/css/main.e22b0810.chunk.css.map",
+    "static/css/main.f2b4663f.chunk.css.map": "/Limbo-hacks-website/static/css/main.f2b4663f.chunk.css.map",
     "static/js/2.7332c41d.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js.LICENSE.txt",
     "static/media/Frame.6d41c70e.png": "/Limbo-hacks-website/static/media/Frame.6d41c70e.png",
     "static/media/LIMBO.fcc7ebbf.png": "/Limbo-hacks-website/static/media/LIMBO.fcc7ebbf.png",
+    "static/media/Privacy policy.9854a808.pdf": "/Limbo-hacks-website/static/media/Privacy policy.9854a808.pdf",
     "static/media/Ryah.92eb9a11.jpg": "/Limbo-hacks-website/static/media/Ryah.92eb9a11.jpg",
+    "static/media/Terms of use.c2255556.pdf": "/Limbo-hacks-website/static/media/Terms of use.c2255556.pdf",
     "static/media/cfc.6dbd3dc7.jpg": "/Limbo-hacks-website/static/media/cfc.6dbd3dc7.jpg",
     "static/media/echoAR.4f66d3a4.png": "/Limbo-hacks-website/static/media/echoAR.4f66d3a4.png",
     "static/media/glimpse.57b2c35f.png": "/Limbo-hacks-website/static/media/glimpse.57b2c35f.png",
@@ -36,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.7332c41d.chunk.js",
-    "static/css/main.e22b0810.chunk.css",
-    "static/js/main.90273344.chunk.js"
+    "static/css/main.f2b4663f.chunk.css",
+    "static/js/main.5603890d.chunk.js"
   ]
 }
