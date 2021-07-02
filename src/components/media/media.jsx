@@ -16,13 +16,13 @@ export default function Media() {
           target="_blank"
           href="https://www.instagram.com/limbohacks/"
         >
-          <img src={Insta} alt="" />
+          <img src={Insta} alt="Limbohacks" />
         </a>
       </div>
 
       <div className="single">
         <a rel="noreferrer" target="_blank" href="https://discord.gg/un2USMtv">
-          <img src={Dis} alt="" />
+          <img src={Dis} alt="Limbohacks" />
         </a>
       </div>
 
@@ -32,7 +32,7 @@ export default function Media() {
           target="_blank"
           href="https://www.linkedin.com/company/limbo-hacks/"
         >
-          <img src={Linked} alt="" />
+          <img src={Linked} alt="Limbohacks" />
         </a>
       </div>
 
@@ -42,7 +42,7 @@ export default function Media() {
           target="_blank"
           href="mailto:abusayid693@gmail.com,hello@limbohack.tech"
         >
-          <img src={Mail} alt="" />
+          <img src={Mail} alt="Limbo Hacks" />
         </a>
       </div>
       <div className="single">
@@ -51,7 +51,7 @@ export default function Media() {
           target="_blank"
           href="https://twitter.com/HacksLimbo"
         >
-          <img src={Twitter} alt="" />
+          <img src={Twitter} alt="limbo hacks" />
         </a>
       </div>
       <div className="single">
@@ -60,7 +60,7 @@ export default function Media() {
           target="_blank"
           href="https://limbo-hacks-12968.devpost.com/"
         >
-          <img src={DevPost} alt="" />
+          <img src={DevPost} alt="Limbo hacks" />
         </a>
       </div>
     </div>

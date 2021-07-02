@@ -20,7 +20,7 @@ function JoinTeam(){
  function Member(props){
     return (
         <div className="member">
-        <img src={props.img} ></img>
+        <img src={props.img} alt="Limbo hack"></img>
         <div className="members-link">
         <h3>{props.name}</h3>
         <p>{props.role}</p>
