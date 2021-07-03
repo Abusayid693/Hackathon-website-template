@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Limbo-hacks-website/static/css/main.f2b4663f.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.c04a69d1.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.c04a69d1.chunk.js.map",
+    "main.css": "/Limbo-hacks-website/static/css/main.2a2a2999.chunk.css",
+    "main.js": "/Limbo-hacks-website/static/js/main.fad4e744.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.fad4e744.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.7332c41d.chunk.js": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js",
     "static/js/2.7332c41d.chunk.js.map": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js.map",
     "index.html": "/Limbo-hacks-website/index.html",
-    "static/css/main.f2b4663f.chunk.css.map": "/Limbo-hacks-website/static/css/main.f2b4663f.chunk.css.map",
+    "static/css/main.2a2a2999.chunk.css.map": "/Limbo-hacks-website/static/css/main.2a2a2999.chunk.css.map",
     "static/js/2.7332c41d.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.7332c41d.chunk.js.LICENSE.txt",
     "static/media/Frame.27383c5f.png": "/Limbo-hacks-website/static/media/Frame.27383c5f.png",
     "static/media/LIMBO.c778440a.png": "/Limbo-hacks-website/static/media/LIMBO.c778440a.png",
@@ -32,6 +32,7 @@
     "static/media/moon.8fc0d610.png": "/Limbo-hacks-website/static/media/moon.8fc0d610.png",
     "static/media/pass.0d965fc3.png": "/Limbo-hacks-website/static/media/pass.0d965fc3.png",
     "static/media/pravallika.78715d6f.jpg": "/Limbo-hacks-website/static/media/pravallika.78715d6f.jpg",
+    "static/media/qoom.cd1be00b.svg": "/Limbo-hacks-website/static/media/qoom.cd1be00b.svg",
     "static/media/replit.3c3b0ba7.png": "/Limbo-hacks-website/static/media/replit.3c3b0ba7.png",
     "static/media/taskade.ac444bbc.png": "/Limbo-hacks-website/static/media/taskade.ac444bbc.png",
     "static/media/zoha.8533bbde.png": "/Limbo-hacks-website/static/media/zoha.8533bbde.png"
@@ -39,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.7332c41d.chunk.js",
-    "static/css/main.f2b4663f.chunk.css",
-    "static/js/main.c04a69d1.chunk.js"
+    "static/css/main.2a2a2999.chunk.css",
+    "static/js/main.fad4e744.chunk.js"
   ]
 }
