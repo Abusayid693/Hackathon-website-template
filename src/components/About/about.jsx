@@ -16,7 +16,8 @@ import {
   echoAR,
   cfc,
   pass,
-  glimpse
+  glimpse,
+  qoom
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -163,6 +164,10 @@ export default function AboutSection(props) {
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
             <Sponsor srcx={Replit} />{" "}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <Sponsor srcx={qoom} />{""}
           </Col>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}

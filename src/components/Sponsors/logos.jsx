@@ -6,9 +6,11 @@ import echoAR from "./sponsorsLogos/echoAR.png"
 import cfc from "./sponsorsLogos/cfc.jpg"
 import pass from "./sponsorsLogos/pass.png"
 import glimpse from "./sponsorsLogos/glimpse.png"
+import qoom from "./sponsorsLogos/qoom.svg"
 
 
 
 
 
-export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse }
+
+export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse,qoom }

@@ -29,8 +29,8 @@ const Prizeinfo=[
     }
     ,
     {
-        type:"For everyone",
-        content:"All attendees will be receiving (more info will be revel later) "
+        type:"More prizes",
+        content:"More prizes will be revealed soon"
     }
 ]
 

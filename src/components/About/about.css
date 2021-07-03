@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
 .Whole_div{
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: auto 100vh;
     font-family: 'Montserrat', sans-serif;
 }
 .mediaInfo{
@@ -50,7 +50,6 @@ border-radius: 32px;
 
 }
 
-
 .faqsSection{
     text-align: center;
     margin: 0 auto;
@@ -65,7 +64,7 @@ border-radius: 32px;
         margin-top: 0;
     }
     .Whole_div{
-        background-size: 150vh 100vh;
+        background-size: auto 100vh;
     }
 
     .faqsSection{
