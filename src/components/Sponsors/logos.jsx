@@ -7,10 +7,10 @@ import cfc from "./sponsorsLogos/cfc.jpg"
 import pass from "./sponsorsLogos/pass.png"
 import glimpse from "./sponsorsLogos/glimpse.png"
 import qoom from "./sponsorsLogos/qoom.svg"
+import sublime from "./sponsorsLogos/sublime.png"
 
 
 
 
 
-
-export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse,qoom }
+export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse,qoom,sublime  }

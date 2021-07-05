@@ -1,12 +1,11 @@
 .counter{
     display: block;
     /* font-family: 'Nunito', sans-serif; */
-    margin: 30px 0;
     background-color: white;
     color: black;
     width: fit-content;
     height: fit-content;
-    height: 10vh;
+    height: fit-content;
     padding: 0px 30px;
     border-radius: 8px;
     text-align: center;

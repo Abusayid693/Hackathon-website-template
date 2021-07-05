@@ -8,6 +8,8 @@ import DevPost from "./icons8-dev-post.svg";
 import PrivacyPolicy from "./Privacy policy.pdf";
 import TermsOfUse from "./Terms of use.pdf";
 import Twitter from "./icons8-twitter.svg";
+import {Btn} from "../Top-division-components/Top-division-components.jsx";
+
 export default function Footer() {
   return (
     <div>
@@ -68,6 +70,10 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <div className="Register_a">
+        <Btn type="Register" overlay="Fill the form"/>
+        </div>
+        <div className="footer_info">
         <p>
           Contact us{" "}
           <a href="mailto:hello@limbohack.tech">
@@ -87,6 +93,7 @@ export default function Footer() {
         </a>
         <p>Made with ❤️ </p>
       </div>
+    </div>
     </div>
   );
 }

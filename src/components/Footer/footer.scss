@@ -18,10 +18,25 @@
   align-items: center;
   text-align: center;
 }
+.footer p{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color:white;
+}
+.footer a{
+  color: aliceblue;
+}
 .footer img {
   width: 70%;
 }
-
+.footer_info{
+  padding: 20px 0;
+  background-color: rgb(32, 32, 32);
+}
+.Register_a{
+  padding: 70px 0;
+  background-color: rgb(255, 126, 74);
+}
 @media (max-width: 570px) {
   .social-icon {
     padding-top: 0px;

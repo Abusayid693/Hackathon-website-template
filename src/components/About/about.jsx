@@ -17,7 +17,8 @@ import {
   cfc,
   pass,
   glimpse,
-  qoom
+  qoom,
+  sublime
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -184,6 +185,10 @@ export default function AboutSection(props) {
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
            <a href=" https://joinglimpse.com " target="blank"> <Sponsor srcx={glimpse} /></a>{" "}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <Sponsor srcx={sublime} />{""}
           </Col>
         </Row>
         <Birds top="0vh" left="0vh" />
