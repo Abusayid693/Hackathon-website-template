@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="Register_a">
-        <Btn type="Register" overlay="Fill the form"/>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u"><Btn type="Register" overlay="Fill the form"/></a>
         </div>
         <div className="footer_info">
         <p>

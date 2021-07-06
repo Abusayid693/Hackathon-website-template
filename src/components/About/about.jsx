@@ -18,7 +18,8 @@ import {
   pass,
   glimpse,
   qoom,
-  sublime
+  sublime,
+  egg
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -154,10 +155,21 @@ export default function AboutSection(props) {
         </Row>
         <Row className="sponsorSection">
           <SponsorsHead />
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
             <Sponsor srcx={cfc} />{" "}
           </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <Sponsor srcx={sublime} />{""}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <a href="https://www.echoar.xyz"> <Sponsor srcx={echoAR} /></a>{" "}
+          </Col>
+          </Row>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
             <Sponsor srcx={taskade} />{" "}
@@ -170,6 +182,8 @@ export default function AboutSection(props) {
             {" "}
            <Sponsor srcx={qoom} />{""}
           </Col>
+          </Row>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
             <Sponsor srcx={interviewC} />{" "}
@@ -178,18 +192,20 @@ export default function AboutSection(props) {
             {" "}
            <a href="https://1password.com"> <Sponsor srcx={pass} /></a>{" "}
           </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <a href="https://www.echoar.xyz"> <Sponsor srcx={echoAR} /></a>{" "}
-          </Col>
+    
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
            <a href=" https://joinglimpse.com " target="blank"> <Sponsor srcx={glimpse} /></a>{" "}
           </Col>
+          </Row>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
-           <Sponsor srcx={sublime} />{""}
+           <Sponsor srcx={egg} />{""}
           </Col>
+          </Row>
+         
+      
         </Row>
         <Birds top="0vh" left="0vh" />
         <Birds top="97vh" left="0vh" />

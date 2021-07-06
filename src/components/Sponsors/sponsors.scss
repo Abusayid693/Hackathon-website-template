@@ -1,7 +1,16 @@
+.Sponsor{
+  margin-bottom: 5rem;
+  transition: 0.3s;
+}
+.Sponsor:hover{
+  transform: scale(1.1);
+}
 .Sponsor img{
     width: 25rem;
-    margin-bottom: 8rem;
+    display: inline-block;
+    margin: 0;
 }
+
 .shead{
     font-size: 6rem;
     margin-bottom: 6rem;
