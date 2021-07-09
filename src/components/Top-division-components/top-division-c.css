@@ -1,6 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 .h1{
     margin: 0;
   }
@@ -9,32 +10,45 @@ button{
   width: 22rem;
   height: 6rem;
   border: none;
-  background-color: white;
-  border-radius: 6px;
+  border-radius: 19px;
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: #6A63B7;;
   font-weight: 300;
   position: relative;
-  border: 1px solid rgb(255, 194, 252);
+
+}
+.sponsor_btn{
+ 
 }
 .register{
   margin-left: 9rem;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+
 }
 .AboutMe {
   /* font-family: 'Nunito', sans-serif; */
+ 
 }
-.AboutMe h1{
-  font-weight: 600;
+.AboutMe h2{
+  font-size: 8rem;
+  font-family: 'Noto Sans', sans-serif;
 }
 p{ 
   font-size: 2rem;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 300;
+
 
 }
+.Myinfo{
+  text-align: left;
+  margin-left: 10vh;
+}
 .Myinfo p{
-  width: 50%;
-  margin: 0 auto;
+  width: 70%; 
+  /* margin: 0 auto; */
 }
 
 
@@ -74,14 +88,18 @@ p{
     @media  (max-width: 570px){
       .Myinfo p{
         width: 100%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+      }
+      .AboutMe h2{
+        font-size: 4rem;
       }
     .register{
       margin-left: 0;
       margin-top: 3vh;
     }
     .Myinfo{
-      text-align: center;
+      text-align: center; 
+      margin-left: 0;
     }
     .Myinfo p{
       font-size: 1.9rem;

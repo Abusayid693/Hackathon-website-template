@@ -1,24 +1,23 @@
 .media{
-
-}
-.media img{
-    display: block;
-    margin: 0 auto;
-
+color: white;
 }
 .single{
     display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-.single img {
-    width: 10rem;
-    margin-left: 20px;
-    margin-right: 20px;
+.single a{
+    color:rgba(231, 228, 228);
 }
-
-
+.single a:hover{
+    color: white;
+}
 @media (max-width:570px){
     .single{
         display: inline-block;
+        margin-top: 50px;
+        margin-left: 14.5px;
+    margin-right: 14.5px;
     }
     .single img {
         width: 70%;

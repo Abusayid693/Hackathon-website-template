@@ -21,9 +21,10 @@ nav ul li{
 }
 
 .links{
-    color: black;
+    color: rgb(231, 228, 228);
     transition: 0.5s;
-    font-weight: 200;
+    font-weight: 300;
+    letter-spacing: 1.3px;
 }
 
 .links:hover{
@@ -56,8 +57,10 @@ a:link {
 }
 
 @media  (max-width: 380px){
-    nav ul{
+    .links{
+    letter-spacing: 0px;
     }
+ 
 }
 @media  (max-width: 370px){
     nav{

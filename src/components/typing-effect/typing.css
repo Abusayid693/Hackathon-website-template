@@ -3,19 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
 .typing-div{
-    margin-bottom: 1.3rem;
-    /* font-family: 'Nunito', sans-serif */
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 
 }
 .typing-div h1{
-    font-size: 6.5rem;
-    font-weight: 400;
+    font-size: 6rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: left;
 }
 
 @media  (max-width: 570px){
     .typing-div h1{
         font-size: 3rem;
         font-weight: 700;
+        text-align: center;
     }
 }
 @media  (max-width: 330px){

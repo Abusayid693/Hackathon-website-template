@@ -5,7 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 .mediaInfo{
-    margin-top: 30vh;
+    margin-top: 10vh;
+    background-size: auto 100vh;
+
+}
+.color_sectiom{
+background-color: #121930;
+padding-bottom: 5rem;
 }
 h1{
     text-align: center;
@@ -19,25 +25,25 @@ h1{
     margin-top: 20vh;
     color: white;
 }
-
+.d-image img{
+    width: 100%;
+}
 .logoSection{
     text-align: center;
     padding: 20vh 10vh 0 10vh ;
     margin-top: 3vh;
     margin-bottom: 3vh;
-
 }
 .members{
     padding: 0vh 10vh 0 10vh ;
-
 }
-
 .prizesection{
+    background-size: 100% 100%;
     text-align: center;
     margin: 0 auto;
     padding: 0 4vh 0 4vh ;
     margin: 17vh 14vh 0 14vh ;
-border-radius: 32px;
+    border-radius: 14px;
     margin-top: 4vh;
     background-color: rgb(246, 246, 246);
 

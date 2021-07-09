@@ -18,7 +18,7 @@ import CountDown from "../count-down/countDown";
    function About(){
     return (
          <div className="AboutMe">
-         <h1>Join Limbo Hacks</h1>
+         <h2>Join Limbo Hacks</h2>
          <MytypedComponent />
         </div>
         );
@@ -37,7 +37,7 @@ import CountDown from "../count-down/countDown";
         
           </p>
           <CountDown />
-          <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com"><Btn type="Sponsor us" overlay="Send a mail"/></a> 
+          <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com"><Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail"/></a> 
           <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">  <Btn class="register" type="Register " overlay="Hackers registration" /></a>
          </div>
 

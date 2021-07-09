@@ -36,18 +36,24 @@ import {
   kk
 } from "../team/teamdetails.jsx";
 
-import bg from "./Frame.png"
+import bg from "./Frame2.png"
+import boy from "./boy.png"
+
 import Media from "../media/media.jsx"
 
 // import { useMediaPredicate } from "react-media-hook";
 
 export default function AboutSection(props) {
   return (
-    <div className="Whole_div" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="Whole_div" >
+    <div className="color_sectiom">
       <Container fluid>
         <Row className="Row info">
-          <Col className="info-div" sm={12} lg={12} md={12}>
+          <Col className="info-div" sm={12} lg={7} md={7} >
             <Myinfo />
+          </Col>
+          <Col className="d-image" sm={12} lg={5} md={5}>
+            <img src={boy} />
           </Col>
         </Row>
 
@@ -56,7 +62,9 @@ export default function AboutSection(props) {
             <Media />
          </Col>
        </Row>
-
+       </Container>
+       </div>
+      <Container fluid>
         {/* Logo section  */}
         <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
@@ -66,8 +74,9 @@ export default function AboutSection(props) {
             <Logo />
           </Col>
         </Row>
-
-        <Row className="faqsSection">
+        
+     
+        <Row className="faqsSection" >
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[0].q} ans={QA[0].ans} />
           </Col>
@@ -100,8 +109,9 @@ export default function AboutSection(props) {
             <DropDown q={QA[7].q} ans={QA[7].ans} />
           </Col>
         </Row>
-
-        <Row className="prizesection">
+   
+       
+        <Row className="prizesection" style={{ backgroundImage: `url(${bg})` }}>
           <PrizeHeading />
           <Col className="" sm={12} lg={4} md={6}>
             <FirstPrize

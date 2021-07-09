@@ -10,19 +10,23 @@ import "./media.css";
 export default function Media() {
   return (
     <div className="media">
+    <p>Follow us on social media for updates</p>
       <div className="single">
         <a
           rel="noreferrer"
           target="_blank"
           href="https://www.instagram.com/limbohacks/"
         >
-          <img src={Insta} alt="Limbohacks" />
+          {/* <img src={Insta} alt="Limbohacks" /> */}
+          <i class="fab fa-3x fa-instagram"></i>
         </a>
       </div>
 
       <div className="single">
         <a rel="noreferrer" target="_blank" href="https://discord.gg/un2USMtv">
-          <img src={Dis} alt="Limbohacks" />
+          {/* <img src={Dis} alt="Limbohacks" /> */}
+          <i class="fab fa-3x fa-discord"></i>
+          
         </a>
       </div>
 
@@ -32,17 +36,8 @@ export default function Media() {
           target="_blank"
           href="https://www.linkedin.com/company/limbo-hacks/"
         >
-          <img src={Linked} alt="Limbohacks" />
-        </a>
-      </div>
-
-      <div className="single">
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="mailto:abusayid693@gmail.com,hello@limbohack.tech"
-        >
-          <img src={Mail} alt="Limbo Hacks" />
+          {/* <img src={Linked} alt="Limbohacks" /> */}
+          <i class="fab fa-3x fa-linkedin-in"></i>
         </a>
       </div>
       <div className="single">
@@ -51,7 +46,8 @@ export default function Media() {
           target="_blank"
           href="https://twitter.com/HacksLimbo"
         >
-          <img src={Twitter} alt="limbo hacks" />
+          {/* <img src={Twitter} alt="limbo hacks" /> */}
+          <i class="fab fa-3x fa-twitter"></i>
         </a>
       </div>
       <div className="single">
@@ -60,7 +56,8 @@ export default function Media() {
           target="_blank"
           href="https://limbo-hacks-12968.devpost.com/"
         >
-          <img src={DevPost} alt="Limbo hacks" />
+          {/* <img src={DevPost} alt="Limbo hacks" /> */}
+          <i class="fab fa-3x fa-dev"></i>
         </a>
       </div>
     </div>

@@ -5,9 +5,15 @@
 }
 .faq button{
     font-size: 1.7rem;
-    border: 2px solid rgb(245, 154, 240);
+    border: 2px solid rgb(158, 107, 241);
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 7px;
 }
-
+.faq button:hover{
+ background-color: rgb(158, 107, 241);
+ color:white;
+}
   .collapsible {
     cursor: pointer;
     padding: 18px;
@@ -25,7 +31,7 @@
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: rgb(248, 153, 243);
+    background-color: #121930;
     color: white;
-    /* background-color: #f1f1f1; */
+    border-radius: 7px;
   }
