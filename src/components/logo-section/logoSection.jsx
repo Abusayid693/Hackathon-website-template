@@ -1,6 +1,11 @@
 import React from "react";
 import "./logoSection.css";
-import logo from './LIMBO.png';
+import sym from './sym.png';
+
+import logo1 from './logo4.png';
+import logo2 from './logo2.png';
+import logo3 from './logo3.png';
+
 
 
 function LogoSectionAbout(){
@@ -14,7 +19,14 @@ function LogoSectionAbout(){
 
 function Logo(){
     return(
-        <img className="Logo" src={logo} alt="Limbohacks" />
+        <div className="logoS">
+        <img className="Logo sym" src={sym} alt="Limbohacks" />
+
+        <img className="Logo logo1" src={logo1} alt="Limbohacks" />
+        <img className="Logo logo2" src={logo2} alt="Limbohacks" />
+        <img className="Logo logo3" src={logo3} alt="Limbohacks" />
+
+        </div>
     ) 
 }
 

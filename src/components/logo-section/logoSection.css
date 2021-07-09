@@ -1,9 +1,57 @@
+.logoS{
+  width: 390px;
+  height: 390px;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+  right: 130px;
+
+}
 .Logo{
     width: 60%;
-    /* background-color: black; */
     display: inline-block;
-    position: relative;
+    margin: 0;
+   padding: 0;
+   position: absolute;
 }
+
+.logoS img{
+margin: 0;
+
+}
+.sym{
+  z-index: 4;
+  width: 120px;
+  right:17px;
+  top: 35px;
+  transition: 0.4s;
+}
+
+.logo1{
+  z-index: 3;
+  top: 0;
+  transition: 0.4s;
+
+}
+.logo2{
+z-index: 2;
+top: 21px;
+transition: 0.4s;
+
+
+}
+.logo3{
+z-index: 1;
+top: 41px;
+transition: 0.4s;
+}
+.logoS:hover .logo3{
+  top: 96px;
+}
+.logoS:hover .logo2{
+  top: 51px;
+}
+
 .LogoSectionAbout{
     text-align: left;
     width: 80%;
@@ -30,3 +78,13 @@
      0% { transform: translateY(0); }
      100% { transform: translateY(-10px); }
    }
+
+   @media  (max-width: 570px){
+    .logoS{
+      margin-top: 10rem;
+      margin-bottom: -10rem;
+    }
+    .Logo{
+     margin: 0 auto;
+    }
+  }
