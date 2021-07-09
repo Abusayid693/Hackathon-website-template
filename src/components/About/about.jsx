@@ -36,7 +36,9 @@ import {
   kk
 } from "../team/teamdetails.jsx";
 
-import bg from "./Frame2.png"
+
+import pattern from "./pattern4.png"
+
 import boy from "./boy.png"
 
 import Media from "../media/media.jsx"
@@ -45,7 +47,7 @@ import Media from "../media/media.jsx"
 
 export default function AboutSection(props) {
   return (
-    <div className="Whole_div" >
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
     <div className="color_sectiom">
       <Container fluid>
         <Row className="Row info">
@@ -111,7 +113,7 @@ export default function AboutSection(props) {
         </Row>
    
        
-        <Row className="prizesection" style={{ backgroundImage: `url(${bg})` }}>
+        <Row className="prizesection" >
           <PrizeHeading />
           <Col className="" sm={12} lg={4} md={6}>
             <FirstPrize
