@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Limbo-hacks-website/static/css/main.ef045635.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.3dd11a82.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.3dd11a82.chunk.js.map",
+    "main.css": "/Limbo-hacks-website/static/css/main.1f02753b.chunk.css",
+    "main.js": "/Limbo-hacks-website/static/js/main.c8d35875.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.c8d35875.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.e3259290.chunk.js": "/Limbo-hacks-website/static/js/2.e3259290.chunk.js",
     "static/js/2.e3259290.chunk.js.map": "/Limbo-hacks-website/static/js/2.e3259290.chunk.js.map",
     "index.html": "/Limbo-hacks-website/index.html",
-    "static/css/main.ef045635.chunk.css.map": "/Limbo-hacks-website/static/css/main.ef045635.chunk.css.map",
+    "static/css/main.1f02753b.chunk.css.map": "/Limbo-hacks-website/static/css/main.1f02753b.chunk.css.map",
     "static/js/2.e3259290.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.e3259290.chunk.js.LICENSE.txt",
     "static/media/1pass.fe1b7aaa.png": "/Limbo-hacks-website/static/media/1pass.fe1b7aaa.png",
     "static/media/Privacy policy.9854a808.pdf": "/Limbo-hacks-website/static/media/Privacy policy.9854a808.pdf",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.e3259290.chunk.js",
-    "static/css/main.ef045635.chunk.css",
-    "static/js/main.3dd11a82.chunk.js"
+    "static/css/main.1f02753b.chunk.css",
+    "static/js/main.c8d35875.chunk.js"
   ]
 }
