@@ -106,6 +106,7 @@ export default function AboutSection(props) {
         <Row className="faqsSection">
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[6].q} ans={QA[6].ans} />
+            
           </Col>
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[7].q} ans={QA[7].ans} />

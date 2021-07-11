@@ -24,11 +24,11 @@ const QA=[{
 },
 {
     q:"I have more doubts?",
-    ans:"Reach out to me directly (abusayid693@gmail.com) i would happy to help you."
+    ans:"Reach us directly at (rehan@limbohacks.tech) we would happy to help you."
 },
 {
   q:"Can i volunteer?",
-  ans:"Yes we are looking for volunteers, Reach out to me directly (abusayid693@gmail.com) we would be glad to have you."
+  ans:"Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
 },
 {
   q:"What are the conduct of guidlines?",
