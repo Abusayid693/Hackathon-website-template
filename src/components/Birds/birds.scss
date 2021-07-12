@@ -1,7 +1,6 @@
 
 
 .container {
-	z-index: 1;
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -12,7 +11,7 @@
 	background-size: cover;
 	background-position: center center;
 	padding: 2rem;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
 
 }
@@ -160,4 +159,11 @@
 		transform: translateY(0vh) translateX(110vw) scale(0.45);
 	}
 	
+}
+
+@media  (max-width: 570px){
+
+	.container {
+		display: none;
+	}
 }

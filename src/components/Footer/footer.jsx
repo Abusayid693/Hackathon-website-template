@@ -28,7 +28,7 @@ export default function Footer() {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://discord.gg/un2USMtv"
+              href="https://discord.gg/YEfteWAT"
             >
               <img src={Dis} alt="" />
             </a>

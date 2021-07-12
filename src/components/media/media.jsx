@@ -23,7 +23,7 @@ export default function Media() {
       </div>
 
       <div className="single">
-        <a rel="noreferrer" target="_blank" href="https://discord.gg/un2USMtv">
+        <a rel="noreferrer" target="_blank" href="https://discord.gg/YEfteWAT">
           {/* <img src={Dis} alt="Limbohacks" /> */}
           <i class="fab fa-3x fa-discord"></i>
           

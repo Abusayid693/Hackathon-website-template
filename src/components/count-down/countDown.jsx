@@ -7,10 +7,13 @@ import Countdown from 'react-countdown';
 export default function CountDown(){
     return(
 <div className="counter">
-{/* <h1> Count the day</h1> */}
-{/* <p>Until the hack start</p> */}
 <h1>
-<Countdown date={Date.now() + 415201152} />
+<a rel="noreferrer" target="_blank" href="https://discord.gg/un2USMtv">
+          
+          <i class="fab fa-3x fa-discord"></i>
+          <p>Join our discord</p>
+          
+        </a>
 </h1>
 
 </div>

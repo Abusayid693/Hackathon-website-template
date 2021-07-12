@@ -6,13 +6,17 @@ import CountDown from "../count-down/countDown";
 
   function Btn(props){
     return(  
-   <button className={props.class}>{props.type}
+   <button className={props.class}>
+       <i className={props.ico}></i>
+           {props.type}     
        <div className="overlay">
         <div className="overlay-text">{props.overlay}</div>
        </div>
    </button>
        );
    }
+
+
 
 
    function About(){
@@ -36,7 +40,9 @@ import CountDown from "../count-down/countDown";
         
         
           </p>
-          <CountDown />
+          <div className="join_dis">
+          <a rel="noreferrer" target="_blank" href="https://discord.gg/YEfteWAT"><Btn ico="fab fa-2x fa-discord" class="join_disco" type="Join our discord" overlay="Send a mail"/></a>
+          </div>
           <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com"><Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail"/></a> 
           <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">  <Btn class="register" type="Register " overlay="Hackers registration" /></a>
          </div>

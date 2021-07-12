@@ -225,11 +225,8 @@ export default function AboutSection(props) {
          
       
         </Row>
-        <Birds top="0vh" left="0vh" />
-        <Birds top="97vh" left="0vh" />
-        <Birds top="180vh" left="0vh" />
-        <Birds top="310vh" left="0vh" />
-        <Birds top="400vh" left="0vh" />
+        <Birds top="120vh" left="0vh" type="" />
+    
 
         <h1>Our Team</h1>
         <JoinTeam/>

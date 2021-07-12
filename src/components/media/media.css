@@ -1,6 +1,7 @@
 .media{
 color: white;
 }
+
 .single{
     display: inline-block;
     margin-left: 25px;
@@ -8,6 +9,7 @@ color: white;
 }
 .single a{
     color:rgba(231, 228, 228);
+
 }
 .single a:hover{
     color: white;
