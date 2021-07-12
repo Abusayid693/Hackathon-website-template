@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Limbo-hacks-website/static/css/main.1f02753b.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.c8d35875.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.c8d35875.chunk.js.map",
+    "main.js": "/Limbo-hacks-website/static/js/main.1ddbf697.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.1ddbf697.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.e3259290.chunk.js": "/Limbo-hacks-website/static/js/2.e3259290.chunk.js",
@@ -28,6 +28,7 @@
     "static/media/interview-cake.37432cbb.jpg": "/Limbo-hacks-website/static/media/interview-cake.37432cbb.jpg",
     "static/media/keshav.3379e1fd.jpg": "/Limbo-hacks-website/static/media/keshav.3379e1fd.jpg",
     "static/media/kk.045132d5.png": "/Limbo-hacks-website/static/media/kk.045132d5.png",
+    "static/media/ll.fd735495.png": "/Limbo-hacks-website/static/media/ll.fd735495.png",
     "static/media/logo2.eeea9382.png": "/Limbo-hacks-website/static/media/logo2.eeea9382.png",
     "static/media/logo3.665337f1.png": "/Limbo-hacks-website/static/media/logo3.665337f1.png",
     "static/media/logo4.7dcc3f21.png": "/Limbo-hacks-website/static/media/logo4.7dcc3f21.png",
@@ -47,6 +48,6 @@
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.e3259290.chunk.js",
     "static/css/main.1f02753b.chunk.css",
-    "static/js/main.c8d35875.chunk.js"
+    "static/js/main.1ddbf697.chunk.js"
   ]
 }
