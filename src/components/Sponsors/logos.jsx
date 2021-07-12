@@ -9,10 +9,12 @@ import glimpse from "./sponsorsLogos/glimpse.png"
 import qoom from "./sponsorsLogos/qoom.svg"
 import sublime from "./sponsorsLogos/sublime.png"
 import egg from "./sponsorsLogos/egg.png"
+import ll from "./sponsorsLogos/ll.png"
 
 
 
 
 
 
-export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse,qoom,sublime,egg  }
+
+export {taskade,Replit , interviewC,echoAR,cfc,pass,glimpse,qoom,sublime,egg ,ll }

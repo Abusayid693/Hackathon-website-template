@@ -19,7 +19,8 @@ import {
   glimpse,
   qoom,
   sublime,
-  egg
+  egg,
+  ll
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -215,6 +216,10 @@ export default function AboutSection(props) {
           <Col className="" sm={12} lg={4} md={6}>
             {" "}
            <Sponsor srcx={egg} />{""}
+          </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            {" "}
+           <Sponsor srcx={ll} />{""}
           </Col>
           </Row>
          
