@@ -52,10 +52,10 @@ export default function AboutSection(props) {
     <div className="color_sectiom">
       <Container fluid>
         <Row className="Row info">
-          <Col className="info-div" sm={12} lg={7} md={7} >
+          <Col className="info-div" sm={12} lg={7} md={8} >
             <Myinfo />
           </Col>
-          <Col className="d-image" sm={12} lg={5} md={5}>
+          <Col className="d-image" sm={12} lg={5} md={4}>
             <img src={boy} />
           </Col>
         </Row>

@@ -35,10 +35,7 @@ button{
   background-color: transparent;
 
 }
-.AboutMe {
-  /* font-family: 'Nunito', sans-serif; */
- 
-}
+
 .AboutMe h2{
   font-size: 8rem;
   font-family: 'Noto Sans', sans-serif;
@@ -58,8 +55,6 @@ p{
   width: 70%; 
   /* margin: 0 auto; */
 }
-
-
   /* Over lay effect */
   .overlay {
       position: absolute;
@@ -92,11 +87,15 @@ p{
       width: 100%;
       left: 0;
     }  
+    @media  (max-width: 1200px){
+      .AboutMe h2{
+        /* font-size: 6rem; */
+      }
+        }
   /* main targer */
     @media  (max-width: 570px){
       .Myinfo p{
         width: 100%;
-        /* margin: 0 auto; */
       }
       .AboutMe h2{
         font-size: 4rem;
@@ -117,7 +116,6 @@ p{
     }
   }
   
-    /* more smaller */
     @media  (max-width: 330px){
     
     .register{

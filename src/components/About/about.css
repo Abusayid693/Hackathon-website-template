@@ -52,17 +52,14 @@ h1{
     padding: 17vh 18vh 0 18vh ;
     margin-top: -10vh;
     margin-top: 0vh;
-
 }
-
 .faqsSection{
     text-align: center;
     margin: 0 auto;
     padding: 17vh 18vh 0 18vh ;
     margin-top: -16vh;
-
-
 }
+
 
 @media  (max-width: 570px){
     .mediaInfo{
@@ -97,14 +94,5 @@ h1{
     .logoSection{
         text-align: center;
         padding: 20vh 0vh 0 0vh ;
-        /* background-color: white; */
     }
-  }
-
-
-
-  @media  (max-width: 1400px){
-  /* .Whole_div{
-    background-size: 100vh 100vh;
-} */
   }
