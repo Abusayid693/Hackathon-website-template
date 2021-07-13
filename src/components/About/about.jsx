@@ -116,7 +116,8 @@ export default function AboutSection(props) {
    
        
         <Row className="prizesection" >
-          <PrizeHeading />
+          <PrizeHeading type="Prize section"/>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             <FirstPrize
               icon={Myicons[0]}
@@ -138,6 +139,8 @@ export default function AboutSection(props) {
               content={Prizeinfo[2].content}
             />
           </Col>
+          </Row>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             <FirstPrize
               icon={Myicons[3]}
@@ -159,6 +162,8 @@ export default function AboutSection(props) {
               content={Prizeinfo[5].content}
             />
           </Col>
+          </Row>
+          <Row>
           <Col className="" sm={12} lg={4} md={6}>
             <FirstPrize
               icon={Myicons[6]}
@@ -166,7 +171,22 @@ export default function AboutSection(props) {
               content={Prizeinfo[6].content}
             />
           </Col>
+          <Col className="" sm={12} lg={4} md={6}>
+            <FirstPrize
+              icon={Myicons[7]}
+              type={Prizeinfo[7].type}
+              content={Prizeinfo[7].content}
+            />
+          </Col>
+          </Row>
         </Row>
+
+        <Row className="prizesection non-coding" >
+          <PrizeHeading type="Non-coding prizes"/>
+          <h2>coming soon</h2>
+
+        </Row>  
+
         <Row className="sponsorSection">
           <SponsorsHead />
           <Row>

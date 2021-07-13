@@ -2,10 +2,10 @@ import React from "react";
 import "./prizes.scss"
 
 
-function PrizeHeading(){
+function PrizeHeading(props){
     return(
     <div className="PrizeHeading">
-    <h1>Prize tracks</h1>
+    <h1>{props.type}</h1>
     </div>
     );
 }

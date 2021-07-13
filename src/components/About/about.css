@@ -3,6 +3,7 @@
     background-repeat: repeat;
     background-size: auto 100vh;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 
 }
 .mediaInfo{
@@ -39,7 +40,6 @@ h1{
     padding: 0vh 10vh 0 10vh ;
 }
 .prizesection{
-
     text-align: center;
     margin: 0 auto;
     padding: 0 4vh 0 4vh ;
@@ -47,8 +47,6 @@ h1{
     border-radius: 14px;
     margin-top: 4vh;
     background-color: #F3EFFE
-
-
 }
 .sponsorSection{
     padding: 17vh 18vh 0 18vh ;
@@ -94,7 +92,7 @@ h1{
        
         padding: 0;
         margin: 0;
-        margin: 0 auto;
+        margin: 12rem auto;
     }
     .logoSection{
         text-align: center;

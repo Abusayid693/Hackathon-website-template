@@ -9,6 +9,11 @@ const Prizeinfo=[
     }
     ,
     {
+        type:"Third Second",
+        content:"Best third overall project of the hackathon will win some awesome prizes"
+    }
+    ,
+    {
         type:"Best Solo",
         content:"You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team"
     }
@@ -19,13 +24,13 @@ const Prizeinfo=[
     }
     ,
     {
-        type:"Best Education",
-        content:"Built something related to education in order to qualify for this category"
+        type:"Best UI/UX",
+        content:"Project with most creative designs will be UI/UX track"
     }
     ,
     {
-        type:"Best AR/VR",
-        content:"Use any kind of AR/VR tech in your project to qualify for this category"
+        type:"Best Web App with Qoom",
+        content:"Must use qoom in your project to win this category"
     }
     ,
     {
