@@ -1,5 +1,5 @@
 import React from "react";
-import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
+import { Myinfo } from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -20,11 +20,11 @@ import {
   qoom,
   sublime,
   egg,
-  ll
+  ll,
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
-import {Member,JoinTeam} from "../team/team.jsx";
+import { Member, JoinTeam } from "../team/team.jsx";
 import {
   TeamInfo,
   me,
@@ -34,39 +34,40 @@ import {
   Pravallika,
   keshav,
   zoha,
-  kk
+  kk,
 } from "../team/teamdetails.jsx";
 
+import Schedule from "../Schedule/Schedule";
 
-import pattern from "./pattern4.png"
+import pattern from "./pattern4.png";
 
-import boy from "./boy.png"
+import boy from "./boy.png";
 
-import Media from "../media/media.jsx"
+import Media from "../media/media.jsx";
 
 // import { useMediaPredicate } from "react-media-hook";
 
 export default function AboutSection(props) {
   return (
     <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
-    <div className="color_sectiom">
-      <Container fluid>
-        <Row className="Row info">
-          <Col className="info-div" sm={12} lg={7} md={8} >
-            <Myinfo />
-          </Col>
-          <Col className="d-image" sm={12} lg={5} md={4}>
-            <img src={boy} />
-          </Col>
-        </Row>
+      <div className="color_sectiom">
+        <Container fluid>
+          <Row className="Row info">
+            <Col className="info-div" sm={12} lg={7} md={8}>
+              <Myinfo />
+            </Col>
+            <Col className="d-image" sm={12} lg={5} md={4}>
+              <img src={boy} />
+            </Col>
+          </Row>
 
-       <Row className="mediaInfo">
-        <Col className="" sm={12} lg={12} md={12}>
-            <Media />
-         </Col>
-       </Row>
-       </Container>
-       </div>
+          <Row className="mediaInfo">
+            <Col className="" sm={12} lg={12} md={12}>
+              <Media />
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Container fluid>
         {/* Logo section  */}
         <Row className=" logoSection">
@@ -77,9 +78,8 @@ export default function AboutSection(props) {
             <Logo />
           </Col>
         </Row>
-        
-     
-        <Row className="faqsSection" >
+
+        <Row className="faqsSection">
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[0].q} ans={QA[0].ans} />
           </Col>
@@ -107,149 +107,163 @@ export default function AboutSection(props) {
         <Row className="faqsSection">
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[6].q} ans={QA[6].ans} />
-            
           </Col>
           <Col className="" sm={12} lg={6} md={6}>
             <DropDown q={QA[7].q} ans={QA[7].ans} />
           </Col>
         </Row>
-   
-       
-        <Row className="prizesection" >
-          <PrizeHeading type="Prize section"/>
+
+        <Row className="prizesection">
+          <PrizeHeading type="Prize section" />
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[0]}
-              type={Prizeinfo[0].type}
-              content={Prizeinfo[0].content}
-            />
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[1]}
-              type={Prizeinfo[1].type}
-              content={Prizeinfo[1].content}
-            />
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[2]}
-              type={Prizeinfo[2].type}
-              content={Prizeinfo[2].content}
-            />
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[0]}
+                type={Prizeinfo[0].type}
+                content={Prizeinfo[0].content}
+              />
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[1]}
+                type={Prizeinfo[1].type}
+                content={Prizeinfo[1].content}
+              />
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[2]}
+                type={Prizeinfo[2].type}
+                content={Prizeinfo[2].content}
+              />
+            </Col>
           </Row>
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[3]}
-              type={Prizeinfo[3].type}
-              content={Prizeinfo[3].content}
-            />
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[4]}
-              type={Prizeinfo[4].type}
-              content={Prizeinfo[4].content}
-            />
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[5]}
-              type={Prizeinfo[5].type}
-              content={Prizeinfo[5].content}
-            />
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[3]}
+                type={Prizeinfo[3].type}
+                content={Prizeinfo[3].content}
+              />
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[4]}
+                type={Prizeinfo[4].type}
+                content={Prizeinfo[4].content}
+              />
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[5]}
+                type={Prizeinfo[5].type}
+                content={Prizeinfo[5].content}
+              />
+            </Col>
           </Row>
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[6]}
-              type={Prizeinfo[6].type}
-              content={Prizeinfo[6].content}
-            />
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            <FirstPrize
-              icon={Myicons[7]}
-              type={Prizeinfo[7].type}
-              content={Prizeinfo[7].content}
-            />
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[6]}
+                type={Prizeinfo[6].type}
+                content={Prizeinfo[6].content}
+              />
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              <FirstPrize
+                icon={Myicons[7]}
+                type={Prizeinfo[7].type}
+                content={Prizeinfo[7].content}
+              />
+            </Col>
           </Row>
         </Row>
 
-        <Row className="prizesection non-coding" >
-          <PrizeHeading type="Non-coding prizes"/>
+        <Row className="prizesection non-coding">
+          <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
-
-        </Row>  
+        </Row>
 
         <Row className="sponsorSection">
           <SponsorsHead />
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-            <Sponsor srcx={cfc} />{" "}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <Sponsor srcx={sublime} />{""}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <a href="https://www.echoar.xyz"> <Sponsor srcx={echoAR} /></a>{" "}
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={cfc} />{" "}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={sublime} />
+              {""}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <a href="https://www.echoar.xyz">
+                {" "}
+                <Sponsor srcx={echoAR} />
+              </a>{" "}
+            </Col>
           </Row>
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-            <Sponsor srcx={taskade} />{" "}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-            <Sponsor srcx={Replit} />{" "}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <Sponsor srcx={qoom} />{""}
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={taskade} />{" "}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={Replit} />{" "}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={qoom} />
+              {""}
+            </Col>
           </Row>
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-            <Sponsor srcx={interviewC} />{" "}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <a href="https://1password.com"> <Sponsor srcx={pass} /></a>{" "}
-          </Col>
-    
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <a href=" https://joinglimpse.com " target="blank"> <Sponsor srcx={glimpse} /></a>{" "}
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={interviewC} />{" "}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <a href="https://1password.com">
+                {" "}
+                <Sponsor srcx={pass} />
+              </a>{" "}
+            </Col>
+
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <a href=" https://joinglimpse.com " target="blank">
+                {" "}
+                <Sponsor srcx={glimpse} />
+              </a>{" "}
+            </Col>
           </Row>
           <Row>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <Sponsor srcx={egg} />{""}
-          </Col>
-          <Col className="" sm={12} lg={4} md={6}>
-            {" "}
-           <Sponsor srcx={ll} />{""}
-          </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={egg} />
+              {""}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={ll} />
+              {""}
+            </Col>
           </Row>
-         
-      
         </Row>
         <Birds top="120vh" left="0vh" type="" />
-    
+
+        <h1 style={{ textAlign: "center" }}>Schedule</h1>
+        <h5 style={{ textAlign: "center" }}>
+          * The schedule is in Indian Standard Time(IST)
+        </h5>
+        <br />
+        <Schedule />
 
         <h1>Our Team</h1>
-        <JoinTeam/>
+        <JoinTeam />
         <Row className="members">
           <Col className="" sm={12} lg={4} md={4}>
             <Member name={TeamInfo[0].Name} role={TeamInfo[0].role} img={me} />
@@ -285,11 +299,7 @@ export default function AboutSection(props) {
             />
           </Col>
           <Col className="" sm={12} lg={4} md={4}>
-            <Member
-              name={TeamInfo[4].Name}
-             role={TeamInfo[4].role}
-              img={kk}
-            />
+            <Member name={TeamInfo[4].Name} role={TeamInfo[4].role} img={kk} />
           </Col>
           <Col className="" sm={12} lg={4} md={4}>
             <Member
