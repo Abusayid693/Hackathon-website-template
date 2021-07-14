@@ -1,6 +1,4 @@
-# References
 
-### Thanks [ella](https://github.com/eilla1) for design snippets
 
 # Getting Started with Create React App
 
