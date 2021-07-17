@@ -16,7 +16,7 @@ const QA=[{
 },
 {
     q:"Do i need to pay any money?",
-    ans:"Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderatator"
+    ans:"Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
 },
 {
     q:"I dont have a team to participate?",
@@ -32,7 +32,7 @@ const QA=[{
 },
 {
   q:"What are the conduct of guidlines?",
-  ans:"We strong follow MLH code of conduct, Our team members will enforce this code throughout the event. "
+  ans:"We strongly follow the MLH code of conduct, Our team members will enforce this code throughout the event. "
 }
 
 ]
