@@ -16,7 +16,7 @@ const QA=[{
 },
 {
     q:"Do i need to pay any money?",
-    ans:"Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderatator"
+    ans:"Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
 },
 {
     q:"I dont have a team to participate?",
