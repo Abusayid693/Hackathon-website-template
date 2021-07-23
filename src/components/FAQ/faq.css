@@ -1,37 +1,39 @@
-
-.faq{
-    margin-top: 2rem;
-
+.faq {
+  margin-top: 2rem;
 }
-.faq button{
-    font-size: 1.7rem;
-    border: 2px solid rgb(158, 107, 241);
-    background-color: white;
-    transition: 0.3s;
-    border-radius: 7px;
+.faq button {
+  font-size: 1.7rem;
+  border: 2px solid rgb(158, 107, 241);
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 7px;
 }
-.faq button:hover{
- background-color: rgb(158, 107, 241);
- color:white;
+.faq button:hover {
+  background-color: rgb(158, 107, 241);
+  color: white;
 }
-  .collapsible {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    color: #000;
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+}
 
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #121930;
+  color: white;
+  border-radius: 7px;
+}
 
+@media only screen and (max-width: 633px){
+  .faq button {
+    padding: 2px;
   }
-
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #121930;
-    color: white;
-    border-radius: 7px;
-  }
+}
