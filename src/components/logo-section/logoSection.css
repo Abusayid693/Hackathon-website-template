@@ -17,7 +17,6 @@
 
 .logoS img{
 margin: 0;
-
 }
 .sym{
   z-index: 4;
@@ -88,3 +87,15 @@ transition: 0.4s;
      margin: 0 auto;
     }
   }
+
+  @media  (max-width: 570px){
+    .logoS{
+      margin-top: 10rem;
+      margin-bottom: -10rem;
+      /* background-color: black; */
+    }
+    .Logo{
+     margin: 0 auto;
+    }
+  }
+ 

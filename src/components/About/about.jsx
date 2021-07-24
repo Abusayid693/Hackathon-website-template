@@ -37,7 +37,7 @@ import {
   kk,
 } from "../team/teamdetails.jsx";
 
-import Schedule from "../Schedule/Schedule";
+// import Schedule from "../Schedule/Schedule";
 
 import pattern from "./pattern4.png";
 
@@ -255,12 +255,12 @@ export default function AboutSection(props) {
         </Row>
         <Birds top="120vh" left="0vh" type="" />
 
-        <h1 style={{ textAlign: "center" }}>Schedule</h1>
+        {/* <h1 style={{ textAlign: "center" }}>Schedule</h1>
         <h5 style={{ textAlign: "center" }}>
           * The schedule is in Indian Standard Time(IST)
         </h5>
         <br />
-        <Schedule />
+        <Schedule /> */}
 
         <h1>Our Team</h1>
         <JoinTeam />

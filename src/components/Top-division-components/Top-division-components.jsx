@@ -41,7 +41,7 @@ import CountDown from "../count-down/countDown";
         
           </p>
           <div className="join_dis">
-          <a rel="noreferrer" target="_blank" href="https://discord.gg/YEfteWAT"><Btn ico="fab fa-2x fa-discord" class="join_disco" type="Join our discord" overlay="Send a mail"/></a>
+          <a rel="noreferrer" target="_blank" href="https://discord.gg/Mgx4r57E"><Btn ico="fab fa-2x fa-discord" class="join_disco" type="Join our discord" overlay="Click the link"/></a>
           </div>
           <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com"><Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail"/></a> 
           <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">  <Btn class="register" type="Register " overlay="Hackers registration" /></a>
