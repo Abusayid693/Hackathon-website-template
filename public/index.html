@@ -1,30 +1,48 @@
-
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2RHZG4KY9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N2RHZG4KY9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-N2RHZG4KY9');
-</script>
-<title>Limbo Hacks</title>
+      gtag("config", "G-N2RHZG4KY9");
+    </script>
+    <title>Limbo Hacks</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="author" content="LimboHacks">
-    <meta name="description" content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="author" content="LimboHacks" />
+    <meta
+      name="description"
+      content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun."
+    />
     <meta name="robots" content="NOODP, index, follow" />
-    <meta itemprop="name" content="LimboHacks">
-    <meta name="google-site-verification" content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E" />    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./index.css">
-    <script src="https://kit.fontawesome.com/fe697e6552.js" crossorigin="anonymous"></script>    <title>React App</title>
+    <meta itemprop="name" content="LimboHacks" />
+    <meta
+      name="google-site-verification"
+      content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/fe697e6552.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>React App</title>
   </head>
   <body onload="removeLoader()" class="day-mode">
     <div id="loader"></div>
@@ -35,22 +53,24 @@
         position: relative;
         background-repeat: no-repeat;
       }
-      #body{
+      #body {
         position: relative;
         overflow: hidden;
       }
-        @media  (max-width: 900px){
-    body{
-      text-align: center;
-      position: relative;
-    }
-  }
-     </style>
+      @media (max-width: 900px) {
+        body {
+          text-align: center;
+          position: relative;
+        }
+      }
+    </style>
     <script src="../js/main.js"></script>
     <script>
-      function removeLoader(){
-      document.getElementById("footer").style.display="none";  
-     }
+      function removeLoader() {
+        setTimeout(() => {
+          document.getElementById("footer").style.display = "none";
+        }, 500);
+      }
     </script>
   </body>
 </html>

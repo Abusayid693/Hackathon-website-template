@@ -1,5 +1,6 @@
 import React from "react";
-import "./loading.css"
+import loadergif from '../Loading/loader.gif';
+import "./loading.css";
 
 
 
@@ -8,7 +9,7 @@ export default function LOADER(props){
     return(
 
     <div class="load">
-      <div id="spinner"></div>
+      <img src={loadergif} alt="loader" />
     </div>
     );   
 }
