@@ -1,33 +1,11 @@
-
-
-
-@keyframes spinner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .load {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:rgba(249, 89, 236, 1) ;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    z-index: 200000;
-  }
-  #spinner {
-    min-width: 60px;
-    min-height: 60px;
-    border: 5px solid #ccffff;
-    border-right: 5px solid #00eded;
-    border-radius: 50%;
-    animation: spinner 1s linear infinite;
-  }
-  
-  
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 200000;
+}
