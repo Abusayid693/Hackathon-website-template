@@ -4,12 +4,13 @@ import "./styles.scss";
 // import TOGGLE from "../toggle-button/toggle";
 import AboutSection from "../About/about";
 // import logo from "./logoo.png"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Discord from "../Routes/Discord";
+import Twitter from "../Routes/Twitter";
+import Linkedin from "../Routes/LinkedIn";
+import Instagram from "../Routes/Instagram";
+import Devpost from "../Routes/Devpost";
 
 export default function NAVBAR() {
   return (
@@ -18,31 +19,40 @@ export default function NAVBAR() {
         <nav className="nav_bar">
           <ul>
             <li>
-              <Link to="/"><span className="links">Home </span> </Link>
+              <Link to="/">
+                <span className="links">Home </span>{" "}
+              </Link>
             </li>
             <li>
-              <Link to="/contact"><span className="links">Sponsors </span> </Link>
+              <Link to="/contact">
+                <span className="links">Sponsors </span>{" "}
+              </Link>
             </li>
             <li>
-              <Link to="/projects"><span className="links">More info </span> </Link>
+              <Link to="/projects">
+                <span className="links">More info </span>{" "}
+              </Link>
             </li>
           </ul>
           {/* <img className="myLogo" src={logo} /> */}
           {/* <TOGGLE/> */}
         </nav>
 
-       {/* Keep parent route at bottom */}
+        {/* Keep parent route at bottom */}
         <Switch>
+          <Route path="/discord" exact component={Discord} />
+          <Route path="/linkedin" exact component={Linkedin} />
+          <Route path="/devpost" exact component={Devpost} />
+          <Route path="/twitter" exact component={Twitter} />
+          <Route path="/instagram" exact component={Instagram} />
           <Route path="/contact">
-          <AboutSection />
-
+            <AboutSection />
           </Route>
           <Route path="/links">
-          <AboutSection />
-
+            <AboutSection />
           </Route>
           <Route path="/projects">
-          <AboutSection />
+            <AboutSection />
           </Route>
           <Route path="/">
             <AboutSection />
@@ -63,5 +73,4 @@ function Contact() {
 
 function Links() {
   return <h2>Home</h2>;
-
 }

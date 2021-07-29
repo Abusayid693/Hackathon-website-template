@@ -1,16 +1,16 @@
 import React from "react";
-import Insta from "./icons8-instagram.svg";
-import Dis from "./icons8-discord.svg";
-import Linked from "./icons8-linkedin-2.svg";
-import Mail from "./icons8-mail.svg";
-import DevPost from "./icons8-dev-post.svg";
-import Twitter from "./icons8-twitter.svg";
+// import Insta from "./icons8-instagram.svg";
+// import Dis from "./icons8-discord.svg";
+// import Linked from "./icons8-linkedin-2.svg";
+// import Mail from "./icons8-mail.svg";
+// import DevPost from "./icons8-dev-post.svg";
+// import Twitter from "./icons8-twitter.svg";
 import "./media.css";
 
 export default function Media() {
   return (
     <div className="media">
-    <p>Follow us on social media for updates</p>
+      <p>Follow us on social media for updates</p>
       <div className="single">
         <a
           rel="noreferrer"
@@ -23,10 +23,13 @@ export default function Media() {
       </div>
 
       <div className="single">
-        <a rel="noreferrer" target="_blank" href="https://discord.gg/YEfteWAT">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://discord.gg/8XJSzmtWPp"
+        >
           {/* <img src={Dis} alt="Limbohacks" /> */}
           <i class="fab fa-3x fa-discord"></i>
-          
         </a>
       </div>
 

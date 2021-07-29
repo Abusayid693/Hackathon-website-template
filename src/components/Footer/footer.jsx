@@ -8,7 +8,7 @@ import DevPost from "./icons8-dev-post.svg";
 import PrivacyPolicy from "./Privacy policy.pdf";
 import TermsOfUse from "./Terms of use.pdf";
 import Twitter from "./icons8-twitter.svg";
-import {Btn} from "../Top-division-components/Top-division-components.jsx";
+import { Btn } from "../Top-division-components/Top-division-components.jsx";
 
 export default function Footer() {
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://discord.gg/YEfteWAT"
+              href="https://discord.gg/8XJSzmtWPp"
             >
               <img src={Dis} alt="" />
             </a>
@@ -71,31 +71,39 @@ export default function Footer() {
           </div>
         </div>
         <div className="Register_a">
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u"><Btn type="Register" overlay="Fill the form"/></a>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u"><Btn type="Volunteer" class="Volunteer" overlay="Fill the form"/></a>
-
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">
+            <Btn type="Register" overlay="Fill the form" />
+          </a>
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u">
+            <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
+          </a>
         </div>
         <div className="footer_info">
-        <p>
-          Contact us{" "}
-          <a href="mailto:hello@limbohack.tech">
-            <em>hello@limbohack.tech</em>
-          </a>{" "}
-        </p>
-        <a
-          href={PrivacyPolicy}
-          download
-          target="blank"
-          className="privacy-policy"
-        >
-          <p>Privacy Policy</p>
-        </a>
-        <a href={TermsOfUse} download target="blank" className="privacy-policy">
-          <p>Terms of Use</p>
-        </a>
-        <p>Made with ❤️ </p>
+          <p>
+            Contact us{" "}
+            <a href="mailto:hello@limbohack.tech">
+              <em>hello@limbohack.tech</em>
+            </a>{" "}
+          </p>
+          <a
+            href={PrivacyPolicy}
+            download
+            target="blank"
+            className="privacy-policy"
+          >
+            <p>Privacy Policy</p>
+          </a>
+          <a
+            href={TermsOfUse}
+            download
+            target="blank"
+            className="privacy-policy"
+          >
+            <p>Terms of Use</p>
+          </a>
+          <p>Made with ❤️ </p>
+        </div>
       </div>
-    </div>
     </div>
   );
 }
