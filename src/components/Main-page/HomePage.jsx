@@ -47,7 +47,7 @@ import Media from "../media/media.jsx";
 
 // import { useMediaPredicate } from "react-media-hook";
 
-export default function AboutSection(props) {
+export default function HomePage(props) {
   return (
     <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectiom">

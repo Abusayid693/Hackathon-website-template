@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 // import MytypedComponent from "../typing-effect/typing.js"
 // import TOGGLE from "../toggle-button/toggle";
-import AboutSection from "../About/about";
+import HomePage from "../Main-page/HomePage";
 // import logo from "./logoo.png"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -46,16 +46,16 @@ export default function NAVBAR() {
           <Route path="/twitter" exact component={Twitter} />
           <Route path="/instagram" exact component={Instagram} />
           <Route path="/contact">
-            <AboutSection />
+            <HomePage />
           </Route>
           <Route path="/links">
-            <AboutSection />
+            <HomePage />
           </Route>
           <Route path="/projects">
-            <AboutSection />
+            <HomePage />
           </Route>
           <Route path="/">
-            <AboutSection />
+            <HomePage />
           </Route>
         </Switch>
       </div>
