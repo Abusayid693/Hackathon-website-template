@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Limbo-hacks-website/static/css/main.3f4ede49.chunk.css",
-    "main.js": "/Limbo-hacks-website/static/js/main.09a5df68.chunk.js",
-    "main.js.map": "/Limbo-hacks-website/static/js/main.09a5df68.chunk.js.map",
+    "main.js": "/Limbo-hacks-website/static/js/main.20e83c53.chunk.js",
+    "main.js.map": "/Limbo-hacks-website/static/js/main.20e83c53.chunk.js.map",
     "runtime-main.js": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js",
     "runtime-main.js.map": "/Limbo-hacks-website/static/js/runtime-main.e3e2ad22.js.map",
     "static/js/2.3d056076.chunk.js": "/Limbo-hacks-website/static/js/2.3d056076.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.3f4ede49.chunk.css.map": "/Limbo-hacks-website/static/css/main.3f4ede49.chunk.css.map",
     "static/js/2.3d056076.chunk.js.LICENSE.txt": "/Limbo-hacks-website/static/js/2.3d056076.chunk.js.LICENSE.txt",
     "static/media/1pass.fe1b7aaa.png": "/Limbo-hacks-website/static/media/1pass.fe1b7aaa.png",
+    "static/media/ACF.896fe374.png": "/Limbo-hacks-website/static/media/ACF.896fe374.png",
     "static/media/Privacy policy.9854a808.pdf": "/Limbo-hacks-website/static/media/Privacy policy.9854a808.pdf",
     "static/media/Ryah.92eb9a11.jpg": "/Limbo-hacks-website/static/media/Ryah.92eb9a11.jpg",
     "static/media/Terms of use.c2255556.pdf": "/Limbo-hacks-website/static/media/Terms of use.c2255556.pdf",
@@ -49,6 +50,6 @@
     "static/js/runtime-main.e3e2ad22.js",
     "static/js/2.3d056076.chunk.js",
     "static/css/main.3f4ede49.chunk.css",
-    "static/js/main.09a5df68.chunk.js"
+    "static/js/main.20e83c53.chunk.js"
   ]
 }
