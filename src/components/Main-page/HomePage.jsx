@@ -21,6 +21,7 @@ import {
   sublime,
   egg,
   ll,
+  ACF
 } from "../Sponsors/logos.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
@@ -249,6 +250,11 @@ export default function HomePage(props) {
             <Col className="" sm={12} lg={4} md={6}>
               {" "}
               <Sponsor srcx={ll} />
+              {""}
+            </Col>
+            <Col className="" sm={12} lg={4} md={6}>
+              {" "}
+              <Sponsor srcx={ACF} />
               {""}
             </Col>
           </Row>
