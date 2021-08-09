@@ -48,9 +48,12 @@ function Myinfo() {
           />
         </a>
       </div>
-      <a href="mailto:abusayid693@gmail.com, sponsorlimbohack@gmail.com">
-        <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" />
+      {/* This is judges application button */}
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u">
+        {" "}
+        <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
       </a>
+
       <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">
         {" "}
         <Btn class="register" type="Register " overlay="Hackers registration" />

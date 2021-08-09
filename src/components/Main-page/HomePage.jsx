@@ -8,7 +8,7 @@ import { Logo, LogoSectionAbout } from "../logo-section/logoSection.jsx";
 import { FirstPrize, PrizeHeading } from "../prize tracks/prizes.jsx";
 import { Prizeinfo, Myicons } from "../prize tracks/prize-contents.jsx";
 import { DropDown, QA } from "../FAQ/faq.jsx";
-import { Sponsor, SponsorsHead } from "../Sponsors/sponsors.jsx";
+import { Sponsor, SponsorsHead,SponsorUS } from "../Sponsors/sponsors.jsx";
 import {
   taskade,
   Replit,
@@ -183,9 +183,9 @@ export default function HomePage(props) {
           <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
         </Row>
-
         <Row className="sponsorSection">
           <SponsorsHead />
+          <SponsorUS />
           <Row>
             <Col className="" sm={12} lg={4} md={6}>
               {" "}
