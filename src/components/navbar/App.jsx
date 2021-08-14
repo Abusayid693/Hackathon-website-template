@@ -4,7 +4,7 @@ import "./styles.scss";
 // import TOGGLE from "../toggle-button/toggle";
 import HomePage from "../Main-page/HomePage";
 // import logo from "./logoo.png"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import Discord from "../Routes/Discord";
 import Twitter from "../Routes/Twitter";

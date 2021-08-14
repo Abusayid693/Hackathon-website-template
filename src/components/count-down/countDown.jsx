@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import "./countDown.css";
 import Countdown from "react-countdown";
 

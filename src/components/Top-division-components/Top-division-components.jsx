@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "./top-division-c.css";
 import MytypedComponent from "../typing-effect/typing.js";
-import { useMediaPredicate } from "react-media-hook";
-import CountDown from "../count-down/countDown";
+
+import {TOP_SECTION, SOCIALS} from "../../Module/General";
 
 function Btn(props) {
   return (
@@ -19,7 +19,7 @@ function Btn(props) {
 function About() {
   return (
     <div className="AboutMe">
-      <h2>Join Limbo Hacks</h2>
+      <h2>{TOP_SECTION.TITLE}</h2>
       <MytypedComponent />
     </div>
   );
@@ -29,17 +29,9 @@ function Myinfo() {
   return (
     <div className="Myinfo">
       <About />
-      <p>
-        {" "}
-        Join us on 20th November 2021 with over 300 students from across the
-        nation for 24 hours of creation, innovation, & fun.
-      </p>
+      <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <div className="join_dis">
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://discord.gg/8XJSzmtWPp"
-        >
+        <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
           <Btn
             ico="fab fa-2x fa-discord"
             class="join_disco"
@@ -49,12 +41,12 @@ function Myinfo() {
         </a>
       </div>
       {/* This is judges application button */}
-      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u">
+      <a href={TOP_SECTION.JUDGES_FORM_LINK}>
         {" "}
         <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
       </a>
 
-      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u">
+      <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
         {" "}
         <Btn class="register" type="Register " overlay="Hackers registration" />
       </a>
@@ -62,4 +54,4 @@ function Myinfo() {
   );
 }
 
-export { Btn, Myinfo };
+export {Btn, Myinfo};

@@ -1,13 +1,13 @@
 import * as React from "react";
 import Paper from "@material-ui/core/Paper";
-import { ViewState } from "@devexpress/dx-react-scheduler";
+import {ViewState} from "@devexpress/dx-react-scheduler";
 import {
   Scheduler,
   Toolbar,
   DateNavigator,
   Appointments,
   TodayButton,
-  DayView,
+  DayView
 } from "@devexpress/dx-react-scheduler-material-ui";
 import "./Styles.css";
 import SchedulerData from "./data";
@@ -17,12 +17,12 @@ export default class Schedule extends React.PureComponent {
     super(props);
 
     this.state = {
-      data: SchedulerData,
+      data: SchedulerData
     };
   }
 
   render() {
-    const { data } = this.state;
+    const {data} = this.state;
 
     return (
       <div className="schedule">
