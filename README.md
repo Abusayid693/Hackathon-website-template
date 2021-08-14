@@ -137,6 +137,9 @@ const TOP_SECTION = {
   HACKERS_REGISTRATION_FORM_LINK:""
 };
 
+
+
+
 /* Add all your social media handels*/
 const SOCIALS = {
   instagram: "https://www.instagram.com/limbohacks/",
@@ -148,6 +151,9 @@ const SOCIALS = {
   mail:"hello@limbohacks.tech"
 };
 
+
+
+
 /* Customize middle section of your website */
 const MIDDLE_SECTION = {
   TITLE: "What is Limbo hacks?",
@@ -158,6 +164,8 @@ const MIDDLE_SECTION = {
   // Your hackathon logo src
   LOGO: ""
 };
+
+
 
 
 /* Customize footer section */
@@ -174,6 +182,8 @@ const FOOTER = {
 };
 
 
+
+
 /* Add your prize descriptions,
  *INFORTANT : please follow the instructions provided in Genereal.js file above Prizeinfo  */
 
@@ -186,6 +196,8 @@ const Prizeinfo = [
       content:
         "First Overall prize .."
     },{....
+
+
 
 
 /*Add your team members 
@@ -206,6 +218,9 @@ import moon from "./Assets/team/moon.png";
       linkedin: "",
       img: Rehan
     }, 
+
+
+
 
 
 /*Put your sponsors logos in Assets/sponsors and simply import them*/
