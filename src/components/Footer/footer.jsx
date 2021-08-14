@@ -61,7 +61,7 @@ export default function Footer() {
           <p>
             Contact us{" "}
             <a href={SOCIALS.email}>
-              <em>{FOOTER.SOCIALS.mail}</em>
+              <em>{SOCIALS.mail}</em>
             </a>{" "}
           </p>
 

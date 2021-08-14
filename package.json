@@ -1,6 +1,6 @@
 {
-  "homepage": "https://limbo-hacks.github.io/Limbo-hacks-website/",
-  "name": "limbo-hacks-website",
+  "homepage": "https://limbo-hacks.github.io/Hackathon-website-template/",
+  "name": "hackathon-website-template",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
