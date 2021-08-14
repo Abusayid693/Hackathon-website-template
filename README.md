@@ -6,6 +6,13 @@
 
 ## A clean, beautiful and responsive portfolio template for your upcoming hackathon!
 
+#### Desktop view
+
+![](https://i.imgur.com/eBbTLCP.gif)
+
+### Mobile view
+![](https://i.imgur.com/tfZ8zrv.gifv)
+
 **For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)** 
 
 Just change `src/Module/general.js` to get your hackathon portfolio. Customize and your sponsors, team-member and judges by adding images in `src/Module/Assets` . Feel free to use it as-is or personalize it as much as you want.
