@@ -14,7 +14,7 @@
 ### Mobile view
 
 
-![gifs](https://i.imgur.com/tfZ8zrv.gif)
+![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202021-08-14%20at%2010.42.16%20PM.gif
 
 **For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)** 
 
