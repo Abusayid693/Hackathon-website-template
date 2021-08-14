@@ -127,7 +127,7 @@ Personalize page content in `/src/Module/general.js` & modify it as per your nee
 #### **Please follow the instructions given in `src/Module/general.js` file.**
 
 ```javascript
-/* Change this file to get your Personal Porfolio */
+/* Change this file to get your hackthon Porfolio */
 
 import boy from "./Assets/boy.png";
 /* Change top section of the website  */
