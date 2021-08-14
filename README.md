@@ -260,6 +260,30 @@ Feel free to make changes in logos
 
 When you are done with the setup, you should host your website online. We highly recommend to read through the Deploying on Github Pages docs for React.
 
+Move to package.json
+
+```javascript
+// package.json
+{
+  "homepage": "https://limbo-hacks.github.io/Hackathon-website-template/",
+  "name": "hackathon-website-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {....
+  
+// Change homepage to = "https://{YOUR_USER_NAME}.github.io/{REPO_NAME}/"  
+```
+```bash
+git add .
+git commit -m "Preparing for deployment"
+git push origin main
+# Deploy command
+npm run deploy
+
+# Your website is live in "https://{YOUR_USER_NAME}.github.io/{REPO_NAME}/"
+```
+
+
 ## [Technologies Used]()
 
 <p>
