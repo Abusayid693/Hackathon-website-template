@@ -8,12 +8,12 @@
 
 #### Desktop view
 
-![](https://i.imgur.com/eBbTLCP.gif)
+![gifs](https://i.imgur.com/eBbTLCP.gif)
 
 ### Mobile view
 
 
-![](https://i.imgur.com/tfZ8zrv.gif)
+![gifs](https://i.imgur.com/tfZ8zrv.gif)
 
 **For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)** 
 
