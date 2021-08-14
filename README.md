@@ -4,17 +4,14 @@
 
 
 
-## A clean, beautiful and responsive portfolio template for your upcoming hackathon!
+## A clean, beautiful and mobile responsive portfolio template for your upcoming hackathon!
 
-#### Desktop view
+#### Demo view
 
 
 ![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202021-08-14%20at%2010.42.16%20PM.gif)
 
-### Mobile view
 
-
-![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202021-08-14%20at%2010.52.02%20PM-2.gif)
 **For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)** 
 
 Just change `src/Module/general.js` to get your hackathon portfolio. Customize and your sponsors, team-member and judges by adding images in `src/Module/Assets` . Feel free to use it as-is or personalize it as much as you want.
