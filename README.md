@@ -8,7 +8,8 @@
 
 #### Desktop view
 
-![gifs](https://i.imgur.com/eBbTLCP.gif)
+
+<img src="https://i.imgur.com/eBbTLCP.gif" width="200px">
 
 ### Mobile view
 
