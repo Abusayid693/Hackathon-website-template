@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import NAV from "./components/navbar/App.jsx";
-import {faqCollapse} from "./components/FAQ/faq.jsx";
 import LOADER from "./components/Loading/loading.jsx";
 
 const rootElement = document.getElementById("body");
@@ -21,6 +20,3 @@ ReactDOM.render(
   footer
 );
 
-// Dropdown function
-
-faqCollapse();

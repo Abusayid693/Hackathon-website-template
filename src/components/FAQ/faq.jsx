@@ -1,34 +1,86 @@
 import React from "react";
 import "./faq.css";
+import ReactDOM from "react-dom";
 
-function faqCollapse() {
-  var coll = document.querySelectorAll(".collapsible");
-  var i;
+// here
+class Panel extends React.Component {
+  constructor(props) {
+    super(props);
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
+    this.state = {
+      height: 0
+    };
+  }
+
+  componentDidMount() {
+    window.setTimeout(() => {
+      const el = ReactDOM.findDOMNode(this);
+      const height = el.querySelector(".panel__inner").scrollHeight;
+      this.setState({
+        height
+      });
+    }, 333);
+  }
+
+  render() {
+    const {label, content, activeTab, index, activateTab} = this.props;
+    const {height} = this.state;
+    const isActive = activeTab === index;
+    const innerStyle = {
+      height: `${isActive ? height : 0}px`
+    };
+
+    return (
+      <div className="panel" role="tabpanel" aria-expanded={isActive}>
+        <button className="panel__label" role="tab" onClick={activateTab}>
+          {label}
+        </button>
+        <div
+          className="panel__inner"
+          style={innerStyle}
+          aria-hidden={!isActive}
+        >
+          <p className="panel__content">{content}</p>
+        </div>
+      </div>
+    );
   }
 }
 
-function DropDown(props) {
-  return (
-    <div className="faq">
-      <button type="button" class="collapsible">
-        {props.q}
-      </button>
-      <div class="content">
-        <p>{props.ans}</p>
+class Accordion extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeTab: 1
+    };
+
+    this.activateTab = this.activateTab.bind(this);
+  }
+
+  activateTab(index) {
+    this.setState(prev => ({
+      activeTab: prev.activeTab === index ? -1 : index
+    }));
+  }
+
+  render() {
+    const {panels} = this.props;
+    const {activeTab} = this.state;
+    return (
+      <div className="accordion" role="tablist">
+        {panels.map((panel, index) => (
+          <Panel
+            key={index}
+            activeTab={activeTab}
+            index={index}
+            {...panel}
+            activateTab={this.activateTab.bind(null, index)}
+          />
+        ))}
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export {DropDown, faqCollapse};
+export {Accordion};

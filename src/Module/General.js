@@ -54,7 +54,7 @@ const SOCIALS = {
   twitter: "https://twitter.com/HacksLimbo",
   devpost: "https://limbo-hacks-12968.devpost.com/",
   email: "mailto:hello@limbohacks.tech",
-  mail:"hello@limbohacks.tech"
+  mail: "hello@limbohacks.tech"
 };
 
 const MIDDLE_SECTION = {
@@ -239,47 +239,50 @@ const sponsorLogos = [
   [{src: egg}, {src: ll}, {src: ACF}] //Array 4
 ];
 
-const frequentlyAskedQuestions = [
+
+const frequentlyAskedQuestions  = [
   [
-    {
-      q: "What is a hackathon?",
-      ans: "Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech"
-    },
-    {
-      q: "How to participate?",
-      ans: "All you need is to fill our form above and join Discord, we will guide you through everything there"
-    }
+    [
+      {
+        label: "What is a hackathon?",
+        content:
+          'Icons are everywhere. These "little miracle workers" (as John Hicks described them) help us reinforce meaning in the interfaces we design and build. Their popularity in web design has never been greater; the conciseness and versatility of pictograms in particular make them a lovely fit for displays large and small. But icons on the web have had their fair share of challenges.'
+      },
+      {
+        label: "I have no idea what coding is?",
+        content: "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"
+      },
+      {
+        label: "Do i need to pay any money?",
+        content: "Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
+      },
+      {
+        label: "I dont have a team to participate?",
+        content: "You dont need one, prior to our event in discord you will meet many hackers exactly like you and join to form a team, if not you can participate alone and fun fact we are running special best solo prize."
+      }
+    ],
+    [
+      {
+        label: "How to participate?",
+        content: "All you need is to fill our form above and join Discord, we will guide you through everything there"
+      },
+      {
+        label: "I have more doubts?",
+        content: "Reach us directly at (rehan@limbohacks.tech) we would happy to help you."
+      }
+      ,
+      {
+        label: "Can i volunteer?",
+        content: "Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
+      }
+      ,
+      {
+        label: "What are the conduct of guidlines?",
+        content: "We strongly follow the MLH code of conduct, Our team members will enforce this code throughout the event. "
+      }
+    ]
   ],
-  [
-    {
-      q: "I have no idea what coding is?",
-      ans: "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"
-    },
-    {
-      q: "Do i need to pay any money?",
-      ans: "Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
-    }
-  ],
-  [
-    {
-      q: "I dont have a team to participate?",
-      ans: "You dont need one, prior to our event in discord you will meet many hackers exactly like you and join to form a team, if not you can participate alone and fun fact we are running special best solo prize."
-    },
-    {
-      q: "I have more doubts?",
-      ans: "Reach us directly at (rehan@limbohacks.tech) we would happy to help you."
-    }
-  ],
-  [
-    {
-      q: "Can i volunteer?",
-      ans: "Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
-    },
-    {
-      q: "What are the conduct of guidlines?",
-      ans: "We strongly follow the MLH code of conduct, Our team members will enforce this code throughout the event. "
-    }
-  ]
+
 ];
 
 export {

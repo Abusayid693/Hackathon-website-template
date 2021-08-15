@@ -1,39 +1,67 @@
-.faq {
-  margin-top: 2rem;
-}
-.faq button {
-  font-size: 1.7rem;
-  border: 2px solid rgb(158, 107, 241);
-  background-color: white;
-  transition: 0.3s;
-  border-radius: 7px;
-}
-.faq button:hover {
-  background-color: rgb(158, 107, 241);
-  color: white;
-}
-.collapsible {
-  cursor: pointer;
-  padding: 18px;
+.accordion {
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+.panel {
+  background-color: #c8ccf4;
+  border-radius: 12px;
+margin-top: 10px;
+}
+.panel__label {
+  display: block;
+  width: 100%;
+  background: none;
   border: none;
   text-align: left;
+  padding: 27px 65px 27px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: inherit;
+  transition: color 0.1s linear;
+  cursor: pointer;
+  color: black;
+}
+.panel__label:focus {
   outline: none;
-  font-size: 15px;
-  color: #000;
 }
-
-.content {
-  padding: 0 18px;
-  display: none;
+.panel__label:after,
+.panel__label:before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  margin-top: -2px;
+  background-color: #372717;
+}
+.panel__label:before {
+  transform: rotate(-90deg);
+  transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.panel[aria-expanded="true"] .panel__content {
+  opacity: 1;
+}
+.panel[aria-expanded="true"] .panel__label {
+  color: #41403f;
+}
+.panel[aria-expanded="true"] .panel__label:before {
+  transform: rotate(0deg);
+}
+.panel__inner {
   overflow: hidden;
-  background-color: #121930;
-  color: white;
-  border-radius: 7px;
+  will-change: height;
+  transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-
-@media only screen and (max-width: 633px){
-  .faq button {
-    padding: 2px;
-  }
+.panel__content {
+  margin: 5px 25px 25px;
+  font-size: 17px;
+  color: #494948;
+  opacity: 0;
+  transition: opacity 0.3s linear 0.18s;
+}
+.panel:not(:last-child) {
+  margin-bottom: 3px;
 }
