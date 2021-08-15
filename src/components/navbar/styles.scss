@@ -19,6 +19,11 @@ nav ul li{
     margin: 2rem 0 5rem 6rem;
 
 }
+nav ul li:hover{
+    background: aquamarine;
+    border-radius: 8px;
+    border: 2px solid black;
+}
 
 .links{
     color: rgb(231, 228, 228);
@@ -28,14 +33,13 @@ nav ul li{
 }
 
 .links:hover{
-    color: rgb(59, 59, 59);  
-
+    color: rgb(59, 59, 59);
 
 }
 a:link {
     text-decoration: none;
     padding: 1px;
- 
+
 
   }
 
@@ -67,14 +71,10 @@ a:link {
         font-size: 1.6rem;
     }
     nav ul li{
-        display: block;
-        text-align: left;
-        background-color:#FFD1D1;
-        margin: 0;
-        padding: 2vh;
-        z-index: 5000;
+    margin: 0px;
+    z-index: 5000;
+    padding: 4px 11px;
+    margin-left: -1rem;
+    margin-right: -1rem;
     }
-nav ul{
-    display:none;
-}
 }

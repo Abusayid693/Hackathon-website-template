@@ -1,12 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
-.h1{
-    margin: 0;
-  }
+.h1 {
+  margin: 0;
+}
 
-button{
+button {
   width: 22rem;
   height: 6rem;
   border: none;
@@ -16,118 +18,124 @@ button{
   background-color: #6A63B7;
   font-weight: 300;
   position: relative;
-
 }
-.join_disco{
+
+.join_disco {
   width: 25rem;
   background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
 }
-.join_disco i{
+
+.join_disco i {
   margin-right: 10px;
 }
-.join_dis{
+
+.join_dis {
   margin-bottom: 29px;
   margin-top: 19px;
 }
-.register{
+
+.register {
   margin-left: 9rem;
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
-
 }
 
-.AboutMe h2{
+.AboutMe h2 {
   font-size: 8rem;
   font-family: 'Noto Sans', sans-serif;
 }
-p{ 
+
+p {
   font-size: 2rem;
   line-height: 1.6;
   font-weight: 300;
-
-
+  font-family: "Baloo Tamma 2", cursive;
 }
-.Myinfo{
+
+.Myinfo {
   text-align: left;
   margin-left: 10vh;
 }
-.Myinfo p{
-  width: 70%; 
+
+.Myinfo p {
+  width: 70%;
+  font-family: "Baloo Tamma 2", cursive;
   /* margin: 0 auto; */
 }
-  /* Over lay effect */
-  .overlay {
-      position: absolute;
-      bottom: 0;
-      left: 100%;
-      right: 0;
-      background-color:white;
-      overflow: hidden;
-      width: 0;
-      height: 100%;
-      transition: .3s ease;
-      border-radius: 12px;
-  
-    }
-  
-    .overlay-text {
-      font-weight: 300;
-      color:#2C4677;
-      font-size: 17px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
-    }
-  
-    button:hover .overlay {
-      width: 100%;
-      left: 0;
-    }  
-    @media  (max-width: 1200px){
-      .AboutMe h2{
-        /* font-size: 6rem; */
-      }
-        }
-  /* main targer */
-    @media  (max-width: 570px){
-      .Myinfo p{
-        width: 100%;
-      }
-      .AboutMe h2{
-        font-size: 4rem;
-      }
-    .register{
-      margin-left: 0;
-      margin-top: 3vh;
-    }
-    .Myinfo{
-      text-align: center; 
-      margin-left: 0;
-    }
-    .Myinfo p{
-      font-size: 1.9rem;
-    }
-    .AboutMe{
-      text-align: center;
-    }
-  }
-  
-    @media  (max-width: 330px){
-    
-    .register{
-      margin-left: 0;
-      margin-top: 3vh;
-    }
-    .AboutMe h1{
-      font-size: 2.2em;
-    }
-    .Myinfo p{
-      font-size: 1.6rem;
-    }
-  }
 
+/* Over lay effect */
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .3s ease;
+  border-radius: 12px;
+}
+
+.overlay-text {
+  font-weight: 300;
+  color: #2C4677;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+button:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .AboutMe h2 {
+    /* font-size: 6rem; */
+  }
+}
+
+/* main targer */
+
+@media (max-width: 570px) {
+  .Myinfo p {
+    width: 100%;
+  }
+  .AboutMe h2 {
+    font-size: 4rem;
+  }
+  .register {
+    margin-left: 0;
+    margin-top: 3vh;
+  }
+  .Myinfo {
+    text-align: center;
+    margin-left: 0;
+  }
+  .Myinfo p {
+    font-size: 1.9rem;
+  }
+  .AboutMe {
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .register {
+    margin-left: 0;
+    margin-top: 3vh;
+  }
+  .AboutMe h1 {
+    font-size: 2.2em;
+  }
+  .Myinfo p {
+    font-size: 1.6rem;
+  }
+}
