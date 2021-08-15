@@ -239,15 +239,16 @@ const sponsorLogos = [
   [{src: egg}, {src: ll}, {src: ACF}] //Array 4
 ];
 
-
+/** Instructions
+ * Follow the strcuture provided below to add as many as FAQ's you want
+ */
 const frequentlyAskedQuestions  = [
   [
     [
       {
         label: "What is a hackathon?",
         content:
-          'Icons are everywhere. These "little miracle workers" (as John Hicks described them) help us reinforce meaning in the interfaces we design and build. Their popularity in web design has never been greater; the conciseness and versatility of pictograms in particular make them a lovely fit for displays large and small. But icons on the web have had their fair share of challenges.'
-      },
+        'Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech'      },
       {
         label: "I have no idea what coding is?",
         content: "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"

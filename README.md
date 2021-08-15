@@ -229,7 +229,6 @@ import moon from "./Assets/team/moon.png";
 
 
 
-
 /*Put your sponsors logos in Assets/sponsors and simply import them*/
 import interviewCake from "./Assets/sponsorsLogos/interview-cake.jpg";
 import echoAR from "./Assets/sponsorsLogos/echoAR.png";
@@ -240,15 +239,20 @@ import echoAR from "./Assets/sponsorsLogos/echoAR.png";
 
 
 /* Add or change frequently asked questions */
-const frequentlyAskedQuestions = [
+const frequentlyAskedQuestions  = [
   [
-    {
-      q: "What is a hackathon?",
-      ans: "Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech"
-    },
-
-
+    [
+      {
+        label: "What is a hackathon?",
+        content:
+          'Icons are everywhere
+      },
+      {
+        label: "I have no idea what coding is?",
+        content: "Thats why you must attend our "
+      },....
 ```
+
 
 #### Using General logos.
 
