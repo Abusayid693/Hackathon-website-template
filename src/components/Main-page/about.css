@@ -25,8 +25,17 @@ h1 {
   margin-top: 20vh;
   color: white;
 }
+
 .d-image img {
   width: 100%;
+  position: relative;
+  transition: 0.3s;
+  top:0px;
+  transition: top 0.2s linear;
+}
+.d-image img:hover {
+opacity: 0.9;
+top: 10px;
 }
 .logoSection {
   text-align: center;

@@ -1,42 +1,46 @@
-.member{
-    text-align: center;
-    margin-top: 5rem;
+.member {
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
+  top:0px;
+  transition: top 0.2s linear;
 }
-.member img{
-    width: 25rem;
-   height: 25rem;
-    border-radius: 50%;
-    display: block;
-   margin: 0 auto;
-   border: 5px solid rgb(255, 194, 252);
+.member:hover{
+    top: -5px;
+    opacity: 0.90;
+}
+.member img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid rgb(255, 194, 252);
 }
 .members-link {
-text-align: center;
-
+  text-align: center;
 }
-.members-link a{
-    margin: 0 7px;
-    cursor: pointer;
+.members-link a {
+  margin: 0 7px;
+  cursor: pointer;
 }
-.joinT{
-    text-align: center;
+.joinT {
+  text-align: center;
 }
-.joinT h3{
-display: inline-block;
-font-weight: 500;
-margin-right: 40px;
-
+.joinT h3 {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 40px;
 }
-@media (max-width:570px){
-    .member{
-        margin-top: 4rem;
-    }
-    .member img{
-        width: 25rem;
-        height: 25rem;
-  
-    }
-    .joinT h3{
-     margin-right: 0px;
-    }
+@media (max-width: 570px) {
+  .member {
+    margin-top: 4rem;
+  }
+  .member img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .joinT h3 {
+    margin-right: 0px;
+  }
 }

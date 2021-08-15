@@ -1,80 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
- nav {
-    list-style-type: none;
-    height: 7.5vh;
-    font-size: 1.8rem;
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-    background-color:rgb(4, 206, 233);
+nav {
+  list-style-type: none;
+  height: 7.5vh;
+  font-size: 1.8rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  transition: 0.2s;
 }
 
-ul{
-    display: inline;
-    margin-left: 7%;
-    
+ul {
+  display: inline;
+  margin-left: 7%;
 }
-nav ul li{
-    display: inline-block;
-    margin: 2rem 0 5rem 6rem;
-
+nav ul li {
+  display: inline-block;
+  margin: 2rem 0 5rem 6rem;
 }
-nav ul li:hover{
-    background: aquamarine;
-    border-radius: 8px;
-    border: 2px solid black;
-}
-
-.links{
-    color: rgb(231, 228, 228);
-    transition: 0.5s;
-    font-weight: 300;
-    letter-spacing: 1.3px;
+.links {
+  color: rgb(231, 228, 228);
+  transition: 0.5s;
+  font-weight: 300;
+  letter-spacing: 1.3px;
 }
 
-.links:hover{
-    color: rgb(59, 59, 59);
-
+.links:hover {
+  color: rgb(184, 180, 180);
 }
 a:link {
-    text-decoration: none;
-    padding: 1px;
+  text-decoration: none;
+  padding: 1px;
+}
 
-
+@media (max-width: 600px) {
+  ul {
+    text-align: center;
+    margin-right: 6rem;
+    margin-left: 0%;
   }
-
-
-@media  (max-width: 600px){
-    ul{
-       text-align: center;
-       margin-right: 6rem;
-       margin-left: 0%;
-    }
-    nav ul li{
-        margin: 2rem 1rem 0 1rem;
-
-    
-    }
-    nav{
-        height: 8.5vh;
-    }
+  nav ul li {
+    margin: 2rem 1rem 0 1rem;
+  }
+  nav {
+    height: 8.5vh;
+  }
 }
 
-@media  (max-width: 380px){
-    .links{
+@media (max-width: 380px) {
+  .links {
     letter-spacing: 0px;
-    }
- 
+  }
 }
-@media  (max-width: 370px){
-    nav{
-        font-size: 1.6rem;
-    }
-    nav ul li{
+@media (max-width: 370px) {
+  nav {
+    font-size: 1.6rem;
+  }
+  nav ul li {
     margin: 0px;
     z-index: 5000;
     padding: 4px 11px;
     margin-left: -1rem;
     margin-right: -1rem;
-    }
+  }
 }

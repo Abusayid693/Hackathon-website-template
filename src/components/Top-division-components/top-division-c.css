@@ -49,7 +49,6 @@ p {
   font-size: 2rem;
   line-height: 1.6;
   font-weight: 300;
-  font-family: "Baloo Tamma 2", cursive;
 }
 
 .Myinfo {
@@ -59,8 +58,6 @@ p {
 
 .Myinfo p {
   width: 70%;
-  font-family: "Baloo Tamma 2", cursive;
-  /* margin: 0 auto; */
 }
 
 /* Over lay effect */
