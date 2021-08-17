@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import "./footer.scss";
 import Insta from "./icons8-instagram.svg";
 import Dis from "./icons8-discord.svg";
@@ -11,7 +11,33 @@ import Twitter from "./icons8-twitter.svg";
 import {Btn} from "../Top-division-components/Top-division-components.jsx";
 import {SOCIALS, TOP_SECTION, FOOTER} from "../../Module/General";
 
+function GithubTemplate(){
+
+  return (
+  <div class="template">
+        <a href="https://github.com/Limbo-Hacks/Hackathon-website-template">  <p> Get this template <i class="fab fa-github-alt"></i> in github <i class="fas fa-times"></i></p></a>
+  </div>
+  )
+}
+
+
+
+
 export default function Footer() {
+
+  const [template,setTemplate]=useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
+
+  const listenScrollEvent = e => {
+    if (window.scrollY > 2800)
+      setTemplate(true)
+  else if(window.scrollY < 2800)
+  setTemplate(false)
+  }
+
   return (
     <div>
       <div className="footer">
@@ -85,8 +111,10 @@ export default function Footer() {
               <p>Terms of Use</p>
             </a>
           )}
-          <p>Made with ❤️ </p>
+          <p>Made with ❤️</p>
+
         </div>
+      {template &&<GithubTemplate/>}
       </div>
     </div>
   );

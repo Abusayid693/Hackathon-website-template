@@ -57,9 +57,27 @@
   }
 }
 
-.privacy-policy,
-.terms-of-use {
-  font-size: 1.2vh;
-  font-weight: 400;
+.privacy-policy p {
+  font-size: 2vh;
+  font-weight: 300;
+  margin: 0;
   text-decoration: underline;
+}
+
+.template{
+  position: fixed;
+  top: 97.3vh;
+  background-color: rgb(196, 230, 227);
+  text-align: center;
+  width: 100%;
+  padding-top: 2px;
+}
+.template p{
+  margin: 0 auto;
+  color: rgb(20, 6, 100);
+}
+.fa-times{
+position: absolute;
+right: 10px;
+top: 5px;
 }
