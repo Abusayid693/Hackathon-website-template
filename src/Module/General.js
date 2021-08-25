@@ -22,10 +22,7 @@ import me from "./Assets/teami/me.png";
 import moon from "./Assets/teami/moon.png";
 import Ryah from "./Assets/teami/Ryah.jpg";
 import lyin from "./Assets/teami/lyin.jpg";
-import Pravallika from "./Assets/teami/pravallika.jpg";
-import keshav from "./Assets/teami/keshav.jpg";
 import zoha from "./Assets/teami/zoha.png";
-import kk from "./Assets/teami/kk.png";
 
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -198,32 +195,8 @@ const TeamInfo = [
       github: "",
       linkedin: "",
       img: zoha
-    },
-    {
-      Name: "Karishma",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: kk
-    }
-  ],
-  [
-    //Array 3
-    {
-      Name: "Pravallika",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Pravallika
-    },
-    {
-      Name: "Keshav",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: keshav
-    }
-  ]
+    },    
+  ] 
 ];
 
 /** Instructions
