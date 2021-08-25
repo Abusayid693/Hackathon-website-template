@@ -198,32 +198,8 @@ const TeamInfo = [
       github: "",
       linkedin: "",
       img: zoha
-    },
-    {
-      Name: "Karishma",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: kk
-    }
-  ],
-  [
-    //Array 3
-    {
-      Name: "Pravallika",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Pravallika
-    },
-    {
-      Name: "Keshav",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: keshav
-    }
-  ]
+    },    
+  ] 
 ];
 
 /** Instructions
