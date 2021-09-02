@@ -221,38 +221,38 @@ const frequentlyAskedQuestions  = [
       {
         label: "What is a hackathon?",
         content:
-        'Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech'      },
+        'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'      },
       {
-        label: "I have no idea what coding is?",
-        content: "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"
+        label: "Who can attend?",
+        content: "Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools."
       },
       {
-        label: "Do i need to pay any money?",
-        content: "Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
+        label: "I am a first time hacker, what should I do?",
+        content: "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general."
       },
       {
-        label: "I dont have a team to participate?",
-        content: "You dont need one, prior to our event in discord you will meet many hackers exactly like you and join to form a team, if not you can participate alone and fun fact we are running special best solo prize."
+        label: "How team formation works?",
+        content: "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
       {
-        label: "How to participate?",
+        label: "How to register myself in the hackathon?",
         content: "All you need is to fill our form above and join Discord, we will guide you through everything there"
       },
       {
-        label: "I have more doubts?",
-        content: "Reach us directly at (rehan@limbohacks.tech) we would happy to help you."
+        label: "I have more questions?",
+        content: "Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you."
       }
       ,
       {
         label: "Can i volunteer?",
-        content: "Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
+        content: "Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you."
       }
       ,
       {
-        label: "What are the conduct of guidlines?",
-        content: "We strongly follow the MLH code of conduct, Our team members will enforce this code throughout the event. "
+        label: "Will there be swag?",
+        content: "Yes! Participants will recieveing Limbo Hacks swag!."
       }
     ]
   ],
