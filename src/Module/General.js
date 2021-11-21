@@ -32,12 +32,12 @@ import zoha from "./Assets/teami/zoha.png";
 import boy from "./Assets/boy.png";
 
 const TOP_SECTION = {
-  TITLE: "Join Limbo Hacks",
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  TITLE: "Join DecHacks SNU",
+  Typed_effect: ["4 days of creation", "Win awesome prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "Join us from 17th Dec to 20th Dec with over 300 students from across the nation for 4 days of creation, innovation, & fun.",
   IMG_SRC: boy,
-  DISCORD_LINK: "",
+  DISCORD_LINK: "https://discord.com/invite/c5fEPAsjcg",
   JUDGES_FORM_LINK:
     "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
   HACKERS_REGISTRATION_FORM_LINK:
@@ -45,19 +45,19 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: "https://www.instagram.com/limbohacks/",
-  discord: "https://discord.com/invite/8XJSzmtWPp",
-  linkedin: "https://www.linkedin.com/company/limbo-hacks/",
-  twitter: "https://twitter.com/HacksLimbo",
-  devpost: "https://limbo-hacks-12968.devpost.com/",
-  email: "mailto:hello@limbohacks.tech",
+  instagram: "https://www.instagram.com/gdscsnukolkata",
+  discord: "https://discord.com/invite/c5fEPAsjcg",
+  linkedin: "https://www.linkedin.com/company/gdsc-snu/",
+  twitter: "https://twitter.com/gdscsnu",
+  devpost: "https://limbo-hacks-12968.devpost.com/", //do we have?
+  email: "mailto:hello@limbohacks.tech",            // whose mail to provide?
   mail: "hello@limbohacks.tech"
 };
 
 const MIDDLE_SECTION = {
-  TITLE: "What is Limbo hacks?",
+  TITLE: "What is DecHacks?",
   LONG_DESCRIPTION:
-    "Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.",
+    "DecHack is a hackathon organised by GDSC SNU in December, to encourage students put their skills in social good. We welcome brilliant engineers, designers, entreprenurs and out of the box thinkers around the campus. Compete for prizes while you make earth a better place to live",
   LOGO_EFFECT: true,
   LOGO: ""
 };
