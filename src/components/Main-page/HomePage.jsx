@@ -89,7 +89,7 @@ function FrequentlyAsked(props) {
 export default function HomePage(props) {
   return (
     <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
-      <div className="color_sectiom">
+      <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
             <Col className="info-div" sm={12} lg={7} md={8}>
@@ -119,13 +119,13 @@ export default function HomePage(props) {
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
-        <div className="Myfaqs">
+        <div className="Myfaqs" id="faq">
         {frequentlyAskedQuestions.map(FrequentlyAsked)}
         {/* ********Frequently asked Questions ending here ***** */}
          </div>  
 
         {/* ********Prizes here ***** */}
-        <Row className="prizesection">
+        <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
@@ -138,7 +138,7 @@ export default function HomePage(props) {
 
         {/* ********Sponsors here ***** */}
 
-        <Row className="sponsorSection">
+        <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <SponsorUS />
           {sponsorLogos.map(SponsorGroup)}
@@ -148,7 +148,7 @@ export default function HomePage(props) {
         <Birds top="120vh" left="0vh" type="" />
 
         {/* ********Team here ***** */}
-        <h1>Our Team</h1>
+        <h1 id="team">Our Team</h1>
         {FOOTER.JOIN_TEAM.required && <JoinTeam />}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
