@@ -31,6 +31,10 @@ import zoha from "./Assets/teami/zoha.png";
 
 import boy from "./Assets/boy.png";
 
+
+
+
+
 const TOP_SECTION = {
   TITLE: "Join Limbo Hacks",
   Typed_effect: ["24 hours of creation", "Win awesome prizes"],
@@ -161,6 +165,50 @@ const TeamInfo = [
     {
       Name: "Rehan",
       role: "Organizer",
+      github: "https://github.com/Limbo-Hacks/Hackathon-website-template",
+      linkedin: "",
+      img: me
+    },
+    {
+      Name: "Moon",
+      role: "Organizer",
+      github: "",
+      linkedin: "",
+      img: moon
+    },
+    {
+      Name: "Erika",
+      role: "Organizer",
+      github: "",
+      linkedin: "",
+      img: Ryah
+    }
+  ],
+  [
+    //Array 2
+    {
+      Name: "Lyanola",
+      role: "Organizer",
+      github: "",
+      linkedin: "",
+      img: lyin
+    },
+    {
+      Name: "Zoheb",
+      role: "Organizer",
+      github: "",
+      linkedin: "",
+      img: zoha
+    },    
+  ] 
+];
+
+const JudgesInfo = [
+  [
+    //Array 1
+    {
+      Name: "Rehan",
+      role: "Organizer",
       github: "",
       linkedin: "",
       img: me
@@ -198,6 +246,7 @@ const TeamInfo = [
     },    
   ] 
 ];
+
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -267,5 +316,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
+  JudgesInfo,
   frequentlyAskedQuestions
 };

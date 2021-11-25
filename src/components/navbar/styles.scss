@@ -8,15 +8,16 @@ nav {
   z-index: 10;
   transition: 0.2s;
   box-shadow: 0px 5px 10px rgba(50, 13, 136, 0.25);
-  img{
+  img {
     z-index: 1000000;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 }
-.s-open,.s-close{
-  display:none;
+.s-open,
+.s-close {
+  display: none;
 }
 .nav-inner {
   width: 30%;
@@ -48,24 +49,24 @@ a:link {
 }
 
 @media (max-width: 470px) {
-.ease{
-  background: #484848;
-  height: 75%;
-  opacity: 0.2;
- pointer-events: none;
-}
+  .ease {
+    background: #484848;
+    height: 75%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
   ul {
     flex-direction: column;
     padding: 30px 20;
   }
-  .s-open{
-    display:inline;
+  .s-open {
+    display: inline;
     position: absolute;
     right: 10px;
     top: 10px;
     z-index: -1;
   }
-  .s-close{
+  .s-close {
     display: block;
     position: absolute;
     right: 10px;

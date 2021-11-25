@@ -18,36 +18,36 @@
   align-items: center;
   text-align: center;
 }
-.footer p{
+.footer p {
   font-weight: 500;
   font-size: 1.5rem;
-  color:white;
+  color: white;
 }
-.footer a{
+.footer a {
   color: aliceblue;
 }
 .footer img {
   width: 70%;
 }
-.footer_info{
+.footer_info {
   padding: 20px 0;
   background-color: rgb(32, 32, 32);
 }
-.Register_a{
+.Register_a {
   padding: 70px 0;
   background-color: #121930;
 }
-.Register_a a{
+.Register_a a {
   margin-left: 10px;
   margin-right: 10px;
 }
 
 @media (max-width: 570px) {
-  .Register_a a{
+  .Register_a a {
     margin-left: 0;
-    margin-right:0;
+    margin-right: 0;
   }
-  .Volunteer{
+  .Volunteer {
     margin-top: 15px;
   }
   .social-icon {
@@ -64,20 +64,34 @@
   text-decoration: underline;
 }
 
-.template{
+.template {
   position: fixed;
-  top: 97.3vh;
-  background-color: rgb(196, 230, 227);
+  bottom: 0;
+  background-color: rgb(231, 231, 231);
   text-align: center;
   width: 100%;
-  padding-top: 2px;
-}
-.template p{
-  margin: 0 auto;
-  color: rgb(20, 6, 100);
-}
-.fa-times{
-position: absolute;
-right: 10px;
-top: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  justify-content: center;
+  padding-top: 4px;
+  &-left{
+    width: 80%;
+  }
+  img {
+    width: 15px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  p {
+    margin: 0 auto;
+    color: rgb(20, 6, 100);
+    @media (max-width: 570px) {
+      font-size: 14px;
+    }
+  }
+  a {
+    color: #43b7be;
+  }
 }
