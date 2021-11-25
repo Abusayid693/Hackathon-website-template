@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Hackathon-website-template/static/css/main.cdfdc3ae.chunk.css",
-    "main.js": "/Hackathon-website-template/static/js/main.bcf8e3de.chunk.js",
-    "main.js.map": "/Hackathon-website-template/static/js/main.bcf8e3de.chunk.js.map",
+    "main.css": "/Hackathon-website-template/static/css/main.fc38e3bf.chunk.css",
+    "main.js": "/Hackathon-website-template/static/js/main.cbd92b2c.chunk.js",
+    "main.js.map": "/Hackathon-website-template/static/js/main.cbd92b2c.chunk.js.map",
     "runtime-main.js": "/Hackathon-website-template/static/js/runtime-main.556b0e78.js",
     "runtime-main.js.map": "/Hackathon-website-template/static/js/runtime-main.556b0e78.js.map",
-    "static/js/2.950195c9.chunk.js": "/Hackathon-website-template/static/js/2.950195c9.chunk.js",
-    "static/js/2.950195c9.chunk.js.map": "/Hackathon-website-template/static/js/2.950195c9.chunk.js.map",
+    "static/js/2.800ee2d8.chunk.js": "/Hackathon-website-template/static/js/2.800ee2d8.chunk.js",
+    "static/js/2.800ee2d8.chunk.js.map": "/Hackathon-website-template/static/js/2.800ee2d8.chunk.js.map",
     "index.html": "/Hackathon-website-template/index.html",
-    "static/css/main.cdfdc3ae.chunk.css.map": "/Hackathon-website-template/static/css/main.cdfdc3ae.chunk.css.map",
-    "static/js/2.950195c9.chunk.js.LICENSE.txt": "/Hackathon-website-template/static/js/2.950195c9.chunk.js.LICENSE.txt",
+    "static/css/main.fc38e3bf.chunk.css.map": "/Hackathon-website-template/static/css/main.fc38e3bf.chunk.css.map",
+    "static/js/2.800ee2d8.chunk.js.LICENSE.txt": "/Hackathon-website-template/static/js/2.800ee2d8.chunk.js.LICENSE.txt",
     "static/media/1pass.fe1b7aaa.png": "/Hackathon-website-template/static/media/1pass.fe1b7aaa.png",
     "static/media/ACF.896fe374.png": "/Hackathon-website-template/static/media/ACF.896fe374.png",
     "static/media/Privacy policy.9854a808.pdf": "/Hackathon-website-template/static/media/Privacy policy.9854a808.pdf",
@@ -17,6 +17,7 @@
     "static/media/Terms of use.c2255556.pdf": "/Hackathon-website-template/static/media/Terms of use.c2255556.pdf",
     "static/media/boy.e1bb0956.png": "/Hackathon-website-template/static/media/boy.e1bb0956.png",
     "static/media/cfc.18f32e55.png": "/Hackathon-website-template/static/media/cfc.18f32e55.png",
+    "static/media/cross.4b360e08.svg": "/Hackathon-website-template/static/media/cross.4b360e08.svg",
     "static/media/echoAR.4f66d3a4.png": "/Hackathon-website-template/static/media/echoAR.4f66d3a4.png",
     "static/media/egg.f445ea46.png": "/Hackathon-website-template/static/media/egg.f445ea46.png",
     "static/media/glimpse.57b2c35f.png": "/Hackathon-website-template/static/media/glimpse.57b2c35f.png",
@@ -47,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.556b0e78.js",
-    "static/js/2.950195c9.chunk.js",
-    "static/css/main.cdfdc3ae.chunk.css",
-    "static/js/main.bcf8e3de.chunk.js"
+    "static/js/2.800ee2d8.chunk.js",
+    "static/css/main.fc38e3bf.chunk.css",
+    "static/js/main.cbd92b2c.chunk.js"
   ]
 }
