@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "baseUrl": "src",
+    "paths": {
+      // "@components": ["components"],s
+      // "@fonts": ["fonts"],
+      // "@hooks": ["hooks"],
+      // "@images": ["images"],
+      // "@pages": ["pages"],
+      // "@theme": ["theming"],
+      // "@utils": ["utils"]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "src/types/**/*.d.ts",
+    "gatsby-browser.js",
+    "gatsby-config.js",
+    "gatsby-ssr.js",
+    "gatsby-node.js"
+  ],
+  "exclude": ["node_modules", "public", ".cache"]
+}
