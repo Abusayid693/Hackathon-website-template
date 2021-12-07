@@ -21,8 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    # - name: Install Dependencies
-    #   run: npm install 
+    - name: Install Dependencies
+      run: npm install 
     - name: Run ESLint
       run: |   
        echo "::set-output name=prettier_output::$(npm run lint)"
