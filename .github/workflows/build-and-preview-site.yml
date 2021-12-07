@@ -20,7 +20,7 @@ jobs:
       - name: Build the site
         run: |
           npm install
-          npm build
+          npm run build
           
       - name: Netlify Actions
         uses: nwtgck/actions-netlify@v1.2.2
