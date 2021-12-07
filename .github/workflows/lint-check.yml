@@ -4,11 +4,11 @@
 name: ES Lint Check
 
 on:
-  pull_request:
+  push:
     branches: [ version3-starter ]
 
 jobs:
-  build:
+  eslint:
 
     runs-on: ubuntu-latest
 
@@ -24,10 +24,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install
-      run: npm run develop
+#     - name: Install
+#       run: npm run develop
     - name: Install
       run: |   
-       echo "::set-output name=prettier_output::$(npm run lint)"
+       echo "::set-output name=prettier_output::hello"
    
 
