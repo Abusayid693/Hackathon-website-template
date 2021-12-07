@@ -12,11 +12,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -24,9 +19,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-#     - name: Install
-#       run: npm run develop
-    - name: Install
+    - name: Install Dependencies
+      run: npm install 
+    - name: Run ESLint
       run: |   
        echo "::set-output name=prettier_output::hello"
    
