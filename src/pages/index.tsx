@@ -9,7 +9,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 20,
 };
 const headingAccentStyles = {
   color: '#663399',
