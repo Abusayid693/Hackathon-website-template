@@ -22,11 +22,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install Dependencies
-    - run: npm install 
-    - uses: reviewdog/action-eslint@v1
-      with:
-        reporter: github-check
-        eslint_flags: 'src/'   
+      run: npm install 
+
     - name: Run ESLint
       run: |   
        echo "::set-output name=prettier_output::$(npm run lint)"
