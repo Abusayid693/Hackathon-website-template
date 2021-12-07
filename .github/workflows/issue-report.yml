@@ -1,18 +1,18 @@
 name: Report new issues
-on:
-  issues:
-    types: [opened]
+ on:
+   issues:
+     types: [opened]
 
-jobs:
-  comment:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/github-script@v5
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Thanks for putting this issue, one of our project maintainer will review it soon. In the meantime, please check our open-issues if you want ot contribute !  Be sure to star, if you haven't already.'
-            })
+ jobs:
+   comment:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/github-script@v5
+         with:
+           script: |
+             github.rest.issues.createComment({
+               issue_number: context.issue.number,
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               body: '👋 Thanks for reporting!'
+             })
