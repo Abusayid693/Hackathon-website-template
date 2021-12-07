@@ -5,7 +5,7 @@ name: ES Lint Check
 
 on:
   pull_request:
-    branches: [version3-starter]
+    branches: [version-3-files]
 #   push:
 #     branches: [ version3-starter ]
 
