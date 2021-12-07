@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    // repeated from base config's "include" setting
+    "src",
+    //   "src/types/**/*.d.ts",
+
+    // these are the eslint-only inclusions
+    ".eslintrc.js",
+    //   "gatsby-browser.js",
+    "gatsby-config.js"
+    //   "gatsby-node.js",
+    //   "gatsby-ssr.js"
+  ]
+}

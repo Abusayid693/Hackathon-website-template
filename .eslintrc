@@ -1,0 +1,50 @@
+{
+    "root": true,
+    "extends": [
+      "airbnb-typescript",
+      "airbnb/hooks",
+      "prettier",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["react", "@typescript-eslint", "prettier", "import"],
+    "env": {
+      "browser": true,
+      "jest": true,
+      "node": true,
+      "es6": true
+    },
+    "globals": {
+    //   "Atomics": "readonly",
+    //   "SharedBufferArray": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {"jsx": true},
+      "tsconfigRootDir": "./",
+      "project": "./tsconfig.eslint.json"
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "max-len": ["error", {"code": 100}],
+      "prefer-promise-reject-errors": ["off"],
+      "react/jsx-filename-extension": ["off"],
+      "no-return-assign": ["off"],
+      "react/prop-types": 0,
+      "import/prefer-default-export": 0,
+      "no-use-before-define": 0,
+      "click-events-have-key-events": 0,
+      "no-static-element-interactions": 0,
+      "prefer-destructuring": 1,
+      "react/display-name": 0,
+      "func-names": 0,
+      "@typescript-eslint/ban-ts-comment": 0
+    }
+  }
