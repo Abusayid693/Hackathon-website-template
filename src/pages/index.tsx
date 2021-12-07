@@ -8,7 +8,7 @@ const pageStyles = {
 };
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
+  marginBottom: 54,
   maxWidth: 20,
 };
 const headingAccentStyles = {
