@@ -27,6 +27,7 @@
     "gatsby-plugin-netlify-cms": "^6.3.0",
     "gatsby-plugin-styled-components": "^5.3.0",
     "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-remark": "^5.3.0",
     "netlify-cms-app": "^2.15.60",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.17",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "eslint": "^7.32.0",
