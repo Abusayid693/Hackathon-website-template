@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+html {
+  background-color: peachpuff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  padding: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+a {
+  color: rebeccapurple;
+}
