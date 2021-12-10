@@ -1,8 +1,10 @@
-import {graphql} from 'gatsby';
-import styled from 'styled-components';
+// Libraries
 import * as React from 'react';
-import {Button} from '../components';
+import styled from 'styled-components';
 
+// Components
+// import {Button} from '../components';
+import Navbar from "../components/Navigation"
 
 const HeadingStyles = styled.div`
 width: 100%;
@@ -11,21 +13,13 @@ min-height: 100vh;
 margin: 0;
 padding: 0;
 padding-top: 80px;
-background:red;
+background:#121930;
 `;
-export default ({data}: any) => {
+export default () => {
   return (
     <HeadingStyles>
-      <h1>Hello World s</h1>
-      {data.allFile.edges.map(({node}: any) => (
-        <>
-          <h1>
-            {node.id}
-          </h1>
-          <h3 >{node.relativePath} </h3>
-          <Button />
-        </>
-      ))}
+      <Navbar/>
+      <h1 style={{color:"white"}}>Hello World s</h1>
     </HeadingStyles>
   );
 };
@@ -40,18 +34,18 @@ export default ({data}: any) => {
 //   }
 // `;
 
-export const query = graphql`
-  query FirstQuery {
-    allFile {
-      edges {
-        node {
-          id
-          relativePath
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query FirstQuery {
+//     allFile {
+//       edges {
+//         node {
+//           id
+//           relativePath
+//         }
+//       }
+//     }
+//   }
+// `;
 
 // export const query = graphql`
 //   query FirstQuery {
