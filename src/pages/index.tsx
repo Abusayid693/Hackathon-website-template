@@ -2,24 +2,30 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+// Style
+import {Flexbox} from '../components/elements/Flexbox';
+
 // Components
-// import {Button} from '../components';
-import Navbar from "../components/Navigation"
+import Navbar from '../components/Navigation';
+import {Calender} from '../components/Calender';
 
 const HeadingStyles = styled.div`
-width: 100%;
-max-width: 100vw;
-min-height: 100vh;
-margin: 0;
-padding: 0;
-padding-top: 80px;
-background:#121930;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  background: #121930;
 `;
 export default () => {
   return (
     <HeadingStyles>
-      <Navbar/>
-      <h1 style={{color:"white"}}>Hello World s</h1>
+      <Navbar />
+      <Flexbox flexRowLg style={{padding: '0 2%'}}>
+        <h1 style={{color: 'white'}}>Hello World s</h1>
+        <Calender />
+      </Flexbox>
     </HeadingStyles>
   );
 };
