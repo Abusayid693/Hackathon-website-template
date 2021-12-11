@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "esnext","es5", "es6", "dom.iterable"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
