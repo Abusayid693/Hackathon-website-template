@@ -21,153 +21,15 @@ interface dataProps {
   events: eventType[];
 }
 
-const data: dataProps[] = [
-  {
-    day: 1,
-    event: true,
-    events: [
-      {
-        title: 'Intro to python',
-        timings: '12 AM - 1 Pm',
-        content: 'Intro to python .....',
-        ended: false,
-      },
-      {
-        title: 'Intro to Java',
-        timings: '12 AM - 1 Pm',
-        content: 'Intro to python .....',
-        ended: false,
-      },
-    ],
-  },
-  {
-    day: 2,
-    event: true,
-    events: [
-      {
-        title: 'Intro to python',
-        timings: '12 AM - 1 Pm',
-        content: 'Intro to python .....',
-        ended: false,
-      },
-      {
-        title: 'Intro to Java',
-        timings: '12 AM - 1 Pm',
-        content: 'Intro to python .....',
-        ended: false,
-      },
-    ],
-  },
-  {
-    day: 3,
-    event: false,
-    events: [],
-  },
-  {
-    day: 4,
-    event: false,
-    events: [],
-  },
-  {
-    day: 5,
-    event: false,
-    events: [],
-  },
-  {
-    day: 6,
-    event: false,
-    events: [],
-  },
-  {
-    day: 7,
-    event: false,
-    events: [],
-  },
-  {
-    day: 8,
-    event: false,
-    events: [],
-  },
-  {
-    day: 9,
-    event: false,
-    events: [],
-  },
-  {
-    day: 10,
-    event: false,
-    events: [],
-  },
-  {
-    day: 11,
-    event: false,
-    events: [],
-  },
-  {
-    day: 12,
-    event: false,
-    events: [],
-  },
-  {
-    day: 13,
-    event: false,
-    events: [],
-  },
-  {
-    day: 14,
-    event: false,
-    events: [],
-  },
-];
-
-interface payloadTypes {
-  type: string;
-  data?: number | string | dataProps[];
-}
 
 export const Calender = () => {
 
   const contextTesting = useContext(calenderContext);
   // @ts-ignore
- const [mstate, dispatch] = contextTesting;
-  const initialState = {
-    index: 1,
-    selectedData: 0,
-    month: 12,
-    year: 2021,
-    dates: data,
-  };
+ const [state, dispatch] = contextTesting;
 
-  const [state, setState] = useState(initialState);
-
-  const calenderReducer = (state = initialState,payload: payloadTypes) => {
-    switch (payload.type) {
-      case 'UPDATE_INDEX':
-        // @ts-ignore
-        setState(state => ({...state, index: payload.data}));
-        break;
-      case 'SHOW_EVENTS_FOR_SELECTED_DATE':
-        // @ts-ignore
-        setState(state => ({...state, selectedData: payload.data}));
-        break;
-      case 'UPDATE_DATES':
-        // @ts-ignore
-        setState(state => ({...state, dates: payload.data}));
-        break;
-      case 'MONTH_FORWARD':
-        // @ts-ignore
-        setState(state => ({...state, month: state.month + 1}));
-        break;
-      case 'MONTH_BACKYARD':
-        // @ts-ignore
-        setState(state => ({...state, month: state.month - 1}));
-        break;
-    }
-  };
 
   useEffect(() => {
-    // let num = 28;
-    // let paddingDay = 4;
 
     let structureToHoldDates: dataProps[] = [];
 
@@ -204,7 +66,7 @@ export const Calender = () => {
       }
     }
 
-    calenderReducer(state, {type: 'UPDATE_DATES', data: structureToHoldDates});
+    dispatch({type: 'UPDATE_DATES', data: structureToHoldDates});
   }, [state.month]);
 
   const weekDays = [
@@ -253,14 +115,14 @@ export const Calender = () => {
         <Flexbox className="card-top" flexRow>
           <H3 fontMax={20} color="white">
                 {/* @ts-ignore */}
-            Events schedule {mstate.year}
+            Events schedule {state.year}
           </H3>
           <Flexbox flexRow className="card-top-inner">
             <Flexbox
               justifyCenter
               alignCenter
               className="card-top-inner-item"
-              onClick={() => calenderReducer(state, {type: 'MONTH_BACKYARD'})}
+              onClick={() => dispatch({type: 'MONTH_BACKYARD'})}
             >
               <StaticImage src="../../images/left-icon.svg" alt="A dinosaur" />
             </Flexbox>
@@ -268,7 +130,7 @@ export const Calender = () => {
               justifyCenter
               alignCenter
               className="card-top-inner-item"
-              onClick={() => calenderReducer(state, {type: 'MONTH_FORWARD'})}
+              onClick={() => dispatch({type: 'MONTH_FORWARD'})}
             >
               <StaticImage src="../../images/right-icon.svg" alt="A dinosaur" />
             </Flexbox>
@@ -280,7 +142,7 @@ export const Calender = () => {
               <P color="#9E9E9E">{day}</P>
             </Flexbox>
           ))}
-
+       {/* @ts-ignore */}
           {state.dates.map((day, j) => (
             <Flexbox
               alignCenter
@@ -288,9 +150,9 @@ export const Calender = () => {
               className="card-body-inner"
               onClick={() => {
                 // setIndex(2);
-                calenderReducer(state, {type: 'UPDATE_INDEX', data: 2});
+                dispatch({type: 'UPDATE_INDEX', data: 2});
                 // setSelectedDate(j);
-                calenderReducer(state, {
+                dispatch({
                   type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
                   data: j,
                 });
@@ -305,8 +167,8 @@ export const Calender = () => {
   } else if (state.index === 2) {
     return (
       <H.Container>
-        {state.dates[state.selectedData].event ? (
-          state.dates[state.selectedData].events.map((event, j) => (
+          {/* @ts-ignore */}
+           {state.dates[state.selectedData].event ? ( state.dates[state.selectedData].events.map((event, j) => (
             <H.Event>
               <h3>{event.title}</h3>{' '}
             </H.Event>
