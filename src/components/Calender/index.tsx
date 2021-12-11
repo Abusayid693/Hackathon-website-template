@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect,useContext} from 'react';
+import { calenderContext } from '../Context/calender.context';
 import {StaticImage} from 'gatsby-plugin-image';
 import {Flexbox} from '../elements/Flexbox';
 import {H3, P} from '../elements/Heading';
@@ -15,7 +16,7 @@ interface eventType {
 
 interface dataProps {
   day: number;
-  dumpDay?:boolean;
+  dumpDay?: boolean;
   event: boolean;
   events: eventType[];
 }
@@ -124,24 +125,22 @@ interface payloadTypes {
   data?: number | string | dataProps[];
 }
 
-
-
-
-
-
-
 export const Calender = () => {
+
+  const contextTesting = useContext(calenderContext);
+  // @ts-ignore
+ const [mstate, dispatch] = contextTesting;
   const initialState = {
     index: 1,
     selectedData: 0,
-    month: 1,
+    month: 12,
     year: 2021,
     dates: data,
   };
 
   const [state, setState] = useState(initialState);
 
-  const calenderReducer = (state = initialState, payload: payloadTypes) => {
+  const calenderReducer = (state = initialState,payload: payloadTypes) => {
     switch (payload.type) {
       case 'UPDATE_INDEX':
         // @ts-ignore
@@ -150,29 +149,36 @@ export const Calender = () => {
       case 'SHOW_EVENTS_FOR_SELECTED_DATE':
         // @ts-ignore
         setState(state => ({...state, selectedData: payload.data}));
-        break; 
-      case 'SWITCH_MONTHS':
+        break;
+      case 'UPDATE_DATES':
         // @ts-ignore
         setState(state => ({...state, dates: payload.data}));
-        break;  
+        break;
+      case 'MONTH_FORWARD':
+        // @ts-ignore
+        setState(state => ({...state, month: state.month + 1}));
+        break;
+      case 'MONTH_BACKYARD':
+        // @ts-ignore
+        setState(state => ({...state, month: state.month - 1}));
+        break;
     }
   };
 
+  useEffect(() => {
+    // let num = 28;
+    // let paddingDay = 4;
 
+    let structureToHoldDates: dataProps[] = [];
 
-  useEffect(()=>{
+    const [num, paddingDay] = getDatesForMonth();
 
-    let num = 28;
-
-    let structureToHoldDates:dataProps[] = [];
-
-
-    for (let i = 0; i<= num+4; i++){
-       if(i>4){
+    for (let i = 1; i <= num + paddingDay; i++) {
+      if (i > paddingDay) {
         structureToHoldDates.push({
-          day: i,
+          day: i - paddingDay,
           event: true,
-          dumpDay:false,
+          dumpDay: false,
           events: [
             {
               title: 'Intro to python',
@@ -187,38 +193,83 @@ export const Calender = () => {
               ended: false,
             },
           ],
-        })
-       }
-       else {
-        structureToHoldDates.push(
-          {
-            day: i,
-            event: false,
-            dumpDay:true,
-            events: [],
-        })
-       }
+        });
+      } else {
+        structureToHoldDates.push({
+          day: 5,
+          event: false,
+          dumpDay: true,
+          events: [],
+        });
+      }
     }
 
-    calenderReducer(state,{type:'SWITCH_MONTHS',data:structureToHoldDates})
- 
-  },[])
+    calenderReducer(state, {type: 'UPDATE_DATES', data: structureToHoldDates});
+  }, [state.month]);
 
+  const weekDays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
 
+  const getDatesForMonth = () => {
+    const [firstDay, lastDay] = [
+      new Date(state.year, state.month - 1, 1),
+      new Date(state.year, state.month, 0),
+    ];
 
+    const [firstDayOfTheMonth, lastDayOfTheMonth, totalNumOfDays] = [
+      firstDay.toLocaleDateString('en-us', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }),
+      lastDay.toLocaleDateString('en-us', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }),
+      lastDay.getDate(),
+    ];
+
+    const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(',')[0]);
+    console.log(
+      firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays,
+    );
+    console.log('Padding days :', extraDays);
+    return [totalNumOfDays, extraDays];
+  };
 
   if (state.index === 1) {
     return (
       <H.Container>
         <Flexbox className="card-top" flexRow>
           <H3 fontMax={20} color="white">
-            Events schedule
+                {/* @ts-ignore */}
+            Events schedule {mstate.year}
           </H3>
           <Flexbox flexRow className="card-top-inner">
-            <Flexbox justifyCenter alignCenter className="card-top-inner-item">
+            <Flexbox
+              justifyCenter
+              alignCenter
+              className="card-top-inner-item"
+              onClick={() => calenderReducer(state, {type: 'MONTH_BACKYARD'})}
+            >
               <StaticImage src="../../images/left-icon.svg" alt="A dinosaur" />
             </Flexbox>
-            <Flexbox justifyCenter alignCenter className="card-top-inner-item">
+            <Flexbox
+              justifyCenter
+              alignCenter
+              className="card-top-inner-item"
+              onClick={() => calenderReducer(state, {type: 'MONTH_FORWARD'})}
+            >
               <StaticImage src="../../images/right-icon.svg" alt="A dinosaur" />
             </Flexbox>
           </Flexbox>
@@ -237,9 +288,12 @@ export const Calender = () => {
               className="card-body-inner"
               onClick={() => {
                 // setIndex(2);
-                calenderReducer(state,{type:'UPDATE_INDEX',data:2})
+                calenderReducer(state, {type: 'UPDATE_INDEX', data: 2});
                 // setSelectedDate(j);
-                calenderReducer(state,{type:'SHOW_EVENTS_FOR_SELECTED_DATE',data:j})
+                calenderReducer(state, {
+                  type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
+                  data: j,
+                });
               }}
             >
               <p>{day.day}</p>
