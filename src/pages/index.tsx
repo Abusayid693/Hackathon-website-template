@@ -16,7 +16,7 @@ const HeadingStyles = styled.div`
   margin: 0;
   padding: 0;
   padding-top: 80px;
-  background: #121930;
+  background: #FFFAF2;
 `;
 export default () => {
   return (
