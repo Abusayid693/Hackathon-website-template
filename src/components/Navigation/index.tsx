@@ -6,13 +6,13 @@ import * as H from './style';
 
 const Navbar = ({}) => {
   const [toggle, setToggle] = useState<boolean>(true);
-  const [color, setColor] = useState<string>('#121930');
+  const [color, setColor] = useState<string>('#FFD3CC');
 
   const listenScrollEvent = () => {
     if (window.scrollY > 800) {
-      setColor('rgba(50, 13, 136)');
+      setColor('#FFD3CC');
     } else {
-      setColor('#121930');
+      setColor('#FFD3CC');
     }
   };
 

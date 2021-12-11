@@ -16,7 +16,7 @@ nav {
     z-index: 10;
     top:0;
     transition: 0.2s;
-    box-shadow: 0px 5px 10px rgba(50, 13, 136, 0.25);
+    box-shadow: 0px 1px 7px #FFD3CC;
     img {
       z-index: 1000000;
       &:hover {
@@ -46,10 +46,12 @@ nav {
 
   }
   .links {
-    color: rgb(231, 228, 228);
+    color:black;
     transition: 0.5s;
     font-weight: 300;
     letter-spacing: 1.3px;
+    font-weight:400;
+    font-size: 17px;
   }
   .links:hover {
     color: rgb(184, 180, 180);
