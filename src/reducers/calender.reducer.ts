@@ -2,7 +2,7 @@ import {Reducer} from 'react';
 import {
   CalenderStateTypes,
   EventArrayType,
-} from '../../types/calenderState.types';
+} from '../types/calenderState.types';
 
 export const initialState = {
   index: 1,

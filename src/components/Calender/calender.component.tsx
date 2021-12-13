@@ -1,15 +1,12 @@
 import React, {useEffect, useContext} from 'react';
-import {calenderContext} from '../Context/calender.context';
+import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../elements/Flexbox';
 import {H3, P} from '../elements/Heading';
 
-import {getDatesForMonth} from './calender.function';
+import {calenderMainLogic} from './calender.function';
 
 // Layout
 import {CalenderLayout} from './calender.layout';
-
-// Types
-import {EventArrayType} from '../../types/calenderState.types';
 
 // Styles
 import * as H from './style';
@@ -21,49 +18,7 @@ export const Calender = ({data}) => {
   const [state, dispatch] = contextTesting;
 
   useEffect(() => {
-    let structureToHoldDates: EventArrayType[] = [];
-
-    const [num, paddingDay, totalNumOfDaysInPreviousMonths] =
-      getDatesForMonth(state);
-
-    for (let i = 1; i <= num + paddingDay; i++) {
-      if (i > paddingDay) {
-        const currentDay = i - paddingDay;
-        const currentMonth = state.month;
-        const currentYear = state.year;
-        const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
-
-        // Searching in event list for matching events
-        // @ts-ignore
-        let obj = data.find(o => o.day === currentDate);
-        if (obj) {
-          console.log('Find date in :', obj);
-
-          structureToHoldDates.push({
-            day: i - paddingDay,
-            event: true,
-            dumpDay: false,
-            events: obj.events,
-          });
-        } else {
-          structureToHoldDates.push({
-            day: i - paddingDay,
-            event: false,
-            dumpDay: false,
-            events: [],
-          });
-        }
-      } else {
-        structureToHoldDates.push({
-          day: totalNumOfDaysInPreviousMonths - paddingDay + i,
-          event: false,
-          dumpDay: true,
-          events: [],
-        });
-      }
-    }
-
-    dispatch({type: 'UPDATE_DATES', data: structureToHoldDates});
+    calenderMainLogic(state, dispatch, data);
   }, [state.month]);
 
   if (state.index === 1) {
