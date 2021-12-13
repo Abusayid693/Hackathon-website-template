@@ -1,9 +1,14 @@
-import React, {useState, useEffect,useContext} from 'react';
-import { calenderContext } from '../Context/calender.context';
-import {StaticImage} from 'gatsby-plugin-image';
+import React, {useEffect, useContext} from 'react';
+import {calenderContext} from '../Context/calender.context';
 import {Flexbox} from '../elements/Flexbox';
 import {H3, P} from '../elements/Heading';
 import * as H from './style';
+
+// Demo API data
+import {data} from './api';
+
+// Layout
+import {CalenderLayout} from './calender.layout';
 
 interface eventType {
   title: string;
@@ -12,53 +17,58 @@ interface eventType {
   image?: string;
   ended: boolean;
   previousYoutubeRecording?: string; // If event ended provide recording
+  organizer?: string;
 }
 
 interface dataProps {
-  day: number;
+  day?: number | string;
+  month?: number;
+  year?: number;
   dumpDay?: boolean;
   event: boolean;
   events: eventType[];
 }
 
-
 export const Calender = () => {
-
   const contextTesting = useContext(calenderContext);
   // @ts-ignore
- const [state, dispatch] = contextTesting;
-
+  const [state, dispatch] = contextTesting;
 
   useEffect(() => {
-
     let structureToHoldDates: dataProps[] = [];
 
-    const [num, paddingDay] = getDatesForMonth();
+    const [num, paddingDay, totalNumOfDaysInPreviousMonths] =
+      getDatesForMonth();
 
     for (let i = 1; i <= num + paddingDay; i++) {
       if (i > paddingDay) {
-        structureToHoldDates.push({
-          day: i - paddingDay,
-          event: true,
-          dumpDay: false,
-          events: [
-            {
-              title: 'Intro to python',
-              timings: '12 AM - 1 Pm',
-              content: 'Intro to python .....',
-              ended: false,
-            },
-            {
-              title: 'Intro to Java',
-              timings: '12 AM - 1 Pm',
-              content: 'Intro to python .....',
-              ended: false,
-            },
-          ],
-        });
+        const currentDay = i - paddingDay;
+        const currentMonth = state.month;
+        const currentYear = state.year;
+        const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
+
+        // Searching in event list for matching events
+        let obj = data.find(o => o.day === currentDate);
+        if (obj) {
+          console.log('Find date in :', obj);
+
+          structureToHoldDates.push({
+            day: i - paddingDay,
+            event: true,
+            dumpDay: false,
+            events: obj.events,
+          });
+        } else {
+          structureToHoldDates.push({
+            day: i - paddingDay,
+            event: false,
+            dumpDay: false,
+            events: [],
+          });
+        }
       } else {
         structureToHoldDates.push({
-          day: 5,
+          day: totalNumOfDaysInPreviousMonths - paddingDay + i,
           event: false,
           dumpDay: true,
           events: [],
@@ -80,12 +90,18 @@ export const Calender = () => {
   ];
 
   const getDatesForMonth = () => {
-    const [firstDay, lastDay] = [
+    const [firstDay, lastDay, lastDayOfPreviousMonth] = [
       new Date(state.year, state.month - 1, 1),
       new Date(state.year, state.month, 0),
+      new Date(state.year, state.month - 1, 0),
     ];
 
-    const [firstDayOfTheMonth, lastDayOfTheMonth, totalNumOfDays] = [
+    const [
+      firstDayOfTheMonth,
+      lastDayOfTheMonth,
+      totalNumOfDays,
+      totalNumOfDaysInPreviousMonths,
+    ] = [
       firstDay.toLocaleDateString('en-us', {
         weekday: 'long',
         year: 'numeric',
@@ -99,6 +115,7 @@ export const Calender = () => {
         day: 'numeric',
       }),
       lastDay.getDate(),
+      lastDayOfPreviousMonth.getDate(),
     ];
 
     const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(',')[0]);
@@ -106,77 +123,81 @@ export const Calender = () => {
       firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays,
     );
     console.log('Padding days :', extraDays);
-    return [totalNumOfDays, extraDays];
+    return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
   };
 
   if (state.index === 1) {
     return (
-      <H.Container>
-        <Flexbox className="card-top" flexRow>
-          <H3 fontMax={20} color="white">
-                {/* @ts-ignore */}
-            Events schedule {state.year}
-          </H3>
-          <Flexbox flexRow className="card-top-inner">
-            <Flexbox
-              justifyCenter
-              alignCenter
-              className="card-top-inner-item"
-              onClick={() => dispatch({type: 'MONTH_BACKYARD'})}
-            >
-              <StaticImage src="../../images/left-icon.svg" alt="A dinosaur" />
-            </Flexbox>
-            <Flexbox
-              justifyCenter
-              alignCenter
-              className="card-top-inner-item"
-              onClick={() => dispatch({type: 'MONTH_FORWARD'})}
-            >
-              <StaticImage src="../../images/right-icon.svg" alt="A dinosaur" />
-            </Flexbox>
-          </Flexbox>
-        </Flexbox>
+      <CalenderLayout
+        handleActionProcced={{type: 'MONTH_FORWARD'}}
+        handleActionBack={{type: 'MONTH_BACKYARD'}}
+      >
         <div className="card-body">
           {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
             <Flexbox alignCenter justifyCenter className="card-body-header">
               <P color="#9E9E9E">{day}</P>
             </Flexbox>
           ))}
-       {/* @ts-ignore */}
+          {/* @ts-ignore */}
           {state.dates.map((day, j) => (
             <Flexbox
               alignCenter
               justifyCenter
-              className="card-body-inner"
+              className={
+                day.dumpDay
+                  ? 'card-body-inner'
+                  : 'card-body-inner card-body-inner__active'
+              }
               onClick={() => {
-                // setIndex(2);
                 dispatch({type: 'UPDATE_INDEX', data: 2});
-                // setSelectedDate(j);
                 dispatch({
                   type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
                   data: j,
                 });
               }}
             >
-              <p>{day.day}</p>
+              {day.event ? (
+                <p className="card-body-inner__active__event">{day.day}</p>
+              ) : (
+                <p>{day.day}</p>
+              )}
             </Flexbox>
           ))}
         </div>
-      </H.Container>
+      </CalenderLayout>
     );
   } else if (state.index === 2) {
     return (
-      <H.Container>
-          {/* @ts-ignore */}
-           {state.dates[state.selectedData].event ? ( state.dates[state.selectedData].events.map((event, j) => (
-            <H.Event>
-              <h3>{event.title}</h3>{' '}
-            </H.Event>
-          ))
-        ) : (
-          <p>No evnets</p>
-        )}
-      </H.Container>
+      <CalenderLayout
+        handleActionBack={{type: 'UPDATE_INDEX', data: 1}}
+        handleActionProcced={{type: 'DISABLED'}}
+      >
+        <H.EventContainer>
+          {state.dates[state.selectedData].event ? (
+            state.dates[state.selectedData].events.map(
+              (event: any, j: number) => (
+                <H.Event
+                  key={j}
+                  onClick={() => dispatch({type: 'UPDATE_INDEX', data: 3})}
+                >
+                  <h3>{event.title}</h3>
+                </H.Event>
+              ),
+            )
+          ) : (
+            <p>No evnets</p>
+          )}
+        </H.EventContainer>
+      </CalenderLayout>
+    );
+  } else if (state.index === 3) {
+    return (
+      <CalenderLayout
+        handleActionProcced={{type: 'DISABLED'}}
+        handleActionBack={{type: 'UPDATE_INDEX', data: 2}}
+      >
+        <h2>Hello</h2>
+      </CalenderLayout>
     );
   }
   return <H.Container></H.Container>;
