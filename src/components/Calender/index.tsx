@@ -17,7 +17,58 @@ import {EventArrayType} from '../../types/calenderState.types';
 
 // @ts-ignore
 export const Calender = ({data}) => {
-  console.log('MDX file :',data.allMdx.edges);
+  console.log('MDX file :', data.allMdx.edges);
+
+  // @ts-ignore
+  const temporaryStructure = [];
+
+  for (let i = 0; i < data.allMdx.edges.length; i++) {
+    console.log(`Mdx file ${i} : ${data.allMdx.edges[i].node.frontmatter.day}`);
+    const day = data.allMdx.edges[i].node.frontmatter.day;
+    let label = 1;
+    // @ts-ignore
+    temporaryStructure.some(function (entry, i) {
+      if (entry.day === day) {
+        // @ts-ignore
+        temporaryStructure[i].events.push({
+          title: data.allMdx.edges[i].node.frontmatter.title,
+          timings: data.allMdx.edges[i].node.frontmatter.timings,
+          content: data.allMdx.edges[i].node.frontmatter.content,
+          image: data.allMdx.edges[i].node.frontmatter.image,
+          organizer: data.allMdx.edges[i].node.frontmatter.organizer,
+          role: data.allMdx.edges[i].node.frontmatter.role,
+          company: data.allMdx.edges[i].node.frontmatter.company,
+        });
+        console.log('Dublicate found', i);
+        label = 0;
+      }
+    });
+
+    if (!label) continue;
+
+    let events = [
+      {
+        title: data.allMdx.edges[i].node.frontmatter.title,
+        timings: data.allMdx.edges[i].node.frontmatter.timings,
+        content: data.allMdx.edges[i].node.frontmatter.content,
+        image: data.allMdx.edges[i].node.frontmatter.image,
+        organizer: data.allMdx.edges[i].node.frontmatter.organizer,
+        role: data.allMdx.edges[i].node.frontmatter.role,
+        company: data.allMdx.edges[i].node.frontmatter.company,
+      },
+    ];
+
+    const pushStruct = {
+      day: data.allMdx.edges[i].node.frontmatter.day,
+      events: events,
+    };
+    temporaryStructure.push(pushStruct);
+  }
+
+  temporaryStructure.forEach(element =>
+    console.log(`Temporary struct :${element.events.length}`),
+  );
+
   const contextTesting = useContext(calenderContext);
   // @ts-ignore
   const [state, dispatch] = contextTesting;
@@ -36,7 +87,8 @@ export const Calender = ({data}) => {
         const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
 
         // Searching in event list for matching events
-        let obj = calenderData.find(o => o.day === currentDate);
+        // @ts-ignore
+        let obj = temporaryStructure.find(o => o.day === currentDate);
         if (obj) {
           console.log('Find date in :', obj);
 
@@ -218,18 +270,16 @@ export default function MyCalender(props) {
           allMdx(filter: {fileAbsolutePath: {regex: "/content/schedule/"}}) {
             edges {
               node {
-                fileAbsolutePath
-                id
                 frontmatter {
-          title
-          day
-          items{
-          value
-            title
-            timings
-            content
-          }
-        }
+                  title
+                  day
+                  timings
+                  content
+                  organizer
+                  role
+                  company
+                  image
+                }
               }
             }
           }

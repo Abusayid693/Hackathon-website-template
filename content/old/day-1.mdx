@@ -31,3 +31,24 @@ content: >-
 
   <Graph />
 ---
+
+
+query MyQuery {
+  allMdx(filter: {fileAbsolutePath: {regex: "/content/schedule/"}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          day
+          items{
+          value
+            title
+            timings
+            content
+          }
+        }
+      }
+    }
+  }
+}
