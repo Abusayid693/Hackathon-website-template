@@ -90,3 +90,38 @@ background:transparent;
 overflow: scroll;
 height: 400px;
 `
+
+export const EventLayout = styled.div`
+background:#fff;
+overflow: scroll;
+height: 400px;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:0 5%;
+& button{
+  display: block;
+  background-color:#FF4A6F;
+  margin:15px auto;
+  border:none;
+  padding: 12px 30px;
+  border-radius:8px;
+  color:#fff;
+  font-size:18px;
+
+}
+& p{
+  font-weight:300;
+}
+.image-layout{
+  text-align:center;
+  width:150px;
+}
+& img {
+  height:120px;
+  width:120px;
+  border-radius:5px;
+  border: 2px solid #FF69AC;
+  box-shadow: 0px 2px 7px #FFD3CC;
+}
+`

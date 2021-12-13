@@ -6,6 +6,8 @@
     ended: boolean;
     previousYoutubeRecording?: string; // If event ended provide recording
     organizer?: string;
+    role?:string;
+    company?:string;
   }
 
   export interface EventArrayType {
@@ -20,6 +22,7 @@
   export interface CalenderStateTypes {
     index: number;
     selectedData: EventType[];
+    selectedEvent:EventType,
     month: number;
     year: number;
     dates: EventArrayType[];

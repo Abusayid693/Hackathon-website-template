@@ -1,6 +1,7 @@
 import React, {useEffect, useContext} from 'react';
 import {calenderContext} from '../Context/calender.context';
 import {Flexbox} from '../elements/Flexbox';
+import {StaticImage} from 'gatsby-plugin-image';
 import {H3, P} from '../elements/Heading';
 import * as H from './style';
 
@@ -10,9 +11,8 @@ import {data} from './api';
 // Layout
 import {CalenderLayout} from './calender.layout';
 
-// 
-import {EventArrayType} from "../../types/calenderState.types"
-
+//
+import {EventArrayType} from '../../types/calenderState.types';
 
 export const Calender = () => {
   const contextTesting = useContext(calenderContext);
@@ -20,7 +20,7 @@ export const Calender = () => {
   const [state, dispatch] = contextTesting;
 
   useEffect(() => {
-    let structureToHoldDates:EventArrayType[] = [];
+    let structureToHoldDates: EventArrayType[] = [];
 
     const [num, paddingDay, totalNumOfDaysInPreviousMonths] =
       getDatesForMonth();
@@ -165,9 +165,13 @@ export const Calender = () => {
           {state.selectedData.map((event: any, j: number) => (
             <H.Event
               key={j}
-              onClick={() => dispatch({type: 'UPDATE_INDEX', data: 3})}
+              onClick={() => {
+                dispatch({type: 'UPDATE_INDEX', data: 3});
+                dispatch({type: 'SHOW_SELECTED_EVENT_DETAILS', data: event});
+              }}
             >
               <h3>{event.title}</h3>
+              <p>{event.timings}</p>
             </H.Event>
           ))}
         </H.EventContainer>
@@ -179,7 +183,22 @@ export const Calender = () => {
         handleActionProcced={{type: 'DISABLED'}}
         handleActionBack={{type: 'UPDATE_INDEX', data: 2}}
       >
-        <h2>Hello</h2>
+        <H.EventLayout>
+          <h2>{state.selectedEvent.title}</h2>
+          <p> {state.selectedEvent.timings}</p>
+          <div className="image-layout">
+            <img src="https://i.imgur.com/EjM8qVK.jpg" alt="A dinosaur" />
+            <p>{state.selectedEvent.organizer}</p>
+            <h5>{state.selectedEvent.role}</h5>
+            <h5>{state.selectedEvent.company}</h5>
+          </div>
+          <p>{state.selectedEvent.content}</p>
+
+          <button>
+            {state.selectedEvent.timings} <br />
+            <p>Add to calender</p>
+          </button>
+        </H.EventLayout>
       </CalenderLayout>
     );
   }
