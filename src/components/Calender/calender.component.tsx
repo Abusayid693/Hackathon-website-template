@@ -2,13 +2,17 @@ import React, {useEffect, useContext} from 'react';
 import {calenderContext} from '../Context/calender.context';
 import {Flexbox} from '../elements/Flexbox';
 import {H3, P} from '../elements/Heading';
-import * as H from './style';
+
+import {getDatesForMonth} from './calender.function';
 
 // Layout
 import {CalenderLayout} from './calender.layout';
 
 // Types
 import {EventArrayType} from '../../types/calenderState.types';
+
+// Styles
+import * as H from './style';
 
 // @ts-ignore
 export const Calender = ({data}) => {
@@ -20,7 +24,7 @@ export const Calender = ({data}) => {
     let structureToHoldDates: EventArrayType[] = [];
 
     const [num, paddingDay, totalNumOfDaysInPreviousMonths] =
-      getDatesForMonth();
+      getDatesForMonth(state);
 
     for (let i = 1; i <= num + paddingDay; i++) {
       if (i > paddingDay) {
@@ -62,60 +66,12 @@ export const Calender = ({data}) => {
     dispatch({type: 'UPDATE_DATES', data: structureToHoldDates});
   }, [state.month]);
 
-  const weekDays = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-
-  const getDatesForMonth = () => {
-    const [firstDay, lastDay, lastDayOfPreviousMonth] = [
-      new Date(state.year, state.month - 1, 1),
-      new Date(state.year, state.month, 0),
-      new Date(state.year, state.month - 1, 0),
-    ];
-
-    const [
-      firstDayOfTheMonth,
-      lastDayOfTheMonth,
-      totalNumOfDays,
-      totalNumOfDaysInPreviousMonths,
-    ] = [
-      firstDay.toLocaleDateString('en-us', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      }),
-      lastDay.toLocaleDateString('en-us', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      }),
-      lastDay.getDate(),
-      lastDayOfPreviousMonth.getDate(),
-    ];
-
-    const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(',')[0]);
-    console.log(
-      firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays,
-    );
-    console.log('Padding days :', extraDays);
-    return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
-  };
-
   if (state.index === 1) {
     return (
       <CalenderLayout
         handleActionProcced={{type: 'MONTH_FORWARD'}}
         handleActionBack={{type: 'MONTH_BACKYARD'}}
       >
-        {/* {data.allMdx.edges[0].node.frontmatter.title} */}
         <div className="card-body">
           {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
             <Flexbox alignCenter justifyCenter className="card-body-header">
@@ -203,13 +159,3 @@ export const Calender = ({data}) => {
   }
   return <H.Container></H.Container>;
 };
-
-// Calender.propTypes = {
-//   data: PropTypes.shape({
-//     site: PropTypes.shape({
-//       siteMetadata: PropTypes.shape({
-//         title: PropTypes.string.isRequired,
-//       }).isRequired,
-//     }).isRequired,
-//   }).isRequired,
-// }
