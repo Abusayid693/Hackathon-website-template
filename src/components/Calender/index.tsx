@@ -10,24 +10,9 @@ import {data} from './api';
 // Layout
 import {CalenderLayout} from './calender.layout';
 
-interface eventType {
-  title: string;
-  timings: string;
-  content: string;
-  image?: string;
-  ended: boolean;
-  previousYoutubeRecording?: string; // If event ended provide recording
-  organizer?: string;
-}
+// 
+import {EventArrayType} from "../../types/calenderState.types"
 
-interface dataProps {
-  day?: number | string;
-  month?: number;
-  year?: number;
-  dumpDay?: boolean;
-  event: boolean;
-  events: eventType[];
-}
 
 export const Calender = () => {
   const contextTesting = useContext(calenderContext);
@@ -35,7 +20,7 @@ export const Calender = () => {
   const [state, dispatch] = contextTesting;
 
   useEffect(() => {
-    let structureToHoldDates: dataProps[] = [];
+    let structureToHoldDates:EventArrayType[] = [];
 
     const [num, paddingDay, totalNumOfDaysInPreviousMonths] =
       getDatesForMonth();
@@ -149,11 +134,15 @@ export const Calender = () => {
                   : 'card-body-inner card-body-inner__active'
               }
               onClick={() => {
-                dispatch({type: 'UPDATE_INDEX', data: 2});
-                dispatch({
-                  type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
-                  data: j,
-                });
+                if (day.event) {
+                  dispatch({type: 'UPDATE_INDEX', data: 2});
+                  dispatch({
+                    type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
+                    data: state.dates[j].events,
+                  });
+                } else {
+                  alert('No events');
+                }
               }}
             >
               {day.event ? (
@@ -173,20 +162,14 @@ export const Calender = () => {
         handleActionProcced={{type: 'DISABLED'}}
       >
         <H.EventContainer>
-          {state.dates[state.selectedData].event ? (
-            state.dates[state.selectedData].events.map(
-              (event: any, j: number) => (
-                <H.Event
-                  key={j}
-                  onClick={() => dispatch({type: 'UPDATE_INDEX', data: 3})}
-                >
-                  <h3>{event.title}</h3>
-                </H.Event>
-              ),
-            )
-          ) : (
-            <p>No evnets</p>
-          )}
+          {state.selectedData.map((event: any, j: number) => (
+            <H.Event
+              key={j}
+              onClick={() => dispatch({type: 'UPDATE_INDEX', data: 3})}
+            >
+              <h3>{event.title}</h3>
+            </H.Event>
+          ))}
         </H.EventContainer>
       </CalenderLayout>
     );

@@ -1,23 +1,12 @@
-interface eventType {
-    title: string;
-    timings: string;
-    content: string;
-    image?: string;
-    ended: boolean;
-    previousYoutubeRecording?: string; // If event ended provide recording
-    organizer?: string;
-  }
-  
-  interface dataProps {
-    day?: number | string;
-    month?: number;
-    year?: number;
-    dumpDay?: boolean;
-    event: boolean;
-    events: eventType[];
-  }
-  
-  export const data: dataProps[] = [
+import {EventType} from "../../types/calenderState.types"
+
+// The types of data admin will provide
+interface EventArrayInputTypes {
+  day: string;
+  event: boolean;
+  events: EventType[];
+}
+  export const data: EventArrayInputTypes[] = [
     {
       day: '1-12-2021',
       event: true,
