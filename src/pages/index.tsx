@@ -7,10 +7,10 @@ import {Flexbox} from '../components/elements/Flexbox';
 
 // Components
 import Navbar from '../components/Navigation';
-import {Calender} from '../components/Calender';
+import MyCalender from '../components/Calender';
 
 // Context API
-import {CalenderContextProvider} from "../components/Context/calender.context"
+import {CalenderContextProvider} from "../Context/calender.context"
 
 
 const HeadingStyles = styled.div`
@@ -29,7 +29,7 @@ export default () => {
       <Navbar />
       <Flexbox flexRowLg style={{padding: '0 2%'}}>
         <h1 style={{color: 'white'}}>Hello World s</h1>
-        <Calender />
+        <MyCalender />
       </Flexbox>
     </HeadingStyles>
     </CalenderContextProvider>

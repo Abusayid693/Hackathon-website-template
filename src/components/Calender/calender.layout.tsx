@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {calenderContext} from '../Context/calender.context';
+import {calenderContext} from '../../Context/calender.context';
 import {StaticImage} from 'gatsby-plugin-image';
 import {Flexbox} from '../elements/Flexbox';
 import {H3, P} from '../elements/Heading';
