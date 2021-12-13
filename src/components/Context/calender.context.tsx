@@ -11,7 +11,7 @@ import {calenderReducer, initialState} from '../reducers/calender.reducer';
 
 export const calenderContext = createContext(initialState);
 
-// @ts-ignore
+
 export const CalenderContextProvider: React.FC  = ({children}) => {
 // @ts-ignore
   const [state, dispatch] = useReducer(calenderReducer, initialState);
