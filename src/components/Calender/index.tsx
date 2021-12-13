@@ -2,11 +2,12 @@ import React, {useEffect, useContext} from 'react';
 import {calenderContext} from '../Context/calender.context';
 import {Flexbox} from '../elements/Flexbox';
 import {StaticImage} from 'gatsby-plugin-image';
+import {StaticQuery, graphql} from 'gatsby';
 import {H3, P} from '../elements/Heading';
 import * as H from './style';
 
 // Demo API data
-import {data} from './api';
+import {calenderData} from './api';
 
 // Layout
 import {CalenderLayout} from './calender.layout';
@@ -14,7 +15,9 @@ import {CalenderLayout} from './calender.layout';
 //
 import {EventArrayType} from '../../types/calenderState.types';
 
-export const Calender = () => {
+// @ts-ignore
+export const Calender = ({data}) => {
+  console.log('MDX file :',data.allMdx.edges);
   const contextTesting = useContext(calenderContext);
   // @ts-ignore
   const [state, dispatch] = contextTesting;
@@ -33,7 +36,7 @@ export const Calender = () => {
         const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
 
         // Searching in event list for matching events
-        let obj = data.find(o => o.day === currentDate);
+        let obj = calenderData.find(o => o.day === currentDate);
         if (obj) {
           console.log('Find date in :', obj);
 
@@ -117,6 +120,7 @@ export const Calender = () => {
         handleActionProcced={{type: 'MONTH_FORWARD'}}
         handleActionBack={{type: 'MONTH_BACKYARD'}}
       >
+        {data.allMdx.edges[0].node.frontmatter.title}
         <div className="card-body">
           {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
             <Flexbox alignCenter justifyCenter className="card-body-header">
@@ -204,3 +208,44 @@ export const Calender = () => {
   }
   return <H.Container></H.Container>;
 };
+
+// @ts-ignore
+export default function MyCalender(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query MyQuery {
+          allMdx(filter: {fileAbsolutePath: {regex: "/content/schedule/"}}) {
+            edges {
+              node {
+                fileAbsolutePath
+                id
+                frontmatter {
+          title
+          day
+          items{
+          value
+            title
+            timings
+            content
+          }
+        }
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Calender data={data} {...props} />}
+    />
+  );
+}
+
+// Calender.propTypes = {
+//   data: PropTypes.shape({
+//     site: PropTypes.shape({
+//       siteMetadata: PropTypes.shape({
+//         title: PropTypes.string.isRequired,
+//       }).isRequired,
+//     }).isRequired,
+//   }).isRequired,
+// }
