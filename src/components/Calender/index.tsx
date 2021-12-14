@@ -1,16 +1,3 @@
-import React from 'react';
-import {StaticQuery, graphql} from 'gatsby';
-
-import {Calender} from './calender.component';
-
-
-// @ts-ignore
-const CalenderDataLogic = ({data}, {...props}) => {
-  console.log('How may time rendeing');
-
-  // @ts-ignore
-  const temporaryStructure = [];
-
 /*---------------------------------------------------------------------------------------------
  *  This higher order component formats the data received from mdx files using graphQL
  *  query into desired JSON object to be used by Calender component to display events
@@ -36,6 +23,18 @@ const CalenderDataLogic = ({data}, {...props}) => {
  *      }
  *    }
  *--------------------------------------------------------------------------------------------*/
+
+import React from 'react';
+import {StaticQuery, graphql} from 'gatsby';
+import {Calender} from './calender.component';
+
+
+// @ts-ignore
+const CalenderDataLogic = ({data}, {...props}) => {
+  console.log('How may time rendeing');
+
+  // @ts-ignore
+  const temporaryStructure = [];
 
   for (let i = 0; i < data.allMdx.edges.length; i++) {
     console.log(`Mdx file ${i} : ${data.allMdx.edges[i].node.frontmatter.day}`);
