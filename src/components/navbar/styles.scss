@@ -3,6 +3,7 @@ nav {
   list-style-type: none;
   height: 7.5vh;
   font-size: 1.8rem;
+  display: flex;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -15,6 +16,13 @@ nav {
     }
   }
 }
+.header--logo {
+  width: 95px;
+}
+.header_logo{
+  padding: 55vw;
+
+}
 .s-open,
 .s-close {
   display: none;
@@ -23,13 +31,19 @@ nav {
   width: 30%;
 }
 ul {
+  width: 100vw;
+  margin-top: -2%;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   height: 100%;
 }
+
+.list--general{
+  padding: 20px;
+}
+
 nav ul li {
   display: inline-block;
   // margin: 2rem 0 5rem 6rem;

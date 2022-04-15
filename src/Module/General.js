@@ -26,20 +26,16 @@ import zoha from "./Assets/teami/zoha.png";
 
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
- * or you can provide a cloud link in src also
+ * or you can provide a cloud link in src alsoy
  */
 
 import boy from "./Assets/boy.png";
 
-
-
-
-
 const TOP_SECTION = {
   TITLE: "Hack The Crisis 2.0",
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  Typed_effect: ["36 hours of creation", "Win awesome prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "Join us on 21st April to 22 April 2022 with over 500 students from across the nation for 36 hours of creation, innovation, & fun.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
@@ -59,9 +55,9 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: "What is Limbo hacks?",
+  TITLE: "What is Hack the Crisis?",
   LONG_DESCRIPTION:
-    "Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.",
+    "It is a virtual/online hackathon in which all the participants will work in a given timeline and develop strategies to cope up with the effects and after-effects of the ongoing crisis around the world on peoples lives.War has a catastrophic effect on the health and well being of nations.During war, people can be exposed to many different traumatic events. That raises the chances of developing mental health problems—like post-traumatic stress disorder (PTSD), anxiety, and depression—and poorer life outcomes as adults.Effects of war also include mass destruction of cities and have long lasting effects on a countrys economy. Armed conflict has important indirect negative consequences on infrastructure, public health provision, and social order.",
   LOGO_EFFECT: true,
   LOGO: ""
 };
@@ -199,8 +195,8 @@ const TeamInfo = [
       github: "",
       linkedin: "",
       img: zoha
-    },    
-  ] 
+    }
+  ]
 ];
 
 const JudgesInfo = [
@@ -243,10 +239,9 @@ const JudgesInfo = [
       github: "",
       linkedin: "",
       img: zoha
-    },    
-  ] 
+    }
+  ]
 ];
-
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -255,25 +250,26 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
-  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src:cfc}]
+  // [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
+  // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
+  // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
+  // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
 ];
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
-const frequentlyAskedQuestions  = [
+ const frequentlyAskedQuestions  = [
   [
     [
       {
         label: "What is a hackathon?",
         content:
-        'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'      },
+        'Hackathon is a tool to drive sustained innovation and crowdsource solutions to address pressing real-life business problems and social issues. A hackathon is typically a time-bound competitive event where participants collaborate to build proofs of concept and minimum viable products for a specific pre-defined problem or to innovate.'      },
       {
         label: "Who can attend?",
-        content: "Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools."
+        content: "Hack the Crisis 2.0 is open to all undergraduate, high school students and middle school students from all schools."
       },
       {
         label: "I am a first time hacker, what should I do?",
@@ -291,22 +287,23 @@ const frequentlyAskedQuestions  = [
       },
       {
         label: "I have more questions?",
-        content: "Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you."
+        content: "Reach us directly at (hacthecrisis email) we would happy to help you."
       }
       ,
       {
         label: "Can i volunteer?",
-        content: "Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you."
+        content: "No."
       }
       ,
       {
         label: "Will there be swag?",
-        content: "Yes! Participants will recieveing Limbo Hacks swag!."
+        content: "Yes! Participants will recieveing swag!."
       }
     ]
   ],
 
 ];
+
 
 export {
   TOP_SECTION,
