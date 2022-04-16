@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import hamLogo from "./ham.svg";
 import logoClose from "./ham-c.svg";
+import hacklogo1 from "./hacklogo.png"
 import styled from "styled-components";
 import "./styles.scss";
 
@@ -70,30 +71,30 @@ const NAVBAR = ({}) => {
       <nav className="nav_bar" style={{backgroundColor: color}}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
-          <ul>
-              <li>
+            <ul>
+              <li className="list--general">
                 <Link   to={`#home`}>
                   <span className="links">Home </span>{" "}
                 </Link>
               </li>
-              <li>
+              <li className="list--general">
                 <Link to={`#faq`}>
                   <span className="links">FAQ </span>{" "}
                 </Link>
               </li>
-              <li>
+              <li className="list--general">
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{" "}
+                  <span className="links">Prizes </span>{" "}
                 </Link>
               </li>
-              <li>
+              <li className="list--general">
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{" "}
+                  <span className="links">Sponsors </span>{" "}
                 </Link>
               </li>
-              <li>
+              <li className="list--general">
                 <Link to={`#team`}>
-                  <span className="links">team </span>{" "}
+                  <span className="links">Team </span>{" "}
                 </Link>
               </li>
               <img
@@ -101,6 +102,11 @@ const NAVBAR = ({}) => {
                 onClick={() => setToggle(true)}
                 src={logoClose}
               />
+              <li>
+                <div className="header_logo">
+                  <img className="header--logo" src={hacklogo1}/>
+                </div>
+              </li>
             </ul>
           </div>
           <div className="ease" />
