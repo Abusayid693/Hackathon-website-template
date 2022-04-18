@@ -75,11 +75,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Limbo-Hacks/Limbo-hacks-website.git"
+    "url": "git+https://github.com/BVP-ISTE/hack_the_crisis2.0.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Limbo-Hacks/Limbo-hacks-website/issues"
+    "url": "https://github.com/BVP-ISTE/hack_the_crisis2.0/issues"
   }
 }
