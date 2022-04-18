@@ -30,8 +30,8 @@ import {
 function SponsorGroup(props) {
   return (
     <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+      {props.map((s, key) => (
+        <Col key={key} className="" sm={12} lg={4} md={6}>
           {" "}
           <Sponsor srcx={s.src} />{" "}
         </Col>
@@ -47,8 +47,8 @@ function SponsorGroup(props) {
 function PrizeGroup(props) {
   return (
     <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+      {props.map((s, key) => (
+        <Col key={key} className="" sm={12} lg={4} md={6}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
@@ -60,8 +60,8 @@ function PrizeGroup(props) {
 function TeamMembers(props) {
   return (
     <Row className="members">
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
+      {props.map((s, k) => (
+        <Col key={k} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
@@ -72,8 +72,8 @@ function TeamMembers(props) {
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
-      {props.map(s => (
-        <Col className="" sm={12} lg={6} md={6}>
+      {props.map((s, k) => (
+        <Col key={k} className="" sm={12} lg={6} md={6}>
           <Accordion panels={s} />
         </Col>
       ))}
