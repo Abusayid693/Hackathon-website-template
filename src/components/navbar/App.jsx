@@ -1,16 +1,16 @@
 import React, {useState, useEffect, useRef} from "react";
 import HomePage from "../Main-page/HomePage";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import {HashLink as Link} from "react-router-hash-link";
 import hamLogo from "./ham.svg";
 import logoClose from "./ham-c.svg";
-import hacklogo1 from "./hacklogo.png"
+import hacklogo1 from "./hacklogo.png";
 import styled from "styled-components";
 import "./styles.scss";
 
 const Wrapper = styled.div`
   display: block;
-  width:40%;
+  width: 40%;
   margin-top: 20px;
   @media (max-width: 470px) {
     margin: 0;
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const NAVBAR = ({}) => {
+const NAVBAR = () => {
   const [toggle, setToggle] = useState(true);
   const [color, setColor] = useState("#121930");
 
@@ -73,7 +73,7 @@ const NAVBAR = ({}) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li className="list--general">
-                <Link   to={`#home`}>
+                <Link to={`#home`}>
                   <span className="links">Home </span>{" "}
                 </Link>
               </li>
@@ -98,13 +98,14 @@ const NAVBAR = ({}) => {
                 </Link>
               </li>
               <img
+                alt="img"
                 className="s-close"
                 onClick={() => setToggle(true)}
                 src={logoClose}
               />
               <li>
                 <div className="header_logo">
-                  <img className="header--logo" src={hacklogo1}/>
+                  <img alt="img" className="header--logo" src={hacklogo1} />
                 </div>
               </li>
             </ul>
@@ -112,6 +113,7 @@ const NAVBAR = ({}) => {
           <div className="ease" />
         </Wrapper>
         <img
+          alt="img"
           className="s-open"
           onClick={() => setToggle(false)}
           src={hamLogo}
@@ -127,16 +129,16 @@ const NAVBAR = ({}) => {
   );
 };
 
-function Projects() {
-  return <h2>Projects here</h2>;
-}
+// function Projects() {
+//   return <h2>Projects here</h2>;
+// }
 
-function Contact() {
-  return <h2>contact info</h2>;
-}
+// function Contact() {
+//   return <h2>contact info</h2>;
+// }
 
-function Links() {
-  return <h2>Home</h2>;
-}
+// function Links() {
+//   return <h2>Home</h2>;
+// }
 
 export default NAVBAR;

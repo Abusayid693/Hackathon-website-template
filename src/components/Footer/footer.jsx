@@ -17,26 +17,27 @@ function GithubTemplate({hideTemplate}) {
     <div className="template">
       <div className="template-left">
         <p>
-          Join us to  <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>, where we will be hosting PUBLIC workshops,
-          tech talks, panel discussions, and career sessions!
+          Join us to{" "}
+          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
+          where we will be hosting PUBLIC workshops, tech talks, panel
+          discussions, and career sessions!
         </p>
       </div>
-      <img onClick={hideTemplate} src={cross} />
+      <img alt="img" onClick={hideTemplate} src={cross} />
     </div>
   );
 }
 
 export default function Footer() {
   const [template, setTemplate] = useState(false);
-  const [viewTemplate, setViewTemplate] = useState(true)
-
+  const [viewTemplate, setViewTemplate] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
 
-    return ()=>{
-    window.removeEventListener("scroll", listenScrollEvent);
-    }
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
   }, []);
 
   const listenScrollEvent = e => {
@@ -119,7 +120,9 @@ export default function Footer() {
           )}
           <p>Made with ❤️</p>
         </div>
-        {template && viewTemplate&& <GithubTemplate hideTemplate={() => setViewTemplate(false)} />}
+        {template && viewTemplate && (
+          <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
+        )}
       </div>
     </div>
   );

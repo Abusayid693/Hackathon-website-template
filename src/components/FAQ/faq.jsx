@@ -31,6 +31,7 @@ class Panel extends React.Component {
     };
 
     return (
+      // eslint-disable-next-line jsx-a11y/role-supports-aria-props
       <div className="panel" role="tabpanel" aria-expanded={isActive}>
         <button className="panel__label" role="tab" onClick={activateTab}>
           {label}

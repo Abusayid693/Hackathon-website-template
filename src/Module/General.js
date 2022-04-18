@@ -1,16 +1,16 @@
 // Importing all sponsors logos from Assets
-import taskade from "./Assets/sponsorsLogos/taskade.png";
-import Replit from "./Assets/sponsorsLogos/replit.png";
-import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
-import echoAR from "./Assets/sponsorsLogos/echoAR.png";
+// import taskade from "./Assets/sponsorsLogos/taskade.png";
+// import Replit from "./Assets/sponsorsLogos/replit.png";
+// import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
+// import echoAR from "./Assets/sponsorsLogos/echoAR.png";
 import cfc from "./Assets/sponsorsLogos/cfc.png";
-import pass from "./Assets/sponsorsLogos/1pass.png";
-import glimpse from "./Assets/sponsorsLogos/glimpse.png";
-import qoom from "./Assets/sponsorsLogos/qoom.svg";
-import sublime from "./Assets/sponsorsLogos/sublime.png";
-import egg from "./Assets/sponsorsLogos/egg.png";
-import ll from "./Assets/sponsorsLogos/ll.png";
-import ACF from "./Assets/sponsorsLogos/ACF.png";
+// import pass from "./Assets/sponsorsLogos/1pass.png";
+// import glimpse from "./Assets/sponsorsLogos/glimpse.png";
+// import qoom from "./Assets/sponsorsLogos/qoom.svg";
+// import sublime from "./Assets/sponsorsLogos/sublime.png";
+// import egg from "./Assets/sponsorsLogos/egg.png";
+// import ll from "./Assets/sponsorsLogos/ll.png";
+// import ACF from "./Assets/sponsorsLogos/ACF.png";
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -250,7 +250,7 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src:cfc}]
+  [{src: cfc}]
   // [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
   // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
   // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
@@ -260,50 +260,52 @@ const sponsorLogos = [
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
- const frequentlyAskedQuestions  = [
+const frequentlyAskedQuestions = [
   [
     [
       {
         label: "What is a hackathon?",
         content:
-        'Hackathon is a tool to drive sustained innovation and crowdsource solutions to address pressing real-life business problems and social issues. A hackathon is typically a time-bound competitive event where participants collaborate to build proofs of concept and minimum viable products for a specific pre-defined problem or to innovate.'      },
+          "Hackathon is a tool to drive sustained innovation and crowdsource solutions to address pressing real-life business problems and social issues. A hackathon is typically a time-bound competitive event where participants collaborate to build proofs of concept and minimum viable products for a specific pre-defined problem or to innovate."
+      },
       {
         label: "Who can attend?",
-        content: "Hack the Crisis 2.0 is open to all undergraduate, high school students and middle school students from all schools."
+        content:
+          "Hack the Crisis 2.0 is open to all undergraduate, high school students and middle school students from all schools."
       },
       {
         label: "I am a first time hacker, what should I do?",
-        content: "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general."
+        content:
+          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general."
       },
       {
         label: "How team formation works?",
-        content: "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+        content:
+          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
       {
         label: "How to register myself in the hackathon?",
-        content: "All you need is to fill our form above and join Discord, we will guide you through everything there"
+        content:
+          "All you need is to fill our form above and join Discord, we will guide you through everything there"
       },
       {
         label: "I have more questions?",
-        content: "Reach us directly at (hacthecrisis email) we would happy to help you."
-      }
-      ,
+        content:
+          "Reach us directly at (hacthecrisis email) we would happy to help you."
+      },
       {
         label: "Can i volunteer?",
         content: "No."
-      }
-      ,
+      },
       {
         label: "Will there be swag?",
         content: "Yes! Participants will recieveing swag!."
       }
     ]
-  ],
-
+  ]
 ];
-
 
 export {
   TOP_SECTION,

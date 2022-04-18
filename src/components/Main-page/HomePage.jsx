@@ -69,22 +69,17 @@ function TeamMembers(props) {
   );
 }
 
-
-
-
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
       {props.map(s => (
         <Col className="" sm={12} lg={6} md={6}>
-        <Accordion panels={ s }/>
+          <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
 }
-
-
 
 export default function HomePage(props) {
   return (
@@ -96,7 +91,7 @@ export default function HomePage(props) {
               <Myinfo />
             </Col>
             <Col className="d-image" sm={12} lg={5} md={4}>
-              <img src={TOP_SECTION.IMG_SRC} />
+              <img alt="img" src={TOP_SECTION.IMG_SRC} />
             </Col>
           </Row>
 
@@ -120,9 +115,9 @@ export default function HomePage(props) {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
-        {frequentlyAskedQuestions.map(FrequentlyAsked)}
-        {/* ********Frequently asked Questions ending here ***** */}
-         </div>  
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
@@ -149,17 +144,28 @@ export default function HomePage(props) {
 
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={FOOTER.JOIN_TEAM} content="Interested in joining our team" />}
+        {FOOTER.JOIN_TEAM.required && (
+          <JoinTeam
+            placeholder="Join our team"
+            formLink={FOOTER.JOIN_TEAM}
+            content="Interested in joining our team"
+          />
+        )}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
-        
+
         <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={TOP_SECTION.JUDGES_FORM_LINK} content="Interested in being judge" />}
+        {FOOTER.JOIN_TEAM.required && (
+          <JoinTeam
+            placeholder="Join our team"
+            formLink={TOP_SECTION.JUDGES_FORM_LINK}
+            content="Interested in being judge"
+          />
+        )}
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
       </Container>
       <Footer />
     </div>

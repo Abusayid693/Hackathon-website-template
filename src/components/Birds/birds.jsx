@@ -5,6 +5,7 @@ export default function Waves(props) {
   return (
     <div
       className="container"
+      // eslint-disable-next-line react/jsx-no-duplicate-props
       className={props.type}
       style={{top: props.top, left: props.left}}
     >
