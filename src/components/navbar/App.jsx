@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     top: ${props => (props.toggle ? "-1000px" : "0px")};
     transition: top 1s;
     .nav-content {
-      height: 35%;
+      height: 50%;
       background-color: rgba(50, 13, 136);
     }
   }
