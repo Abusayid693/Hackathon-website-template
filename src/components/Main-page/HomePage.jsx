@@ -8,8 +8,8 @@ import {Logo, LogoSectionAbout} from "../logo-section/logoSection.jsx";
 import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
 import {Prizeinfo} from "../../Module/General";
 import {Accordion} from "../FAQ/faq.jsx";
-import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
-
+// import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
+import {Sponsor, SponsorsHead} from "../Sponsors/sponsors.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
 import {Member} from "../team/team.jsx";
@@ -134,7 +134,7 @@ export default function HomePage(props) {
 
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
-          <SponsorUS />
+          {/* <SponsorUS /> */}
           {sponsorLogos.map(SponsorGroup)}
         </Row>
         {/* ********Sponsors ending here ***** */}
@@ -142,6 +142,10 @@ export default function HomePage(props) {
         <Birds top="120vh" left="0vh" type="" />
 
         {/* ********Team here ***** */}
+        {/* <h1 id="team">Mentor</h1>
+
+        {JudgesInfo.map(TeamMembers)} */}
+        
         <h1 id="team">Our Team</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
@@ -153,15 +157,7 @@ export default function HomePage(props) {
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
-        {/* <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
-        {JudgesInfo.map(TeamMembers)} */}
+        
 
         {/* ********Team ending here ***** */}
       </Container>

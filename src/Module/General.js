@@ -83,15 +83,15 @@ const FOOTER = {
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u"
   },
   JOIN_TEAM: {
-    required: true,
+    required: false,
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"
   },
   Privacy_policy: {
-    required: true,
+    required: false,
     src: ""
   },
   Terms_of_use: {
-    required: true,
+    required: false,
     src: ""
   }
 };
@@ -169,14 +169,25 @@ const Prizeinfo = [
  * create as many arrays you want all team members will be rendered
  * in a group of 3.
  */
-
+//  const Mentor = [
+//   [
+//     //Array 1
+//     {
+//       Name: "Eeshita Gupta",
+//       role: "Mentor",
+//       github: "",
+//       linkedin: "https://www.linkedin.com/in/eeshita-gupta/",
+//       img: divya
+//     }
+//   ]
+// ];
 const TeamInfo = [
   [
     //Array 1
     {
       Name: "Piyush Khurana",
       role: "Event Organiser",
-      github: "",
+      github: "https://github.com/Piyush-pk02",
       linkedin: "https://www.linkedin.com/in/piyush-khurana-/",
       img: piyush
     },
@@ -320,25 +331,14 @@ const TeamInfo = [
     {
       Name: "Dev",
       role: "Web Dev Head",
-      github: "",
+      github: "https://github.com/doki12325",
       linkedin: "https://www.linkedin.com/in/dev-khokhar-198ba5192/",
       img: dev
     }
   ]
 ];
 
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: divya
-    }
-  ]
-];
+
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -347,11 +347,13 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
+  
   [{src: cfc}]
   // [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
   // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
   // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
   // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  
 ];
 
 /** Instructions
@@ -412,6 +414,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
+  // Mentor as JudgesInfo,
   frequentlyAskedQuestions
 };
