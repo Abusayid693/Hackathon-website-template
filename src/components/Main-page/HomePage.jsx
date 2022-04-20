@@ -12,17 +12,15 @@ import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
 
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
-import {Member, JoinTeam} from "../team/team.jsx";
+import {Member} from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
 
 import {
   TOP_SECTION,
   TeamInfo,
-  JudgesInfo,
   sponsorLogos,
   frequentlyAskedQuestions,
-  FOOTER
 } from "../../Module/General";
 
 // javascript Map for sponsors
@@ -144,27 +142,10 @@ export default function HomePage(props) {
 
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={FOOTER.JOIN_TEAM}
-            content="Interested in joining our team"
-          />
-        )}
+        
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
-        {/* ********Judges here ***** */}
-
-        <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
-        {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

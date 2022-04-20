@@ -18,11 +18,26 @@ import cfc from "./Assets/sponsorsLogos/cfc.png";
  */
 
 // Importing all Team members images  from Assets
-import me from "./Assets/teami/me.png";
-import moon from "./Assets/teami/moon.png";
-import Ryah from "./Assets/teami/Ryah.jpg";
-import lyin from "./Assets/teami/lyin.jpg";
-import zoha from "./Assets/teami/zoha.png";
+import piyush from "./Assets/teami/me.png";
+import aavaig from "./Assets/teami/moon.png";
+import Bhavuk from "./Assets/teami/Ryah.jpg";
+import vaibhav from "./Assets/teami/lyin.jpg";
+import Sohil from "./Assets/teami/zoha.png";
+import Aastha from "./Assets/teami/zoha.png";
+import uday from "./Assets/teami/lyin.jpg";
+import pulkit from "./Assets/teami/zoha.png";
+import ayushman from "./Assets/teami/zoha.png";
+import vishal from "./Assets/teami/lyin.jpg";
+import divya from "./Assets/teami/Divya.jpeg";
+import laksh from "./Assets/teami/zoha.png";
+import devansh from "./Assets/teami/lyin.jpg";
+import mayank from "./Assets/teami/zoha.png";
+import shradha from "./Assets/teami/zoha.png";
+import ankita from "./Assets/teami/lyin.jpg";
+import nishant from "./Assets/teami/zoha.png";
+import anjali from "./Assets/teami/zoha.png";
+import dev from "./Assets/teami/lyin.jpg";
+
 
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -159,89 +174,159 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: "Rehan",
-      role: "Organizer",
+      Name: "Piyush Khurana",
+      role: "Event Organiser",
       github: "",
       linkedin: "",
-      img: me
+      img: piyush
     },
     {
-      Name: "Moon",
-      role: "Organizer",
+      Name: "Aavaig Malhotra",
+      role: "Event Organiser",
       github: "",
       linkedin: "",
-      img: moon
+      img: aavaig
     },
     {
-      Name: "Erika",
-      role: "Organizer",
+      Name: "Bhavuk",
+      role: "Event Manager",
       github: "",
       linkedin: "",
-      img: Ryah
+      img: Bhavuk 
     }
   ],
   [
     //Array 2
     {
-      Name: "Lyanola",
-      role: "Organizer",
+      Name: "Vaibhav",
+      role: "Event Manager",
       github: "",
       linkedin: "",
-      img: lyin
+      img: vaibhav
     },
     {
-      Name: "Zoheb",
-      role: "Organizer",
+      Name: "Sohil",
+      role: "Event Manager",
       github: "",
       linkedin: "",
-      img: zoha
+      img: Sohil
+    },
+    {
+      Name: "Aastha",
+      role: "Event Manager",
+      github: "",
+      linkedin: "",
+      img: Aastha
+    }
+  ],
+  [
+    //Array 3
+    {
+      Name: "Uday",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "",
+      img: uday
+    },
+    {
+      Name: "Pulkit",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "",
+      img: pulkit
+    },
+    {
+      Name: "Ayushman",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "",
+      img: ayushman
+    }
+  ],
+  [
+    //Array 4
+    {
+      Name: "Vishal",
+      role: "Event coordinator",
+      github: "",
+      linkedin: "",
+      img: vishal
+    },
+    {
+      Name: "Divya",
+      role: "Teach Head",
+      github: "",
+      linkedin: "",
+      img: divya
+    },
+    {
+      Name: "Laksh",
+      role: "Design Head",
+      github: "",
+      linkedin: "",
+      img: laksh
+    }
+  ],
+  [
+    //Array 5
+    {
+      Name: "Devansh",
+      role: "Design Head",
+      github: "",
+      linkedin: "",
+      img: devansh
+    },
+    {
+      Name: "Mayank",
+      role: "Sponsorship",
+      github: "",
+      linkedin: "",
+      img: mayank
+    },
+    {
+      Name: "Shradha",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "",
+      img: shradha
+    }
+  ],
+  [
+    //Array 6
+    {
+      Name: "Ankita",
+      role: "Content Head",
+      github: "",
+      linkedin: "",
+      img: ankita
+    },
+    {
+      Name: "Nishant",
+      role: "Logistics",
+      github: "",
+      linkedin: "",
+      img: nishant
+    },
+    {
+      Name: "Anjali Sharma",
+      role: "Publicity Head",
+      github: "",
+      linkedin: "",
+      img: anjali
+    }
+  ],
+  [
+    //Array 5
+    {
+      Name: "Dev",
+      role: "Web Dev Head",
+      github: "",
+      linkedin: "",
+      img: dev
     }
   ]
 ];
 
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: me
-    },
-    {
-      Name: "Moon",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: moon
-    },
-    {
-      Name: "Ryah Garcia",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Ryah
-    }
-  ],
-  [
-    //Array 2
-    {
-      Name: "Lyanola",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: lyin
-    },
-    {
-      Name: "Zoheb",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: zoha
-    }
-  ]
-];
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -315,6 +400,5 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
   frequentlyAskedQuestions
 };

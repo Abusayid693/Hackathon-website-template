@@ -4,6 +4,7 @@
   position: relative;
   top:0px;
   transition: top 0.2s linear;
+  
 }
 .member:hover{
     top: -5px;
@@ -16,6 +17,7 @@
   display: block;
   margin: 0 auto;
   border: 5px solid rgb(255, 194, 252);
+  object-fit: cover;
 }
 .members-link {
   text-align: center;
