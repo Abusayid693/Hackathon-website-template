@@ -79,7 +79,7 @@ const MIDDLE_SECTION = {
 
 const FOOTER = {
   VOLUNTEERING_FORM: {
-    required: true,
+    required: false,
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u"
   },
   JOIN_TEAM: {
@@ -378,7 +378,7 @@ const frequentlyAskedQuestions = [
       {
         label: "I have more questions?",
         content:
-          "Reach us directly at (hacthecrisis email) we would happy to help you."
+          "Reach us directly at hackthecrisis2021@gmail.com we would happy to help you."
       },
       {
         label: "Can i volunteer?",

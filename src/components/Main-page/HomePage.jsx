@@ -142,9 +142,17 @@ export default function HomePage(props) {
 
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
-        
+        {/* {FOOTER.JOIN_TEAM.required && (
+          <JoinTeam
+            placeholder="Join our team"
+            formLink={FOOTER.JOIN_TEAM}
+            content="Interested in joining our team"
+          />
+        )} */}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
+
+
 
         {/* ********Team ending here ***** */}
       </Container>
