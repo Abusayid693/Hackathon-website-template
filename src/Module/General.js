@@ -18,25 +18,25 @@ import cfc from "./Assets/sponsorsLogos/cfc.png";
  */
 
 // Importing all Team members images  from Assets
-import piyush from "./Assets/teami/me.png";
-import aavaig from "./Assets/teami/moon.png";
-import Bhavuk from "./Assets/teami/Ryah.jpg";
-import vaibhav from "./Assets/teami/lyin.jpg";
-import Sohil from "./Assets/teami/zoha.png";
-import Aastha from "./Assets/teami/zoha.png";
-import uday from "./Assets/teami/lyin.jpg";
-import pulkit from "./Assets/teami/zoha.png";
-import ayushman from "./Assets/teami/zoha.png";
-import vishal from "./Assets/teami/lyin.jpg";
+import piyush from "./Assets/teami/Piyush.jpeg";
+import aavaig from "./Assets/teami/aavaig.jpeg";
+import Bhavuk from "./Assets/teami/Bhavuk.jpeg";
+import vaibhav from "./Assets/teami/Vaibhav.jpeg";
+import Sohil from "./Assets/teami/Sohil.png";
+import Aastha from "./Assets/teami/Aastha.jpg";
+import uday from "./Assets/teami/Uday.jpeg";
+import pulkit from "./Assets/teami/Pulkit.jpeg";
+import ayushman from "./Assets/teami/Aysuhmaan.jpeg";
+import vishal from "./Assets/teami/vishal.jpeg";
 import divya from "./Assets/teami/Divya.jpeg";
-import laksh from "./Assets/teami/zoha.png";
-import devansh from "./Assets/teami/lyin.jpg";
-import mayank from "./Assets/teami/zoha.png";
-import shradha from "./Assets/teami/zoha.png";
-import ankita from "./Assets/teami/lyin.jpg";
-import nishant from "./Assets/teami/zoha.png";
-import anjali from "./Assets/teami/zoha.png";
-import dev from "./Assets/teami/lyin.jpg";
+import laksh from "./Assets/teami/Laksh.jpeg";
+import devansh from "./Assets/teami/Devansh.jpg";
+import mayank from "./Assets/teami/Mayank.jpeg";
+import shradha from "./Assets/teami/Shradha.jpeg";
+import ankita from "./Assets/teami/Ankita.jpeg";
+import nishant from "./Assets/teami/nishant.jpeg";
+import anjali from "./Assets/teami/Anjali.jpeg";
+import dev from "./Assets/teami/Dev.jpeg";
 
 
 /** Put all your Team member image inside folder `Team Images`
@@ -177,21 +177,21 @@ const TeamInfo = [
       Name: "Piyush Khurana",
       role: "Event Organiser",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/piyush-khurana-/",
       img: piyush
     },
     {
       Name: "Aavaig Malhotra",
       role: "Event Organiser",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/aavaig-malhotra/",
       img: aavaig
     },
     {
       Name: "Bhavuk",
       role: "Event Manager",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/bhavuk-khanna-79b302186/",
       img: Bhavuk 
     }
   ],
@@ -201,21 +201,21 @@ const TeamInfo = [
       Name: "Vaibhav",
       role: "Event Manager",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/vaibhav0511/",
       img: vaibhav
     },
     {
       Name: "Sohil",
       role: "Event Manager",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/sohil-khattar-444663113/",
       img: Sohil
     },
     {
       Name: "Aastha",
       role: "Event Manager",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/aastha-suri-557274181/",
       img: Aastha
     }
   ],
@@ -225,7 +225,7 @@ const TeamInfo = [
       Name: "Uday",
       role: "Event Coordinator",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/uday-jain-2853581a6/",
       img: uday
     },
     {
@@ -239,7 +239,7 @@ const TeamInfo = [
       Name: "Ayushman",
       role: "Event Coordinator",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/ayushmaanchauhan",
       img: ayushman
     }
   ],
@@ -249,21 +249,21 @@ const TeamInfo = [
       Name: "Vishal",
       role: "Event coordinator",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/vishal-gautam-655a93189",
       img: vishal
     },
     {
       Name: "Divya",
       role: "Teach Head",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/divya520357",
+      linkedin: "https://www.linkedin.com/in/divya098/",
       img: divya
     },
     {
       Name: "Laksh",
       role: "Design Head",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/lakshgambhir/",
       img: laksh
     }
   ],
@@ -272,22 +272,22 @@ const TeamInfo = [
     {
       Name: "Devansh",
       role: "Design Head",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/DevanshV08",
+      linkedin: "https://www.linkedin.com/in/devansh-verma/",
       img: devansh
     },
     {
       Name: "Mayank",
       role: "Sponsorship",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/MayankHora",
+      linkedin: "https://www.linkedin.com/in/mayankhora/",
       img: mayank
     },
     {
       Name: "Shradha",
       role: "Event Coordinator",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/shradha-bansal-809aa61a8/",
       img: shradha
     }
   ],
@@ -304,14 +304,14 @@ const TeamInfo = [
       Name: "Nishant",
       role: "Logistics",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/nishant-bhardwaj-461592205/",
       img: nishant
     },
     {
       Name: "Anjali Sharma",
       role: "Publicity Head",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/2609anjali/",
       img: anjali
     }
   ],
@@ -321,12 +321,24 @@ const TeamInfo = [
       Name: "Dev",
       role: "Web Dev Head",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/dev-khokhar-198ba5192/",
       img: dev
     }
   ]
 ];
 
+const JudgesInfo = [
+  [
+    //Array 1
+    {
+      Name: "Rehan",
+      role: "Organizer",
+      github: "",
+      linkedin: "",
+      img: divya
+    }
+  ]
+];
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -400,5 +412,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
+  JudgesInfo,
   frequentlyAskedQuestions
 };

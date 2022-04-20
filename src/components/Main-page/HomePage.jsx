@@ -19,6 +19,7 @@ import Media from "../media/media.jsx";
 import {
   TOP_SECTION,
   TeamInfo,
+  // JudgesInfo,
   sponsorLogos,
   frequentlyAskedQuestions,
 } from "../../Module/General";
@@ -152,7 +153,15 @@ export default function HomePage(props) {
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
-
+        {/* <h1 id="team">Judges</h1>
+        {FOOTER.JOIN_TEAM.required && (
+          <JoinTeam
+            placeholder="Join our team"
+            formLink={TOP_SECTION.JUDGES_FORM_LINK}
+            content="Interested in being judge"
+          />
+        )}
+        {JudgesInfo.map(TeamMembers)} */}
 
         {/* ********Team ending here ***** */}
       </Container>
