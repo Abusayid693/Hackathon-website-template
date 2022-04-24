@@ -2,7 +2,7 @@ import React from "react";
 import "./top-division-c.css";
 import MytypedComponent from "../typing-effect/typing.js";
 
-import {TOP_SECTION, SOCIALS} from "../../Module/General";
+import {TOP_SECTION} from "../../Module/General";
 
 function Btn(props) {
   return (
@@ -31,7 +31,7 @@ function Myinfo() {
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <div className="join_dis">
-        <a rel="noreferrer" target="_blank" href={""}>
+        <a rel="noreferrer" target="_blank" href={"./"}>
           <Btn
             // ico="fab fa-2x fa-discord"
             class="join_disco"

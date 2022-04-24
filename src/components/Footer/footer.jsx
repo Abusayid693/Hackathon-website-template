@@ -9,7 +9,7 @@ import PrivacyPolicy from "./Privacy policy.pdf";
 import TermsOfUse from "./Terms of use.pdf";
 import Twitter from "./icons8-twitter.svg";
 import {Btn} from "../Top-division-components/Top-division-components.jsx";
-import cross from "./cross.svg";
+// import cross from "./cross.svg";
 import {SOCIALS, TOP_SECTION, FOOTER} from "../../Module/General";
 
 // function GithubTemplate({hideTemplate}) {
@@ -120,9 +120,9 @@ export default function Footer() {
           )}
           {/* <p>Made with ❤️</p> */}
         </div>
-        {/* {template && viewTemplate && (
-          <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
-        )} */}
+        {template && viewTemplate && (
+          <template hidetemplate={() => setViewTemplate(false)} />
+        )}
       </div>
     </div>
   );

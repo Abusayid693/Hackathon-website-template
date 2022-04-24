@@ -1,7 +1,7 @@
 import React from "react";
 import "./sponsors.scss";
-import {Btn} from "../Top-division-components/Top-division-components.jsx";
-import {SOCIALS} from "../../Module/General";
+// import {Btn} from "../Top-division-components/Top-division-components.jsx";
+// import {SOCIALS} from "../../Module/General";
 
 function SponsorsHead() {
   return (

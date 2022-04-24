@@ -54,14 +54,14 @@ const TOP_SECTION = {
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
+    "./",
   HACKERS_REGISTRATION_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u"
+    "./"
 };
 
 const SOCIALS = {
   instagram: "https://instagram.com/hack_the_crisis_?igshid=YmMyMTA2M2Y=",
-  discord: "",
+  // discord: "",
   linkedin: "https://www.linkedin.com/in/hack-the-crisis-65b80b211",
   twitter: " https://twitter.com/HackTheCrisis1?t=EUvOgiyUAeuc_1l8NEKqAg&s=08",
   devpost: "",
