@@ -9,24 +9,24 @@ import PrivacyPolicy from "./Privacy policy.pdf";
 import TermsOfUse from "./Terms of use.pdf";
 import Twitter from "./icons8-twitter.svg";
 import {Btn} from "../Top-division-components/Top-division-components.jsx";
-import cross from "./cross.svg";
+// import cross from "./cross.svg";
 import {SOCIALS, TOP_SECTION, FOOTER} from "../../Module/General";
 
-function GithubTemplate({hideTemplate}) {
-  return (
-    <div className="template">
-      <div className="template-left">
-        <p>
-          Join us to{" "}
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
-          where we will be hosting PUBLIC workshops, tech talks, panel
-          discussions, and career sessions!
-        </p>
-      </div>
-      <img alt="img" onClick={hideTemplate} src={cross} />
-    </div>
-  );
-}
+// function GithubTemplate({hideTemplate}) {
+//   return (
+//     <div className="template">
+//       <div className="template-left">
+//         <p>
+//           Join us to{" "}
+//           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
+//           where we will be hosting PUBLIC workshops, tech talks, panel
+//           discussions, and career sessions!
+//         </p>
+//       </div>
+//       <img alt="img" onClick={hideTemplate} src={cross} />
+//     </div>
+//   );
+// }
 
 export default function Footer() {
   const [template, setTemplate] = useState(false);
@@ -118,10 +118,10 @@ export default function Footer() {
               <p>Terms of Use</p>
             </a>
           )}
-          <p>Made with ❤️</p>
+          {/* <p>Made with ❤️</p> */}
         </div>
         {template && viewTemplate && (
-          <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
+          <template hidetemplate={() => setViewTemplate(false)} />
         )}
       </div>
     </div>

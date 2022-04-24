@@ -18,11 +18,26 @@ import cfc from "./Assets/sponsorsLogos/cfc.png";
  */
 
 // Importing all Team members images  from Assets
-import me from "./Assets/teami/me.png";
-import moon from "./Assets/teami/moon.png";
-import Ryah from "./Assets/teami/Ryah.jpg";
-import lyin from "./Assets/teami/lyin.jpg";
-import zoha from "./Assets/teami/zoha.png";
+import piyush from "./Assets/teami/Piyush.jpeg";
+import aavaig from "./Assets/teami/aavaig.jpeg";
+import Bhavuk from "./Assets/teami/Bhavuk.jpeg";
+import vaibhav from "./Assets/teami/Vaibhav.jpeg";
+import Sohil from "./Assets/teami/Sohil.png";
+import Aastha from "./Assets/teami/Aastha.jpg";
+import uday from "./Assets/teami/Uday.jpeg";
+import pulkit from "./Assets/teami/Pulkit.jpeg";
+import ayushman from "./Assets/teami/Aysuhmaan.jpeg";
+import vishal from "./Assets/teami/vishal.jpeg";
+import divya from "./Assets/teami/Divya.jpeg";
+import laksh from "./Assets/teami/Laksh.jpeg";
+import devansh from "./Assets/teami/Devansh.jpg";
+import mayank from "./Assets/teami/Mayank.jpeg";
+import shradha from "./Assets/teami/Shradha.jpeg";
+import ankita from "./Assets/teami/Ankita.jpeg";
+import nishant from "./Assets/teami/nishant.jpeg";
+import anjali from "./Assets/teami/Anjali.jpeg";
+import dev from "./Assets/teami/Dev.jpeg";
+
 
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -39,14 +54,14 @@ const TOP_SECTION = {
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
+    "./",
   HACKERS_REGISTRATION_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u"
+    "./"
 };
 
 const SOCIALS = {
   instagram: "https://instagram.com/hack_the_crisis_?igshid=YmMyMTA2M2Y=",
-  discord: "",
+  // discord: "",
   linkedin: "https://www.linkedin.com/in/hack-the-crisis-65b80b211",
   twitter: " https://twitter.com/HackTheCrisis1?t=EUvOgiyUAeuc_1l8NEKqAg&s=08",
   devpost: "",
@@ -64,19 +79,19 @@ const MIDDLE_SECTION = {
 
 const FOOTER = {
   VOLUNTEERING_FORM: {
-    required: true,
+    required: false,
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u"
   },
   JOIN_TEAM: {
-    required: true,
+    required: false,
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"
   },
   Privacy_policy: {
-    required: true,
+    required: false,
     src: ""
   },
   Terms_of_use: {
-    required: true,
+    required: false,
     src: ""
   }
 };
@@ -154,94 +169,176 @@ const Prizeinfo = [
  * create as many arrays you want all team members will be rendered
  * in a group of 3.
  */
-
+//  const Mentor = [
+//   [
+//     //Array 1
+//     {
+//       Name: "Eeshita Gupta",
+//       role: "Mentor",
+//       github: "",
+//       linkedin: "https://www.linkedin.com/in/eeshita-gupta/",
+//       img: divya
+//     }
+//   ]
+// ];
 const TeamInfo = [
   [
     //Array 1
     {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: me
+      Name: "Piyush Khurana",
+      role: "Event Organiser",
+      github: "https://github.com/Piyush-pk02",
+      linkedin: "https://www.linkedin.com/in/piyush-khurana-/",
+      img: piyush
     },
     {
-      Name: "Moon",
-      role: "Organizer",
+      Name: "Aavaig Malhotra",
+      role: "Event Organiser",
       github: "",
-      linkedin: "",
-      img: moon
+      linkedin: "https://www.linkedin.com/in/aavaig-malhotra/",
+      img: aavaig
     },
     {
-      Name: "Erika",
-      role: "Organizer",
+      Name: "Bhavuk",
+      role: "Event Manager",
       github: "",
-      linkedin: "",
-      img: Ryah
+      linkedin: "https://www.linkedin.com/in/bhavuk-khanna-79b302186/",
+      img: Bhavuk 
     }
   ],
   [
     //Array 2
     {
-      Name: "Lyanola",
-      role: "Organizer",
+      Name: "Vaibhav",
+      role: "Event Manager",
       github: "",
-      linkedin: "",
-      img: lyin
+      linkedin: "https://www.linkedin.com/in/vaibhav0511/",
+      img: vaibhav
     },
     {
-      Name: "Zoheb",
-      role: "Organizer",
+      Name: "Sohil",
+      role: "Event Manager",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/sohil-khattar-444663113/",
+      img: Sohil
+    },
+    {
+      Name: "Aastha",
+      role: "Event Manager",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/aastha-suri-557274181/",
+      img: Aastha
+    }
+  ],
+  [
+    //Array 3
+    {
+      Name: "Uday",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/uday-jain-2853581a6/",
+      img: uday
+    },
+    {
+      Name: "Pulkit",
+      role: "Event Coordinator",
       github: "",
       linkedin: "",
-      img: zoha
+      img: pulkit
+    },
+    {
+      Name: "Ayushman",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/ayushmaanchauhan",
+      img: ayushman
+    }
+  ],
+  [
+    //Array 4
+    {
+      Name: "Vishal",
+      role: "Event coordinator",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/vishal-gautam-655a93189",
+      img: vishal
+    },
+    {
+      Name: "Divya",
+      role: "Teach Head",
+      github: "https://github.com/divya520357",
+      linkedin: "https://www.linkedin.com/in/divya098/",
+      img: divya
+    },
+    {
+      Name: "Laksh",
+      role: "Design Head",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/lakshgambhir/",
+      img: laksh
+    }
+  ],
+  [
+    //Array 5
+    {
+      Name: "Devansh",
+      role: "Design Head",
+      github: "https://github.com/DevanshV08",
+      linkedin: "https://www.linkedin.com/in/devansh-verma/",
+      img: devansh
+    },
+    {
+      Name: "Mayank",
+      role: "Sponsorship",
+      github: "https://github.com/MayankHora",
+      linkedin: "https://www.linkedin.com/in/mayankhora/",
+      img: mayank
+    },
+    {
+      Name: "Shradha",
+      role: "Event Coordinator",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/shradha-bansal-809aa61a8/",
+      img: shradha
+    }
+  ],
+  [
+    //Array 6
+    {
+      Name: "Ankita",
+      role: "Content Head",
+      github: "",
+      linkedin: "",
+      img: ankita
+    },
+    {
+      Name: "Nishant",
+      role: "Logistics",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/nishant-bhardwaj-461592205/",
+      img: nishant
+    },
+    {
+      Name: "Anjali Sharma",
+      role: "Publicity Head",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/2609anjali/",
+      img: anjali
+    }
+  ],
+  [
+    //Array 5
+    {
+      Name: "Dev",
+      role: "Web Dev Head",
+      github: "https://github.com/doki12325",
+      linkedin: "https://www.linkedin.com/in/dev-khokhar-198ba5192/",
+      img: dev
     }
   ]
 ];
 
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: me
-    },
-    {
-      Name: "Moon",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: moon
-    },
-    {
-      Name: "Ryah Garcia",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Ryah
-    }
-  ],
-  [
-    //Array 2
-    {
-      Name: "Lyanola",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: lyin
-    },
-    {
-      Name: "Zoheb",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: zoha
-    }
-  ]
-];
+
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -250,11 +347,13 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
+  
   [{src: cfc}]
   // [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
   // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
   // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
   // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  
 ];
 
 /** Instructions
@@ -293,7 +392,7 @@ const frequentlyAskedQuestions = [
       {
         label: "I have more questions?",
         content:
-          "Reach us directly at (hacthecrisis email) we would happy to help you."
+          "Reach us directly at hackthecrisis2021@gmail.com we would happy to help you."
       },
       {
         label: "Can i volunteer?",
@@ -315,6 +414,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
+  // Mentor as JudgesInfo,
   frequentlyAskedQuestions
 };

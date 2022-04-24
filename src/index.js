@@ -19,4 +19,3 @@ ReactDOM.render(
   </div>,
   footer
 );
-

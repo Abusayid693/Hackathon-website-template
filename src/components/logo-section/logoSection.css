@@ -12,7 +12,7 @@
 }
 
 .darklogo{
-  width: 500px;
+  width: 40rem;
 
 }
 .Logo{
@@ -101,9 +101,13 @@ transition: 0.4s;
       margin-top: 10rem;
       margin-bottom: -10rem;
       /* background-color: black; */
+      display: contents;
     }
     .Logo{
      margin: 0 auto;
     }
+    /* .darklogo{
+      left: 10rem;
+    } */
   }
  

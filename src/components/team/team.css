@@ -4,10 +4,11 @@
   position: relative;
   top:0px;
   transition: top 0.2s linear;
+  
 }
 .member:hover{
-    top: -5px;
-    opacity: 0.90;
+  top: -5px;
+  opacity: 0.90;
 }
 .member img {
   width: 25rem;
@@ -16,6 +17,7 @@
   display: block;
   margin: 0 auto;
   border: 5px solid rgb(255, 194, 252);
+  object-fit: cover;
 }
 .members-link {
   text-align: center;
