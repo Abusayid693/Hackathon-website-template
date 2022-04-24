@@ -50,7 +50,7 @@ const TOP_SECTION = {
   TITLE: "Hack The Crisis 2.0",
   Typed_effect: ["36 hours of creation", "Win awesome prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 21st April to 22 April 2022 with over 500 students from across the nation for 36 hours of creation, innovation, & fun.",
+    "Join us on 21st May - 22nd May 2022 with over 500 students from across the nation for 36 hours of creation, innovation, & fun.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
