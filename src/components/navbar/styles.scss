@@ -4,6 +4,7 @@ nav {
   height: 7.5vh;
   font-size: 1.8rem;
   display: flex;
+  align-items: center;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -19,9 +20,10 @@ nav {
 .header--logo {
   width: 95px;
 }
-.header_logo{
+.header_logo {
   padding: 55vw;
-
+  display: grid;
+  place-items: center;
 }
 .s-open,
 .s-close {
@@ -40,7 +42,7 @@ ul {
   height: 100%;
 }
 
-.list--general{
+.list--general {
   padding: 20px;
 }
 
@@ -69,9 +71,8 @@ a:link {
     opacity: 0.2;
     pointer-events: none;
   }
-  .header_logo{
+  .header_logo {
     padding: 0vw;
-  
   }
   ul {
     flex-direction: column;
