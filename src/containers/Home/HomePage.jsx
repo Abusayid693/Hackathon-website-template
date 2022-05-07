@@ -1,10 +1,10 @@
-import { UseMedia } from "hooks/useMedia";
-import React, { useState } from "react";
+import {UseMedia} from "hooks/useMedia";
+import React, {useState} from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Birds from "../../components/Birds";
-import { Accordion } from "../../components/FAQ/faq.jsx";
+import {Accordion} from "../../components/FAQ/faq.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import {
   Logo,
@@ -20,8 +20,8 @@ import {
   SponsorsHead,
   SponsorUS
 } from "../../components/Sponsors/sponsors.jsx";
-import { JoinTeam, Member } from "../../components/team/team";
-import { Myinfo } from "../../components/Top-division-components/Top-division-components.jsx";
+import {JoinTeam, Member} from "../../components/team/team";
+import {Myinfo} from "../../components/Top-division-components/Top-division-components.jsx";
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -34,7 +34,6 @@ import {
 import MyCalender from "../calender";
 import "./about.css";
 import pattern from "./pattern4.png";
-
 
 function SponsorGroup(props) {
   return (
@@ -91,9 +90,8 @@ function FrequentlyAsked(props) {
 }
 
 export default function HomePage() {
-
   const [media, setMedia] = useState();
-  UseMedia('min-width', 1000, setMedia);
+  UseMedia("min-width", 1000, setMedia);
 
   return (
     <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>

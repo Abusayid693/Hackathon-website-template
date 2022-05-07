@@ -1,15 +1,16 @@
 import {
   CalenderStateTypes,
   EventArrayType
-} from '../types/calenderState.types';
+} from '../../@types/calenderState.types';
+import { CALENDER_VIEW } from "../constants";
+import { calenderStartingDate } from "../Module/General";
 
 export const initialState = {
-  index: 1,
+  index: CALENDER_VIEW,
   selectedData: [],
   selectedEvent: {},
-  month: 12,
-  year: 2021,
   dates: [],
+  ...calenderStartingDate
 };
 
 interface payloadTypes {

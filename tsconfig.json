@@ -26,7 +26,7 @@
   },
   "include": [
     "./src/**/*",
-    "src/types/**/*.d.ts",
+    "types/**/*.d.ts",
     "gatsby-browser.js",
     "gatsby-config.js",
     "gatsby-ssr.js",

@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import React, {useEffect, useRef, useState} from "react";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link";
 import styled from "styled-components";
 import HomePage from "../Home/HomePage";
 import logoClose from "./ham-c.svg";
@@ -9,9 +9,9 @@ import "./styles.scss";
 
 const Wrapper = styled.div`
   display: block;
-  width:40%;
+  width: 40%;
   margin-top: 20px;
-  
+
   @media (max-width: 1000px) {
     margin: 0;
     display: ${props => (props.toggle ? "none" : "static")};
@@ -71,9 +71,9 @@ const NAVBAR = ({}) => {
       <nav className="nav_bar" style={{backgroundColor: color}}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
-          <ul>
+            <ul>
               <li>
-                <Link   to={`#home`}>
+                <Link to={`#home`}>
                   <span className="links">Home </span>{" "}
                 </Link>
               </li>
