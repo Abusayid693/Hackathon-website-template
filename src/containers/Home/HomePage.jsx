@@ -12,6 +12,7 @@ import { Sponsor, SponsorsHead, SponsorUS } from "../../components/Sponsors/spon
 import { JoinTeam, Member } from "../../components/team/team";
 import { Myinfo } from "../../components/Top-division-components/Top-division-components.jsx";
 import { FOOTER, frequentlyAskedQuestions, JudgesInfo, Prizeinfo, sponsorLogos, TeamInfo, TOP_SECTION } from "../../Module/General";
+import MyCalender from "../calender";
 import "./about.css";
 import pattern from "./pattern4.png";
 
@@ -88,9 +89,11 @@ export default function HomePage(props) {
               <Myinfo />
             </Col>
             <Col className="d-image" sm={12} lg={5} md={4}>
-              <img src={TOP_SECTION.IMG_SRC} />
+            <MyCalender/>
             </Col>
           </Row>
+
+
 
           <Row className="mediaInfo">
             <Col className="" sm={12} lg={12} md={12}>
@@ -110,11 +113,14 @@ export default function HomePage(props) {
           </Col>
         </Row>
 
+
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
         {frequentlyAskedQuestions.map(FrequentlyAsked)}
         {/* ********Frequently asked Questions ending here ***** */}
          </div>  
+
+         
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">

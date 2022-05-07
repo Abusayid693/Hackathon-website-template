@@ -1,6 +1,6 @@
 import {
-    CalenderStateTypes,
-    EventArrayType
+  CalenderStateTypes,
+  EventArrayType
 } from '../types/calenderState.types';
 
 export const initialState = {
@@ -32,8 +32,6 @@ export const calenderReducer = (
       return {...state, index: payload.data};
     case 'SHOW_EVENTS_FOR_SELECTED_DATE':
       return {...state, selectedData: payload.data};
-    case 'SHOW_SELECTED_EVENT_DETAILS':
-      return {...state, selectedEvent: payload.data};
     case 'UPDATE_DATES':
       return {...state, dates: payload.data};
     case 'MONTH_FORWARD':
