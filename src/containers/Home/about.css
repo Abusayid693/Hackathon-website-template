@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+.Whole_div {
+  background-repeat: repeat;
+  background-size: auto 100vh;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.mediaInfo {
+  margin-top: 10vh;
+  background-size: auto 100vh;
+}
+.color_sectiom {
+  background-color: #121930;
+  padding-bottom: 5rem;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.Row {
+  text-align: center;
+}
+
+.info {
+  margin-top: 20vh;
+  color: white;
+}
+
+.d-image img {
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  top:0px;
+  transition: top 0.2s linear;
+}
+.d-image img:hover {
+opacity: 0.9;
+top: 10px;
+}
+.logoSection {
+  text-align: center;
+  padding: 20vh 10vh 0 10vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.members {
+  padding: 0vh 10vh 0 10vh;
+}
+.prizesection {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 4vh 0 4vh;
+  margin: 17vh 14vh 0 14vh;
+  border-radius: 14px;
+  margin-top: 4vh;
+  background-color: #f3effe;
+}
+.sponsorSection {
+  padding: 17vh 18vh 0 18vh;
+  margin-top: -10vh;
+  margin-top: 0vh;
+}
+.faqsSection {
+  text-align: center;
+  margin: 0 auto;
+  padding: 17vh 18vh 0 18vh;
+  margin-top: -16vh;
+}
+
+
+
+@media (max-width: 570px) {
+  .mediaInfo {
+    margin-top: 0;
+  }
+  .Whole_div {
+    background-size: auto 100vh;
+  }
+
+  .faqsSection {
+    padding: 0;
+    margin-top: 0vh;
+  }
+  .members {
+    margin: 0;
+    padding: 0;
+  }
+
+  .prizesection {
+    margin: 5vh 0 0 0;
+    padding: 17vh 0 0 4vh;
+  }
+  .sponsorSection {
+    padding: 0;
+    margin: 0;
+    margin: 12rem auto;
+  }
+  .logoSection {
+    text-align: center;
+    padding: 20vh 0vh 0 0vh;
+  }
+}

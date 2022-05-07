@@ -1,35 +1,33 @@
 // Importing all sponsors logos from Assets
-import taskade from "./Assets/sponsorsLogos/taskade.png";
-import Replit from "./Assets/sponsorsLogos/replit.png";
-import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
-import echoAR from "./Assets/sponsorsLogos/echoAR.png";
-import cfc from "./Assets/sponsorsLogos/cfc.png";
-import pass from "./Assets/sponsorsLogos/1pass.png";
-import glimpse from "./Assets/sponsorsLogos/glimpse.png";
-import qoom from "./Assets/sponsorsLogos/qoom.svg";
-import sublime from "./Assets/sponsorsLogos/sublime.png";
-import egg from "./Assets/sponsorsLogos/egg.png";
-import ll from "./Assets/sponsorsLogos/ll.png";
-import ACF from "./Assets/sponsorsLogos/ACF.png";
-
-/** Put all your sponsors logo inside folder `sponsorLogos`
- * and import them in the above and update `src` in sponsorLogos
- * or you can provide a cloud link in src
- */
-
-// Importing all Team members images  from Assets
-import me from "./Assets/teami/me.png";
-import moon from "./Assets/teami/moon.png";
-import Ryah from "./Assets/teami/Ryah.jpg";
-import lyin from "./Assets/teami/lyin.jpg";
-import zoha from "./Assets/teami/zoha.png";
-
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
  * or you can provide a cloud link in src also
  */
-
 import boy from "./Assets/boy.png";
+import pass from "./Assets/sponsorsLogos/1pass.png";
+import ACF from "./Assets/sponsorsLogos/ACF.png";
+import cfc from "./Assets/sponsorsLogos/cfc.png";
+import echoAR from "./Assets/sponsorsLogos/echoAR.png";
+import egg from "./Assets/sponsorsLogos/egg.png";
+import glimpse from "./Assets/sponsorsLogos/glimpse.png";
+import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
+import ll from "./Assets/sponsorsLogos/ll.png";
+import qoom from "./Assets/sponsorsLogos/qoom.svg";
+import Replit from "./Assets/sponsorsLogos/replit.png";
+import sublime from "./Assets/sponsorsLogos/sublime.png";
+import taskade from "./Assets/sponsorsLogos/taskade.png";
+import lyin from "./Assets/teami/lyin.jpg";
+/** Put all your sponsors logo inside folder `sponsorLogos`
+ * and import them in the above and update `src` in sponsorLogos
+ * or you can provide a cloud link in src
+ */
+// Importing all Team members images  from Assets
+import me from "./Assets/teami/me.png";
+import moon from "./Assets/teami/moon.png";
+import Ryah from "./Assets/teami/Ryah.jpg";
+import zoha from "./Assets/teami/zoha.png";
+
+
 
 
 
@@ -84,6 +82,75 @@ const FOOTER = {
     src: ""
   }
 };
+
+
+/** SCHEDULE
+ *  
+ * INSTRUCTIONS
+ * 
+ * Date format : 8-11-2021, 18-11-2021 (without trailing zeros)
+ */
+
+
+ const schedule = [
+  {
+      "day": "8-11-2021",
+      "events": [
+          {
+              "title": "Intro to phycycology",
+              "timings": "12 AM - 1 Pm",
+               "link" : "https://google.com"
+          }
+      ]
+  },
+  {
+      "day": "5-12-2021",
+      "events": [
+          {
+              "title": "Intro to deep learning",
+              "timings": "12 AM - 1 Pm",
+              "link" : "https://google.com"
+          },
+          {
+              "title": "Intro to deep learning",
+              "timings": "12 AM - 1 Pm",
+              "link" : "https://google.com"
+          }
+      ]
+  },
+  {
+      "day": "3-12-2021",
+      "events": [
+          {
+              "title": "Intro to phycycology",
+              "timings": "12 AM - 1 Pm",
+              "link" : "https://google.com"
+          }
+      ]
+  },
+  {
+      "day": "1-12-2021",
+      "events": [
+          {
+              "title": "Intro to deep learning",
+              "timings": "12 AM - 1 Pm",
+              "link" : "https://google.com"
+          }
+      ]
+  },
+  {
+    "day": "1-1-2022",
+    "events": [
+        {
+            "title": "Intro to phycycology",
+            "timings": "12 AM - 1 Pm",
+             "link" : "https://google.com"
+        }
+    ]
+},
+]
+
+
 
 /** ICON
  *
@@ -317,5 +384,6 @@ export {
   sponsorLogos,
   TeamInfo,
   JudgesInfo,
-  frequentlyAskedQuestions
+  frequentlyAskedQuestions,
+  schedule
 };

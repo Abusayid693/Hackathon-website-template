@@ -1,8 +1,8 @@
 import React from "react";
-import "./top-division-c.css";
+import { SOCIALS, TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../typing-effect/typing.js";
+import "./top-division-c.css";
 
-import {TOP_SECTION, SOCIALS} from "../../Module/General";
 
 function Btn(props) {
   return (
@@ -40,7 +40,7 @@ function Myinfo() {
           />
         </a>
       </div>
-      {/* This is judges application button */}
+      <div className="buttom-group">
       <a href={TOP_SECTION.JUDGES_FORM_LINK}>
         {" "}
         <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
@@ -50,8 +50,10 @@ function Myinfo() {
         {" "}
         <Btn class="register" type="Register " overlay="Hackers registration" />
       </a>
+      </div>
     </div>
   );
 }
 
-export {Btn, Myinfo};
+export { Btn, Myinfo };
+
