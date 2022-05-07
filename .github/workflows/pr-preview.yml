@@ -1,0 +1,35 @@
+name: Netlify development build
+
+on:
+ pull_request:
+   branches: [main]
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      
+      steps:
+      - uses: actions/checkout@v2
+        name: Checkout source code
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.0
+        with :
+           version: 16.13.0
+       
+      - name: Build the site
+        run: |
+          npm install
+          npm run build
+          
+      - name: Netlify Actions
+        uses: nwtgck/actions-netlify@v1.2.2
+        with:
+          publish-dir: './public'
+          production-branch: main
+          deploy-message: 'Preview Deploy for new Pull Request'
+          enable-pull-request-comment: true
+          enable-commit-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  
