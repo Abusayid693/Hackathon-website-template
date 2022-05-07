@@ -1,12 +1,12 @@
-import React from "react";
-import "./logoSection.css";
-import sym from "./sym.png";
+import React from 'react';
+import './logoSection.css';
+import sym from './sym.png';
 
-import logo1 from "./logo4.png";
-import logo2 from "./logo2.png";
-import logo3 from "./logo3.png";
+import logo1 from './logo4.png';
+import logo2 from './logo2.png';
+import logo3 from './logo3.png';
 
-import {MIDDLE_SECTION} from "../../Module/General";
+import {MIDDLE_SECTION} from '../../Module/General';
 
 function LogoSectionAbout() {
   return (

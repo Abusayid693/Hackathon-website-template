@@ -1,11 +1,11 @@
-import React, {useEffect, useRef, useState} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {HashLink as Link} from "react-router-hash-link";
-import styled from "styled-components";
-import HomePage from "../Home/HomePage";
-import logoClose from "./ham-c.svg";
-import hamLogo from "./ham.svg";
-import "./styles.scss";
+import React, {useEffect, useRef, useState} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
+import styled from 'styled-components';
+import HomePage from '../Home/HomePage';
+import logoClose from './ham-c.svg';
+import hamLogo from './ham.svg';
+import './styles.scss';
 
 const Wrapper = styled.div`
   display: block;
@@ -14,11 +14,11 @@ const Wrapper = styled.div`
 
   @media (max-width: 1000px) {
     margin: 0;
-    display: ${props => (props.toggle ? "none" : "static")};
+    display: ${props => (props.toggle ? 'none' : 'static')};
     height: 100vh;
     width: 100vw;
     position: fixed;
-    top: ${props => (props.toggle ? "-1000px" : "0px")};
+    top: ${props => (props.toggle ? '-1000px' : '0px')};
     transition: top 1s;
     .nav-content {
       height: 35%;
@@ -29,20 +29,20 @@ const Wrapper = styled.div`
 
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
-  const [color, setColor] = useState("#121930");
+  const [color, setColor] = useState('#121930');
 
   const navigation = useRef();
 
   const listenScrollEvent = e => {
     if (window.scrollY > 800) {
-      setColor("rgba(50, 13, 136)");
+      setColor('rgba(50, 13, 136)');
     } else {
-      setColor("#121930");
+      setColor('#121930');
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
+    window.addEventListener('scroll', listenScrollEvent);
     console.log(navigation);
   }, []);
 
@@ -55,12 +55,12 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", e =>
+    document.addEventListener('mousedown', e =>
       handleOutsideCick(e, navigation)
     );
 
     return () => {
-      document.removeEventListener("mousedown", e =>
+      document.removeEventListener('mousedown', e =>
         handleOutsideCick(e, navigation)
       );
     };
@@ -74,27 +74,27 @@ const NAVBAR = ({}) => {
             <ul>
               <li>
                 <Link to={`#home`}>
-                  <span className="links">Home </span>{" "}
+                  <span className="links">Home </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{" "}
+                  <span className="links">FAQ </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{" "}
+                  <span className="links">prizes </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{" "}
+                  <span className="links">sponsors </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">team </span>{" "}
+                  <span className="links">team </span>{' '}
                 </Link>
               </li>
               <img

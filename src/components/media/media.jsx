@@ -1,6 +1,6 @@
-import React from "react";
-import "./media.css";
-import {SOCIALS} from "../../Module/General";
+import React from 'react';
+import './media.css';
+import {SOCIALS} from '../../Module/General';
 
 export default function Media() {
   return (

@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
+import React, {useEffect} from 'react';
 
 function Linkedin() {
   useEffect(() => {
-    window.location.href = "https://www.linkedin.com/company/limbo-hacks/";
+    window.location.href = 'https://www.linkedin.com/company/limbo-hacks/';
   }, []);
   return <div></div>;
 }
