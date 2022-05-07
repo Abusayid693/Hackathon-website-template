@@ -1,6 +1,6 @@
-import React from "react";
-import "./faq.css";
-import ReactDOM from "react-dom";
+import React from 'react';
+import './faq.css';
+import ReactDOM from 'react-dom';
 
 // here
 class Panel extends React.Component {
@@ -15,7 +15,7 @@ class Panel extends React.Component {
   componentDidMount() {
     window.setTimeout(() => {
       const el = ReactDOM.findDOMNode(this);
-      const height = el.querySelector(".panel__inner").scrollHeight;
+      const height = el.querySelector('.panel__inner').scrollHeight;
       this.setState({
         height
       });

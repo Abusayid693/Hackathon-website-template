@@ -1,11 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
   min-height: 450px;
   max-height: 520px;
 
-  
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 1px 7px #ffd3cc;
@@ -72,7 +71,7 @@ export const Container = styled.div`
         &__event {
           &:after {
             position: absolute;
-            content: "";
+            content: '';
             width: 6px;
             height: 6px;
             background-color: #ff4a6f;

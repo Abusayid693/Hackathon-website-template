@@ -1,27 +1,30 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { months } from "../../constants/index";
-import { calenderContext } from '../../Context/calender.context';
-import { Flexbox } from '../../elements/Flexbox';
-import * as H from './style';
+import { calenderContext } from "../../Context/calender.context";
+import { Flexbox } from "../../elements/Flexbox";
+import * as H from "./style";
 
-
-interface actionTypes{
-    type:string;
-    data?:number|string;
+interface actionTypes {
+  type: string;
+  data?: number | string;
 }
 
 interface CalenderLayoutProps {
-    handleActionProcced?:actionTypes;
-    handleActionBack?:actionTypes
+  handleActionProcced?: actionTypes;
+  handleActionBack?: actionTypes;
 }
 
-export const CalenderLayout:React.FC<CalenderLayoutProps> = ({children,handleActionProcced,handleActionBack})=>{
-    const contextTesting = useContext(calenderContext);
-    // @ts-ignore
-    const [state,dispatch] = contextTesting;
-    return (
-        <H.Container>
-        <Flexbox className="card-top" flexRow >
+export const CalenderLayout: React.FC<CalenderLayoutProps> = ({
+  children,
+  handleActionProcced,
+  handleActionBack
+}) => {
+  const contextTesting = useContext(calenderContext);
+  // @ts-ignore
+  const [state, dispatch] = contextTesting;
+  return (
+    <H.Container>
+      <Flexbox className="card-top" flexRow>
         <h3 style={{fontSize: 20}} color="white">
           Events schedule {months[state.month - 1]} {state.year}
         </h3>
@@ -45,6 +48,6 @@ export const CalenderLayout:React.FC<CalenderLayoutProps> = ({children,handleAct
         </Flexbox>
       </Flexbox>
       {children}
-      </H.Container>
-    )
-}
+    </H.Container>
+  );
+};

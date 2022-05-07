@@ -1,8 +1,7 @@
-import React from "react";
-import { SOCIALS, TOP_SECTION } from "../../Module/General";
-import MytypedComponent from "../typing-effect/typing.js";
-import "./top-division-c.css";
-
+import React from 'react';
+import {SOCIALS, TOP_SECTION} from '../../Module/General';
+import MytypedComponent from '../typing-effect/typing.js';
+import './top-division-c.css';
 
 function Btn(props) {
   return (
@@ -41,19 +40,22 @@ function Myinfo() {
         </a>
       </div>
       <div className="buttom-group">
-      <a href={TOP_SECTION.JUDGES_FORM_LINK}>
-        {" "}
-        <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
-      </a>
+        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
+          {' '}
+          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+        </a>
 
-      <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-        {" "}
-        <Btn class="register" type="Register " overlay="Hackers registration" />
-      </a>
+        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+          {' '}
+          <Btn
+            class="register"
+            type="Register "
+            overlay="Hackers registration"
+          />
+        </a>
       </div>
     </div>
   );
 }
 
-export { Btn, Myinfo };
-
+export {Btn, Myinfo};
