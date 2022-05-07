@@ -19,9 +19,8 @@ export const CalenderLayout:React.FC<CalenderLayoutProps> = ({children,handleAct
     const [,dispatch] = contextTesting;
     return (
         <H.Container>
-        <Flexbox className="card-top" flexRow>
+        <Flexbox className="card-top" flexRow >
         <h3 style={{fontSize: 20}} color="white">
-          {/* @ts-ignore */}
           Events schedule
         </h3>
         <Flexbox flexRow className="card-top-inner">

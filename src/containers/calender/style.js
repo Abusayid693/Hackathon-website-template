@@ -1,21 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 530px;
+  width: 100%;
   min-height: 450px;
   max-height: 520px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 1px 7px #ffd3cc;
-  
+
+  margin: 20px 0;
 
   .card-top {
     background-color: #b2b2b2;
     height: 80px;
     border-radius: 8px 8px 0 0;
     padding: 0 5%;
+    overflow: auto;
+
     &-inner {
       width: 20%;
+
       &-item {
         background: #bbbbbb;
         width: 35px;
@@ -26,11 +30,18 @@ export const Container = styled.div`
           width: 95%;
         }
       }
+
+      @media only screen and (max-width: 450px) {
+        width: 30%;
+      }
     }
   }
   .card-body {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
+
+    overflow: scroll;
+
     &-header {
       width: 45px;
       height: 45px;
@@ -96,17 +107,19 @@ export const Event = styled.div`
     padding: 0;
     text-align: left;
 
-    & h3{
+    & h3 {
       font-size: 20px;
-      background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+      background-image: linear-gradient(
+        83.2deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      
     }
-    & p{
+    & p {
       font-size: 17px;
       font-weight: 500;
-
     }
   }
 
@@ -160,8 +173,7 @@ export const EventLayout = styled.div`
   }
 `;
 
-
 export const GradientBorder = styled.div`
-background: linear-gradient(to right, red, purple);
-padding: 5px;
-`
+  background: linear-gradient(to right, red, purple);
+  padding: 5px;
+`;

@@ -32,10 +32,16 @@ button {
 .join_dis {
   margin-bottom: 29px;
   margin-top: 19px;
+  
+}
+
+.buttom-group{
+  width: 100%;
+  overflow: auto;
 }
 
 .register {
-  margin-left: 9rem;
+  margin-left: 1rem;
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
 }
