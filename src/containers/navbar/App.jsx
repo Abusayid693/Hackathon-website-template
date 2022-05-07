@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   display: block;
   width:40%;
   margin-top: 20px;
-  @media (max-width: 470px) {
+  
+  @media (max-width: 1000px) {
     margin: 0;
     display: ${props => (props.toggle ? "none" : "static")};
     height: 100vh;

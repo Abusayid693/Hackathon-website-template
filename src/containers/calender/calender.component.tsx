@@ -6,7 +6,6 @@ import { calenderMainLogic } from "./calender.function";
 import { CalenderLayout } from "./calender.layout";
 import * as H from "./style";
 
-
 export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
   // @ts-ignore
@@ -20,7 +19,7 @@ export const Calender = ({data}: any) => {
     return (
       <CalenderLayout
         handleActionProcced={{type: "MONTH_FORWARD"}}
-        handleActionBack={{type: "MONTH_BACKYARD"}}
+        handleActionBack={{type: "MONTH_BACKWARD"}}
       >
         <div className="card-body">
           {["S", "M", "T", "W", "T", "F", "S"].map((day, j) => (
@@ -40,7 +39,7 @@ export const Calender = ({data}: any) => {
               }
               onClick={() => {
                 if (day.event) {
-                  dispatch({type: "UPDATE_INDEX", data: 2});
+                  dispatch({type: "UPDATE_CALENDER_VIEW", data: 2});
                   dispatch({
                     type: "SHOW_EVENTS_FOR_SELECTED_DATE",
                     data: state.dates[j].events
@@ -63,12 +62,17 @@ export const Calender = ({data}: any) => {
   } else if (state.index === EVENT_VIEW) {
     return (
       <CalenderLayout
-        handleActionBack={{type: "UPDATE_INDEX", data: 1}}
+        handleActionBack={{type: "UPDATE_CALENDER_VIEW", data: 1}}
         handleActionProcced={{type: "DISABLED"}}
       >
         <H.EventContainer>
           {state.selectedData.map((event: any, j: number) => (
-            <H.Event key={j}>
+            <H.Event
+              key={j}
+              onClick={() => {
+                window.open(event.link, "_blank");
+              }}
+            >
               <div className="event-subcard">
                 <h3>{event.title}</h3>
                 <p>{event.timings}</p>
