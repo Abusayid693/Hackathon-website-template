@@ -1,29 +1,21 @@
 import React from "react";
-import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Birds from "../../components/Birds";
+import { Accordion } from "../../components/FAQ/faq.jsx";
+import Footer from "../../components/Footer/footer.jsx";
+import { Logo, LogoSectionAbout } from "../../components/logo-section/logoSection.jsx";
+import Media from "../../components/media/media.jsx";
+import { FirstPrize, PrizeHeading } from "../../components/prize tracks/prizes.jsx";
+import { Sponsor, SponsorsHead, SponsorUS } from "../../components/Sponsors/sponsors.jsx";
+import { JoinTeam, Member } from "../../components/team/team";
+import { Myinfo } from "../../components/Top-division-components/Top-division-components.jsx";
+import { FOOTER, frequentlyAskedQuestions, JudgesInfo, Prizeinfo, sponsorLogos, TeamInfo, TOP_SECTION } from "../../Module/General";
 import "./about.css";
-import {Logo, LogoSectionAbout} from "../logo-section/logoSection.jsx";
-import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
-import {Prizeinfo} from "../../Module/General";
-import {Accordion} from "../FAQ/faq.jsx";
-import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
-
-import Birds from "../Birds/birds.jsx";
-import Footer from "../Footer/footer.jsx";
-import {Member, JoinTeam} from "../team/team.jsx";
 import pattern from "./pattern4.png";
-import Media from "../media/media.jsx";
 
-import {
-  TOP_SECTION,
-  TeamInfo,
-  JudgesInfo,
-  sponsorLogos,
-  frequentlyAskedQuestions,
-  FOOTER
-} from "../../Module/General";
+
 
 // javascript Map for sponsors
 

@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useRef} from "react";
-import HomePage from "../Main-page/HomePage";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
-import hamLogo from "./ham.svg";
-import logoClose from "./ham-c.svg";
 import styled from "styled-components";
+import HomePage from "../Home/HomePage";
+import logoClose from "./ham-c.svg";
+import hamLogo from "./ham.svg";
 import "./styles.scss";
 
 const Wrapper = styled.div`

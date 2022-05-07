@@ -4,8 +4,7 @@ import "./birds.scss";
 export default function Waves(props) {
   return (
     <div
-      className="container"
-      className={props.type}
+      className={`container ${props.type}`}
       style={{top: props.top, left: props.left}}
     >
       <div className="bird-container bird-container--one">
