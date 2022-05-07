@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from "react";
+import { CALENDER_VIEW, EVENT_VIEW } from "../../constants";
 import { calenderContext } from "../../Context/calender.context";
 import { Flexbox } from "../../elements/Flexbox";
 import { calenderMainLogic } from "./calender.function";
 import { CalenderLayout } from "./calender.layout";
 import * as H from "./style";
+
 
 export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
@@ -14,7 +16,7 @@ export const Calender = ({data}: any) => {
     calenderMainLogic(state, dispatch, data);
   }, [state.month]);
 
-  if (state.index === 1) {
+  if (state.index === CALENDER_VIEW) {
     return (
       <CalenderLayout
         handleActionProcced={{type: "MONTH_FORWARD"}}
@@ -58,7 +60,7 @@ export const Calender = ({data}: any) => {
         </div>
       </CalenderLayout>
     );
-  } else if (state.index === 2) {
+  } else if (state.index === EVENT_VIEW) {
     return (
       <CalenderLayout
         handleActionBack={{type: "UPDATE_INDEX", data: 1}}

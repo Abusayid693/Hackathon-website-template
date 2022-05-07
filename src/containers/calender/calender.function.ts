@@ -1,4 +1,4 @@
-import { weekDays } from "../../constants/week";
+import { weekDays } from "../../constants";
 import { EventArrayType } from "../../types/calenderState.types";
 
 export const getDatesForMonth = (state: any) => {

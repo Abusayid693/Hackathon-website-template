@@ -15,3 +15,7 @@ export const weekDays = [
     month: 'long',
     day: 'numeric',
   }  
+
+
+export const CALENDER_VIEW = 1
+export const EVENT_VIEW = 2
