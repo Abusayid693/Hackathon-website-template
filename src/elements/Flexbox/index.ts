@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const desktop = "@media only screen and (min-width: 992px)";
+const desktop = '@media only screen and (min-width: 992px)';
 
 interface FlexBoxTypes {
   flexRow?: boolean;
@@ -11,7 +11,7 @@ interface FlexBoxTypes {
   justifyFlexEnd?: boolean;
   justifyStart?: boolean;
   justifyEnd?: boolean;
-  justifyCenter?:boolean;
+  justifyCenter?: boolean;
   alignStart?: boolean;
   alignCenter?: boolean;
   alignEnd?: boolean;

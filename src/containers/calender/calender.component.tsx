@@ -1,10 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import { CALENDER_VIEW, EVENT_VIEW } from "../../constants";
-import { calenderContext } from "../../Context/calender.context";
-import { Flexbox } from "../../elements/Flexbox";
-import { calenderMainLogic } from "./calender.function";
-import { CalenderLayout } from "./calender.layout";
-import * as H from "./style";
+import React, {useContext, useEffect} from 'react';
+import {CALENDER_VIEW, EVENT_VIEW} from '../../constants';
+import {calenderContext} from '../../Context/calender.context';
+import {Flexbox} from '../../elements/Flexbox';
+import {calenderMainLogic} from './calender.function';
+import {CalenderLayout} from './calender.layout';
+import * as H from './style';
 
 export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
@@ -18,11 +18,11 @@ export const Calender = ({data}: any) => {
   if (state.index === CALENDER_VIEW) {
     return (
       <CalenderLayout
-        handleActionProcced={{type: "MONTH_FORWARD"}}
-        handleActionBack={{type: "MONTH_BACKWARD"}}
+        handleActionProcced={{type: 'MONTH_FORWARD'}}
+        handleActionBack={{type: 'MONTH_BACKWARD'}}
       >
         <div className="card-body">
-          {["S", "M", "T", "W", "T", "F", "S"].map((day, j) => (
+          {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
             <Flexbox alignCenter justifyCenter className="card-body-header">
               <p color="#9E9E9E">{day}</p>
             </Flexbox>
@@ -34,18 +34,18 @@ export const Calender = ({data}: any) => {
               justifyCenter
               className={
                 day.dumpDay
-                  ? "card-body-inner"
-                  : "card-body-inner card-body-inner__active"
+                  ? 'card-body-inner'
+                  : 'card-body-inner card-body-inner__active'
               }
               onClick={() => {
                 if (day.event) {
-                  dispatch({type: "UPDATE_CALENDER_VIEW", data: 2});
+                  dispatch({type: 'UPDATE_CALENDER_VIEW', data: 2});
                   dispatch({
-                    type: "SHOW_EVENTS_FOR_SELECTED_DATE",
+                    type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
                     data: state.dates[j].events
                   });
                 } else {
-                  alert("No events");
+                  alert('No events');
                 }
               }}
             >
@@ -62,15 +62,15 @@ export const Calender = ({data}: any) => {
   } else if (state.index === EVENT_VIEW) {
     return (
       <CalenderLayout
-        handleActionBack={{type: "UPDATE_CALENDER_VIEW", data: 1}}
-        handleActionProcced={{type: "DISABLED"}}
+        handleActionBack={{type: 'UPDATE_CALENDER_VIEW', data: 1}}
+        handleActionProcced={{type: 'DISABLED'}}
       >
         <H.EventContainer>
           {state.selectedData.map((event: any, j: number) => (
             <H.Event
               key={j}
               onClick={() => {
-                window.open(event.link, "_blank");
+                window.open(event.link, '_blank');
               }}
             >
               <div className="event-subcard">

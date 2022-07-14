@@ -1,6 +1,6 @@
-import React from "react";
-import { Btn } from "../Top-division-components/Top-division-components.jsx";
-import "./team.css";
+import React from 'react';
+import {Btn} from '../Top-division-components/Top-division-components.jsx';
+import './team.css';
 
 interface IJoinTeam {
   placeholder: string;
@@ -38,5 +38,4 @@ function Member({info}: {info: any}) {
   );
 }
 
-export { Member, JoinTeam };
-
+export {Member, JoinTeam};

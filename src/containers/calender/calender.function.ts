@@ -1,5 +1,5 @@
-import { EventArrayType } from "../../../@types/calenderState.types";
-import { weekDays } from "../../constants";
+import {EventArrayType} from '../../../@types/calenderState.types';
+import {weekDays} from '../../constants';
 
 export const getDatesForMonth = (state: any) => {
   const [firstDay, lastDay, lastDayOfPreviousMonth] = [
@@ -14,27 +14,27 @@ export const getDatesForMonth = (state: any) => {
     totalNumOfDays,
     totalNumOfDaysInPreviousMonths
   ] = [
-    firstDay.toLocaleDateString("en-us", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric"
+    firstDay.toLocaleDateString('en-us', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     }),
-    lastDay.toLocaleDateString("en-us", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric"
+    lastDay.toLocaleDateString('en-us', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     }),
     lastDay.getDate(),
     lastDayOfPreviousMonth.getDate()
   ];
 
-  const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(",")[0]);
+  const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(',')[0]);
   console.log(
-    firstDayOfTheMonth + " - " + lastDayOfTheMonth + "- " + totalNumOfDays
+    firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays
   );
-  console.log("Padding days :", extraDays);
+  console.log('Padding days :', extraDays);
   return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
 };
 
@@ -51,10 +51,9 @@ export const calenderMainLogic = (state: any, dispatch: any, data: any) => {
       const currentYear = state.year;
       const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
 
-
-      let obj = data.find((o:any) => o.day === currentDate);
+      let obj = data.find((o: any) => o.day === currentDate);
       if (obj) {
-        console.log("Find date in :", obj);
+        console.log('Find date in :', obj);
 
         structureToHoldDates.push({
           day: i - paddingDay,
@@ -80,5 +79,5 @@ export const calenderMainLogic = (state: any, dispatch: any, data: any) => {
     }
   }
 
-  dispatch({type: "UPDATE_DATES", data: structureToHoldDates});
+  dispatch({type: 'UPDATE_DATES', data: structureToHoldDates});
 };

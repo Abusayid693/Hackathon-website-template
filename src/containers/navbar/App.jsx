@@ -28,7 +28,6 @@ const Wrapper = styled.div`
   }
 `;
 
-
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
@@ -45,9 +44,7 @@ const NAVBAR = ({}) => {
 
   useEffect(() => {
     window.addEventListener('scroll', listenScrollEvent);
-    return ()=>
-    window.removeEventListener('scroll', listenScrollEvent);
-
+    return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
   const handleOutsideCick = (event, ref) => {
@@ -72,7 +69,7 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}` }>
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
@@ -125,6 +122,5 @@ const NAVBAR = ({}) => {
     </Router>
   );
 };
-
 
 export default NAVBAR;

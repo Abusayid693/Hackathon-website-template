@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { months } from "../../constants/index";
-import { calenderContext } from "../../Context/calender.context";
-import { Flexbox } from "../../elements/Flexbox";
-import * as H from "./style";
+import React, {useContext} from 'react';
+import {months} from '../../constants/index';
+import {calenderContext} from '../../Context/calender.context';
+import {Flexbox} from '../../elements/Flexbox';
+import * as H from './style';
 
 interface actionTypes {
   type: string;
