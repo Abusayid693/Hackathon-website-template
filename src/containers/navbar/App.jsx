@@ -3,14 +3,15 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
-import logoClose from './ham-c.svg';
-import hamLogo from './ham.svg';
+import logoClose from './assets/ham-c.svg';
+import hamLogo from './assets/ham.svg';
 import './styles.scss';
+
+const NAVIGATION_OFFSET = 66;
 
 const Wrapper = styled.div`
   display: block;
   width: 40%;
-  margin-top: 20px;
 
   @media (max-width: 1000px) {
     margin: 0;
@@ -29,21 +30,21 @@ const Wrapper = styled.div`
 
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
-  const [color, setColor] = useState('#121930');
+  const [isOffset, setIsOffset] = useState(false);
 
   const navigation = useRef();
 
   const listenScrollEvent = e => {
-    if (window.scrollY > 800) {
-      setColor('rgba(50, 13, 136)');
+    if (window.scrollY >= NAVIGATION_OFFSET) {
+      setIsOffset(true);
     } else {
-      setColor('#121930');
+      setIsOffset(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener('scroll', listenScrollEvent);
-    console.log(navigation);
+    return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
   const handleOutsideCick = (event, ref) => {
@@ -68,7 +69,7 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav className="nav_bar" style={{backgroundColor: color}}>
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
@@ -121,17 +122,5 @@ const NAVBAR = ({}) => {
     </Router>
   );
 };
-
-function Projects() {
-  return <h2>Projects here</h2>;
-}
-
-function Contact() {
-  return <h2>contact info</h2>;
-}
-
-function Links() {
-  return <h2>Home</h2>;
-}
 
 export default NAVBAR;

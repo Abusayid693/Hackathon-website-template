@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
 export const UseMedia = (query: string, val: number, setMediaQuery: any) => {
   const queryStr = `(${query}: ${val}px)`;

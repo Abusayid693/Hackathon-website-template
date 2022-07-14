@@ -1,75 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
-nav {
+.nav_bar {
   list-style-type: none;
-  height: 7.5vh;
+  height: 50px;
   font-size: 1.8rem;
   position: fixed;
   width: 100%;
   z-index: 10;
-  transition: 0.2s;
-  box-shadow: 0px 5px 10px rgba(50, 13, 136, 0.25);
-  img {
-    z-index: 1000000;
-    &:hover {
-      cursor: pointer;
-    }
+  transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #121930;
+
+  @media (min-width: 1000px) {
+    height: 88px;
   }
-}
-.s-open,
-.s-close {
-  display: none;
-}
-.nav-inner {
-  width: 30%;
-}
-ul {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  height: 100%;
-}
-nav ul li {
-  display: inline-block;
-  // margin: 2rem 0 5rem 6rem;
-}
-.links {
-  color: rgb(231, 228, 228);
-  transition: 0.5s;
-  font-weight: 300;
-  letter-spacing: 1.3px;
-}
-.links:hover {
-  color: rgb(184, 180, 180);
-}
-a:link {
-  text-decoration: none;
-  padding: 1px;
 }
 
-@media (max-width: 1000px) {
-  .ease {
-    background: #484848;
-    height: 75%;
-    opacity: 0.2;
-    pointer-events: none;
+  @media (min-width: 1000px) {
+    .nav_bar-offset-crossed {
+      background-color: #6A63B7;
+      height: 72px;
+      box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
+    }
+  }
+
+  .s-open,
+  .s-close {
+    display: none;
+  }
+  .nav-inner {
+    width: 30%;
   }
   ul {
-    flex-direction: column;
-    padding: 30px 20;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100%;
+    align-items: center;
   }
-  .s-open {
-    display: inline;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: -1;
+  nav ul li {
+    display: inline-block;
   }
-  .s-close {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  .links {
+    color: rgb(231, 228, 228);
+    transition: 0.5s;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
-}
+
+  @media (max-width: 1000px) {
+    .ease {
+      background: #484848;
+      height: 75%;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    ul {
+      flex-direction: column;
+      padding: 30px 20;
+    }
+    .s-open {
+      display: inline;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: -1;
+    }
+    .s-close {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+

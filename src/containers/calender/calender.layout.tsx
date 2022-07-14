@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { months } from "../../constants/index";
-import { calenderContext } from "../../Context/calender.context";
-import { Flexbox } from "../../elements/Flexbox";
-import * as H from "./style";
+import React, {useContext} from 'react';
+import {months} from '../../constants/index';
+import {calenderContext} from '../../Context/calender.context';
+import {Flexbox} from '../../elements/Flexbox';
+import * as H from './style';
 
 interface actionTypes {
   type: string;
@@ -14,7 +14,7 @@ interface CalenderLayoutProps {
   handleActionBack?: actionTypes;
 }
 
-export const CalenderLayout: React.FC<CalenderLayoutProps> = ({
+const CalenderLayout: React.FC<CalenderLayoutProps> = ({
   children,
   handleActionProcced,
   handleActionBack
@@ -51,3 +51,5 @@ export const CalenderLayout: React.FC<CalenderLayoutProps> = ({
     </H.Container>
   );
 };
+
+export default CalenderLayout;
