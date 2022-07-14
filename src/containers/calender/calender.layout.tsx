@@ -14,7 +14,7 @@ interface CalenderLayoutProps {
   handleActionBack?: actionTypes;
 }
 
-export const CalenderLayout: React.FC<CalenderLayoutProps> = ({
+const CalenderLayout: React.FC<CalenderLayoutProps> = ({
   children,
   handleActionProcced,
   handleActionBack
@@ -51,3 +51,5 @@ export const CalenderLayout: React.FC<CalenderLayoutProps> = ({
     </H.Container>
   );
 };
+
+export default CalenderLayout;

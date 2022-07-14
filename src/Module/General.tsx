@@ -1,8 +1,11 @@
+import hackathonLogo from './Assets/hackathonLogo.png';
+
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
  * or you can provide a cloud link in src also
  */
+
 import boy from './Assets/boy.png';
 import pass from './Assets/sponsorsLogos/1pass.png';
 import ACF from './Assets/sponsorsLogos/ACF.png';
@@ -17,11 +20,14 @@ import Replit from './Assets/sponsorsLogos/replit.png';
 import sublime from './Assets/sponsorsLogos/sublime.png';
 import taskade from './Assets/sponsorsLogos/taskade.png';
 import lyin from './Assets/teami/lyin.jpg';
+
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
  */
+
 // Importing all Team members images  from Assets
+
 import me from './Assets/teami/me.png';
 import moon from './Assets/teami/moon.png';
 import Ryah from './Assets/teami/Ryah.jpg';
@@ -54,8 +60,7 @@ const MIDDLE_SECTION = {
   TITLE: 'What is Limbo hacks?',
   LONG_DESCRIPTION:
     'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
-  LOGO_EFFECT: true,
-  LOGO: ''
+  LOGO: hackathonLogo
 };
 
 const FOOTER = {

@@ -1,101 +1,70 @@
-.logoS{
+.logoS {
   width: 390px;
   height: 390px;
   margin-top: 0;
   padding: 0;
   position: relative;
   right: 130px;
-
 }
-.Logo{
-    width: 60%;
-    display: inline-block;
-    margin: 0;
-   padding: 0;
-   position: absolute;
-}
-
-.logoS img{
-margin: 0;
-}
-.sym{
-  z-index: 4;
-  width: 120px;
-  right:17px;
-  top: 35px;
-  transition: 0.4s;
-}
-
-.logo1{
-  z-index: 3;
-  top: 0;
-  transition: 0.4s;
-
-}
-.logo2{
-z-index: 2;
-top: 21px;
-transition: 0.4s;
-
-
-}
-.logo3{
-z-index: 1;
-top: 41px;
-transition: 0.4s;
-}
-.logoS:hover .logo3{
-  top: 96px;
-}
-.logoS:hover .logo2{
-  top: 51px;
-}
-
-.LogoSectionAbout{
-    text-align: left;
-    width: 80%;
-    display: inline-block;
-    position: relative;
-    font-family: 'Nunito', sans-serif;
-}
-.LogoSectionAbout h1{
-    font-weight: 700;
-    text-align: left;
+.Logo {
+  width: 60%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 
-.Logo{
+.LogoSectionAbout {
+  text-align: left;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+}
+.LogoSectionAbout h1 {
+  font-weight: 700;
+  text-align: left;
+}
 
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-   }
-   @-webkit-keyframes mover {
-     0% { transform: translateY(0); }
-     100% { transform: translateY(-10px); }
-   }
-   @keyframes mover {
-     0% { transform: translateY(0); }
-     100% { transform: translateY(-10px); }
-   }
-
-   @media  (max-width: 570px){
-    .logoS{
-      margin-top: 10rem;
-      margin-bottom: -10rem;
-    }
-    .Logo{
-     margin: 0 auto;
-    }
+.Logo {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
   }
-
-  @media  (max-width: 570px){
-    .logoS{
-      margin-top: 10rem;
-      margin-bottom: -10rem;
-      /* background-color: black; */
-    }
-    .Logo{
-     margin: 0 auto;
-    }
+  100% {
+    transform: translateY(-10px);
   }
- 
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 570px) {
+  .logoS {
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+  }
+  .Logo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .logoS {
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    /* background-color: black; */
+  }
+  .Logo {
+    margin: 0 auto;
+  }
+}

@@ -16,14 +16,9 @@
 
   @media (min-width: 1000px) {
     .nav_bar-offset-crossed {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: #6A63B7;
       height: 72px;
-      -webkit-backdrop-filter: blur(6px);
-      backdrop-filter: blur(6px);
       box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
-      .links {
-        color: #121930;
-      }
     }
   }
 
