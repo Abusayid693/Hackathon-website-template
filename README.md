@@ -17,6 +17,10 @@
 
 Just change `src/Module/general.js` to get your hackathon portfolio. Customize and your sponsors, team-member and judges by adding images in `src/Module/Assets` . Feel free to use it as-is or personalize it as much as you want.
 
+## Prerequisites
+- Node v16.13.0
+- 8.1.0
+
 ## Table of Contents
 
 - [Sections]()
