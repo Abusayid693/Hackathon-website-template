@@ -32,12 +32,13 @@ import me from './Assets/teami/me.png';
 import moon from './Assets/teami/moon.png';
 import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
+const name = 'Defi Degen';
 
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  TITLE: name,
+  Typed_effect: ['3 days', '$1000+ in prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 21st October 2021 for 3 days of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -47,30 +48,30 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
-  discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  instagram: 'https://www.instagram.com/blockchain.at.asu/',
+  discord: 'https://discord.gg/RsFhPUXM',
+  linkedin: 'https://www.linkedin.com/company/blockchain-at-asu/',
+  twitter: 'https://twitter.com/blockchainASU',
+  devpost: '',
+  email: ''
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
-  LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+  TITLE: `What is ${name}?`,
+  LONG_DESCRIPTION: `${name} is a weekend long hackathon which will be held on October 21-23, We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at ${name} will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of people attending.`,
   LOGO: hackathonLogo
 };
 
 const FOOTER = {
   VOLUNTEERING_FORM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    src:
+      'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
   },
   JOIN_TEAM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    src:
+      'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
   },
   Privacy_policy: {
     required: true,
