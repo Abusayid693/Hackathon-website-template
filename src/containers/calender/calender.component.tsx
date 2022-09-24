@@ -14,7 +14,7 @@ const CalenderView = () => {
   return (
     <div className="card-body">
       {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
-        <Flexbox alignCenter justifyCenter className="card-body-header">
+        <Flexbox key={j} alignCenter justifyCenter className="card-body-header">
           <p color="#9E9E9E">{day}</p>
         </Flexbox>
       ))}
@@ -38,6 +38,7 @@ const CalenderView = () => {
               alert('No events');
             }
           }}
+          key={j}
         >
           {day.event ? (
             <p className="card-body-inner__active__event">{day.day}</p>
