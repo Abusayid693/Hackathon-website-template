@@ -35,56 +35,56 @@ import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern4.png';
 
-function SponsorGroup(props) {
+const SponsorGroup = (props, index) => {
   return (
-    <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+    <Row key={index}>
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={6}>
           {' '}
           <Sponsor srcx={s.src} />{' '}
         </Col>
       ))}
     </Row>
   );
-}
+};
 
 // Prize group
-function PrizeGroup(props) {
+const PrizeGroup = (props, index) => {
   return (
-    <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
+    <Row key={index}>
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
 // Prize group ending
-function TeamMembers(props) {
+const TeamMembers = (props, index) => {
   return (
-    <Row className="members">
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
+    <Row key={index} className="members">
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
-function FrequentlyAsked(props) {
+const FrequentlyAsked = (props, index) => {
   return (
-    <Row className="sf">
-      {props.map(s => (
-        <Col className="" sm={12} lg={6} md={6}>
+    <Row key={index} className="sf">
+      {props.map((s, i) => (
+        <Col key={i} sm={12} lg={6} md={6}>
           <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
 export default function HomePage() {
   const [media, setMedia] = useState();

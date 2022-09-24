@@ -31,9 +31,6 @@ export const getDatesForMonth = (state: any) => {
   ];
 
   const extraDays = weekDays.indexOf(firstDayOfTheMonth.split(',')[0]);
-  console.log(
-    firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays
-  );
   return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
 };
 
