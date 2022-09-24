@@ -56,7 +56,7 @@ function PrizeGroup(props) {
   return (
     <Row>
       {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+        <Col className="" sm={12} lg={4} md={4}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
