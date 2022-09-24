@@ -1,3 +1,5 @@
+import { Dispatch } from "react";
+
 export interface EventType {
     title: string;
     timings: string;
@@ -27,3 +29,28 @@ export interface EventType {
     year: number;
     dates: EventArrayType[];
   }
+
+  export interface Action {
+    type:
+      | 'UPDATE_CALENDER_VIEW'
+      | 'SHOW_EVENTS_FOR_SELECTED_DATE'
+      | 'UPDATE_DATES'
+      | 'MONTH_BACKWARD'
+      | 'MONTH_FORWARD'
+      | 'SHOW_SELECTED_EVENT_DETAILS';
+    data: number | string | EventArrayType[];
+  }
+
+  export interface State {
+    month: number;
+    year: number;
+    index: number;
+    selectedData: any[];
+    selectedEvent: {};
+    dates: any[];
+}
+
+export interface ContextType{
+  state:State;
+  dispatch: Dispatch<Action>;
+}

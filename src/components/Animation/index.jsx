@@ -1,5 +1,4 @@
-import React from 'react';
-import './birds.scss';
+import './style.scss';
 
 export default function Waves(props) {
   return (

@@ -1,27 +1,21 @@
 import {UseMedia} from 'hooks/useMedia';
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Birds from '../../components/Birds';
-import {Accordion} from '../../components/FAQ/faq.jsx';
-import Footer from '../../components/Footer/footer.jsx';
-import {
-  Logo,
-  LogoSectionAbout
-} from '../../components/logo-section/logoSection.jsx';
-import Media from '../../components/media/media.jsx';
-import {
-  FirstPrize,
-  PrizeHeading
-} from '../../components/prize-tracks/prizes.jsx';
+import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
+import {Accordion} from '../../components/Accordian/index.jsx';
+import Birds from '../../components/Animation';
+import Footer from '../../components/Footer/index.jsx';
+import {Myinfo} from '../../components/Landing/index.jsx';
+import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
+import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/team/team';
-import {Myinfo} from '../../components/Top-division-components/Top-division-components.jsx';
+import {JoinTeam, Member} from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,

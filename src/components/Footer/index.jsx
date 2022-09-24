@@ -1,18 +1,19 @@
-import React, {useEffect, useState} from 'react';
-import './footer.scss';
-import Insta from './icons8-instagram.svg';
-import Dis from './icons8-discord.svg';
-import Linked from './icons8-linkedin-2.svg';
-import Mail from './icons8-mail.svg';
-import DevPost from './icons8-dev-post.svg';
-import PrivacyPolicy from './Privacy policy.pdf';
-import TermsOfUse from './Terms of use.pdf';
-import Twitter from './icons8-twitter.svg';
-import {Btn} from '../Top-division-components/Top-division-components.jsx';
-import cross from './cross.svg';
-import {SOCIALS, TOP_SECTION, FOOTER} from '../../Module/General';
+import {useEffect, useState} from 'react';
+import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
+import {Btn} from '../Landing/index.jsx';
+import cross from './assets/cross.svg';
+import DevPost from './assets/icons8-dev-post.svg';
+import Dis from './assets/icons8-discord.svg';
+import Insta from './assets/icons8-instagram.svg';
+import Linked from './assets/icons8-linkedin-2.svg';
+import Mail from './assets/icons8-mail.svg';
+import Twitter from './assets/icons8-twitter.svg';
+import PrivacyPolicy from './assets/Privacy policy.pdf';
+import TermsOfUse from './assets/Terms of use.pdf';
+//------------------------------------------------------------------
+import './style.scss';
 
-function GithubTemplate({hideTemplate}) {
+const GithubTemplate = ({hideTemplate}) => {
   return (
     <div className="template">
       <div className="template-left">
@@ -26,9 +27,9 @@ function GithubTemplate({hideTemplate}) {
       <img onClick={hideTemplate} src={cross} />
     </div>
   );
-}
+};
 
-export default function Footer() {
+const Footer = () => {
   const [template, setTemplate] = useState(false);
   const [viewTemplate, setViewTemplate] = useState(true);
 
@@ -126,4 +127,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
+};
+
+export default Footer;

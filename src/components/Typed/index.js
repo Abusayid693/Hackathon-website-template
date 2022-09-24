@@ -1,7 +1,6 @@
-import React from 'react';
 import Typed from 'react-typed';
-import './typing.css';
 import {TOP_SECTION} from '../../Module/General';
+import './style.css';
 
 export default function MytypedComponent() {
   return (

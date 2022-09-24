@@ -1,7 +1,6 @@
-import React from 'react';
-import './sponsors.scss';
-import {Btn} from '../Top-division-components/Top-division-components.jsx';
 import {SOCIALS} from '../../Module/General';
+import {Btn} from '../Landing/index.jsx';
+import './sponsors.scss';
 
 function SponsorsHead() {
   return <h1 className="shead">Sponsors & Partners</h1>;

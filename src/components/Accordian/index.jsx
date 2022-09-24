@@ -1,8 +1,7 @@
 import React from 'react';
-import './faq.css';
 import ReactDOM from 'react-dom';
+import './style.css';
 
-// here
 class Panel extends React.Component {
   constructor(props) {
     super(props);

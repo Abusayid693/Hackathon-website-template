@@ -1,16 +1,16 @@
-import React, {useContext, useEffect} from 'react';
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
+import {useContext, useEffect} from 'react';
 import {CALENDER_VIEW} from '../../constants';
 import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../../elements/Flexbox';
 import {calenderMainLogic} from './calender.function';
 import CalenderLayout from './calender.layout';
-import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
 
 import * as H from './style';
 
 const CalenderView = () => {
   const contextTesting = useContext(calenderContext);
-  const [state, dispatch] = contextTesting as any;
+  const {state, dispatch} = contextTesting;
   return (
     <div className="card-body">
       {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
@@ -53,7 +53,7 @@ const CalenderView = () => {
 
 const EventsView = () => {
   const contextTesting = useContext(calenderContext);
-  const [state] = contextTesting as any;
+  const {state} = contextTesting as any;
   return (
     <H.EventContainer>
       {state.selectedData.map((event: any, j: number) => (
@@ -76,7 +76,7 @@ const EventsView = () => {
 
 export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
-  const [state, dispatch] = contextTesting as any;
+  const {state, dispatch} = contextTesting;
 
   useEffect(() => {
     calenderMainLogic(state, dispatch, data);
