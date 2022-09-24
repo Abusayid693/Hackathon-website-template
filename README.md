@@ -1,9 +1,7 @@
-# Hackathon website Folio template ⚡️ 
+# Hackathon website Folio template ⚡️
 
 ![](https://img.shields.io/github/repo-size/Limbo-Hacks/Hackathon-website-template)
 ![](https://img.shields.io/github/commit-activity/m/Limbo-Hacks/Hackathon-website-template)
-
-
 
 ## A clean, beautiful and mobile responsive portfolio template for your upcoming hackathon!
 
@@ -11,15 +9,17 @@
 
 ![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202021-08-14%20at%2010.42.16%20PM.gif)
 
-**For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)** 
+**For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)**
 
 Just change `src/Module/general.js` to get your hackathon portfolio. Customize and your sponsors, team-member and judges by adding images in `src/Module/Assets` . Feel free to use it as-is or personalize it as much as you want.
 
 ## [Prerequisites]()
+
 - Node js : 8.1.0
 - NPM : 8.1.0
 
 ## [Netlify configuration variables](https://docs.netlify.com/configure-builds/environment-variables/)
+
 - CI: false
 - NODE_VERSION: 8.1.0
 - NPM : 8.1.0
@@ -36,7 +36,10 @@ Just change `src/Module/general.js` to get your hackathon portfolio. Customize a
 ---
 
 ## [Website Sections]()
+
 ✔️ General hackathon Info.
+
+✔️ Hackathon calender with schedule.
 
 ✔️ Registrations links.
 
@@ -60,7 +63,6 @@ Just change `src/Module/general.js` to get your hackathon portfolio. Customize a
 
 To view a live example, [click here](https://limbohacks.tech).
 
-
 ## [Getting Started]()
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -74,17 +76,16 @@ git@2.17.1 or higher
 
 ```
 
-
 1. Clone the repo.
+
 ```bash
 git clone https://github.com/Abusayid693/Type-writer.git
 ```
 
-
 2.Starting the Client application.
 
 ```bash
-cd hackathon-templete 
+cd hackathon-templete
 
 # install all packages
 
@@ -93,12 +94,15 @@ npm install
 # start the server
 npm start
 ```
-`This will start client app on localhost:3000`  
+
+`This will start client app on localhost:3000`
 
 ## [Linking Portfolio to your Github]()
+
 In order to deploy the website in github pages you need to set you few things.
 
 Make sure you are on the root directory.
+
 ```bash
 #remove the remote repository
 git remote rm origin
@@ -110,20 +114,18 @@ git remote -v
 2. After creating the repository, copy the repo URL.
 
 ```bash
-> git remote add origin "YOUR REPO URL" 
+> git remote add origin "YOUR REPO URL"
 
 # you should see your repo here
-> git remote -v 
+> git remote -v
 
 # Now you can push/publish it to your own repository!
-git push origin master 
+git push origin master
 
 # Wolla! It’s committed to your GitHub repository.
 ```
 
 If you are having any difficulties [click here](https://dev.to/dance2die/push-git-cloned-repository-to-your-own-on-github-1ili)
-
-
 
 ## [Change and customize every section according to your need]()
 
@@ -173,7 +175,7 @@ const MIDDLE_SECTION = {
   TITLE: "What is Limbo hacks?",
   LONG_DESCRIPTION:
     "Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th ........",
-  // keep LOGO_EFFECT to false 
+  // keep LOGO_EFFECT to false
   LOGO_EFFECT: false,
   // Your hackathon logo src
   LOGO: ""
@@ -214,7 +216,7 @@ const Prizeinfo = [
 
 
 
-/*Add your team members 
+/*Add your team members
  *INFORTANT : please follow the instructions provided in Genereal.js file above TeamInfo  */
 
 /*Put your team member images in Assets/team and simply import them*/
@@ -231,7 +233,7 @@ import moon from "./Assets/team/moon.png";
       github: "",
       linkedin: "",
       img: Rehan
-    }, 
+    },
 
 
 
@@ -241,7 +243,7 @@ import interviewCake from "./Assets/sponsorsLogos/interview-cake.jpg";
 import echoAR from "./Assets/sponsorsLogos/echoAR.png";
 
  const sponsorLogos = [
-  [{src: interviewCake}, {src: echoAR}, {src: echoAR}], //Array 1     
+  [{src: interviewCake}, {src: echoAR}, {src: echoAR}], //Array 1
   [....
 
 
@@ -260,40 +262,47 @@ const frequentlyAskedQuestions  = [
       },....
 ```
 
-
 #### Using General logos.
 
 We have used social and prize sections logos from [Fontawesome](http://fontawesome.com), you just need to create a free account and copy paste ` <i class="fab fourth fa-3x fa-wpbeginner"></i>` tag from fontawesome.
 Feel free to make changes in logos
 
+## [Meta Tags]()
 
-## [Deployment]()
+Change meta tags content in `/public/index.html`
 
-When you are done with the setup, you should host your website online. We highly recommend to read through the Deploying on Github Pages docs for React.
-
-Move to package.json
-
-```javascript
-// package.json
-{
-  "homepage": "https://limbo-hacks.github.io/Hackathon-website-template/",
-  "name": "hackathon-website-template",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {....
-  
-// Change homepage to = "https://{YOUR_USER_NAME}.github.io/{REPO_NAME}/"  
+```html
+<meta name="author" content="LimboHacks" />
+<meta
+  name="description"
+  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun."
+/>
+<meta itemprop="name" content="LimboHacks" />
+<meta
+  name="google-site-verification"
+  content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E"
+/>
+<meta property="og:title" content="Limbo Hacks 2021" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@limbohacks" />
+<meta name="twitter:creator" content="@limbohacks" />
+<meta property="og:url" content="https://limbohacks.tech" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="851" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image:alt" content="Limbo hacks" />
+<meta property="og:image" content="https://i.imgur.com/bxP3Jz1.png" />
+<meta
+  property="og:image:secure_url"
+  content="https://i.imgur.com/bxP3Jz1.png"
+/>
+<meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" />
+<meta
+  property="og:description"
+  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
+/>
 ```
-```bash
-git add .
-git commit -m "Preparing for deployment"
-git push origin main
-# Deploy command
-npm run deploy
-
-# Your website is live in "https://{YOUR_USER_NAME}.github.io/{REPO_NAME}/"
-```
-
 
 ## [Technologies Used]()
 

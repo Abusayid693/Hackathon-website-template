@@ -14,7 +14,7 @@ import Media from '../../components/media/media.jsx';
 import {
   FirstPrize,
   PrizeHeading
-} from '../../components/prize tracks/prizes.jsx';
+} from '../../components/prize-tracks/prizes.jsx';
 import {
   Sponsor,
   SponsorsHead,
@@ -33,7 +33,7 @@ import {
 } from '../../Module/General';
 import MyCalender from '../calender';
 import './about.css';
-import pattern from './pattern4.png';
+import pattern from './assets/pattern4.png';
 
 function SponsorGroup(props) {
   return (
@@ -48,15 +48,12 @@ function SponsorGroup(props) {
   );
 }
 
-// javascript Map for sponsors end
-
 // Prize group
-
 function PrizeGroup(props) {
   return (
     <Row>
       {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+        <Col className="" sm={12} lg={4} md={4}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}

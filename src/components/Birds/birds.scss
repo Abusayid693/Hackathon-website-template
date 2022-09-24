@@ -5,14 +5,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 35rem;
+	min-height: 15rem;
     width: 100%;
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem 0;
+	padding: 0;
     z-index: 0;
     overflow: hidden;
+	pointer-events: none;
 }
 
 .bird {
@@ -24,6 +25,7 @@
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
+	pointer-events: none;
 
 	&--one {
 		animation-duration: 1s;

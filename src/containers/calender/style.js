@@ -7,7 +7,6 @@ export const Container = styled.div`
 
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0px 1px 7px #ffd3cc;
 
   margin: 20px 0;
 
@@ -27,6 +26,9 @@ export const Container = styled.div`
         height: 35px;
         border-radius: 50%;
         cursor: pointer;
+        &__disabled {
+          opacity: 0.3;
+        }
         & img {
           width: 95%;
         }

@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
 .Whole_div {
   background-repeat: repeat;
   background-size: auto 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 }
 .mediaInfo {
@@ -13,6 +13,12 @@
   background-color: #121930;
   padding-bottom: 5rem;
 }
+.container-fluid {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   text-align: center;
   font-size: 5rem;
@@ -30,12 +36,12 @@ h1 {
   width: 100%;
   position: relative;
   transition: 0.3s;
-  top:0px;
+  top: 0px;
   transition: top 0.2s linear;
 }
 .d-image img:hover {
-opacity: 0.9;
-top: 10px;
+  opacity: 0.9;
+  top: 10px;
 }
 .logoSection {
   text-align: center;
@@ -50,11 +56,16 @@ top: 10px;
   text-align: center;
   margin: 0 auto;
   padding: 0 4vh 0 4vh;
-  margin: 17vh 14vh 0 14vh;
+  margin: 17vh 0vh 0 0vh;
   border-radius: 14px;
   margin-top: 4vh;
   background-color: #f3effe;
 }
+
+.Prizes{
+  width: 100%;
+}
+
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
   margin-top: -10vh;
@@ -66,8 +77,6 @@ top: 10px;
   padding: 17vh 18vh 0 18vh;
   margin-top: -16vh;
 }
-
-
 
 @media (max-width: 570px) {
   .mediaInfo {
