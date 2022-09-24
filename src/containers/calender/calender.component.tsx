@@ -11,7 +11,6 @@ import * as H from './style';
 const CalenderView = () => {
   const contextTesting = useContext(calenderContext);
   const [state, dispatch] = contextTesting as any;
-
   return (
     <div className="card-body">
       {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
@@ -53,7 +52,6 @@ const CalenderView = () => {
 
 const EventsView = () => {
   const contextTesting = useContext(calenderContext);
-
   const [state] = contextTesting as any;
   return (
     <H.EventContainer>

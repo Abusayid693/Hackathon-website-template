@@ -13,6 +13,7 @@ margin-top: 10px;
   display: block;
   width: 100%;
   background: none;
+  border-radius: 12px;
   border: none;
   text-align: left;
   padding: 27px 65px 27px 30px;
@@ -22,6 +23,8 @@ margin-top: 10px;
   transition: color 0.1s linear;
   cursor: pointer;
   color: black;
+  height: fit-content;
+
 }
 .panel__label:focus {
   outline: none;
@@ -43,9 +46,6 @@ margin-top: 10px;
 }
 .panel[aria-expanded="true"] .panel__content {
   opacity: 1;
-}
-.panel[aria-expanded="true"] .panel__label {
-  color: #41403f;
 }
 .panel[aria-expanded="true"] .panel__label:before {
   transform: rotate(0deg);

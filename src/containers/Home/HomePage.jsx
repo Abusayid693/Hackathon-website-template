@@ -14,7 +14,7 @@ import Media from '../../components/media/media.jsx';
 import {
   FirstPrize,
   PrizeHeading
-} from '../../components/prize tracks/prizes.jsx';
+} from '../../components/prize-tracks/prizes.jsx';
 import {
   Sponsor,
   SponsorsHead,
@@ -33,7 +33,7 @@ import {
 } from '../../Module/General';
 import MyCalender from '../calender';
 import './about.css';
-import pattern from './pattern4.png';
+import pattern from './assets/pattern4.png';
 
 function SponsorGroup(props) {
   return (
@@ -48,10 +48,7 @@ function SponsorGroup(props) {
   );
 }
 
-// javascript Map for sponsors end
-
 // Prize group
-
 function PrizeGroup(props) {
   return (
     <Row>
