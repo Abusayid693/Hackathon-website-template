@@ -1,7 +1,4 @@
-import {
-  CalenderStateTypes,
-  EventArrayType
-} from '../../types/calenderState.types';
+import {Action, State} from '../../types/calenderState.types';
 import {CALENDER_VIEW} from '../constants';
 import {calenderStartingDate} from '../Module/General';
 
@@ -13,28 +10,14 @@ export const initialState = {
   ...calenderStartingDate
 };
 
-interface payloadTypes {
-  type:
-    | 'UPDATE_CALENDER_VIEW'
-    | 'SHOW_EVENTS_FOR_SELECTED_DATE'
-    | 'UPDATE_DATES'
-    | 'MONTH_BACKWARD'
-    | 'MONTH_FORWARD'
-    | 'SHOW_SELECTED_EVENT_DETAILS';
-  data?: number | string | EventArrayType[];
-}
-
-export const calenderReducer = (
-  state: CalenderStateTypes,
-  payload: payloadTypes
-) => {
+export const calenderReducer = (state: State, payload: Action): State => {
   switch (payload.type) {
     case 'UPDATE_CALENDER_VIEW':
-      return {...state, index: payload.data};
+      return {...state, index: payload.data as number};
     case 'SHOW_EVENTS_FOR_SELECTED_DATE':
-      return {...state, selectedData: payload.data};
+      return {...state, selectedData: payload.data as any[]};
     case 'UPDATE_DATES':
-      return {...state, dates: payload.data};
+      return {...state, dates: payload.data as any[]};
     case 'MONTH_FORWARD': {
       if (state.month === 12) return {...state, month: 1, year: state.year + 1};
       return {...state, month: state.month + 1};

@@ -1,9 +1,8 @@
-import React from 'react';
 import {SOCIALS, TOP_SECTION} from '../../Module/General';
-import MytypedComponent from '../typing-effect/typing.js';
-import './top-division-c.css';
+import MytypedComponent from '../Typed/index.js';
+import './style.css';
 
-function Btn(props) {
+const Btn = props => {
   return (
     <button className={props.class}>
       <i className={props.ico}></i>
@@ -13,18 +12,18 @@ function Btn(props) {
       </div>
     </button>
   );
-}
+};
 
-function About() {
+const About = () => {
   return (
     <div className="AboutMe">
       <h2>{TOP_SECTION.TITLE}</h2>
       <MytypedComponent />
     </div>
   );
-}
+};
 
-function Myinfo() {
+const Myinfo = () => {
   return (
     <div className="Myinfo">
       <About />
@@ -56,6 +55,6 @@ function Myinfo() {
       </div>
     </div>
   );
-}
+};
 
 export {Btn, Myinfo};
