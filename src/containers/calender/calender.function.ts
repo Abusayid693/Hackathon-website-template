@@ -1,4 +1,4 @@
-import {EventArrayType} from '../../../@types/calenderState.types';
+import {EventArrayType} from '../../../types/calenderState.types';
 import {weekDays} from '../../constants';
 
 export const getDatesForMonth = (state: any) => {
@@ -34,7 +34,6 @@ export const getDatesForMonth = (state: any) => {
   console.log(
     firstDayOfTheMonth + ' - ' + lastDayOfTheMonth + '- ' + totalNumOfDays
   );
-  console.log('Padding days :', extraDays);
   return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
 };
 
@@ -53,8 +52,6 @@ export const calenderMainLogic = (state: any, dispatch: any, data: any) => {
 
       let obj = data.find((o: any) => o.day === currentDate);
       if (obj) {
-        console.log('Find date in :', obj);
-
         structureToHoldDates.push({
           day: i - paddingDay,
           event: true,

@@ -1,7 +1,7 @@
 import {
   CalenderStateTypes,
   EventArrayType
-} from '../../@types/calenderState.types';
+} from '../../types/calenderState.types';
 import {CALENDER_VIEW} from '../constants';
 import {calenderStartingDate} from '../Module/General';
 

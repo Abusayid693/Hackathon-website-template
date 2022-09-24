@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {months} from '../../constants/index';
 import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../../elements/Flexbox';
+import {CALENDER_VIEW} from '../../constants';
 import * as H from './style';
 
 interface actionTypes {
@@ -20,8 +21,7 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
   handleActionBack
 }) => {
   const contextTesting = useContext(calenderContext);
-  // @ts-ignore
-  const [state, dispatch] = contextTesting;
+  const [state, dispatch] = contextTesting as any;
   return (
     <H.Container>
       <Flexbox className="card-top" flexRow>
@@ -40,7 +40,9 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
           <Flexbox
             justifyCenter
             alignCenter
-            className="card-top-inner-item"
+            className={`card-top-inner-item ${
+              state.index !== CALENDER_VIEW && 'card-top-inner-item__disabled'
+            }`}
             onClick={() => dispatch(handleActionProcced)}
           >
             N

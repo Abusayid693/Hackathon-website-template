@@ -4,6 +4,7 @@
   background-size: auto 100vh;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  background-color: red;
 }
 .mediaInfo {
   margin-top: 10vh;
@@ -12,7 +13,14 @@
 .color_sectiom {
   background-color: #121930;
   padding-bottom: 5rem;
+  
 }
+.container-fluid{
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   text-align: center;
   font-size: 5rem;

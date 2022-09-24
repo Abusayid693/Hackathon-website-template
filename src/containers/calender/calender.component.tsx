@@ -4,9 +4,9 @@ import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../../elements/Flexbox';
 import {calenderMainLogic} from './calender.function';
 import CalenderLayout from './calender.layout';
-import * as H from './style';
-// @ts-ignore
 import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
+
+import * as H from './style';
 
 const CalenderView = () => {
   const contextTesting = useContext(calenderContext);
@@ -19,8 +19,7 @@ const CalenderView = () => {
           <p color="#9E9E9E">{day}</p>
         </Flexbox>
       ))}
-      {/* @ts-ignore */}
-      {state.dates.map((day, j) => (
+      {state.dates.map((day: any, j: any) => (
         <Flexbox
           alignCenter
           justifyCenter
@@ -55,7 +54,7 @@ const CalenderView = () => {
 const EventsView = () => {
   const contextTesting = useContext(calenderContext);
 
-  const [state, dispatch] = contextTesting as any;
+  const [state] = contextTesting as any;
   return (
     <H.EventContainer>
       {state.selectedData.map((event: any, j: number) => (

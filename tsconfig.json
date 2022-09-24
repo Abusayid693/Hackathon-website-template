@@ -27,10 +27,6 @@
   "include": [
     "./src/**/*",
     "types/**/*.d.ts",
-    "gatsby-browser.js",
-    "gatsby-config.js",
-    "gatsby-ssr.js",
-    "gatsby-node.js"
   ],
   "exclude": [
     "node_modules",

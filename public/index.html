@@ -38,17 +38,13 @@
     <title>React App</title>
   </head>
   <body onload="removeLoader()" class="day-mode">
-    <div id="loader"></div>
     <div id="body"></div>
     <div id="footer"></div>
     <style>
-      body {
-        position: relative;
-        background-repeat: no-repeat;
-      }
       #body {
         position: relative;
         overflow: hidden;
+        background-repeat: no-repeat;
       }
       @media (max-width: 900px) {
         body {
@@ -58,12 +54,5 @@
       }
     </style>
     <script src="../js/main.js"></script>
-    <script>
-      function removeLoader() {
-        setTimeout(() => {
-          document.getElementById("footer").style.display = "none";
-        }, 200);
-      }
-    </script>
   </body>
 </html>
