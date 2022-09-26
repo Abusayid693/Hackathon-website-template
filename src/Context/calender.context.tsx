@@ -1,15 +1,23 @@
-import React, {createContext, useMemo, useReducer} from 'react';
+import React, {createContext, Reducer, useMemo, useReducer} from 'react';
+import {Action, ContextType, State} from '../../types/calenderState.types';
 import {calenderReducer, initialState} from '../reducers/calender.reducer';
 
-export const calenderContext = createContext(initialState);
+export const calenderContext = createContext<ContextType>(null as any);
 
 export const CalenderContextProvider: React.FC = ({children}) => {
-  // @ts-ignore
-  const [state, dispatch] = useReducer(calenderReducer, initialState);
-  const value = useMemo(() => [state, dispatch], [state]);
+  const [state, dispatch] = useReducer<Reducer<State, Action>>(
+    calenderReducer,
+    initialState
+  );
+  const value: ContextType = useMemo(
+    () => ({
+      state,
+      dispatch
+    }),
+    [state]
+  );
 
   return (
-    // @ts-ignore
     <calenderContext.Provider value={value}>
       {children}
     </calenderContext.Provider>

@@ -1,26 +1,24 @@
-import React, {useContext, useEffect} from 'react';
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
+import {useContext, useEffect} from 'react';
 import {CALENDER_VIEW} from '../../constants';
 import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../../elements/Flexbox';
 import {calenderMainLogic} from './calender.function';
 import CalenderLayout from './calender.layout';
+
 import * as H from './style';
-// @ts-ignore
-import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
 
 const CalenderView = () => {
   const contextTesting = useContext(calenderContext);
-  const [state, dispatch] = contextTesting as any;
-
+  const {state, dispatch} = contextTesting;
   return (
     <div className="card-body">
       {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
-        <Flexbox alignCenter justifyCenter className="card-body-header">
+        <Flexbox key={j} alignCenter justifyCenter className="card-body-header">
           <p color="#9E9E9E">{day}</p>
         </Flexbox>
       ))}
-      {/* @ts-ignore */}
-      {state.dates.map((day, j) => (
+      {state.dates.map((day: any, j: any) => (
         <Flexbox
           alignCenter
           justifyCenter
@@ -40,6 +38,7 @@ const CalenderView = () => {
               alert('No events');
             }
           }}
+          key={j}
         >
           {day.event ? (
             <p className="card-body-inner__active__event">{day.day}</p>
@@ -54,8 +53,7 @@ const CalenderView = () => {
 
 const EventsView = () => {
   const contextTesting = useContext(calenderContext);
-
-  const [state, dispatch] = contextTesting as any;
+  const {state} = contextTesting as any;
   return (
     <H.EventContainer>
       {state.selectedData.map((event: any, j: number) => (
@@ -78,7 +76,7 @@ const EventsView = () => {
 
 export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
-  const [state, dispatch] = contextTesting as any;
+  const {state, dispatch} = contextTesting;
 
   useEffect(() => {
     calenderMainLogic(state, dispatch, data);

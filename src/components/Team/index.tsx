@@ -1,6 +1,6 @@
 import React from 'react';
-import {Btn} from '../Top-division-components/Top-division-components.jsx';
-import './team.css';
+import {Btn} from '../Landing/index.jsx';
+import './style.css';
 
 interface IJoinTeam {
   placeholder: string;
@@ -19,7 +19,7 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
   );
 };
 
-function Member({info}: {info: any}) {
+const Member = ({info}: {info: any}) => {
   const {github, role, name, img, linkedin} = info;
   return (
     <div className="member">
@@ -36,6 +36,6 @@ function Member({info}: {info: any}) {
       </div>
     </div>
   );
-}
+};
 
 export {Member, JoinTeam};

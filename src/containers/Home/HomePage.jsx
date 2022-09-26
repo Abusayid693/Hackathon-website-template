@@ -1,27 +1,21 @@
 import {UseMedia} from 'hooks/useMedia';
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Birds from '../../components/Birds';
-import {Accordion} from '../../components/FAQ/faq.jsx';
-import Footer from '../../components/Footer/footer.jsx';
-import {
-  Logo,
-  LogoSectionAbout
-} from '../../components/logo-section/logoSection.jsx';
-import Media from '../../components/media/media.jsx';
-import {
-  FirstPrize,
-  PrizeHeading
-} from '../../components/prize tracks/prizes.jsx';
+import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
+import {Accordion} from '../../components/Accordian/index.jsx';
+import Birds from '../../components/Animation';
+import Footer from '../../components/Footer/index.jsx';
+import {Myinfo} from '../../components/Landing/index.jsx';
+import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
+import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/team/team';
-import {Myinfo} from '../../components/Top-division-components/Top-division-components.jsx';
+import {JoinTeam, Member} from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -33,61 +27,58 @@ import {
 } from '../../Module/General';
 import MyCalender from '../calender';
 import './about.css';
-import pattern from './pattern4.png';
+import pattern from './assets/pattern4.png';
 
-function SponsorGroup(props) {
+const SponsorGroup = (props, index) => {
   return (
-    <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+    <Row key={index}>
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={6}>
           {' '}
           <Sponsor srcx={s.src} />{' '}
         </Col>
       ))}
     </Row>
   );
-}
-
-// javascript Map for sponsors end
+};
 
 // Prize group
-
-function PrizeGroup(props) {
+const PrizeGroup = (props, index) => {
   return (
-    <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+    <Row key={index}>
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
 // Prize group ending
-function TeamMembers(props) {
+const TeamMembers = (props, index) => {
   return (
-    <Row className="members">
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
+    <Row key={index} className="members">
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
-function FrequentlyAsked(props) {
+const FrequentlyAsked = (props, index) => {
   return (
-    <Row className="sf">
-      {props.map(s => (
-        <Col className="" sm={12} lg={6} md={6}>
+    <Row key={index} className="sf">
+      {props.map((s, i) => (
+        <Col key={i} sm={12} lg={6} md={6}>
           <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
-}
+};
 
 export default function HomePage() {
   const [media, setMedia] = useState();

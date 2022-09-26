@@ -1,5 +1,4 @@
-import React from 'react';
-import './logoSection.css';
+import './style.css';
 
 import {MIDDLE_SECTION} from '../../Module/General';
 
