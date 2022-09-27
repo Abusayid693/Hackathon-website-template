@@ -11,6 +11,28 @@ function LogoSectionAbout() {
   );
 }
 
+function AgendaCard(props) {
+  return (
+    <div className="AgendaCard">
+      <div className="card">
+        <div className="card-body">
+          <h3 className="card-title AgendaTitle">{props.TITLE}</h3>
+          <p className="card-text AgendaText">{props.DESCRIPTION}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SectionAgendaAbout() {
+  return (
+    <div className="SectionAgendaAbout">
+      <h2>{MIDDLE_SECTION.AGENDA_TITLE}</h2>
+      <div className="AgendaCards">{MIDDLE_SECTION.AGENDA.map(AgendaCard)}</div>
+    </div>
+  );
+}
+
 function Logo() {
   return (
     <div className="logoS">
@@ -19,4 +41,4 @@ function Logo() {
   );
 }
 
-export {Logo, LogoSectionAbout};
+export {Logo, LogoSectionAbout, SectionAgendaAbout};

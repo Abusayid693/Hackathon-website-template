@@ -7,8 +7,6 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 
-import {MdxContent} from '../Mdx';
-
 const NAVIGATION_OFFSET = 66;
 
 const Wrapper = styled.div`
@@ -25,33 +23,12 @@ const Wrapper = styled.div`
     transition: top 1s;
     .nav-content {
       height: 35%;
-      background-color: rgba(50, 13, 136);
+      background-color: #54127d;
     }
   }
 `;
 
-// const MdxContent = () => {
-//   return (
-//     <div
-//       style={{
-//         backgroundColor: 'red'
-//       }}
-//     >
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-
-//     </div>
-//   );
-// };
-
-const NAVBAR = ({}) => {
+const NAVBAR = () => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
@@ -125,6 +102,7 @@ const NAVBAR = ({}) => {
                 className="s-close"
                 onClick={() => setToggle(true)}
                 src={logoClose}
+                alt="close"
               />
             </ul>
           </div>
@@ -134,13 +112,11 @@ const NAVBAR = ({}) => {
           className="s-open"
           onClick={() => setToggle(false)}
           src={hamLogo}
+          alt="ham"
         />
       </nav>
 
       <Switch>
-        <Route path="/blog" exact={true}>
-          <MdxContent />
-        </Route>
         <Route path="/" exact={true}>
           <HomePage />
         </Route>

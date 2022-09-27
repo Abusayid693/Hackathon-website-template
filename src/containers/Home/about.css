@@ -9,8 +9,8 @@
   margin-top: 10vh;
   background-size: auto 100vh;
 }
-.color_sectiom {
-  background-color: #121930;
+.color_section {
+  background-color: #57058b;
   padding-bottom: 5rem;
 }
 .container-fluid {
@@ -30,6 +30,16 @@ h1 {
 .info {
   margin-top: 20vh;
   color: white;
+}
+
+.info2 {
+  color: white;
+}
+
+.topLogoCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .d-image img {
@@ -62,7 +72,7 @@ h1 {
   background-color: #f3effe;
 }
 
-.Prizes{
+.Prizes {
   width: 100%;
 }
 

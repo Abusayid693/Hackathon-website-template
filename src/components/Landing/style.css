@@ -15,14 +15,14 @@ button {
   border-radius: 19px;
   font-size: 2rem;
   color: rgb(255, 255, 255);
-  background-color: #6A63B7;
+  background-color: #e1e32a;
   font-weight: 300;
   position: relative;
 }
 
 .join_disco {
   width: 25rem;
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
+  background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
 }
 
 .join_disco i {
@@ -32,10 +32,20 @@ button {
 .join_dis {
   margin-bottom: 29px;
   margin-top: 19px;
-  
 }
 
-.buttom-group{
+.topLogoContainer {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topLogo {
+  width: 70%;
+}
+
+.buttom-group {
   width: 100%;
   overflow: auto;
 }
@@ -77,13 +87,13 @@ p {
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
   border-radius: 12px;
 }
 
 .overlay-text {
   font-weight: 300;
-  color: #2C4677;
+  color: #2c4677;
   font-size: 17px;
   position: absolute;
   top: 50%;
