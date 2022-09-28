@@ -1,7 +1,8 @@
 {
-  "name": "hackathon-website-template",
+  "name": "moinho_hackathon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://moinho-hackathon.github.io",
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@mdx-js/loader": "^1.6.22",
@@ -37,7 +38,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,15 +66,14 @@
     "gh-pages": "^3.2.3",
     "husky": "^7.0.0"
   },
-  "description": "### Thanks [ella](https://github.com/eilla1) for design snippets",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Limbo-Hacks/Limbo-hacks-website.git"
+    "url": "git+https://github.com/TiagoGouvea/hackathon-moinho-website-template"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Limbo-Hacks/Limbo-hacks-website/issues"
+    "url": "https://github.com/TiagoGouvea/hackathon-moinho-website-template/issues"
   }
 }
