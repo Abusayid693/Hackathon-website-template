@@ -35,7 +35,7 @@ function SectionAgendaAbout() {
 
 function Logo() {
   return (
-    <div className="logoS">
+    <div className="logoS hidden-sm hidden-xs">
       <img className="Logo" src={MIDDLE_SECTION.LOGO} alt="Limbohacks" />
     </div>
   );

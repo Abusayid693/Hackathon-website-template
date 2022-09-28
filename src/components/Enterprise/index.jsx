@@ -6,10 +6,10 @@ function topicItem(props) {
   return (
     <div className="topicItem">
       <Row className="topicRow">
-        <Col sm={2} lg={1} md={2}>
+        <Col sm={2} lg={2} md={2}>
           {props.ICON}
         </Col>
-        <Col sm={10} lg={11} md={10}>
+        <Col sm={10} lg={10} md={10}>
           {props.DESCRIPTION}
         </Col>
       </Row>

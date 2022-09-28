@@ -1,0 +1,23 @@
+.SectionCamping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.imgContainer {
+  max-width: 700px;
+  margin-bottom: 5rem;
+}
+
+.campingImg {
+  margin-bottom: 20px;
+}
+
+.campingDescription {
+  font-weight: bold;
+  color: #fff;
+}

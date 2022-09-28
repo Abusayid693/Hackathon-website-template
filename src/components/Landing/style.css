@@ -61,6 +61,12 @@ button {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.sponsor_btn {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
 p {
   font-size: 2rem;
   line-height: 1.6;
@@ -83,7 +89,7 @@ p {
   bottom: 0;
   left: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgb(33, 33, 33);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -92,8 +98,8 @@ p {
 }
 
 .overlay-text {
-  font-weight: 300;
-  color: #2c4677;
+  font-weight: 700;
+  color: #ffffff;
   font-size: 17px;
   position: absolute;
   top: 50%;

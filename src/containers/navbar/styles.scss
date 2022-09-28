@@ -21,6 +21,7 @@
   }
 }
 
+.navLogo,
 .s-open,
 .s-close {
   display: none;
@@ -61,6 +62,15 @@ nav ul li {
   ul {
     flex-direction: column;
     padding: 30px 20;
+  }
+
+  .navLogo {
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
   }
   .s-open {
     display: inline;

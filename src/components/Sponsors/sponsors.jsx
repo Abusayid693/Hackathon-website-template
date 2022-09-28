@@ -3,14 +3,22 @@ import {Btn} from '../Landing/index.jsx';
 import './sponsors.scss';
 
 function SponsorsHead() {
-  return <h1 className="shead">Sponsors & Partners</h1>;
+  return <h2 className="shead">Parceiros</h2>;
 }
 
 function Sponsor(props) {
   return (
-    <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
-    </div>
+    <a
+      className="sponsorLink"
+      target="_blank"
+      rel="noopener noreferrer"
+      href={props.link}
+    >
+      <div className="Sponsor">
+        <img src={props.srcx} alt="Hackathon moinho"></img>
+        <p>{props.name}</p>
+      </div>
+    </a>
   );
 }
 

@@ -11,9 +11,15 @@
 }
 .color_section {
   background-color: #57058b;
+  padding-bottom: 8rem;
+}
+
+.yellow_section {
+  background-color: #f9d71c;
   padding-bottom: 5rem;
 }
-.container-fluid {
+
+.limiter {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +39,8 @@ h1 {
 }
 
 .info2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   color: white;
 }
 
@@ -56,8 +64,7 @@ h1 {
 .logoSection {
   text-align: center;
   padding: 20vh 10vh 0 10vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .members {
   padding: 0vh 10vh 0 10vh;
@@ -65,10 +72,11 @@ h1 {
 .prizesection {
   text-align: center;
   margin: 0 auto;
-  padding: 0 4vh 0 4vh;
+  padding: 0 4vh 24px 4vh;
   margin: 17vh 0vh 0 0vh;
-  border-radius: 14px;
-  margin-top: 4vh;
+  border-radius: 16px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   background-color: #f3effe;
 }
 
@@ -106,8 +114,7 @@ h1 {
   }
 
   .prizesection {
-    margin: 5vh 0 0 0;
-    padding: 17vh 0 0 4vh;
+    padding: 24px 5vh 24px 5vh;
   }
   .sponsorSection {
     padding: 0;

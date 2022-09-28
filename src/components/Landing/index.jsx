@@ -25,7 +25,7 @@ const About = () => {
 
 const MoinhoLogo = () => {
   return (
-    <div className="topLogoContainer">
+    <div className="topLogoContainer hidden-xs hidden-sm">
       <img className="topLogo" src={TOP_SECTION.LOGO} alt="Moinho" />
     </div>
   );
@@ -40,7 +40,7 @@ const Myinfo = () => {
       <div className="buttom-group">
         <a href={TOP_SECTION.ACTION_BTN}>
           {' '}
-          <Btn class="sponsor_btn" type="Me avise" overlay="Me avise" />
+          <Btn class="sponsor_btn" type="Me avise" overlay="Ir!" />
         </a>
       </div>
     </div>

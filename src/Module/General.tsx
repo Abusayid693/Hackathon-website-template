@@ -2,15 +2,18 @@ import hackathonBanner from './Assets/hackathonBanner.jpeg';
 import hackathonLogo from './Assets/hackathonLogo.png';
 import moinhoLogo from './Assets/moinhoLogo.png';
 
+// Camping
+import camping1 from './Assets/Camping/camping_1.jpeg';
+
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
  * or you can provide a cloud link in src also
  */
 
-import cfc from './Assets/sponsorsLogos/cfc.png';
-import echoAR from './Assets/sponsorsLogos/echoAR.png';
-import sublime from './Assets/sponsorsLogos/sublime.png';
+import gdgjf from './Assets/sponsorsLogos/gdgjf.png';
+import pfj from './Assets/sponsorsLogos/pjf.png';
+import zero40 from './Assets/sponsorsLogos/zero40.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -19,7 +22,7 @@ import sublime from './Assets/sponsorsLogos/sublime.png';
 
 const TOP_SECTION = {
   BANNER: hackathonBanner,
-  TITLE: 'Moinho',
+  TITLE: '1º Festival de Inovação Social',
   Typed_effect: [
     '24 horas de evento',
     '24 horas de aprendizado',
@@ -113,29 +116,29 @@ const EVENT_SECTION = {
   ACTIVITIES: [
     [
       {
-        icon: 'fas fa-award',
+        icon: <i className="first fas fa-4x fa-walking"></i>,
         title: 'Just Dance Now'
       },
       {
-        icon: 'fas fa-award',
+        icon: <i className="second fas fa-4x fa-users"></i>,
         title: 'Roda de conversa com empreendedores'
       },
       {
-        icon: 'fas fa-award',
+        icon: <i className="third fas fa-4x fa-chalkboard-teacher"></i>,
         title: 'Interação com mentores'
       }
     ],
     [
       {
-        icon: 'fas fa-award',
+        icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
         title: 'Competições paralelas'
       },
       {
-        icon: <i className="fa-sharp fa-solid fa-om"></i>,
+        icon: <i className="third fas fa-4x fa-om"></i>,
         title: 'Prática de Yoga'
       },
       {
-        icon: 'fas fa-award',
+        icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
       }
     ]
@@ -143,78 +146,10 @@ const EVENT_SECTION = {
 };
 
 const CAMPING_PARTY_SECTION = {
-  imgs: [],
+  imgs: [camping1],
   DESCRIPTION:
     'Na hora que bater aquele cansaço.. o que pode ser melhor que deitar na sua barraca e tirar um cochilo? Teremos um camping em uma área reservada do evento, um espaço para desligar e descansar.'
 };
-
-/** ICON
- *
- * icons are from fontawesome visit = https://fontawesome.com
- * and just copy paste icon links and update icon in Prizeinfo
- *
- * INSTRUCTIONS
- *
- * Insert only 3 or less then 3 prizes per array in `Prizeinfo`, you can
- * create as many arrays you want all prizes will be rendered
- * in a group of 3.
- */
-
-const Prizeinfo = [
-  [
-    //Array 1
-    {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'overall First',
-      content:
-        'First Overall prize will be given to a project that outstands all other submissions'
-    },
-    {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'overall Second',
-      content:
-        'Second Overall prize will be given to the second best project of the hackathon'
-    },
-    {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'Third Second',
-      content:
-        'Best third overall project of the hackathon will win some awesome prizes'
-    }
-  ],
-  [
-    //Array 2
-    {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'Best Solo',
-      content:
-        'You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team'
-    },
-    {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
-      content: 'Your project will qualify for this category if atleast 50% '
-    },
-    {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: 'Best UI/UX',
-      content: 'Project with most creative designs will be UI/UX track'
-    }
-  ],
-  [
-    //Array 3
-    {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'Best Web App with Qoom',
-      content: 'Must use qoom in your project to win this category'
-    },
-    {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: 'More prizes',
-      content: 'More prizes will be revealed later'
-    }
-  ]
-];
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -225,17 +160,18 @@ const Prizeinfo = [
 const sponsors = [
   [
     {
-      src: cfc,
+      src: pfj,
       name: 'Prefeitura de Juiz de Fora',
       link: 'https://www.pjf.mg.gov.br/'
     },
-    {src: sublime, name: 'GDGJF', link: 'https://gdgjf.github.io/'},
-    {src: echoAR, name: 'Zero40', link: 'https://zero40.com.br/'}
-  ] //Array 1
+    {src: gdgjf, name: 'GDGJF', link: 'https://gdgjf.github.io/'},
+    {src: zero40, name: 'Zero40', link: 'https://zero40.com.br/'}
+  ]
 ];
 
 const FORM_SECTION = {
-  TITLE: 'Seja avisado quando abrirem as inscrições'
+  TITLE: 'Seja avisado quando abrirem as inscrições',
+  IMG: hackathonBanner
 };
 
 const FOOTER = {
@@ -243,7 +179,7 @@ const FOOTER = {
     name: 'Moinho',
     link: 'https://www.nossomoinho.com/'
   },
-  organizer: {
+  organization: {
     name: 'Tiago Gouvêa',
     link: 'https://www.linkedin.com/in/tiagogouvea/'
   }
@@ -255,7 +191,7 @@ export {
   ENTERPRISE_SECTION,
   EVENT_SECTION,
   SOCIALS,
-  Prizeinfo,
+  CAMPING_PARTY_SECTION,
   FORM_SECTION,
   sponsors,
   FOOTER

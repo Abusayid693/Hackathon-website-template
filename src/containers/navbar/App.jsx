@@ -1,3 +1,4 @@
+import {TOP_SECTION} from 'Module/General';
 import {useEffect, useRef, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
@@ -70,6 +71,7 @@ const NAVBAR = () => {
   return (
     <Router>
       <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+        <img className="navLogo" src={TOP_SECTION.LOGO} alt="logo" />
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
@@ -79,23 +81,23 @@ const NAVBAR = () => {
                 </Link>
               </li>
               <li>
-                <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{' '}
+                <Link to={`#agenda`}>
+                  <span className="links">Agenda </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
+                <Link to={`#activities`}>
+                  <span className="links">Atividades </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
+                <Link to={`#form`}>
+                  <span className="links">Me avise </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
+                <Link to={`#partners`}>
+                  <span className="links">Parceiros </span>{' '}
                 </Link>
               </li>
               <img
@@ -108,6 +110,7 @@ const NAVBAR = () => {
           </div>
           <div className="ease" />
         </Wrapper>
+
         <img
           className="s-open"
           onClick={() => setToggle(false)}
