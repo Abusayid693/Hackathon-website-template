@@ -1,5 +1,3 @@
-import './style.css';
-
 import {MIDDLE_SECTION} from '../../Module/General';
 
 function LogoSectionAbout() {
@@ -11,9 +9,9 @@ function LogoSectionAbout() {
   );
 }
 
-function AgendaCard(props) {
+function AgendaCard(props, index) {
   return (
-    <div className="AgendaCard">
+    <div key={index} className="AgendaCard">
       <div className="card">
         <div className="card-body">
           <h3 className="card-title AgendaTitle">{props.TITLE}</h3>
@@ -28,7 +26,9 @@ function SectionAgendaAbout() {
   return (
     <div className="SectionAgendaAbout">
       <h2>{MIDDLE_SECTION.AGENDA_TITLE}</h2>
-      <div className="AgendaCards">{MIDDLE_SECTION.AGENDA.map(AgendaCard)}</div>
+      <div className="AgendaCards">
+        {MIDDLE_SECTION.AGENDA.map((props, i) => AgendaCard(props, i))}
+      </div>
     </div>
   );
 }

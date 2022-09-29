@@ -1,5 +1,3 @@
-import './style.scss';
-
 function PrizeHeading(props) {
   return (
     <div className="PrizeHeading">

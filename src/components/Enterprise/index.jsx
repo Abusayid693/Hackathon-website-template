@@ -1,10 +1,9 @@
 import {Col, Row} from 'react-bootstrap';
 import {ENTERPRISE_SECTION} from '../../Module/General';
-import './style.css';
 
-function topicItem(props) {
+function topicItem(props, i) {
   return (
-    <div className="topicItem">
+    <div key={i} className="topicItem">
       <Row className="topicRow">
         <Col sm={2} lg={2} md={2}>
           {props.ICON}
@@ -23,7 +22,7 @@ function SectionEnterprise() {
       <h2>{ENTERPRISE_SECTION.TITLE}</h2>
       <p>{ENTERPRISE_SECTION.SHORT_DESCRIPTION}</p>
       <div className="topicList">
-        {ENTERPRISE_SECTION.TOPICS.map(topicItem)}
+        {ENTERPRISE_SECTION.TOPICS.map((props, i) => topicItem(props, i))}
       </div>
     </div>
   );

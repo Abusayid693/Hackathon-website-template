@@ -2,14 +2,8 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
-    "jsx": "react-jsx",
-    "lib": [
-      "dom",
-      "esnext",
-      "es5",
-      "es6",
-      "dom.iterable"
-    ],
+    "jsx": "preserve",
+    "lib": ["dom", "esnext", "es5", "es6", "dom.iterable"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -22,15 +16,9 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "incremental": true
   },
-  "include": [
-    "./src/**/*",
-    "types/**/*.d.ts",
-  ],
-  "exclude": [
-    "node_modules",
-    "public",
-    ".cache"
-  ]
+  "include": ["./src/**/*", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "public", ".cache"]
 }

@@ -1,9 +1,9 @@
-import hackathonBanner from './Assets/hackathonBanner.jpeg';
-import hackathonLogo from './Assets/hackathonLogo.png';
-import moinhoLogo from './Assets/moinhoLogo.png';
+const hackathonBanner = '/Assets/hackathonBanner.jpeg';
+const hackathonLogo = '/Assets/hackathonLogo.png';
+const moinhoLogo = '/Assets/moinhoLogo.png';
 
 // Camping
-import camping1 from './Assets/Camping/camping_1.jpeg';
+const camping1 = '/Assets/Camping/camping_1.jpeg';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -11,9 +11,9 @@ import camping1 from './Assets/Camping/camping_1.jpeg';
  * or you can provide a cloud link in src also
  */
 
-import gdgjf from './Assets/sponsorsLogos/gdgjf.png';
-import pfj from './Assets/sponsorsLogos/pjf.png';
-import zero40 from './Assets/sponsorsLogos/zero40.png';
+const gdgjf = '/Assets/sponsorsLogos/gdgjf.png';
+const pfj = '/Assets/sponsorsLogos/pjf.png';
+const zero40 = '/Assets/sponsorsLogos/zero40.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos

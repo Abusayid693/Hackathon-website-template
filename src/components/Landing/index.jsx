@@ -1,6 +1,5 @@
 import {TOP_SECTION} from '../../Module/General';
 import MytypedComponent from '../Typed/index.js';
-import './style.css';
 
 const Btn = props => {
   return (
