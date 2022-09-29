@@ -1,16 +1,15 @@
 import {Col, Row} from 'react-bootstrap';
 import {FORM_SECTION} from '../../Module/General';
-import './style.css';
 
 function SectionForm() {
   return (
     <div className="formSection">
       <Row className="formRow">
-        <Col lg={8} md={8} className="hidden-sm hidden-xs">
+        <Col lg={8} md={8} className="formImg hidden-sm hidden-xs">
           <div
             className="formImg"
-            style={{backgroundImage: `url(${FORM_SECTION.IMG})`}}
-          ></div>
+            style={{backgroundImage: 'url(/Assets/hackathonBanner.jpeg)'}}
+          />
         </Col>
         <Col sm={12} lg={4} md={4}>
           <div className="formTitle">

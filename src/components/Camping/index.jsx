@@ -1,6 +1,5 @@
 import {Col, Row} from 'react-bootstrap';
 import {CAMPING_PARTY_SECTION} from '../../Module/General';
-import './style.css';
 
 function SectionCamping() {
   return (

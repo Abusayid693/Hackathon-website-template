@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 import {FOOTER} from '../../Module/General';
 //------------------------------------------------------------------
-import './style.scss';
 
 const Footer = () => {
   const [template, setTemplate] = useState(false);

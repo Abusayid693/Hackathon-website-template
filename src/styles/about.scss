@@ -1,0 +1,64 @@
+// About
+.logoS {
+  width: 390px;
+  height: 320px;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+  right: 130px;
+}
+.Logo {
+  width: 60%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.LogoSectionAbout {
+  text-align: left;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+}
+.LogoSectionAbout h1 {
+  font-weight: 700;
+  text-align: left;
+}
+
+.SectionAgendaAbout {
+  text-align: left;
+  border: 3px dotted #e1e32a;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 24px;
+}
+
+.AgendaCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.AgendaCard {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #57058b;
+}
+
+.AgendaTitle {
+  font-weight: 700;
+  text-align: left;
+  color: white;
+}
+
+.AgendaText {
+  font-weight: 400;
+  text-align: left;
+  color: white;
+}

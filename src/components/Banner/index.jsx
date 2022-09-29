@@ -1,5 +1,3 @@
-import './style.css';
-
 import {TOP_SECTION} from '../../Module/General';
 
 const Banner = () => {
