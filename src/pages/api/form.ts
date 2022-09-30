@@ -8,10 +8,25 @@ export default async function handler(
   try {
     const {name, email, phone} = _req.body;
     const parsedEmail = email.trim().toLowerCase();
+    // Verify if email is valid
+    if (!parsedEmail || !parsedEmail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/g))
+      throw new Error('Invalid email');
+
+    // Verify if phone is valid
+    if (
+      !phone ||
+      !phone.match(
+        /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/g
+      )
+    )
+      throw new Error('Invalid phone');
+
+    // Verify if name is valid
+    if (!name) throw new Error('Invalid name');
 
     const sheetId = process.env.GOOGLE_SHEET_ID || '';
-    const sheetEmail = process.env.GOOGLE_SHEET_EMAIL || '';
-    const sheetPrivateKey = process.env.GOOGLE_SHEET_PRIVATE_KEY || '';
+    const sheetEmail = process.env.GOOGLE_SHEET_API_EMAIL || '';
+    const sheetPrivateKey = process.env.GOOGLE_SHEET_API_PRIVATE_KEY || '';
 
     const doc = new GoogleSpreadsheet(sheetId);
     doc.useServiceAccountAuth({
@@ -22,13 +37,7 @@ export default async function handler(
     await doc.loadInfo();
 
     const sheet = doc.sheetsByIndex[0];
-    const columnValues = sheet.headerValues;
-    const expectedHeader = ['Nome', 'Email', 'Whatsapp', 'Label', 'Data'];
-    if (
-      !columnValues ||
-      !expectedHeader.every(value => columnValues.includes(value))
-    )
-      return res.status(500).json({error: 'Invalid sheet header'});
+    await sheet.setHeaderRow(['Nome', 'Email', 'Whatsapp', 'Label', 'Data']);
 
     await sheet.addRow({
       Nome: name,
@@ -39,7 +48,8 @@ export default async function handler(
     });
 
     return res.status(200).json(true);
-  } catch {
-    return res.status(500).json({error: 'Error'});
+  } catch (e) {
+    console.log(e);
+    return res.status(500).json({error: e});
   }
 }

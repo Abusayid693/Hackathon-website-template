@@ -12,13 +12,13 @@ const handleSubmit = e => {
   for (let entry of formData.entries()) {
     data[entry[0]] = entry[1];
   }
-  console.log(data);
+
   const requestOptions = {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   };
-  fetch(`${baseUrl}/api/form`, requestOptions)
+  fetch(`/api/form`, requestOptions)
     .then(response => response.json())
     .then(data => console.log(data));
 };
