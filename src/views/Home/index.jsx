@@ -70,8 +70,8 @@ export default function HomePage() {
             <LogoSectionAbout />
           </Col>
         </Row>
-        <Row className="info-div">
-          <Col>
+        <Row className="Row">
+          <Col className="info-div">
             <SectionAgendaAbout />
           </Col>
         </Row>

@@ -1,5 +1,5 @@
-const hackathonBanner = '/Assets/hackathonBanner.jpeg';
-const hackathonLogo = '/Assets/hackathonLogo.png';
+const hackathonBanner = '/Assets/hackathonBanner.jpg';
+const hackathonLogo = '/Assets/hackthon_branco.png';
 const moinhoLogo = '/Assets/moinhoLogo.png';
 
 // Camping
@@ -32,7 +32,7 @@ const TOP_SECTION = {
     '24 horas de programação e inovação para resolver os principais problemas de saúde e educação da nossa região',
   SHORT_DESCRIPTION: 'Dias 12 e 13 de Novembro no Moinho Zona Norte',
   ACTION_BTN: '#form',
-  LOGO: moinhoLogo
+  LOGO: hackathonLogo
 };
 
 const SOCIALS = {

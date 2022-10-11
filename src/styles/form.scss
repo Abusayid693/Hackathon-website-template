@@ -10,15 +10,31 @@
   height: 100%;
 }
 
+.formTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #010101;
+  margin-bottom: 36px;
+}
+
 .formContainer {
   border-radius: 25px;
-  border: 4px dashed #9f1fe9;
+  border: 4px dashed #010101;
   width: 100%;
-  height: 80%;
-  max-width: 600px;
+  height: 100%;
+  max-width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }
 
 .formContainer input {
@@ -49,13 +65,14 @@
 }
 
 .formBtn {
-  background-color: #9f1fe9;
+  border: 2px solid #010101;
+  background-color: #010101;
   color: #fff;
   transition: ease-in-out 0.5s;
 }
 
 .formBtn:hover {
-  border: 2px solid #9f1fe9;
+  border: 2px solid #b4ff00;
   background-color: transparent;
   color: rgb(36, 36, 36);
 }

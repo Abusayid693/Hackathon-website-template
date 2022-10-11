@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     transition: top 1s;
     .nav-content {
       height: 35%;
-      background-color: #54127d;
+      background-color: #010101;
     }
   }
 `;

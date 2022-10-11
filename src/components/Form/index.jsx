@@ -27,13 +27,7 @@ function SectionForm() {
   return (
     <div className="formSection">
       <Row className="formRow">
-        <Col lg={8} md={8} className="formImg hidden-sm hidden-xs">
-          <div
-            className="formImg"
-            style={{backgroundImage: 'url(/Assets/hackathonBanner.jpeg)'}}
-          />
-        </Col>
-        <Col sm={12} lg={4} md={4}>
+        <Col sm={12} lg={12} md={12}>
           <div className="formTitle">
             <h2>{FORM_SECTION.TITLE}</h2>
           </div>
