@@ -1,6 +1,5 @@
 const hackathonBanner = '/Assets/hackathonBanner.jpg';
 const hackathonLogo = '/Assets/hackthon_branco.png';
-const moinhoLogo = '/Assets/moinhoLogo.png';
 
 // Camping
 const camping1 = '/Assets/Camping/camping_1.jpeg';
