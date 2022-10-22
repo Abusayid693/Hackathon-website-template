@@ -30,7 +30,7 @@ const TOP_SECTION = {
   ],
   LONG_DESCRIPTION:
     '24 horas de programação e inovação para resolver os principais problemas de saúde e educação da nossa região',
-  SHORT_DESCRIPTION: 'Dias 12 e 13 de Novembro no Moinho Zona Norte',
+  SHORT_DESCRIPTION: 'Dias 19 e 20 de Novembro no Moinho Zona Norte',
   ACTION_BTN: '#form',
   LOGO: moinhoLogo
 };
@@ -49,20 +49,20 @@ const MIDDLE_SECTION = {
   TITLE: 'O Hackathon',
   LONG_DESCRIPTION:
     'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
-  AGENDA_TITLE: 'Agenda (preliminar)',
+  AGENDA_TITLE: 'Agenda simplificada',
   AGENDA: [
     {
-      TITLE: 'Sábado, 12 de Novembro',
+      TITLE: 'Sábado, 19 de Novembro',
       DESCRIPTION:
         'Abriremos o espaço para o credenciamento pela manhã, e após o almoço teremos a abertura oficial do evento, com a largada para o Hackathon logo em seguida.'
     },
     {
       TITLE: 'Ideias, projetos e programação',
       DESCRIPTION:
-        '24 horas para pensar em soluções, propor projetos, montar equipes e desenvolver.'
+        '24 horas para pensar em soluções, propor projetos, montar equipes e desenvolver inovações para melhorar nossa realiadade.'
     },
     {
-      TITLE: 'Domingo, 13 de Novembro',
+      TITLE: 'Domingo, 20 de Novembro',
       DESCRIPTION:
         'Antes do almoço fecharemos o envio de projetos, com apresentação de cada projeto desenvolvido. Em seguida haverá a premiação dos melhores projetos e de todos os demais participantes.'
     }
@@ -116,9 +116,9 @@ const EVENT_SECTION = {
   ACTIVITIES: [
     [
       {
-        icon: <i className="first fas fa-4x fa-walking"></i>,
-        title: 'Just Dance Now'
-      },
+        icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
+        title: 'Competições paralelas'
+      }, 
       {
         icon: <i className="second fas fa-4x fa-users"></i>,
         title: 'Roda de conversa com empreendedores'
@@ -130,13 +130,14 @@ const EVENT_SECTION = {
     ],
     [
       {
-        icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
-        title: 'Competições paralelas'
+        icon: <i className="first fas fa-4x fa-walking"></i>,
+        title: 'Just Dance Now'
       },
       {
         icon: <i className="third fas fa-4x fa-om"></i>,
         title: 'Prática de Yoga'
       },
+      
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
