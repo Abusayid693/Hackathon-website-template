@@ -26,12 +26,14 @@ const handleSubmit = e => {
 function SectionForm() {
   return (
     <div className="formSection">
-      <Row className="formRow">
-        <Col sm={12} lg={12} md={12}>
+      <Row className="flex-column justify-content-center align-items-center">
+        <Col>
           <div className="formTitle">
             <h2>{FORM_SECTION.TITLE}</h2>
           </div>
-          <div className="formContainer center-block">
+        </Col>
+        <Col className="d-flex justify-content-center" sm={12} lg={5} md={5}>
+          <div className="formContainer">
             <form className="form-horizontal" onSubmit={handleSubmit}>
               <div className="form-group">
                 <input

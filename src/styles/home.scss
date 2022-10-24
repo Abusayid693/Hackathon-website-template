@@ -20,6 +20,11 @@
   padding-bottom: 5rem;
 }
 
+.grey_section {
+  background-color: #151515;
+  padding-bottom: 5rem;
+}
+
 .limiter {
   max-width: 1500px;
   margin-left: auto;
@@ -63,16 +68,21 @@ h1 {
   top: 10px;
 }
 .logoSection {
-  text-align: center;
-  padding: 20vh 10vh 0 10vh;
+  text-align: left;
+  padding: 10vh 10vh 0 0;
   margin-bottom: 2vh;
 }
+
+.agendaSection {
+  margin-top: 10vh;
+}
+
 .members {
   padding: 0vh 10vh 0 10vh;
 }
 .prizesection {
   text-align: center;
-  margin: 0 auto;
+  flex-direction: column;
   padding: 0 4vh 24px 4vh;
   margin: 17vh 0vh 0 0vh;
   border-radius: 16px;
@@ -86,6 +96,7 @@ h1 {
 }
 
 .sponsorSection {
+  flex-direction: column;
   padding: 17vh 18vh 0 18vh;
   margin-top: -10vh;
   margin-top: 0vh;
@@ -124,7 +135,7 @@ h1 {
   }
   .logoSection {
     text-align: center;
-    padding: 20vh 0vh 0 0vh;
+    padding: 10vh 0vh 0 0vh;
   }
 }
 

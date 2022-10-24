@@ -77,6 +77,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
+              <a href={`#about`}>
+                <span className="links">Sobre </span>{' '}
+              </a>
+            </li>
+            <li>
               <a href={`#agenda`}>
                 <span className="links">Agenda </span>{' '}
               </a>
@@ -96,13 +101,13 @@ const NavBar = () => {
                 <span className="links">Parceiros </span>{' '}
               </a>
             </li>
-            <img
-              className="s-close"
-              onClick={() => setToggle(true)}
-              src={logoClose}
-              alt="close"
-            />
           </ul>
+          <img
+            className="s-close"
+            onClick={() => setToggle(true)}
+            src={logoClose}
+            alt="close"
+          />
         </div>
         <div className="ease" />
       </Wrapper>
