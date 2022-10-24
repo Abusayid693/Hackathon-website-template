@@ -10,7 +10,7 @@ export default async function handler(
     const parsedEmail = email.trim().toLowerCase();
     // Verify if email is valid
     if (!parsedEmail || !parsedEmail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/g))
-      throw new Error('Invalid email');
+      return res.status(400).json({error: {message: 'Email inválido'}});
 
     // Verify if phone is valid
     if (
@@ -19,10 +19,12 @@ export default async function handler(
         /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/g
       )
     )
-      throw new Error('Invalid phone');
+      return res
+        .status(400)
+        .json({error: {message: 'Telefone em formato inválido'}});
 
     // Verify if name is valid
-    if (!name) throw new Error('Invalid name');
+    if (!name) return res.status(400).json({error: {message: 'Nome inválido'}});
 
     const sheetId = process.env.GOOGLE_SHEET_ID || '';
     const sheetEmail = process.env.GOOGLE_SHEET_API_EMAIL || '';
@@ -49,7 +51,6 @@ export default async function handler(
 
     return res.status(200).json(true);
   } catch (e) {
-    console.log(e);
     return res.status(500).json({error: e});
   }
 }
