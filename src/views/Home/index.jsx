@@ -118,8 +118,8 @@ export default function HomePage() {
 
       {/* Mentors */}
 
-      <Container fluid className="limiter">
-        <Row className="mentorsSection Row" id="mentors">
+      <Container fluid className="limiter" id="mentors">
+        <Row className="mentorsSection Row">
           <Mentors />
         </Row>
       </Container>
