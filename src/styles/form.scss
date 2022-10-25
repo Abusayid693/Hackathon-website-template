@@ -21,6 +21,7 @@
   height: 100%;
   max-width: 450px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -58,6 +59,7 @@
 }
 
 .formBtnContainer {
+  width: 100%;
   margin-top: 4em;
 }
 
@@ -72,6 +74,15 @@
   border: 2px solid #b4ff00;
   background-color: transparent;
   color: rgb(36, 36, 36);
+}
+
+.alert-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 2rem 0;
 }
 
 .formImg {

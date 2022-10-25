@@ -48,7 +48,6 @@ const MIDDLE_SECTION = {
   TITLE: 'O Hackathon',
   LONG_DESCRIPTION:
     'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
-
   COLLAPSE_TITLE_PARAGRAPHS: [
     'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação , que possam deixar um legado para a cidade. ',
     'As equipes que mais se destacarem poderão ser convidadas para o programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Seus projetos serão validados no mundo real, e ao final deste período poderão ser apresentados para possíveis investidores.'
@@ -129,7 +128,7 @@ const EVENT_SECTION = {
       {
         icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
         title: 'Competições paralelas'
-      }, 
+      },
       {
         icon: <i className="second fas fa-4x fa-users"></i>,
         title: 'Roda de conversa com empreendedores'
@@ -148,7 +147,7 @@ const EVENT_SECTION = {
         icon: <i className="third fas fa-4x fa-om"></i>,
         title: 'Prática de Yoga'
       },
-      
+
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
@@ -194,6 +193,10 @@ const FOOTER = {
   organization: {
     name: 'Tiago Gouvêa',
     link: 'https://www.linkedin.com/in/tiagogouvea/'
+  },
+  github: {
+    name: 'GitHub',
+    link: 'https://github.com/TiagoGouvea/hackathon-moinho-website-template'
   }
 };
 

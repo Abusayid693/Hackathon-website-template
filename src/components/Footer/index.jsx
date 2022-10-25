@@ -24,15 +24,24 @@ const Footer = () => {
       <div className="footer">
         <div className="footer_info">
           <p>
-            Realização:{' '}
+            O Hackathon é realização do{' '}
             <a href={FOOTER.realization.link}>
               <em>{FOOTER.realization.name}</em>
             </a>{' '}
+            juntamente com a Prefeitura de Juiz de Fora e demais parceiros
+            estratégicos.
           </p>
           <p>
-            Organização:{' '}
+            A elaboração e organização do evento é de{' '}
             <a href={FOOTER.organization.link}>
               <em>{FOOTER.organization.name}</em>
+            </a>{' '}
+          </p>
+          <p>
+            Landing page criada por voluntários com código open-source
+            disponível no{' '}
+            <a href={FOOTER.github.link}>
+              <em>{FOOTER.github.name}</em>
             </a>{' '}
           </p>
         </div>
