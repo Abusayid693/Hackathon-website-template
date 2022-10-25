@@ -106,9 +106,9 @@ export default function HomePage() {
         {/* ********Event ending here ***** */}
       </Container>
       {/* Camping here */}
-      <div className="color_section" id="camping">
+      <div className="grey_section" id="camping">
         <Container fluid className="limiter">
-          <Row className="Row info2 campingSection">
+          <Row className="Row info2">
             <SectionCamping />
           </Row>
         </Container>

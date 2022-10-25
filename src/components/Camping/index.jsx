@@ -5,17 +5,27 @@ function SectionCamping() {
   return (
     <div className="SectionCamping">
       <Row className="imgContainer">
-        {CAMPING_PARTY_SECTION.imgs.map((img, i) => (
-          <Col key={i} className="center-block" sm={12} lg={12} md={12}>
+        <Col className="col-6">
+          <div>
             <img
-              className="img-responsive img-circle campingImg"
-              src={img}
-              alt={`Camping Party ${i}`}
+              className="rounded campingImg"
+              src={CAMPING_PARTY_SECTION.img}
+              alt={`Camping Party`}
             />
-          </Col>
-        ))}
+          </div>
+        </Col>
+
+        <Col className="col-6">
+          <div className="camping_description_wrapper">
+            <p className="campingDescription">
+              {CAMPING_PARTY_SECTION.LONG_DESCRIPTION}
+            </p>
+            <p className="campingDescription">
+              {CAMPING_PARTY_SECTION.SHORT_DESCRIPTION}
+            </p>
+          </div>
+        </Col>
       </Row>
-      <p className="campingDescription">{CAMPING_PARTY_SECTION.DESCRIPTION}</p>
     </div>
   );
 }

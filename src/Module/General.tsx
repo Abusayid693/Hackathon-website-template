@@ -2,7 +2,7 @@ const hackathonBanner = '/Assets/hackathonBanner.jpg';
 const hackathonLogo = '/Assets/hackthon_branco.png';
 
 // Camping
-const camping1 = '/Assets/Camping/camping_1.jpeg';
+const camping1 = '/Assets/Camping/camping_1.jpg';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -157,9 +157,11 @@ const EVENT_SECTION = {
 };
 
 const CAMPING_PARTY_SECTION = {
-  imgs: [camping1],
-  DESCRIPTION:
-    'Na hora que bater aquele cansaço.. o que pode ser melhor que deitar na sua barraca e tirar um cochilo? Teremos um camping em uma área reservada do evento, um espaço para desligar e descansar.'
+  img: camping1,
+  LONG_DESCRIPTION:
+    'Se bater aquele cansaço, o que pode ser melhor que deitar na sua barraca e tirar um cochilo? Teremos um camping em uma área reservada do evento, um espaço para desligar e descansar.',
+  SHORT_DESCRIPTION:
+    'Sinta-se a vontade para leva sua barraca e colchão e poder recarregar as baterias quando necessário.'
 };
 
 /** Instructions
