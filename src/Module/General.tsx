@@ -180,6 +180,89 @@ const sponsors = [
   ]
 ];
 
+const MENTORS_SECTION = {
+  TITLE: 'Mentores',
+  DESCRIPTION:
+    'Você não estará sozinho! Contará com o suporte e apoio de mentores com longa experiência nas áreas de saúde, educação, design e tecnologia',
+  MENTOR_ACTION: {
+    PRE: 'Se você acredita que pode auxiliar os times a alcançarem o sucesso, se ofereça para ser também um de nossos mentores',
+    TEXT: 'Quero ser um mentor',
+    LINK: 'https://forms.gle/'
+  },
+  VOLUNTEER_ACTION: {
+    TEXT: 'Quero ser um voluntário',
+    LINK: 'https://forms.gle/8yGjTd88aSv4dp5C6'
+  },
+  MENTORS: [
+    {
+      NAME: 'Anderson Mattozinhos',
+      SRC: 'https://media-exp1.licdn.com/dms/image/D4E03AQF-tVtaJjir6Q/profile-displayphoto-shrink_200_200/0/1632371269187?e=1672272000&v=beta&t=pOQi7h9MNe1_PQTMr0A07Ya94W6E1AGYYCbyhnzF-gE',
+      DESCRIPTION: 'Sócio Gerente',
+      COMPANY: 'Ultrimagem Juiz de Fora',
+      LINKEDIN: 'https://www.linkedin.com/in/mattozinhos/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Roberto Fortuci Lopes',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQG7dJpTcJhIIg/profile-displayphoto-shrink_200_200/0/1538396064117?e=1672272000&v=beta&t=GTD2zJwkAvbBc8ZekWb-ex2M0Sphy6hfb_OupXD7x_U',
+      DESCRIPTION: 'Coordenador de TI',
+      COMPANY: 'Laboratório Côrtes Villela',
+      LINKEDIN: 'https://www.linkedin.com/in/robertofortucilopes/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Leandro Simões',
+      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQGP3cHBxlfxoA/profile-displayphoto-shrink_200_200/0/1663348110128?e=1672272000&v=beta&t=dvSiJDLpdCTD5mJQlO_w8ByGJfCowoCM4ZQ3jlyHkVI',
+      DESCRIPTION: 'Professor and Software Developer',
+      COMPANY: 'Driven Education',
+      LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Leandro Campos',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGq17_naGMkng/profile-displayphoto-shrink_200_200/0/1620149651761?e=1672272000&v=beta&t=_y_37oj3NyKpAMTFF6JNB3LqgkoFgH33r85ThuY9VwY',
+      DESCRIPTION: 'CEO',
+      COMPANY: 'Nvoip',
+      LINKEDIN: 'https://www.linkedin.com/in/leandro-campos/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Daniela Fabri Ferreira',
+      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQHGbcVh4dVQvw/profile-displayphoto-shrink_200_200/0/1665960214058?e=1672272000&v=beta&t=I8le4BEURYpCgNcmH1RvPYMjvjkpAcO65XAFFSnfrcQ',
+      DESCRIPTION: 'Analista',
+      COMPANY: 'Sebrae-MG',
+      LINKEDIN:
+        'https://www.linkedin.com/in/daniela-fabri-ferreira-mba-a7603989/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    }
+  ],
+  OTHER_MENTORS: [
+    {
+      NAME: 'Yuri Thielmann Duque',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
+      DESCRIPTION: 'Developer senior',
+      COMPANY: 'CI&T',
+      LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Humberto Sales',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQHruN7VHESoVA/profile-displayphoto-shrink_200_200/0/1585834425185?e=1672272000&v=beta&t=GEqh3hkpgX2qAf3O-gUcBVaAfkPXDXj1f9LBI1MNYQI',
+      DESCRIPTION: 'Head de Inovação',
+      COMPANY: 'Quokka',
+      LINKEDIN: 'https://www.linkedin.com/in/humbertosalesdealmeida/',
+      GITHUB: 'a',
+      INSTAGRAM: 'a'
+    }
+  ]
+};
+
 const FORM_SECTION = {
   TITLE: 'Seja avisado quando abrirem as inscrições',
   IMG: hackathonBanner
@@ -209,5 +292,6 @@ export {
   CAMPING_PARTY_SECTION,
   FORM_SECTION,
   sponsors,
+  MENTORS_SECTION,
   FOOTER
 };
