@@ -2,11 +2,14 @@
 .Sponsor {
   margin-bottom: 5rem;
   transition: 0.3s;
+  text-align: center;
 }
+
 .Sponsor:hover {
   transform: scale(1.1);
   text-decoration: none;
 }
+
 .Sponsor img {
   width: 25rem;
   display: inline-block;
@@ -24,9 +27,9 @@
 }
 
 .shead {
+  text-align: center;
   font-size: 6rem;
-  margin-bottom: 6rem;
-  margin-top: -3rem;
+  margin-bottom: 7rem;
 }
 
 .sponsorUS {

@@ -1,0 +1,19 @@
+.collapse-container {
+  font-family: 'Nunito', sans-serif;
+
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.collapse-container p {
+  font-size: 2srem;
+  text-align: left;
+  transition: ease-in-out 1s;
+}
+
+.collapse-button {
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  transition: ease-in-out 0.3s;
+}

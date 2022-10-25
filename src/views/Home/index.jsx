@@ -11,6 +11,7 @@ import {
 import {FirstPrize, PrizeHeading} from '../../components/Activities/index.jsx';
 import {Banner} from '../../components/Banner/index.jsx';
 import Footer from '../../components/Footer/index.jsx';
+import Collapse from '../../components/Collapse/index.jsx';
 import {MoinhoLogo, Myinfo} from '../../components/Landing/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
@@ -63,19 +64,29 @@ export default function HomePage() {
           </Row>
         </Container>
       </div>
-      <Container fluid className="limiter" id="agenda">
-        {/* Agenda section  */}
+      <Container fluid className="limiter" id="about">
         <Row className="logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAbout />
           </Col>
         </Row>
-        <Row className="info-div">
-          <Col>
-            <SectionAgendaAbout />
+        <Row className="Row">
+          <Col className="info-div">
+            <Collapse />
           </Col>
         </Row>
       </Container>
+
+      {/* Agenda section  */}
+      <div className="grey_section">
+        <Container fluid className="limiter" id="agenda">
+          <Row className="agendaSection">
+            <Col className="info-div">
+              <SectionAgendaAbout />
+            </Col>
+          </Row>
+        </Container>
+      </div>
       {/* Enterprise section */}
       <div className="color_section" id="activities">
         <Container fluid className="limiter">

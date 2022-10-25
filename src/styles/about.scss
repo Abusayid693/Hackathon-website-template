@@ -17,7 +17,6 @@
 
 .LogoSectionAbout {
   text-align: left;
-  width: 80%;
   display: inline-block;
   position: relative;
   font-family: 'Nunito', sans-serif;
@@ -29,10 +28,8 @@
 
 .SectionAgendaAbout {
   text-align: left;
-  border: 3px dotted #e1e32a;
-  padding: 20px;
+  color: #fff;
   border-radius: 15px;
-  width: 80%;
   display: inline-block;
   position: relative;
   font-family: 'Nunito', sans-serif;
@@ -48,17 +45,16 @@
 .AgendaCard {
   padding: 10px;
   border-radius: 20px;
-  background-color: #57058b;
 }
 
 .AgendaTitle {
   font-weight: 700;
   text-align: left;
-  color: white;
+  color: #010101;
 }
 
 .AgendaText {
   font-weight: 400;
   text-align: left;
-  color: white;
+  color: #010101;
 }
