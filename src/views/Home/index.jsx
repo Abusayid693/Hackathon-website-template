@@ -17,6 +17,7 @@ import {MoinhoLogo, Myinfo} from '../../components/Landing/index.jsx';
 import Subscription from '../../components/Subscription/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
+import Mentors from 'components/Mentors/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -110,14 +111,25 @@ export default function HomePage() {
         {/* ********Event ending here ***** */}
       </Container>
       {/* Camping here */}
-      <div className="color_section" id="camping">
+      <div className="grey_section" id="camping">
         <Container fluid className="limiter">
-          <Row className="Row info2 campingSection">
+          <Row className="Row info2">
             <SectionCamping />
           </Row>
         </Container>
       </div>
       {/* Camping ending here */}
+
+      {/* Mentors */}
+
+      <Container fluid className="limiter" id="mentors">
+        <Row className="mentorsSection Row">
+          <Mentors />
+        </Row>
+      </Container>
+
+      {/* Mentors ending */}
+
       {/* Form here */}
       {/*<div className="yellow_section" id="form">
         <Container fluid className="limiter">

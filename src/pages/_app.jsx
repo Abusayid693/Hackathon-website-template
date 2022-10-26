@@ -20,6 +20,7 @@ import '../styles/team.scss';
 import '../styles/typed.scss';
 import '../styles/collapse.scss';
 import '../styles/subscription.scss';
+import '../styles/mentors.scss';
 
 export default function MyApp({Component, pageProps}) {
   return (

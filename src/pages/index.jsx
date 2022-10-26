@@ -91,11 +91,16 @@ const NavBar = () => {
                 <span className="links">Atividades </span>{' '}
               </a>
             </li>
-            {/*<li>
+            <li>
+              <a href={`#mentors`}>
+                <span className="links">Mentores </span>{' '}
+              </a>
+            </li>
+            {/* <li>
               <a href={`#form`}>
                 <span className="links">Me avise </span>{' '}
               </a>
-  </li>*/}
+                </li>*/}
             <li>
               <a href={`#subscription`}>
                 <span className="links">Inscrição </span>{' '}
