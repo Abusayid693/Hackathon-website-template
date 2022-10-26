@@ -1,3 +1,4 @@
+import React from 'react';
 import {SectionCamping} from 'components/Camping/index.jsx';
 import {SectionEnterprise} from 'components/Enterprise/index.jsx';
 import {SectionForm} from 'components/Form/index.jsx';
@@ -13,6 +14,7 @@ import {Banner} from '../../components/Banner/index.jsx';
 import Footer from '../../components/Footer/index.jsx';
 import Collapse from '../../components/Collapse/index.jsx';
 import {MoinhoLogo, Myinfo} from '../../components/Landing/index.jsx';
+import Subscription from '../../components/Subscription/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
 
@@ -44,6 +46,8 @@ const PrizeGroup = (props, index) => {
 // Prize group ending
 
 export default function HomePage() {
+  const [termIsOpen, setTermIsOpen] = React.useState(false);
+
   return (
     <div
       className="Whole_div"
@@ -115,9 +119,21 @@ export default function HomePage() {
       </div>
       {/* Camping ending here */}
       {/* Form here */}
-      <div className="yellow_section" id="form">
+      {/*<div className="yellow_section" id="form">
         <Container fluid className="limiter">
           <SectionForm />
+        </Container>
+  </div>*/}
+      <div className="grey_section" id="subscription">
+        <Container fluid className="limiter">
+          <Row className="Row info">
+            <Col className="info-div">
+              <Subscription
+                termIsOpen={termIsOpen}
+                setTermIsOpen={setTermIsOpen}
+              />
+            </Col>
+          </Row>
         </Container>
       </div>
       {/* Form ending here */}
