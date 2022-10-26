@@ -1,5 +1,7 @@
 // Index
 .nav_bar {
+  display: flex;
+  align-items: center;
   list-style-type: none;
   height: 50px;
   font-size: 1.8rem;
@@ -16,7 +18,7 @@
 
 @media (min-width: 1000px) {
   .nav_bar-offset-crossed {
-    background-color: #57058b;
+    background-color: #010101;
     height: 72px;
     box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
   }
@@ -33,9 +35,7 @@
 ul {
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
   height: 100%;
   align-items: center;
 }
@@ -62,7 +62,7 @@ nav ul li {
   }
   ul {
     flex-direction: column;
-    padding: 30px 20;
+    padding: 30px 0 20px;
   }
 
   .navLogo {

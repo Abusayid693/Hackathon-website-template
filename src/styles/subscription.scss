@@ -1,0 +1,86 @@
+.subscriptionSection {
+  display: inline-block;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.main_subscription_text {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sec_subscription_text {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subscription_categories {
+  margin: 8rem 0;
+}
+
+.buttonContainer {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonWrapper {
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-color-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  color: #b2c732;
+  flex: 1 1 auto;
+  text-align: center;
+  line-height: 40px;
+}
+
+.mainButton {
+  background-color: #b2c732;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainButton:hover {
+  background-color: #fff;
+  color: #b2c732;
+  border: 2px solid #b2c732;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #b2c732;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.secondaryButton:hover {
+  background-color: transparent;
+  color: #b2c732;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 1000px) {
+  .buttonWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

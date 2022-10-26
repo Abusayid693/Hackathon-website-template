@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 // Styles
 import '../styles/about.scss';
 import '../styles/banner.scss';
@@ -16,6 +18,9 @@ import '../styles/prizes.scss';
 import '../styles/socials.scss';
 import '../styles/team.scss';
 import '../styles/typed.scss';
+import '../styles/collapse.scss';
+import '../styles/subscription.scss';
+import '../styles/mentors.scss';
 
 export default function MyApp({Component, pageProps}) {
   return (

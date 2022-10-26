@@ -39,7 +39,7 @@ const Myinfo = () => {
       <div className="buttom-group">
         <a href={TOP_SECTION.ACTION_BTN}>
           {' '}
-          <Btn class="sponsor_btn" type="Me avise" overlay="Ir!" />
+          <Btn class="sponsor_btn" type="Me inscrever agora" overlay="Ir!" />
         </a>
       </div>
     </div>

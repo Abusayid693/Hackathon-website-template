@@ -1,73 +1,131 @@
+import {useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import {FORM_SECTION} from '../../Module/General';
 
 const baseUrl = process.env.NEXT_SERVER_URL;
 
-const handleSubmit = e => {
-  e.preventDefault();
-  const form = e.target;
-  const formData = new FormData(form);
-
-  const data = {};
-  for (let entry of formData.entries()) {
-    data[entry[0]] = entry[1];
-  }
-
-  const requestOptions = {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(data)
-  };
-  fetch(`/api/form`, requestOptions)
-    .then(response => response.json())
-    .then(data => console.log(data));
-};
-
 function SectionForm() {
+  const [loading, setLoading] = useState(false);
+  const [sucess, setSucess] = useState(undefined);
+  const [error, setError] = useState(undefined);
+
+  const handleSubmit = async e => {
+    try {
+      setLoading(true);
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      const data = {};
+      for (let entry of formData.entries()) {
+        data[entry[0]] = entry[1];
+      }
+
+      const requestOptions = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      };
+
+      const response = await fetch(`/api/form`, requestOptions);
+      if (response.status === 200) {
+        setSucess(true);
+        setError(undefined);
+      } else {
+        const body = await response.json();
+        console.log(body);
+        setSucess(false);
+        setError(body.error.message);
+      }
+      setLoading(false);
+    } catch (e) {
+      setLoading(false);
+      console.log('ERROR LOG', e);
+    }
+  };
+
   return (
     <div className="formSection">
-      <Row className="formRow">
-        <Col lg={8} md={8} className="formImg hidden-sm hidden-xs">
-          <div
-            className="formImg"
-            style={{backgroundImage: 'url(/Assets/hackathonBanner.jpeg)'}}
-          />
+      <Row className="flex-column justify-content-center align-items-center">
+        <Col>
+          {!sucess && (
+            <div className="formTitle">
+              <h2>{FORM_SECTION.TITLE}</h2>
+            </div>
+          )}
         </Col>
-        <Col sm={12} lg={4} md={4}>
-          <div className="formTitle">
-            <h2>{FORM_SECTION.TITLE}</h2>
-          </div>
-          <div className="formContainer center-block">
-            <form className="form-horizontal" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input
-                  className="form-control"
-                  placeholder="Nome"
-                  name="name"
-                  type="text"
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  className="form-control"
-                  placeholder="Email"
-                  name="email"
-                  type="text"
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  className="form-control"
-                  placeholder="Whatsapp"
-                  name="phone"
-                  type="text"
-                />
-              </div>
+        <Col
+          className="d-flex justify-content-center flex-column align-items-center"
+          sm={12}
+          lg={5}
+          md={5}
+        >
+          {!sucess && (
+            <div className="formContainer">
+              <form className="form-horizontal" onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    placeholder="Nome"
+                    required
+                    name="name"
+                    type="text"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    placeholder="Email"
+                    required
+                    name="email"
+                    type="text"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    placeholder="Whatsapp"
+                    required
+                    name="phone"
+                    pattern="^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$"
+                    type="text"
+                  />
+                </div>
 
-              <div className="form-group formBtnContainer">
-                <input className="btn formBtn" type="submit" value="Me avise" />
+                <div className="form-group formBtnContainer d-flex justify-content-center align-items-center">
+                  <input
+                    className="btn formBtn"
+                    type="submit"
+                    disabled={loading}
+                    value="Me avise"
+                  />
+                  {loading && (
+                    <div className="spinner-border ml-3" role="status">
+                      <span className="sr-only">Loading...</span>
+                    </div>
+                  )}
+                </div>
+              </form>
+            </div>
+          )}
+          <div className="alert-container">
+            {!!sucess && (
+              <div className="d-flex flex-column text-center">
+                <h3 className="display-1 mb-5">
+                  <strong>Parabéns!</strong> Você foi cadastrado com sucesso.
+                </h3>
+                <a href="#home">
+                  <p>Voltar ao topo</p>
+                </a>
               </div>
-            </form>
+            )}
+            {!!error && (
+              <div>
+                <div className="alert alert-danger" role="alert">
+                  <h3>{error}</h3>
+                </div>
+              </div>
+            )}
           </div>
         </Col>
       </Row>
