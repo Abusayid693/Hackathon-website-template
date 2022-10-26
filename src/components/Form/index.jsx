@@ -100,8 +100,8 @@ function SectionForm() {
                     value="Me avise"
                   />
                   {loading && (
-                    <div class="spinner-border ml-3" role="status">
-                      <span class="sr-only">Loading...</span>
+                    <div className="spinner-border ml-3" role="status">
+                      <span className="sr-only">Loading...</span>
                     </div>
                   )}
                 </div>

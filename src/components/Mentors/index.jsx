@@ -9,17 +9,17 @@ const SocialWrapper = ({item}) => {
     <div className="social-wrapper">
       {!!item.LINKEDIN && (
         <a href={item.LINKEDIN} className="text-secondary">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i className="fa fa-linkedin" aria-hidden="true"></i>
         </a>
       )}
       {!!item.INSTAGRAM && (
         <a href={item.INSTAGRAM} className="text-secondary">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i className="fa fa-instagram" aria-hidden="true"></i>
         </a>
       )}
       {!!item.GITHUB && (
         <a href={item.GITHUB} className="text-secondary">
-          <i class="fa fa-github" aria-hidden="true"></i>
+          <i className="fa fa-github" aria-hidden="true"></i>
         </a>
       )}
     </div>
@@ -36,7 +36,7 @@ const SmallestAvatar = ({mentor}) => {
         alt={mentor.NAME}
       />
       <div className="smallest-avatar-info">
-        <p className="small-name">{mentor.NAME}</p>
+        <p className="smallest-name">{mentor.NAME}</p>
       </div>
       <SocialWrapper item={mentor} />
     </div>
@@ -130,10 +130,7 @@ const Mentors = () => {
         <div className="mentors">
           <div className="mentors-list">
             {AvatarGroup(MENTORS_SECTION.MENTORS, 'large')}
-            {AvatarGroup(
-              MENTORS_SECTION.OTHER_MENTORS.flatMap(i => [i, i, i, i, i, i]),
-              'small'
-            )}
+            {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS, 'small')}
           </div>
           <div className="apply_mentor mb-5">
             <p>{MENTORS_SECTION.MENTOR_ACTION.PRE}</p>
@@ -154,10 +151,7 @@ const Mentors = () => {
           <h3 className="display-4">Apoiadores</h3>
         </div>
         <div className="pt-4">
-          {AvatarGroup(
-            MENTORS_SECTION.OTHER_MENTORS.flatMap(i => [i, i, i, i, i, i]),
-            'smallest'
-          )}
+          {AvatarGroup(MENTORS_SECTION.PARTNERS, 'smallest')}
         </div>
         <div className="apply_supporters">
           <a

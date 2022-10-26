@@ -204,11 +204,20 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Roberto Fortuci Lopes',
+      NAME: 'Roberto Fortuci',
       SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQG7dJpTcJhIIg/profile-displayphoto-shrink_200_200/0/1538396064117?e=1672272000&v=beta&t=GTD2zJwkAvbBc8ZekWb-ex2M0Sphy6hfb_OupXD7x_U',
       DESCRIPTION: 'Coordenador de TI',
       COMPANY: 'Laboratório Côrtes Villela',
       LINKEDIN: 'https://www.linkedin.com/in/robertofortucilopes/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Gustavo Oliveira',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQHjYitJmiuUzg/profile-displayphoto-shrink_200_200/0/1516279947889?e=1672272000&v=beta&t=Tlox70kS6xKRBHdKnxBF-0127_6jgDd71B5XZSnU34Y',
+      DESCRIPTION: 'Co-Founder',
+      COMPANY: 'Smart Retail',
+      LINKEDIN: 'https://www.linkedin.com/in/gugaoliveira/',
       GITHUB: '',
       INSTAGRAM: ''
     },
@@ -231,7 +240,7 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Daniela Fabri Ferreira',
+      NAME: 'Daniela Fabri',
       SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQHGbcVh4dVQvw/profile-displayphoto-shrink_200_200/0/1665960214058?e=1672272000&v=beta&t=I8le4BEURYpCgNcmH1RvPYMjvjkpAcO65XAFFSnfrcQ',
       DESCRIPTION: 'Analista',
       COMPANY: 'Sebrae-MG',
@@ -239,11 +248,29 @@ const MENTORS_SECTION = {
         'https://www.linkedin.com/in/daniela-fabri-ferreira-mba-a7603989/',
       GITHUB: '',
       INSTAGRAM: ''
+    },
+    {
+      NAME: 'Débora Marques',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQG3EOeLpvruOg/profile-displayphoto-shrink_200_200/0/1618661428591?e=1672272000&v=beta&t=uENbAD7HanMSKEekcQp2PfLN-6RBjKEMfwxhuFZp79s',
+      DESCRIPTION: 'Planning and Management Manager',
+      COMPANY: 'UFJF',
+      LINKEDIN: 'https://www.linkedin.com/in/débora-marques-28786b49/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Rodrigo Nunes',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF6xoT-B6JhrQ/profile-displayphoto-shrink_200_200/0/1530292900831?e=1672272000&v=beta&t=ud2KhJq_G9-jpODb4-TtBAFG3Kfp3BnZUanIvWzF4uw',
+      DESCRIPTION: 'Co-Founder',
+      COMPANY: 'Reportei.com',
+      LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ],
   OTHER_MENTORS: [
     {
-      NAME: 'Yuri Thielmann Duque',
+      NAME: 'Yuri Thielmann',
       SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
       DESCRIPTION: 'Developer senior',
       COMPANY: 'CI&T',
@@ -257,8 +284,45 @@ const MENTORS_SECTION = {
       DESCRIPTION: 'Head de Inovação',
       COMPANY: 'Quokka',
       LINKEDIN: 'https://www.linkedin.com/in/humbertosalesdealmeida/',
-      GITHUB: 'a',
-      INSTAGRAM: 'a'
+      GITHUB: '',
+      INSTAGRAM: ''
+    }
+  ],
+  PARTNERS: [
+    {
+      NAME: 'Carlos Alexandre',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFFRVZohEzSLQ/profile-displayphoto-shrink_200_200/0/1617742581518?e=1672272000&v=beta&t=J8IcWb7LfMdBbcVnGp9b5Zc2Xyj2oqzU4JvOq8tpnYQ',
+      LINKEDIN: 'https://www.linkedin.com/in/carlosalexandre94/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Douglas Novato',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQH47ynuwrY_1g/profile-displayphoto-shrink_200_200/0/1578078703662?e=1672272000&v=beta&t=XuuVfvMrAhbfrbAEdgGK7FQUtQtj5g5grWPrJ0MtvHI',
+      LINKEDIN: 'https://www.linkedin.com/in/douglasabnovato/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Vinicius Carlos',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQFNcF05elAjDA/profile-displayphoto-shrink_200_200/0/1649509770307?e=1672272000&v=beta&t=gjdwopoYULfA12agHnDS1Q07-fmTzia3W3u05Ys-MZE',
+      LINKEDIN: 'https://www.linkedin.com/in/vinicius-carlos/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Giordano Bruno',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFknLEtKZQ4Ig/profile-displayphoto-shrink_200_200/0/1516545273931?e=1672272000&v=beta&t=_owR0bgVPMB64wGqBENWZInmq7tHvaUbviIsenf0HCo',
+      LINKEDIN: 'https://www.linkedin.com/in/giordano-bruno-vieira-88699614/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Ramon Xavier',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFu48_gAOb_Mg/profile-displayphoto-shrink_200_200/0/1596754239475?e=1672272000&v=beta&t=BzXAObIRccKTYMRBmRMEcnLz8GNTXqw2SBShsRpQZeE',
+      LINKEDIN: 'https://www.linkedin.com/in/ramonxavier/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ]
 };
