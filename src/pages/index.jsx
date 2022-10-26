@@ -92,6 +92,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
+              <a href={`#mentors`}>
+                <span className="links">Mentores </span>{' '}
+              </a>
+            </li>
+            <li>
               <a href={`#form`}>
                 <span className="links">Me avise </span>{' '}
               </a>

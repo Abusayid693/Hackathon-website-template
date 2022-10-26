@@ -15,6 +15,7 @@ import Collapse from '../../components/Collapse/index.jsx';
 import {MoinhoLogo, Myinfo} from '../../components/Landing/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
+import Mentors from 'components/Mentors/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -114,6 +115,17 @@ export default function HomePage() {
         </Container>
       </div>
       {/* Camping ending here */}
+
+      {/* Mentors */}
+
+      <Container fluid className="limiter" id="mentors">
+        <Row className="mentorsSection Row">
+          <Mentors />
+        </Row>
+      </Container>
+
+      {/* Mentors ending */}
+
       {/* Form here */}
       <div className="yellow_section" id="form">
         <Container fluid className="limiter">
