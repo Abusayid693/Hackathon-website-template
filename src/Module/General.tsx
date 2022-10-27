@@ -122,7 +122,7 @@ const ENTERPRISE_SECTION = {
 const EVENT_SECTION = {
   TITLE: 'O evento',
   DESCRIPTION:
-    'Um hackathon não é só uma maratona de programação e inovação, é também um espaço repleto de pessoas inteligentes, nerds, pensadores, empreenderores, estudantes, de todas as raças e classes sociais. Este grande evento terá diversas atividades para informar, entreter e motivar os participantes. Dentre elas:',
+    'Um hackathon é um grande evento cultural, onde nerds, estudantes, programadores, empreendedores, acadêmicos e demais pessoas falam, vivem e criam inovação. Muito além de código, teremos outras atividades, veja algumas delas.',
   ACTIVITIES: [
     [
       {
@@ -151,6 +151,12 @@ const EVENT_SECTION = {
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
+      }
+    ],
+    [
+      {
+        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
+        title: 'Jogos de tabuleiro'
       }
     ]
   ]

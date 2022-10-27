@@ -70,12 +70,7 @@ export default function HomePage() {
         </Container>
       </div>
       <Container fluid className="limiter" id="about">
-        <Row className="logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAbout />
-          </Col>
-        </Row>
-        <Row className="Row">
+        <Row className="Row logoSection">
           <Col className="info-div">
             <Collapse />
           </Col>
@@ -105,7 +100,10 @@ export default function HomePage() {
       <Container fluid className="limiter">
         {/* ********Event here ***** */}
         <Row className="prizesection" id="event">
-          <PrizeHeading title={EVENT_SECTION.TITLE} />
+          <PrizeHeading
+            title={EVENT_SECTION.TITLE}
+            description={EVENT_SECTION.DESCRIPTION}
+          />
           {EVENT_SECTION.ACTIVITIES.map(PrizeGroup)}
         </Row>
         {/* ********Event ending here ***** */}
