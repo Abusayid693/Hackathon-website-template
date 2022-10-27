@@ -191,6 +191,8 @@ const MENTORS_SECTION = {
     TEXT: 'Quero ser um mentor',
     LINK: 'https://forms.gle/'
   },
+  SUPPORTERS_DESCRIPTION:
+    'Apenas com o apoio destas pessoas incríveis é possível fazer um evento tão especial!',
   VOLUNTEER_ACTION: {
     TEXT: 'Quero ser um voluntário',
     LINK: 'https://forms.gle/8yGjTd88aSv4dp5C6'
