@@ -82,22 +82,26 @@ const MIDDLE_SECTION = {
 
 const ENTERPRISE_SECTION = {
   TITLE: 'Hora de empreender!',
-  SHORT_DESCRIPTION: 'Os  melhores projetos receberão nosso apoio:',
+  LONG_DESCRIPTION:
+    'Imagine como seria se um dos nossos projetos seguisse adiante e se tornasse uma solução amplamente utilizada na cidade, estado e até no pais? Estamos aqui pra isso!',
+  SHORT_DESCRIPTION:
+    'Após o Hackathon, os projetos selecionados receberão como apoio:',
   TOPICS: [
     {
       ICON: <i className="fas fa-3x fa-gift"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Apoio do moinho com acesso ao{' '}
+          Apoio do moinho com acesso ao programa{' '}
           <a
             className="link"
             target="_blank"
             rel="noopener noreferrer"
-            href="#a"
+            href="https://www.nossomoinho.com/moinho-lab-coworking/"
           >
-            Pacote Moinho
+            Moinho Lab
           </a>{' '}
-          gratuito por seis meses
+          gratuito por seis meses, com espaço de coworking, acesso a eventos
+          exclusivos e ecossistema integrado
         </p>
       )
     },
@@ -105,15 +109,19 @@ const ENTERPRISE_SECTION = {
       ICON: <i className="fas fa-3x fa-lightbulb"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Validação da ideia pelas secretarias de Saúde e Educação da Prefeitura
-          de Juiz de Fora
+          <span className="link">Validação</span> da ideia pelas secretarias de
+          Saúde e Educação da Prefeitura de Juiz de Fora, além de possíveis
+          empresas parceiras que poderão se interessar pela solução
         </p>
       )
     },
     {
       ICON: <i className="fas fa-3x fa-hand-holding-usd"></i>,
       DESCRIPTION: (
-        <p className="topicText">Apresentação para possíveis investidores</p>
+        <p className="topicText">
+          Apresentação para <span className="link">possíveis investidores</span>{' '}
+          ao final do período de validação
+        </p>
       )
     }
   ]
@@ -197,6 +205,8 @@ const MENTORS_SECTION = {
     TEXT: 'Quero ser um mentor',
     LINK: 'https://forms.gle/'
   },
+  SUPPORTERS_DESCRIPTION:
+    'Apenas com o apoio destas pessoas incríveis é possível fazer um evento tão especial!',
   VOLUNTEER_ACTION: {
     TEXT: 'Quero ser um voluntário',
     LINK: 'https://forms.gle/8yGjTd88aSv4dp5C6'

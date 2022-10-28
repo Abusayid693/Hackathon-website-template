@@ -17,7 +17,7 @@ import {MoinhoLogo, Myinfo} from '../../components/Landing/index.jsx';
 import Subscription from '../../components/Subscription/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
-import Mentors from 'components/Mentors/index.jsx';
+import {Mentors, Supporters} from 'components/People/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Initial banner */}
       <Banner />
       {/* Home section */}
-      <div className="color_section" id="home">
+      <div className="black_section" id="home">
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div" sm={12} lg={7} md={7}>
@@ -86,7 +86,7 @@ export default function HomePage() {
         </Container>
       </div>
       {/* Enterprise section */}
-      <div className="color_section" id="activities">
+      <div className="black_section" id="activities">
         <Container fluid className="limiter">
           <Row className="Row info2">
             <Col className="info-div" sm={12} lg={12} md={12}>
@@ -117,14 +117,24 @@ export default function HomePage() {
       {/* Camping ending here */}
 
       {/* Mentors */}
-
       <Container fluid className="limiter" id="mentors">
         <Row className="mentorsSection Row">
           <Mentors />
         </Row>
       </Container>
-
       {/* Mentors ending */}
+
+      {/* Suporters */}
+
+      <div className="grey_white_section">
+        <Container fluid className="limiter" id="suporters">
+          <Row className="suportersSection Row">
+            <Col>
+              <Supporters />
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
       {/* Form here */}
       {/*<div className="yellow_section" id="form">
