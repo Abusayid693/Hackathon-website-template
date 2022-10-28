@@ -355,7 +355,8 @@ const SUBSCRIPTION_SECTION = {
   ],
   SUBSCRIBE_LINK:
     'https://www.sympla.com.br/hackaton-de-inovacao-social-de-juiz-de-fora__1766078',
-  TERMS_LINK: ''
+  TERMS_LINK:
+    'https://docs.google.com/document/d/1KJT25ANYLSM8n4U1TAkmvh_qok8Ps_SYEfklffgKk_0/edit?usp=sharing'
 };
 
 const FOOTER = {

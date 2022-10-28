@@ -47,8 +47,6 @@ const PrizeGroup = (props, index) => {
 // Prize group ending
 
 export default function HomePage() {
-  const [termIsOpen, setTermIsOpen] = React.useState(false);
-
   return (
     <div
       className="Whole_div"
@@ -138,10 +136,7 @@ export default function HomePage() {
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div">
-              <Subscription
-                termIsOpen={termIsOpen}
-                setTermIsOpen={setTermIsOpen}
-              />
+              <Subscription />
             </Col>
           </Row>
         </Container>
