@@ -59,7 +59,7 @@ const MIDDLE_SECTION = {
     'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor.',
     'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores.'
   ],
-  AGENDA_TITLE: 'Agenda (preliminar)',
+  AGENDA_TITLE: 'Agenda',
   AGENDA: [
     {
       TITLE: 'Sábado, 19 de Novembro',
@@ -294,6 +294,24 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/humbertosalesdealmeida/',
       GITHUB: '',
       INSTAGRAM: ''
+    },
+    {
+      NAME: 'Chay Azevedo',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF9jkm2u4M8xQ/profile-displayphoto-shrink_200_200/0/1663622665654?e=1672272000&v=beta&t=i-XMMKyrxG3Nvt-2ZUVGPqMvcE36Aiz3FhtxZyHE6K0',
+      DESCRIPTION: 'Agente Local de Inovação',
+      COMPANY: 'Sebrae',
+      LINKEDIN: 'https://www.linkedin.com/in/chayazevedo/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Kyro Caram',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFKm_M5wEOIjA/profile-displayphoto-shrink_200_200/0/1518697554572?e=1672272000&v=beta&t=LkrxPlY9Nw0f4clpvlYsbi0Qg7tn2BkA0E73CmmKIH8',
+      DESCRIPTION: 'Fundador',
+      COMPANY: 'Collision ',
+      LINKEDIN: 'https://www.linkedin.com/in/kyrocaram/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ],
   PARTNERS: [
@@ -329,6 +347,13 @@ const MENTORS_SECTION = {
       NAME: 'Ramon Xavier',
       SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFu48_gAOb_Mg/profile-displayphoto-shrink_200_200/0/1596754239475?e=1672272000&v=beta&t=BzXAObIRccKTYMRBmRMEcnLz8GNTXqw2SBShsRpQZeE',
       LINKEDIN: 'https://www.linkedin.com/in/ramonxavier/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Eduardo Alexandre',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGVXUq-4PE2dw/profile-displayphoto-shrink_200_200/0/1614789288094?e=1672272000&v=beta&t=BuamlTTQSV-TWMud3_Eu228zWMzKkZG6MO7dOiD412I',
+      LINKEDIN: 'https://www.linkedin.com/in/eduardotecnologo/',
       GITHUB: '',
       INSTAGRAM: ''
     }
