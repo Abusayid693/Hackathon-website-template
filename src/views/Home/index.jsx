@@ -102,10 +102,7 @@ export default function HomePage() {
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div">
-              <Subscription
-                termIsOpen={termIsOpen}
-                setTermIsOpen={setTermIsOpen}
-              />
+              <Subscription/>
             </Col>
           </Row>
         </Container>
