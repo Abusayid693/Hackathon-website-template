@@ -84,24 +84,22 @@ const ENTERPRISE_SECTION = {
   TITLE: 'Hora de empreender!',
   LONG_DESCRIPTION:
     'Imagine como seria se um dos nossos projetos seguisse adiante e se tornasse uma solução amplamente utilizada na cidade, estado e até no pais? Estamos aqui pra isso!',
-  SHORT_DESCRIPTION:
-    'Após o Hackathon, os projetos selecionados receberão como apoio:',
+  SHORT_DESCRIPTION: 'Os melhores projetos receberão nosso apoio',
   TOPICS: [
     {
       ICON: <i className="fas fa-3x fa-gift"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Apoio do moinho com acesso ao programa{' '}
+          Participação no{' '}
           <a
             className="link"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.nossomoinho.com/moinho-lab-coworking/"
           >
-            Moinho Lab
+            Hub de Inovação do Moinho
           </a>{' '}
-          gratuito por seis meses, com espaço de coworking, acesso a eventos
-          exclusivos e ecossistema integrado
+          por 6 meses
         </p>
       )
     },
@@ -109,9 +107,8 @@ const ENTERPRISE_SECTION = {
       ICON: <i className="fas fa-3x fa-lightbulb"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          <span className="link">Validação</span> da ideia pelas secretarias de
-          Saúde e Educação da Prefeitura de Juiz de Fora, além de possíveis
-          empresas parceiras que poderão se interessar pela solução
+          Busca para <span className="link">validar</span> a ideia junto às
+          organizações parceiras do festival
         </p>
       )
     },
@@ -119,8 +116,8 @@ const ENTERPRISE_SECTION = {
       ICON: <i className="fas fa-3x fa-hand-holding-usd"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Apresentação para <span className="link">possíveis investidores</span>{' '}
-          ao final do período de validação
+          Possibilidade de apresentação do projeto para{' '}
+          <span className="link">investidores</span>
         </p>
       )
     }
