@@ -46,12 +46,14 @@ const Subscription = ({termIsOpen, setTermIsOpen}) => {
             </Button>
           </Col>
           <Col>
-            <div
+            <Button
               className="btn secondaryButton"
-              onClick={() => setTermIsOpen(!termIsOpen)}
+              href={SUBSCRIPTION_SECTION.TERMS_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Ler regulamento
-            </div>
+            </Button>
           </Col>
         </Row>
       </div>
