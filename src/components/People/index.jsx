@@ -99,7 +99,7 @@ const AvatarGroup = (mentors, size) => {
       {size === 'small' && (
         <Row className="mentors-smallest-group">
           {mentors.map((mentor, i) => (
-            <Col key={i} className="mentors-item" sm={2} md={2} lg={2}>
+            <Col key={i} className="mentors-small-item" sm={6} md={6} lg={2}>
               <SmallestAvatar mentor={mentor} />
             </Col>
           ))}

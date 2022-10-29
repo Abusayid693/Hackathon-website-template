@@ -1,19 +1,19 @@
 .SectionCamping {
-  padding: 0 20px;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: 1400px;
 }
 
 .imgContainer {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .campingImg {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .camping_description_wrapper {
@@ -32,11 +32,13 @@
   color: #fff;
 }
 
-@media (max-width: 1000px) {
-  .campingDescription {
-    font-size: 1.5rem;
-  }
-  .imgContainer {
+@media (max-width: 1050px) {
+  .SectionCamping {
     flex-direction: column;
+    gap: 2rem;
+  }
+  .camping_description_wrapper p {
+    text-align: center;
+    font-size: 1.5rem;
   }
 }

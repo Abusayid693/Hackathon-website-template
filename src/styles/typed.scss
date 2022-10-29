@@ -11,16 +11,17 @@
   text-align: left;
 }
 
-@media (max-width: 570px) {
-  .typing-div h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-  }
-}
-@media (max-width: 330px) {
+@media (max-width: 1200px) {
   .typing-div h1 {
     font-size: 2.5rem;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 570px) {
+  .typing-div h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
   }
 }
