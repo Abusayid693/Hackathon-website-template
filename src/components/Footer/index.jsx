@@ -26,7 +26,7 @@ const Footer = () => {
           <p>
             O Hackathon é realização do{' '}
             <a href={FOOTER.realization.link}>
-              <em>{FOOTER.realization.name}</em>
+              <b>{FOOTER.realization.name}</b>
             </a>{' '}
             juntamente com a Prefeitura de Juiz de Fora e demais parceiros
             estratégicos.
@@ -34,14 +34,14 @@ const Footer = () => {
           <p>
             A elaboração e organização do evento é de{' '}
             <a href={FOOTER.organization.link}>
-              <em>{FOOTER.organization.name}</em>
-            </a>{' '}
+              <b>{FOOTER.organization.name}</b>
+            </a>, com o suporte dos apoiadores e mentores{' '}
           </p>
           <p>
             Landing page criada por voluntários com código open-source
             disponível no{' '}
             <a href={FOOTER.github.link}>
-              <em>{FOOTER.github.name}</em>
+              <b>{FOOTER.github.name}</b>
             </a>{' '}
           </p>
         </div>
