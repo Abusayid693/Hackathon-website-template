@@ -24,7 +24,7 @@ const About = () => {
 
 const MoinhoLogo = () => {
   return (
-    <div className="topLogoContainer hidden-xs hidden-sm">
+    <div className="topLogoContainer">
       <img className="topLogo" src={TOP_SECTION.LOGO} alt="Moinho" />
     </div>
   );

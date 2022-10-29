@@ -23,7 +23,7 @@ const SponsorGroup = (props, index) => {
   return (
     <Row key={index}>
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={6}>
+        <Col key={i} className="" sm={12} lg={4} md={12}>
           {' '}
           <Sponsor srcx={s.src} name={s.name} link={s.link} />{' '}
         </Col>
@@ -59,7 +59,7 @@ export default function HomePage() {
       {/* Home section */}
       <div className="black_section" id="home">
         <Container fluid className="limiter">
-          <Row className="Row info">
+          <Row className="Row info reverseRow">
             <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
@@ -144,7 +144,9 @@ export default function HomePage() {
       <div className="grey_section" id="camping">
         <Container fluid className="limiter">
           <Row className="Row info2">
-            <SectionCamping />
+            <Col className="info-div" sm={12} lg={12} md={12}>
+              <SectionCamping />
+            </Col>
           </Row>
         </Container>
       </div>

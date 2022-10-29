@@ -10,7 +10,7 @@ const NAVIGATION_OFFSET = 66;
 
 const Wrapper = styled.div`
   display: block;
-  width: 40%;
+  width: 60%;
 
   @media (max-width: 1000px) {
     margin: 0;
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     top: ${props => (props.toggle ? '-1000px' : '0px')};
     transition: top 1s;
     .nav-content {
-      height: 35%;
+      height: 55%;
       background-color: #010101;
     }
   }
