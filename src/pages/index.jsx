@@ -74,7 +74,7 @@ const NavBar = () => {
             <li>
               <a href={`#home`}>
                 <span className="links">
-                  <i class="fas fa-home"></i>{' '}
+                  <i className="fas fa-home"></i>{' '}
                 </span>{' '}
               </a>
             </li>
