@@ -57,7 +57,7 @@ h1 {
 }
 
 .info {
-  margin-top: 20vh;
+  margin-top: 10vh;
   color: white;
 }
 
@@ -175,6 +175,13 @@ h1 {
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .reverseRow {
+    text-align: center;
+    flex-direction: column-reverse;
   }
 }
 
