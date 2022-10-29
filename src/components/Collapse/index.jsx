@@ -27,9 +27,13 @@ const Collapse = () => {
 
   const text = useMemo(
     () =>
-      fullText
-        ? MIDDLE_SECTION.COLLAPSE_DESCRIPTION_PARAGRAPHS
-        : MIDDLE_SECTION.COLLAPSE_TITLE_PARAGRAPHS,
+      (fullText
+        ? [
+            ...MIDDLE_SECTION.COLLAPSE_TITLE_PARAGRAPHS,
+            ...MIDDLE_SECTION.COLLAPSE_DESCRIPTION_PARAGRAPHS
+          ]
+        : MIDDLE_SECTION.COLLAPSE_TITLE_PARAGRAPHS
+      ).join(''),
     [fullText]
   );
 
@@ -40,10 +44,8 @@ const Collapse = () => {
   }, [parentRef]);
 
   return (
-    <div ref={parentRef} className="collapse-container">
-      {text.map((props, i) => (
-        <ReactMarkdown key={i}>{props}</ReactMarkdown>
-      ))}
+    <div className="collapse-container">
+      <ReactMarkdown ref={parentRef}>{text}</ReactMarkdown>
       <ContextAwareToggle
         setFullText={setFullText}
         fullText={fullText}

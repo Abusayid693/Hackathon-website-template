@@ -28,7 +28,7 @@ const TOP_SECTION = {
     '24 horas de diversão'
   ],
   LONG_DESCRIPTION:
-    '24 horas de programação e inovação para resolver os principais problemas de saúde e educação da nossa região',
+    '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
   SHORT_DESCRIPTION: 'Dias 19 e 20 de Novembro no Moinho Zona Norte',
   ACTION_BTN: '#subscription',
   LOGO: hackathonLogo
@@ -50,14 +50,14 @@ const MIDDLE_SECTION = {
     'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
   COLLAPSE_TITLE_PARAGRAPHS: [
     'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação , que possam deixar um legado para a cidade. ',
-    'As equipes que mais se destacarem poderão ser convidadas para o programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Seus projetos serão validados no mundo real, e ao final deste período poderão ser apresentados para possíveis investidores.'
+    '“As equipes que mais se destacarem serão convidadas para compor a comunidade do Hub de Inovação do Moinho por seis meses, incluindo o acesso ao coworking, a eventos e a muito networking. O objetivo é que os projetos sejam validados no mundo real e, ao final deste período, poderão ser apresentados para possíveis investidores. '
   ],
   COLLAPSE_DESCRIPTION_PARAGRAPHS: [
-    'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon.',
-    'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura.',
-    'Na esteira das demandas e ideas, virá o Hackathon nos dias 19 e 20 de novembro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade.',
-    'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor.',
-    'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores.'
+    'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon. ',
+    'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura. ',
+    'Na esteira das demandas e ideas, virá o Hackathon nos dias 19 e 20 de novembro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade. ',
+    'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor. ',
+    'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores. '
   ],
   AGENDA_TITLE: 'Agenda',
   AGENDA: [
