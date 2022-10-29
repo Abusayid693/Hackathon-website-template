@@ -140,20 +140,8 @@ export default function HomePage() {
       </div>
       {/* Enterprise section ending */}
 
-      {/* Camping here */}
-      <div className="grey_section" id="camping">
-        <Container fluid className="limiter">
-          <Row className="Row info2">
-            <Col className="info-div" sm={12} lg={12} md={12}>
-              <SectionCamping />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      {/* Camping ending here */}
-
       {/* Suporters */}
-      <div className="grey_white_section">
+      <div className="grey_section">
         <Container fluid className="limiter" id="suporters">
           <Row className="suportersSection Row">
             <Col>
@@ -163,13 +151,17 @@ export default function HomePage() {
         </Container>
       </div>
 
-      {/* Form here */}
-      {/*<div className="yellow_section" id="form">
+      {/* Camping here */}
+      <div className="grey_white_section" id="camping">
         <Container fluid className="limiter">
-          <SectionForm />
+          <Row className="Row info2">
+            <Col className="info-div" sm={12} lg={12} md={12}>
+              <SectionCamping />
+            </Col>
+          </Row>
         </Container>
-  </div>*/}
-      {/* Form ending here */}
+      </div>
+      {/* Camping ending here */}
 
       {/* ********Sponsors here ***** */}
       <Container fluid className="limiter">
