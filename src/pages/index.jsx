@@ -10,7 +10,7 @@ const NAVIGATION_OFFSET = 66;
 
 const Wrapper = styled.div`
   display: block;
-  width: 60%;
+  width: 50%;
 
   @media (max-width: 1000px) {
     margin: 0;
