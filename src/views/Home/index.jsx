@@ -47,8 +47,6 @@ const PrizeGroup = (props, index) => {
 // Prize group ending
 
 export default function HomePage() {
-  const [termIsOpen, setTermIsOpen] = React.useState(false);
-
   return (
     <div
       className="Whole_div"
@@ -70,12 +68,7 @@ export default function HomePage() {
         </Container>
       </div>
       <Container fluid className="limiter" id="about">
-        <Row className="logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAbout />
-          </Col>
-        </Row>
-        <Row className="Row">
+        <Row className="Row logoSection">
           <Col className="info-div">
             <Collapse />
           </Col>
@@ -122,7 +115,10 @@ export default function HomePage() {
       {/* ********Event here ***** */}
       <Container fluid className="limiter">
         <Row className="prizesection" id="event">
-          <PrizeHeading title={EVENT_SECTION.TITLE} />
+          <PrizeHeading
+            title={EVENT_SECTION.TITLE}
+            description={EVENT_SECTION.DESCRIPTION}
+          />
           {EVENT_SECTION.ACTIVITIES.map(PrizeGroup)}
         </Row>
       </Container>

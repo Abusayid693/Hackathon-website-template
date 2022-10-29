@@ -12,7 +12,6 @@ function Sponsor(props) {
     >
       <div className="Sponsor">
         <img src={props.srcx} alt="Hackathon moinho" />
-        <p>{props.name}</p>
       </div>
     </a>
   );
