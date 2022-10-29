@@ -10,7 +10,7 @@ const NAVIGATION_OFFSET = 66;
 
 const Wrapper = styled.div`
   display: block;
-  width: 40%;
+  width: 50%;
 
   @media (max-width: 1000px) {
     margin: 0;
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     top: ${props => (props.toggle ? '-1000px' : '0px')};
     transition: top 1s;
     .nav-content {
-      height: 35%;
+      height: 55%;
       background-color: #010101;
     }
   }
@@ -73,12 +73,19 @@ const NavBar = () => {
           <ul>
             <li>
               <a href={`#home`}>
-                <span className="links">Home </span>{' '}
+                <span className="links">
+                  <i className="fas fa-home"></i>{' '}
+                </span>{' '}
               </a>
             </li>
             <li>
               <a href={`#about`}>
-                <span className="links">Sobre </span>{' '}
+                <span className="links">Conceito </span>{' '}
+              </a>
+            </li>
+            <li>
+              <a href={`#mentors`}>
+                <span className="links">Mentores </span>{' '}
               </a>
             </li>
             <li>
@@ -87,28 +94,8 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href={`#activities`}>
-                <span className="links">Atividades </span>{' '}
-              </a>
-            </li>
-            <li>
-              <a href={`#mentors`}>
-                <span className="links">Mentores </span>{' '}
-              </a>
-            </li>
-            {/* <li>
-              <a href={`#form`}>
-                <span className="links">Me avise </span>{' '}
-              </a>
-                </li>*/}
-            <li>
               <a href={`#subscription`}>
                 <span className="links">Inscrição </span>{' '}
-              </a>
-            </li>
-            <li>
-              <a href={`#partners`}>
-                <span className="links">Parceiros </span>{' '}
               </a>
             </li>
           </ul>

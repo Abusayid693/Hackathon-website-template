@@ -23,17 +23,22 @@
 }
 .LogoSectionAbout h1 {
   font-weight: 700;
+  font-size: 3rem;
   text-align: left;
 }
 
 .SectionAgendaAbout {
   text-align: left;
-  color: #fff;
+  color: rgb(0, 0, 0);
   border-radius: 15px;
   display: inline-block;
   position: relative;
   font-family: 'Nunito', sans-serif;
   margin-bottom: 24px;
+}
+
+.SectionAgendaAbout h2 {
+  font-size: 3rem;
 }
 
 .AgendaCards {
@@ -57,4 +62,10 @@
   font-weight: 400;
   text-align: left;
   color: #010101;
+}
+
+@media (max-width: 1000px) {
+  .SectionAgendaAbout {
+    text-align: center;
+  }
 }

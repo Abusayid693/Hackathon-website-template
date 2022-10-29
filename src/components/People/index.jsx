@@ -97,19 +97,9 @@ const AvatarGroup = (mentors, size) => {
       )}
 
       {size === 'small' && (
-        <Row className="mentors-small-group">
-          {mentors.map((mentor, i) => (
-            <Col key={i} className="mentors-item" sm={2} md={2} lg={1}>
-              <SmallAvatar mentor={mentor} />
-            </Col>
-          ))}
-        </Row>
-      )}
-
-      {size === 'smallest' && (
         <Row className="mentors-smallest-group">
           {mentors.map((mentor, i) => (
-            <Col key={i} className="mentors-item" sm={2} md={2} lg={2}>
+            <Col key={i} className="mentors-small-item" sm={6} md={6} lg={2}>
               <SmallestAvatar mentor={mentor} />
             </Col>
           ))}
@@ -122,45 +112,24 @@ const AvatarGroup = (mentors, size) => {
 const Mentors = () => {
   return (
     <div className="mentorsContainer">
-      <div className="mentorsWrapper">
-        <div className="mentors-top">
-          <h2 className="display-4">{MENTORS_SECTION.TITLE}</h2>
-          <h3>{MENTORS_SECTION.DESCRIPTION}</h3>
-        </div>
-        <div className="mentors">
-          <div className="mentors-list">
-            {AvatarGroup(MENTORS_SECTION.MENTORS, 'large')}
-            {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS, 'small')}
-          </div>
-          <div className="apply_mentor mb-5">
-            <p>{MENTORS_SECTION.MENTOR_ACTION.PRE}</p>
-            <a
-              href={MENTORS_SECTION.MENTOR_ACTION.LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-mentor">
-                {MENTORS_SECTION.MENTOR_ACTION.TEXT}
-              </button>
-            </a>
-          </div>
-        </div>
+      <div className="mentors-top">
+        <h2 className="display-4">{MENTORS_SECTION.TITLE}</h2>
+        <h3 className="text-secondary">{MENTORS_SECTION.DESCRIPTION}</h3>
       </div>
-      <div className="supportersWrapper">
-        <div className="mb-5">
-          <h3 className="display-4">Apoiadores</h3>
+      <div className="mentors">
+        <div className="mentors-list">
+          {AvatarGroup(MENTORS_SECTION.MENTORS, 'large')}
+          {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS, 'small')}
         </div>
-        <div className="pt-4">
-          {AvatarGroup(MENTORS_SECTION.PARTNERS, 'smallest')}
-        </div>
-        <div className="apply_supporters">
+        <div className="apply_mentor mb-5">
+          <p>{MENTORS_SECTION.MENTOR_ACTION.PRE}</p>
           <a
-            href={MENTORS_SECTION.VOLUNTEER_ACTION.LINK}
+            href={MENTORS_SECTION.MENTOR_ACTION.LINK}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn btn-volunteer">
-              {MENTORS_SECTION.VOLUNTEER_ACTION.TEXT}
+            <button className="btn btn-mentor">
+              {MENTORS_SECTION.MENTOR_ACTION.TEXT}
             </button>
           </a>
         </div>
@@ -169,4 +138,31 @@ const Mentors = () => {
   );
 };
 
-export default Mentors;
+const Supporters = () => {
+  return (
+    <div className="supportersContainer">
+      <div className="mb-5">
+        <h2 className="display-4">Apoiadores</h2>
+        <h3 className="text-secondary">
+          {MENTORS_SECTION.SUPPORTERS_DESCRIPTION}
+        </h3>
+      </div>
+      <div className="pt-4">
+        {AvatarGroup(MENTORS_SECTION.PARTNERS, 'small')}
+      </div>
+      <div className="apply_supporters">
+        <a
+          href={MENTORS_SECTION.VOLUNTEER_ACTION.LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn btn-volunteer">
+            {MENTORS_SECTION.VOLUNTEER_ACTION.TEXT}
+          </button>
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export {Mentors, Supporters};

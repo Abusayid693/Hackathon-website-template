@@ -28,7 +28,7 @@ const TOP_SECTION = {
     '24 horas de diversão'
   ],
   LONG_DESCRIPTION:
-    '24 horas de programação e inovação para resolver os principais problemas de saúde e educação da nossa região',
+    '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
   SHORT_DESCRIPTION: 'Dias 19 e 20 de Novembro no Moinho Zona Norte',
   ACTION_BTN: '#subscription',
   LOGO: hackathonLogo
@@ -50,16 +50,16 @@ const MIDDLE_SECTION = {
     'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
   COLLAPSE_TITLE_PARAGRAPHS: [
     'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação , que possam deixar um legado para a cidade. ',
-    'As equipes que mais se destacarem poderão ser convidadas para o programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Seus projetos serão validados no mundo real, e ao final deste período poderão ser apresentados para possíveis investidores.'
+    '“As equipes que mais se destacarem serão convidadas para compor a comunidade do Hub de Inovação do Moinho por seis meses, incluindo o acesso ao coworking, a eventos e a muito networking. O objetivo é que os projetos sejam validados no mundo real e, ao final deste período, poderão ser apresentados para possíveis investidores. '
   ],
   COLLAPSE_DESCRIPTION_PARAGRAPHS: [
-    'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon.',
-    'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura.',
-    'Na esteira das demandas e ideas, virá o Hackathon nos dias 19 e 20 de novembro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade.',
-    'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor.',
-    'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores.'
+    'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon. ',
+    'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura. ',
+    'Na esteira das demandas e ideas, virá o Hackathon nos dias 19 e 20 de novembro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade. ',
+    'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor. ',
+    'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores. '
   ],
-  AGENDA_TITLE: 'Agenda (preliminar)',
+  AGENDA_TITLE: 'Agenda',
   AGENDA: [
     {
       TITLE: 'Sábado, 19 de Novembro',
@@ -82,22 +82,24 @@ const MIDDLE_SECTION = {
 
 const ENTERPRISE_SECTION = {
   TITLE: 'Hora de empreender!',
-  SHORT_DESCRIPTION: 'Os  melhores projetos receberão nosso apoio:',
+  LONG_DESCRIPTION:
+    'Imagine como seria se um dos nossos projetos seguisse adiante e se tornasse uma solução amplamente utilizada na cidade, estado e até no pais? Estamos aqui pra isso!',
+  SHORT_DESCRIPTION: 'Os melhores projetos receberão nosso apoio',
   TOPICS: [
     {
       ICON: <i className="fas fa-3x fa-gift"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Apoio do moinho com acesso ao{' '}
+          Participação no{' '}
           <a
             className="link"
             target="_blank"
             rel="noopener noreferrer"
-            href="#a"
+            href="https://www.nossomoinho.com/moinho-lab-coworking/"
           >
-            Pacote Moinho
+            Hub de Inovação do Moinho
           </a>{' '}
-          gratuito por seis meses
+          por 6 meses
         </p>
       )
     },
@@ -105,15 +107,18 @@ const ENTERPRISE_SECTION = {
       ICON: <i className="fas fa-3x fa-lightbulb"></i>,
       DESCRIPTION: (
         <p className="topicText">
-          Validação da ideia pelas secretarias de Saúde e Educação da Prefeitura
-          de Juiz de Fora
+          Busca para <span className="link">validar</span> a ideia junto às
+          organizações parceiras do festival
         </p>
       )
     },
     {
       ICON: <i className="fas fa-3x fa-hand-holding-usd"></i>,
       DESCRIPTION: (
-        <p className="topicText">Apresentação para possíveis investidores</p>
+        <p className="topicText">
+          Possibilidade de apresentação do projeto para{' '}
+          <span className="link">investidores</span>
+        </p>
       )
     }
   ]
@@ -122,7 +127,7 @@ const ENTERPRISE_SECTION = {
 const EVENT_SECTION = {
   TITLE: 'O evento',
   DESCRIPTION:
-    'Um hackathon não é só uma maratona de programação e inovação, é também um espaço repleto de pessoas inteligentes, nerds, pensadores, empreenderores, estudantes, de todas as raças e classes sociais. Este grande evento terá diversas atividades para informar, entreter e motivar os participantes. Dentre elas:',
+    'Um hackathon é um grande evento cultural, onde nerds, estudantes, programadores, empreendedores, acadêmicos e demais pessoas falam, vivem e criam inovação. Muito além de código, teremos outras atividades, veja algumas delas.',
   ACTIVITIES: [
     [
       {
@@ -151,6 +156,12 @@ const EVENT_SECTION = {
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
+      }
+    ],
+    [
+      {
+        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
+        title: 'Jogos de tabuleiro'
       }
     ]
   ]
@@ -191,6 +202,8 @@ const MENTORS_SECTION = {
     TEXT: 'Quero ser um mentor',
     LINK: 'https://forms.gle/'
   },
+  SUPPORTERS_DESCRIPTION:
+    'Apenas com o apoio destas pessoas incríveis é possível fazer um evento tão especial!',
   VOLUNTEER_ACTION: {
     TEXT: 'Quero ser um voluntário',
     LINK: 'https://forms.gle/8yGjTd88aSv4dp5C6'
@@ -288,6 +301,24 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/humbertosalesdealmeida/',
       GITHUB: '',
       INSTAGRAM: ''
+    },
+    {
+      NAME: 'Chay Azevedo',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF9jkm2u4M8xQ/profile-displayphoto-shrink_200_200/0/1663622665654?e=1672272000&v=beta&t=i-XMMKyrxG3Nvt-2ZUVGPqMvcE36Aiz3FhtxZyHE6K0',
+      DESCRIPTION: 'Agente Local de Inovação',
+      COMPANY: 'Sebrae',
+      LINKEDIN: 'https://www.linkedin.com/in/chayazevedo/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Kyro Caram',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFKm_M5wEOIjA/profile-displayphoto-shrink_200_200/0/1518697554572?e=1672272000&v=beta&t=LkrxPlY9Nw0f4clpvlYsbi0Qg7tn2BkA0E73CmmKIH8',
+      DESCRIPTION: 'Fundador',
+      COMPANY: 'Collision ',
+      LINKEDIN: 'https://www.linkedin.com/in/kyrocaram/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ],
   PARTNERS: [
@@ -325,6 +356,13 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/ramonxavier/',
       GITHUB: '',
       INSTAGRAM: ''
+    },
+    {
+      NAME: 'Eduardo Alexandre',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGVXUq-4PE2dw/profile-displayphoto-shrink_200_200/0/1614789288094?e=1672272000&v=beta&t=BuamlTTQSV-TWMud3_Eu228zWMzKkZG6MO7dOiD412I',
+      LINKEDIN: 'https://www.linkedin.com/in/eduardotecnologo/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ]
 };
@@ -349,7 +387,8 @@ const SUBSCRIPTION_SECTION = {
   ],
   SUBSCRIBE_LINK:
     'https://www.sympla.com.br/hackaton-de-inovacao-social-de-juiz-de-fora__1766078',
-  TERMS_LINK: ''
+  TERMS_LINK:
+    'https://docs.google.com/document/d/1KJT25ANYLSM8n4U1TAkmvh_qok8Ps_SYEfklffgKk_0/edit?usp=sharing'
 };
 
 const FOOTER = {

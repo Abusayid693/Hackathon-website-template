@@ -8,14 +8,25 @@
 }
 
 .PrizeHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  align-self: center;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  max-width: 800px;
 }
 
 .PrizeHeading h1 {
   font-size: 5rem;
-  margin-bottom: 2rem;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
+}
+
+.PrizeHeading h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
 }
 
 .Prizes p {
