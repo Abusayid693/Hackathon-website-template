@@ -82,16 +82,52 @@ export default function HomePage() {
         </Row>
       </Container>
 
-      {/* Agenda section  */}
-      <div className="grey_section">
-        <Container fluid className="limiter" id="agenda">
-          <Row className="agendaSection">
+      {/* Mentors */}
+      <div className="grey_white_section">
+        <Container fluid className="limiter" id="mentors">
+          <Row className="mentorsSection Row">
+            <Mentors />
+          </Row>
+        </Container>
+      </div>
+      {/* Mentors ending */}
+
+      {/* Agenda */}
+
+      <Container fluid className="limiter" id="agenda">
+        <Row className="agendaSection">
+          <Col className="info-div">
+            <SectionAgendaAbout />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Agenda ending */}
+
+      {/* Subscription */}
+      <div className="black_section" id="subscription">
+        <Container fluid className="limiter">
+          <Row className="Row info">
             <Col className="info-div">
-              <SectionAgendaAbout />
+              <Subscription
+                termIsOpen={termIsOpen}
+                setTermIsOpen={setTermIsOpen}
+              />
             </Col>
           </Row>
         </Container>
       </div>
+      {/* Subscription ending */}
+
+      {/* ********Event here ***** */}
+      <Container fluid className="limiter">
+        <Row className="prizesection" id="event">
+          <PrizeHeading title={EVENT_SECTION.TITLE} />
+          {EVENT_SECTION.ACTIVITIES.map(PrizeGroup)}
+        </Row>
+      </Container>
+      {/* ********Event ending here ***** */}
+
       {/* Enterprise section */}
       <div className="black_section" id="activities">
         <Container fluid className="limiter">
@@ -102,14 +138,8 @@ export default function HomePage() {
           </Row>
         </Container>
       </div>
-      <Container fluid className="limiter">
-        {/* ********Event here ***** */}
-        <Row className="prizesection" id="event">
-          <PrizeHeading title={EVENT_SECTION.TITLE} />
-          {EVENT_SECTION.ACTIVITIES.map(PrizeGroup)}
-        </Row>
-        {/* ********Event ending here ***** */}
-      </Container>
+      {/* Enterprise section ending */}
+
       {/* Camping here */}
       <div className="grey_section" id="camping">
         <Container fluid className="limiter">
@@ -120,16 +150,7 @@ export default function HomePage() {
       </div>
       {/* Camping ending here */}
 
-      {/* Mentors */}
-      <Container fluid className="limiter" id="mentors">
-        <Row className="mentorsSection Row">
-          <Mentors />
-        </Row>
-      </Container>
-      {/* Mentors ending */}
-
       {/* Suporters */}
-
       <div className="grey_white_section">
         <Container fluid className="limiter" id="suporters">
           <Row className="suportersSection Row">
@@ -146,19 +167,8 @@ export default function HomePage() {
           <SectionForm />
         </Container>
   </div>*/}
-      <div className="grey_section" id="subscription">
-        <Container fluid className="limiter">
-          <Row className="Row info">
-            <Col className="info-div">
-              <Subscription
-                termIsOpen={termIsOpen}
-                setTermIsOpen={setTermIsOpen}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </div>
       {/* Form ending here */}
+
       {/* ********Sponsors here ***** */}
       <Container fluid className="limiter">
         <Row className="sponsorSection" id="partners">

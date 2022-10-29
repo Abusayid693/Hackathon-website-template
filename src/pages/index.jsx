@@ -73,12 +73,19 @@ const NavBar = () => {
           <ul>
             <li>
               <a href={`#home`}>
-                <span className="links">Home </span>{' '}
+                <span className="links">
+                  <i class="fas fa-home"></i>{' '}
+                </span>{' '}
               </a>
             </li>
             <li>
               <a href={`#about`}>
-                <span className="links">Sobre </span>{' '}
+                <span className="links">Conceito </span>{' '}
+              </a>
+            </li>
+            <li>
+              <a href={`#mentors`}>
+                <span className="links">Mentores </span>{' '}
               </a>
             </li>
             <li>
@@ -87,28 +94,8 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href={`#activities`}>
-                <span className="links">Atividades </span>{' '}
-              </a>
-            </li>
-            <li>
-              <a href={`#mentors`}>
-                <span className="links">Mentores </span>{' '}
-              </a>
-            </li>
-            {/* <li>
-              <a href={`#form`}>
-                <span className="links">Me avise </span>{' '}
-              </a>
-                </li>*/}
-            <li>
               <a href={`#subscription`}>
                 <span className="links">Inscrição </span>{' '}
-              </a>
-            </li>
-            <li>
-              <a href={`#partners`}>
-                <span className="links">Parceiros </span>{' '}
               </a>
             </li>
           </ul>
