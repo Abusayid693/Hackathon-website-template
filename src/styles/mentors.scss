@@ -65,7 +65,6 @@
 .smallest-avatar {
   display: flex;
   min-width: fit-content;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0;
@@ -84,7 +83,6 @@
 
 .default-avatar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -93,7 +91,10 @@
 }
 
 .name {
-  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
 }
 
 .small-name {
@@ -131,12 +132,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 10rem;
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.description p {
   margin: 0;
   font-size: 1.5rem;
-  height: 5rem;
 }
 
 .social-wrapper {
@@ -202,7 +210,6 @@
     height: 35rem;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
   }
 
   .mentors-small-item {

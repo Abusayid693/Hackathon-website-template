@@ -19,7 +19,7 @@ function topicItem(props, i) {
 function SectionEnterprise() {
   return (
     <div className="SectionEnterprise">
-      <h2>{ENTERPRISE_SECTION.TITLE}</h2>
+      <h2 className="title_default">{ENTERPRISE_SECTION.TITLE}</h2>
       <p>{ENTERPRISE_SECTION.SHORT_DESCRIPTION}</p>
       <div className="topicList">
         {ENTERPRISE_SECTION.TOPICS.map((props, i) => topicItem(props, i))}

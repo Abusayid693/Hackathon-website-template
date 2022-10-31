@@ -1,5 +1,5 @@
 function SponsorsHead() {
-  return <h2 className="shead">Parceiros</h2>;
+  return <h2 className="shead title_default">Parceiros</h2>;
 }
 
 function Sponsor(props) {

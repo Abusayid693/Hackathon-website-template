@@ -1,3 +1,13 @@
 #loader {
   transition: 0.8s;
 }
+
+.title_default {
+  font-size: 6.5rem;
+}
+
+@media (max-width: 768px) {
+  .title_default {
+    font-size: 3rem;
+  }
+}

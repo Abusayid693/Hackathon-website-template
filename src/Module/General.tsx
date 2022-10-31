@@ -13,6 +13,8 @@ const camping1 = '/Assets/Camping/camping_1.jpg';
 const gdgjf = '/Assets/sponsorsLogos/gdgjf.png';
 const pfj = '/Assets/sponsorsLogos/pjf.png';
 const zero40 = '/Assets/sponsorsLogos/zero40.png';
+const critt = '/Assets/sponsorsLogos/critt.jpeg';
+const sebrae = '/Assets/sponsorsLogos/sebrae.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -131,23 +133,19 @@ const EVENT_SECTION = {
   ACTIVITIES: [
     [
       {
-        icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
-        title: 'Competições paralelas'
-      },
-      {
         icon: <i className="second fas fa-4x fa-users"></i>,
         title: 'Roda de conversa com empreendedores'
       },
       {
         icon: <i className="third fas fa-4x fa-chalkboard-teacher"></i>,
         title: 'Interação com mentores'
-      }
-    ],
-    [
+      },
       {
         icon: <i className="first fas fa-4x fa-walking"></i>,
         title: 'Just Dance Now'
-      },
+      }
+    ],
+    [
       {
         icon: <i className="third fas fa-4x fa-om"></i>,
         title: 'Prática de Yoga'
@@ -156,12 +154,16 @@ const EVENT_SECTION = {
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
+      },
+      {
+        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
+        title: 'Jogos de tabuleiro'
       }
     ],
     [
       {
-        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
-        title: 'Jogos de tabuleiro'
+        icon: <i className="sixth fas fa-4x fa-dumbbell"></i>,
+        title: 'Momento funcional'
       }
     ]
   ]
@@ -190,6 +192,18 @@ const sponsors = [
     },
     {src: gdgjf, name: 'GDGJF', link: 'https://gdgjf.github.io/'},
     {src: zero40, name: 'Zero40', link: 'https://zero40.com.br/'}
+  ],
+  [
+    {
+      src: critt,
+      name: 'CRITT',
+      link: 'https://www2.ufjf.br/critt/'
+    },
+    {
+      src: sebrae,
+      name: 'Sebrae',
+      link: 'https://sebrae.com.br/sites/PortalSebrae/ufs/mg?codUf=14'
+    }
   ]
 ];
 
@@ -281,9 +295,7 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
       GITHUB: '',
       INSTAGRAM: ''
-    }
-  ],
-  OTHER_MENTORS: [
+    },
     {
       NAME: 'Yuri Thielmann',
       SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
@@ -321,6 +333,7 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     }
   ],
+  OTHER_MENTORS: [],
   PARTNERS: [
     {
       NAME: 'Carlos Alexandre',
@@ -392,6 +405,22 @@ const SUBSCRIPTION_SECTION = {
 };
 
 const FOOTER = {
+  PRE_FOOTER: {
+    content: (
+      <p className="m-0">
+        Em caso de duvidas sobre o evento, entre em{' '}
+        <a
+          className="pre-footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=5532988735683&text=Gostaria%20de%20saber%20mais%20sobre%20o%20Hackathon"
+        >
+          <u>contato</u>
+        </a>{' '}
+        conosco
+      </p>
+    )
+  },
   realization: {
     name: 'Moinho',
     link: 'https://www.nossomoinho.com/'
