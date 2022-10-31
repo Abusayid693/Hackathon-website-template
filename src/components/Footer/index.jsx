@@ -35,7 +35,8 @@ const Footer = () => {
             A elaboração e organização do evento é de{' '}
             <a href={FOOTER.organization.link}>
               <b>{FOOTER.organization.name}</b>
-            </a>, com o suporte dos apoiadores e mentores{' '}
+            </a>
+            , com o suporte dos apoiadores e mentores{' '}
           </p>
           <p>
             Landing page criada por voluntários com código open-source
