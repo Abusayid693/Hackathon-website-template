@@ -102,7 +102,7 @@ export default function HomePage() {
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div">
-              <Subscription/>
+              <Subscription />
             </Col>
           </Row>
         </Container>
