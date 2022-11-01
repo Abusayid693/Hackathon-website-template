@@ -18,6 +18,7 @@ import Subscription from '../../components/Subscription/index.jsx';
 import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
 import {Mentors, Supporters} from 'components/People/index.jsx';
+import LowCode from 'components/LowCode/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -155,6 +156,18 @@ export default function HomePage() {
         </Container>
       </div>
       {/* Camping ending here */}
+
+      {/* Low code section */}
+      <div className="grey_section" id="low_code">
+        <Container fluid className="limiter">
+          <Row className="Row info">
+            <Col className="info-div">
+              <LowCode />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      {/* Low code section ending */}
 
       {/* ********Sponsors here ***** */}
       <Container fluid className="limiter">
