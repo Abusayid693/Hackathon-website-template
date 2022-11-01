@@ -1,4 +1,4 @@
-const hackathonBanner = '/Assets/hackathonBanner.jpg';
+const hackathonBanner = '/Assets/hackathonBanner.png';
 const hackathonLogo = '/Assets/hackthon_branco.png';
 
 // Camping
