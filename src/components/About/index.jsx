@@ -32,7 +32,7 @@ function AgendaCard(props, index) {
 function SectionAgendaAbout() {
   return (
     <div className="SectionAgendaAbout">
-      <h2>{MIDDLE_SECTION.AGENDA_TITLE}</h2>
+      <h2 className="title_default">{MIDDLE_SECTION.AGENDA_TITLE}</h2>
       <div className="AgendaCards">
         {MIDDLE_SECTION.AGENDA.map((props, i) => AgendaCard(props, i))}
       </div>
