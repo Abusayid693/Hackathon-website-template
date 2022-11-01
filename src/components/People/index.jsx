@@ -35,30 +35,10 @@ const SmallestAvatar = ({mentor}) => {
         width="100px"
         alt={mentor.NAME}
       />
+      <SocialWrapper item={mentor} />
       <div className="smallest-avatar-info">
         <p className="smallest-name">{mentor.NAME}</p>
       </div>
-      <SocialWrapper item={mentor} />
-    </div>
-  );
-};
-
-const SmallAvatar = ({mentor}) => {
-  return (
-    <div className="small-avatar">
-      <img
-        className="rounded-circle shadow-4"
-        src={mentor.SRC}
-        width="80px"
-        alt={mentor.NAME}
-      />
-      <div className="small-avatar-info">
-        <p className="small-name">{mentor.NAME}</p>
-        <p className="small-description text-secondary">
-          {mentor.DESCRIPTION}, {mentor.COMPANY}
-        </p>
-      </div>
-      <SocialWrapper item={mentor} />
     </div>
   );
 };
@@ -71,14 +51,17 @@ const Avatar = ({mentor}) => {
         className="rounded-circle shadow-4"
         alt={mentor.NAME}
       />
-      <div className="avatar-info">
-        <p className="name">{mentor.NAME}</p>
-        <p className="description text-secondary">
-          {mentor.DESCRIPTION}, {mentor.COMPANY}
-        </p>
-      </div>
-
       <SocialWrapper item={mentor} />
+      <div className="avatar-info">
+        <div className="name">
+          <p>{mentor.NAME}</p>
+        </div>
+        <div className="description">
+          <p className="text-secondary">
+            {mentor.DESCRIPTION}, {mentor.COMPANY}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
@@ -113,7 +96,7 @@ const Mentors = () => {
   return (
     <div className="mentorsContainer">
       <div className="mentors-top">
-        <h2 className="display-4">{MENTORS_SECTION.TITLE}</h2>
+        <h2 className="title_default">{MENTORS_SECTION.TITLE}</h2>
         <h3 className="text-secondary">{MENTORS_SECTION.DESCRIPTION}</h3>
       </div>
       <div className="mentors">
@@ -142,7 +125,7 @@ const Supporters = () => {
   return (
     <div className="supportersContainer">
       <div className="mb-5">
-        <h2 className="display-4">Apoiadores</h2>
+        <h2 className="title_default">Apoiadores</h2>
         <h3 className="text-secondary">
           {MENTORS_SECTION.SUPPORTERS_DESCRIPTION}
         </h3>

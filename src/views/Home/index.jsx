@@ -21,7 +21,7 @@ import {Mentors, Supporters} from 'components/People/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
-    <Row key={index}>
+    <Row className="justify-content-center" key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={12}>
           {' '}
@@ -102,7 +102,7 @@ export default function HomePage() {
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div">
-              <Subscription/>
+              <Subscription />
             </Col>
           </Row>
         </Container>

@@ -1,4 +1,4 @@
-const hackathonBanner = '/Assets/hackathonBanner.jpg';
+const hackathonBanner = '/Assets/hackathonBanner.png';
 const hackathonLogo = '/Assets/hackthon_branco.png';
 
 // Camping
@@ -13,6 +13,8 @@ const camping1 = '/Assets/Camping/camping_1.jpg';
 const gdgjf = '/Assets/sponsorsLogos/gdgjf.png';
 const pfj = '/Assets/sponsorsLogos/pjf.png';
 const zero40 = '/Assets/sponsorsLogos/zero40.png';
+const critt = '/Assets/sponsorsLogos/critt.jpeg';
+const sebrae = '/Assets/sponsorsLogos/sebrae.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -49,7 +51,7 @@ const MIDDLE_SECTION = {
   LONG_DESCRIPTION:
     'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
   COLLAPSE_TITLE_PARAGRAPHS: [
-    'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação , que possam deixar um legado para a cidade. ',
+    'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação, que possam deixar um legado para a cidade. ',
     '“As equipes que mais se destacarem serão convidadas para compor a comunidade do Hub de Inovação do Moinho por seis meses, incluindo o acesso ao coworking, a eventos e a muito networking. O objetivo é que os projetos sejam validados no mundo real e, ao final deste período, poderão ser apresentados para possíveis investidores. '
   ],
   COLLAPSE_DESCRIPTION_PARAGRAPHS: [
@@ -74,9 +76,10 @@ const MIDDLE_SECTION = {
     {
       TITLE: 'Domingo, 20 de Novembro',
       DESCRIPTION:
-        'Antes do almoço fecharemos o envio de projetos, com apresentação de cada projeto desenvolvido. Em seguida haverá a premiação dos melhores projetos e de todos os demais participantes.'
+        'Antes do almoço fecharemos o envio de projetos, com apresentação de alguns dos projetos desenvolvidos. Em seguida haverá a premiação dos melhores projetos e de todos os demais participantes.'
     }
   ],
+  AGENDA_FOOTER: 'Os horários exatos ainda serão divulgados',
   LOGO: hackathonLogo
 };
 
@@ -131,23 +134,19 @@ const EVENT_SECTION = {
   ACTIVITIES: [
     [
       {
-        icon: <i className="fourth fas fa-4x fa-user-astronaut"></i>,
-        title: 'Competições paralelas'
-      },
-      {
         icon: <i className="second fas fa-4x fa-users"></i>,
         title: 'Roda de conversa com empreendedores'
       },
       {
         icon: <i className="third fas fa-4x fa-chalkboard-teacher"></i>,
         title: 'Interação com mentores'
-      }
-    ],
-    [
+      },
       {
         icon: <i className="first fas fa-4x fa-walking"></i>,
         title: 'Just Dance Now'
-      },
+      }
+    ],
+    [
       {
         icon: <i className="third fas fa-4x fa-om"></i>,
         title: 'Prática de Yoga'
@@ -156,12 +155,16 @@ const EVENT_SECTION = {
       {
         icon: <i className="sixth fas fa-4x fa-couch"></i>,
         title: 'Espaço relax'
+      },
+      {
+        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
+        title: 'Jogos de tabuleiro'
       }
     ],
     [
       {
-        icon: <i className="fifth fas fa-4x fa-chess-knight"></i>,
-        title: 'Jogos de tabuleiro'
+        icon: <i className="sixth fas fa-4x fa-dumbbell"></i>,
+        title: 'Momento funcional'
       }
     ]
   ]
@@ -190,6 +193,18 @@ const sponsors = [
     },
     {src: gdgjf, name: 'GDGJF', link: 'https://gdgjf.github.io/'},
     {src: zero40, name: 'Zero40', link: 'https://zero40.com.br/'}
+  ],
+  [
+    {
+      src: critt,
+      name: 'CRITT',
+      link: 'https://www2.ufjf.br/critt/'
+    },
+    {
+      src: sebrae,
+      name: 'Sebrae',
+      link: 'https://sebrae.com.br/sites/PortalSebrae/ufs/mg?codUf=14'
+    }
   ]
 ];
 
@@ -281,9 +296,7 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
       GITHUB: '',
       INSTAGRAM: ''
-    }
-  ],
-  OTHER_MENTORS: [
+    },
     {
       NAME: 'Yuri Thielmann',
       SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
@@ -321,6 +334,7 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     }
   ],
+  OTHER_MENTORS: [],
   PARTNERS: [
     {
       NAME: 'Carlos Alexandre',
@@ -377,7 +391,7 @@ const SUBSCRIPTION_SECTION = {
   DESCRIPTION:
     'Os ingressos serão liberados em dois ou três lotes para participação. O número de vagas é limitado em quatro categorias:',
   VALUE:
-    'O valor da inscrição no primeiro lote é de R$80,00 inteira e R$40,00 para estudantes.',
+    'O valor da inscrição no primeiro lote é de R$80,00 inteira e R$40,00 para estudantes. Neste valor estão inclusas as alimentações (biscoitos, frutas, pizza, sanduiches, café e agua).',
   DRAW: 'Não perca essa oportunidade de conhecer gente nova, ficar imerso em cultura inovadora, se divertir, ajudar a cidade e fazer história!',
   CATEGORIES: [
     'Desenvolvedores',
@@ -392,6 +406,22 @@ const SUBSCRIPTION_SECTION = {
 };
 
 const FOOTER = {
+  PRE_FOOTER: {
+    content: (
+      <p className="m-0">
+        Em caso de duvidas sobre o evento, entre em{' '}
+        <a
+          className="pre-footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=5532988735683&text=Gostaria%20de%20saber%20mais%20sobre%20o%20Hackathon"
+        >
+          <u>contato</u>
+        </a>{' '}
+        conosco
+      </p>
+    )
+  },
   realization: {
     name: 'Moinho',
     link: 'https://www.nossomoinho.com/'
