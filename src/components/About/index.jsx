@@ -36,6 +36,9 @@ function SectionAgendaAbout() {
       <div className="AgendaCards">
         {MIDDLE_SECTION.AGENDA.map((props, i) => AgendaCard(props, i))}
       </div>
+      <p className="text-secondary">
+        <small>{MIDDLE_SECTION.AGENDA_FOOTER}</small>
+      </p>
     </div>
   );
 }
