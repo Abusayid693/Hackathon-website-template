@@ -21,6 +21,7 @@ import '../styles/typed.scss';
 import '../styles/collapse.scss';
 import '../styles/subscription.scss';
 import '../styles/mentors.scss';
+import '../styles/low_code.scss';
 
 export default function MyApp({Component, pageProps}) {
   return (

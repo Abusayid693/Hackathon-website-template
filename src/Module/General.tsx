@@ -4,6 +4,8 @@ const hackathonLogo = '/Assets/hackthon_branco.png';
 // Camping
 const camping1 = '/Assets/Camping/camping_1.jpg';
 
+const lowCode = '/Assets/low_code.png';
+
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -175,6 +177,13 @@ const CAMPING_PARTY_SECTION = {
     'Se bater aquele cansaço, o que pode ser melhor que deitar na sua barraca e tirar um cochilo? Teremos um camping em uma área reservada do evento, um espaço para desligar e descansar.',
   SHORT_DESCRIPTION:
     'Sinta-se a vontade para leva sua barraca e colchão e poder recarregar as baterias quando necessário.'
+};
+
+const LOW_CODE_SECTION = {
+  TITLE: 'No-code e low-code',
+  SRC: lowCode,
+  DESCRIPTION:
+    'Queremos te incentivar ao máximo a participar, se expressar e solucionar problemas com a tecnologia. Por isso permitiremos projetos desenvolvidos usando ferramentas no-code ou low-code. Ou seja, não é preciso ser programador para implementar algo realmente incrível!'
 };
 
 /** Instructions
@@ -444,6 +453,7 @@ export {
   CAMPING_PARTY_SECTION,
   FORM_SECTION,
   SUBSCRIPTION_SECTION,
+  LOW_CODE_SECTION,
   sponsors,
   MENTORS_SECTION,
   FOOTER
