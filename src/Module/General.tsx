@@ -79,6 +79,7 @@ const MIDDLE_SECTION = {
         'Antes do almoço fecharemos o envio de projetos, com apresentação de alguns dos projetos desenvolvidos. Em seguida haverá a premiação dos melhores projetos e de todos os demais participantes.'
     }
   ],
+  AGENDA_FOOTER: 'Os horários exatos ainda serão divulgados',
   LOGO: hackathonLogo
 };
 
