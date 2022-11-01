@@ -4,7 +4,7 @@ function PrizeHeading(props) {
   return (
     <Row className="PrizeHeading">
       <Col sm={6} md={6} lg={6}>
-        <h1>{props.title}</h1>
+        <h1 className="title_default">{props.title}</h1>
       </Col>
       <Col>
         <h2>{props.description}</h2>

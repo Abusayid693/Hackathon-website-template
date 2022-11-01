@@ -7,7 +7,7 @@ import {SUBSCRIPTION_SECTION} from '../../Module/General';
 const Subscription = ({termIsOpen, setTermIsOpen}) => {
   return (
     <div className="subscriptionSection">
-      <h2 className="main_subscription_text">{SUBSCRIPTION_SECTION.TITLE}</h2>
+      <h2 className="title_default">{SUBSCRIPTION_SECTION.TITLE}</h2>
       <Row className="flex-column justify-content-center align-items-center">
         <Row>
           <Col>
