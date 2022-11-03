@@ -19,6 +19,7 @@ import {Sponsor, SponsorsHead} from '../../components/Sponsors/sponsors.jsx';
 import {EVENT_SECTION, sponsors} from '../../Module/General';
 import {Mentors, Supporters} from 'components/People/index.jsx';
 import LowCode from 'components/LowCode/index.jsx';
+import NotProgrammer from 'components/NotProgrammer/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -168,6 +169,18 @@ export default function HomePage() {
         </Container>
       </div>
       {/* Low code section ending */}
+
+      {/* Not programmer section */}
+      <div className="grey_white_section">
+        <Container fluid className="limiter">
+          <Row className="Row info2">
+            <Col className="info-div" sm={12} lg={12} md={12}>
+              <NotProgrammer />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      {/* Not programmer section ending */}
 
       {/* ********Sponsors here ***** */}
       <Container fluid className="limiter">
