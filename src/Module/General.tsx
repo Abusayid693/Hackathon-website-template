@@ -187,6 +187,31 @@ const LOW_CODE_SECTION = {
     'Queremos te incentivar ao máximo a participar, se expressar e solucionar problemas com a tecnologia. Por isso permitiremos projetos desenvolvidos usando ferramentas no-code ou low-code. Ou seja, não é preciso ser programador para implementar algo realmente incrível!'
 };
 
+const NOT_PROGRAMMER_SECTION = {
+  TITLE: 'Não é programador?',
+  SHORT_DESCRIPTION: 'Entusiastas são bem vindos!',
+  LONG_DESCRIPTION: (
+    <>
+      <p>
+        Os times serão formados por um desenvolvedor, um empreendedor e um
+        estudante ao menos, mas podem ter ainda outros 3 membros de outras áreas
+        quaisquer.
+      </p>
+      <p>
+        Além disso, criamos a inscrição de &quot;entusiasta&quot; , que permite
+        você participar do evento sem necessariamente competir. Te dá a opção de
+        vivenciar o evento, sentir a energia e criar conexões sem precisar
+        entregar algo em 24 horas.
+      </p>
+      <p>Curtiu? Então se inscreva agora.</p>
+    </>
+  ),
+  ACTION: {
+    LABEL: 'Me inscrever agora',
+    LINK: '#subscription'
+  }
+};
+
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
  * create as many arrays you want all logos will be rendered
@@ -455,6 +480,7 @@ export {
   FORM_SECTION,
   SUBSCRIPTION_SECTION,
   LOW_CODE_SECTION,
+  NOT_PROGRAMMER_SECTION,
   sponsors,
   MENTORS_SECTION,
   FOOTER
