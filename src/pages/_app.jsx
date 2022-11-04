@@ -22,6 +22,7 @@ import '../styles/collapse.scss';
 import '../styles/subscription.scss';
 import '../styles/mentors.scss';
 import '../styles/low_code.scss';
+import '../styles/not_programmer.scss';
 
 export default function MyApp({Component, pageProps}) {
   return (
