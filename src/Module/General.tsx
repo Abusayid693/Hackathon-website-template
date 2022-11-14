@@ -33,7 +33,7 @@ const TOP_SECTION = {
   ],
   LONG_DESCRIPTION:
     '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
-  SHORT_DESCRIPTION: 'Dias 19 e 20 de Novembro no Moinho Zona Norte',
+  SHORT_DESCRIPTION: 'Dias 21 e 22 de Janeiro no Moinho Zona Norte',
   ACTION_BTN: '#subscription',
   LOGO: hackathonLogo
 };
@@ -59,14 +59,14 @@ const MIDDLE_SECTION = {
   COLLAPSE_DESCRIPTION_PARAGRAPHS: [
     'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon. ',
     'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura. ',
-    'Na esteira das demandas e ideas, virá o Hackathon nos dias 19 e 20 de novembro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade. ',
+    'Na esteira das demandas e ideas, virá o Hackathon nos dias 21 e 22 de Janeiro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade. ',
     'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor. ',
     'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores. '
   ],
   AGENDA_TITLE: 'Agenda',
   AGENDA: [
     {
-      TITLE: 'Sábado, 19 de Novembro',
+      TITLE: 'Sábado, 21 de Janeiro',
       DESCRIPTION:
         'Abriremos o espaço para o credenciamento pela manhã, e após o almoço teremos a abertura oficial do evento, com a largada para o Hackathon logo em seguida.'
     },
@@ -76,7 +76,7 @@ const MIDDLE_SECTION = {
         '24 horas para pensar em soluções, propor projetos, montar equipes e desenvolver inovações para melhorar nossa realiadade.'
     },
     {
-      TITLE: 'Domingo, 20 de Novembro',
+      TITLE: 'Domingo, 22 de Janeiro',
       DESCRIPTION:
         'Antes do almoço fecharemos o envio de projetos, com apresentação de alguns dos projetos desenvolvidos. Em seguida haverá a premiação dos melhores projetos e de todos os demais participantes.'
     }
