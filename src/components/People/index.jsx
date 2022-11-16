@@ -104,18 +104,6 @@ const Mentors = () => {
           {AvatarGroup(MENTORS_SECTION.MENTORS, 'large')}
           {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS, 'small')}
         </div>
-        <div className="apply_mentor mb-5">
-          <p>{MENTORS_SECTION.MENTOR_ACTION.PRE}</p>
-          <a
-            href={MENTORS_SECTION.MENTOR_ACTION.LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-mentor">
-              {MENTORS_SECTION.MENTOR_ACTION.TEXT}
-            </button>
-          </a>
-        </div>
       </div>
     </div>
   );
