@@ -29,7 +29,10 @@ const TOP_SECTION = {
   Typed_effect: [
     '24 horas de evento',
     '24 horas de aprendizado',
-    '24 horas de diversão'
+    '24 horas de diversão',
+    '24 horas de programação',
+    '24 horas de tecnologia',
+    '24 horas de inovação'
   ],
   LONG_DESCRIPTION:
     '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
