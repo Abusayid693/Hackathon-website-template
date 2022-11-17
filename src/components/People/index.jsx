@@ -50,6 +50,7 @@ const Avatar = ({mentor}) => {
         src={mentor.SRC}
         className="rounded-circle shadow-4"
         alt={mentor.NAME}
+        width="200px"
       />
       <SocialWrapper item={mentor} />
       <div className="avatar-info">
@@ -102,7 +103,17 @@ const Mentors = () => {
       <div className="mentors">
         <div className="mentors-list">
           {AvatarGroup(MENTORS_SECTION.MENTORS, 'large')}
-          {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS, 'small')}
+        </div>
+      </div>
+      <div>
+        <h2 className="title_default">{MENTORS_SECTION.OTHER_MENTORS.TITLE}</h2>
+        <h3 className="text-secondary">
+          {MENTORS_SECTION.OTHER_MENTORS.DESCRIPTION}
+        </h3>
+      </div>
+      <div className="mentors">
+        <div className="mentors-list">
+          {AvatarGroup(MENTORS_SECTION.OTHER_MENTORS.MENTORS, 'large')}
         </div>
       </div>
     </div>
