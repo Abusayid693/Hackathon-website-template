@@ -25,9 +25,8 @@ import {
   TeamInfo,
   TOP_SECTION
 } from '../../Module/General';
-import MyCalender from '../calender';
 import './about.css';
-import pattern from './assets/pattern4.png';
+// import pattern from './assets/pattern4.png';
 import logoDavidson from './assets/logoDavidson.png';
 
 const SponsorGroup = (props, index) => {
@@ -86,7 +85,7 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div">
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
