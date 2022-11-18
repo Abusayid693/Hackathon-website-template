@@ -34,13 +34,13 @@ import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
-  TITLE: 'Join Hack@ Davidson',
+  TITLE: 'Hack@Davidson',
   Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
     'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
-  SPONSOR_US_EMAIL: 'sphawkins@davidson.edu',
+  SPONSOR_US_EMAIL: 'mailto:sphawkins@davidson.edu',
   HACKERS_REGISTRATION_FORM_LINK:
     'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
 };
