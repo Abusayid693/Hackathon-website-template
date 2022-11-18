@@ -36,7 +36,7 @@ const TOP_SECTION = {
   ],
   LONG_DESCRIPTION:
     '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
-  SHORT_DESCRIPTION: 'Dias 21 e 22 de Janeiro no Moinho Zona Norte',
+  SHORT_DESCRIPTION: 'Dias 21 e 22 de Janeiro no Moinho',
   ACTION_BTN: '#subscription',
   LOGO: hackathonLogo
 };

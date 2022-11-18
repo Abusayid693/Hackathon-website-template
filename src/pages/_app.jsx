@@ -29,7 +29,7 @@ export default function MyApp({Component, pageProps}) {
     <div>
       <Head>
         <title>
-          Hackathon de Inovação Social de Juiz de Fora, no Moinho Zona Norte
+          Hackathon de Inovação Social de Juiz de Fora, no Moinho
         </title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,7 +47,7 @@ export default function MyApp({Component, pageProps}) {
         <meta property="og:image" content="https://i.imgur.com/cWY4Hlk.png" />
         <meta
           property="og:title"
-          content="Hackathon de Inovação Social de Juiz de Fora, no Moinho Zona Norte"
+          content="Hackathon de Inovação Social de Juiz de Fora, no Moinho"
         />
         <meta property="og:type" content="website" />
         <meta
