@@ -7,7 +7,6 @@ import Dis from './assets/icons8-discord.svg';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
-import Twitter from './assets/icons8-twitter.svg';
 import PrivacyPolicy from './assets/Privacy policy.pdf';
 import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
@@ -70,11 +69,7 @@ const Footer = () => {
               <img src={Mail} alt="" />
             </a>
           </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-              <img src={Twitter} alt="" />
-            </a>
-          </div>
+          <div className="social-icon"></div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
               <img src={DevPost} alt="" />
