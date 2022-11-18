@@ -18,7 +18,7 @@ function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
       <h3>Interested in Sponsoring </h3>
-      <a href={SOCIALS.email}>
+      <a href={SOCIALS.SPONSOR_US_EMAIL}>
         <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" />
       </a>{' '}
     </div>
