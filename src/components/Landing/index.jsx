@@ -41,7 +41,7 @@ const Myinfo = () => {
       <div className="buttom-group">
         <a href={TOP_SECTION.JUDGES_FORM_LINK}>
           {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+          <Btn class="sponsor_btn" type="Sponsor us!" overlay="Fill the form" />
         </a>
 
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
