@@ -1,4 +1,4 @@
-import hackathonLogo from './Assets/hackathonLogo.png';
+import ccad_logo from './Assets/ccad-logo.jpeg';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -34,33 +34,31 @@ import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
+  TITLE: 'Join Hack@ Davidson',
   Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
     'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
-  JUDGES_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
+  SPONSOR_US_EMAIL: 'sphawkins@davidson.edu',
   HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u'
+    'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
-  discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  instagram: 'https://www.instagram.com/hack_davidson/',
+  discord: '',
+  linkedin: 'https://www.linkedin.com/company/competitive-coding-at-davidson/',
+  devpost: 'https://hackdavidson.devpost.com/',
+  email: 'mailto:hack@davidson.edu',
+  mail: 'hack@davidson.edu'
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
+  TITLE: 'What is Hack@Davidson?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
-  LOGO: hackathonLogo
+    'Hack@Davidson is a 48 hour long hackathon held on Febuary 10th-12th, 2023.',
+  LOGO: ccad_logo
 };
 
 const FOOTER = {
