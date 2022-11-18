@@ -19,7 +19,7 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
   const contextTesting = useContext(calenderContext);
   const {state, dispatch} = contextTesting as any;
   return (
-    <>Hello</>
+    <>Hellos</>
     // <H.Container>
     //   <Flexbox className="card-top" flexRow>
     //     <h3 style={{fontSize: 20}} color="white">
