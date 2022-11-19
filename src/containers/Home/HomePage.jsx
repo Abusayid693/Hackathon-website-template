@@ -15,14 +15,12 @@ import {
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import {Member} from '../../components/Team';
 import {
-  FOOTER,
   frequentlyAskedQuestions,
   Prizeinfo,
   sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
+  TeamInfo
 } from '../../Module/General';
 import './about.css';
 // import pattern from './assets/pattern4.png';
@@ -126,6 +124,7 @@ export default function HomePage() {
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
+          <PrizeHeading type="Over $5,000 worth of prizes!!!" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
@@ -142,7 +141,7 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
+        <h1 id="team">Leadership</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
       </Container>

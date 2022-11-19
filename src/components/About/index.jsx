@@ -14,7 +14,7 @@ function LogoSectionAbout() {
 function Logo() {
   return (
     <div className="logoS">
-      <img className="Logo" src={MIDDLE_SECTION.LOGO} alt="Limbohacks" />
+      <img className="Logo" src={MIDDLE_SECTION.LOGO} alt="Hack@Davidson" />
     </div>
   );
 }
