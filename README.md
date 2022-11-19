@@ -149,7 +149,6 @@ const TOP_SECTION = {
   // This image will be used for top section right side image
   IMG_SRC:boy ,
   DISCORD_LINK: "",
-  JUDGES_FORM_LINK:"",
   HACKERS_REGISTRATION_FORM_LINK:""
 };
 
@@ -180,24 +179,6 @@ const MIDDLE_SECTION = {
   // Your hackathon logo src
   LOGO: ""
 };
-
-
-
-
-/* Customize footer section */
-const FOOTER = {
-  VOLUNTEERING_FORM: {
-    required: true,
-    src: ""
-  },
-  JOIN_TEAM: {
-    required: true,
-    src: ""
-  }
-  {........
-};
-
-
 
 
 /* Add your prize descriptions,

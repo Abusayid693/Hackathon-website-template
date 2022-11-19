@@ -40,7 +40,6 @@ const TOP_SECTION = {
     'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
-  SPONSOR_US_EMAIL: 'mailto:sphawkins@davidson.edu',
   HACKERS_REGISTRATION_FORM_LINK:
     'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
 };
@@ -51,6 +50,7 @@ const SOCIALS = {
   linkedin: 'https://www.linkedin.com/company/competitive-coding-at-davidson/',
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
+  SPONSOR_US_EMAIL: 'mailto:sphawkins@davidson.edu',
   mail: 'hack@davidson.edu'
 };
 
@@ -62,14 +62,6 @@ const MIDDLE_SECTION = {
 };
 
 const FOOTER = {
-  VOLUNTEERING_FORM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
-  },
-  JOIN_TEAM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
-  },
   Privacy_policy: {
     required: true,
     src: ''
@@ -268,50 +260,6 @@ const TeamInfo = [
   ]
 ];
 
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: me
-    },
-    {
-      Name: 'Moon',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: moon
-    },
-    {
-      Name: 'Ryah Garcia',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: Ryah
-    }
-  ],
-  [
-    //Array 2
-    {
-      Name: 'Lyanola',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: lyin
-    },
-    {
-      Name: 'Zoheb',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: zoha
-    }
-  ]
-];
-
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
  * create as many arrays you want all logos will be rendered
@@ -364,11 +312,6 @@ const frequentlyAskedQuestions = [
           'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
       },
       {
-        label: 'Can i volunteer?',
-        content:
-          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
-      },
-      {
         label: 'Will there be swag?',
         content: 'Yes! Participants will recieveing Hack@Davidson swag!.'
       }
@@ -384,7 +327,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate

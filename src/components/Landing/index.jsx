@@ -30,7 +30,7 @@ const Myinfo = () => {
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <br></br>
       <div className="buttom-group">
-        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
+        <a href={SOCIALS.SPONSOR_US_EMAIL}>
           {' '}
           <Btn class="sponsor_btn" type="Sponsor us!" overlay="Fill the form" />
         </a>

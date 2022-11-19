@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
 import {Btn} from '../Landing/index.jsx';
-import cross from './assets/cross.svg';
 import DevPost from './assets/icons8-dev-post.svg';
 import Dis from './assets/icons8-discord.svg';
 import Insta from './assets/icons8-instagram.svg';
@@ -11,22 +10,6 @@ import PrivacyPolicy from './assets/Privacy policy.pdf';
 import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
 import './style.scss';
-
-const GithubTemplate = ({hideTemplate}) => {
-  return (
-    <div className="template">
-      <div className="template-left">
-        <p>
-          Join us to{' '}
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
-          where we will be hosting PUBLIC workshops, tech talks, panel
-          discussions, and career sessions!
-        </p>
-      </div>
-      <img onClick={hideTemplate} src={cross} />
-    </div>
-  );
-};
 
 const Footer = () => {
   const [template, setTemplate] = useState(false);
@@ -76,16 +59,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="Register_a">
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-            <Btn type="Register" overlay="Fill the form" />
-          </a>
-          {FOOTER.VOLUNTEERING_FORM.required && (
-            <a href={FOOTER.VOLUNTEERING_FORM.src}>
-              <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
-            </a>
-          )}
-        </div>
+
         <div className="footer_info">
           <p>
             Contact us{' '}
@@ -116,9 +90,6 @@ const Footer = () => {
           )}
           <p>Made with ❤️</p>
         </div>
-        {template && viewTemplate && (
-          <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
-        )}
       </div>
     </div>
   );
