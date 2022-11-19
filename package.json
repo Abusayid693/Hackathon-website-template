@@ -2,7 +2,7 @@
   "name": "hackathon-website-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olsenbudanur.github.io/HackAtDavidson",
+  "homepage": "https://hackatdavidson.com",
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@mdx-js/loader": "^1.6.22",

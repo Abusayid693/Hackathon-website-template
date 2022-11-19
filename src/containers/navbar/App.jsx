@@ -141,7 +141,7 @@ const NAVBAR = ({}) => {
         <Route path="/blog" exact={true}>
           <MdxContent />
         </Route>
-        <Route path="/HackAtDavidson" exact={true}>
+        <Route path="/" exact={true}>
           <HomePage />
         </Route>
       </Switch>
