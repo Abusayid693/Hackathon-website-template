@@ -42,7 +42,7 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Hack@Davidson?',
+  TITLE: 'What is Hack @ Davidson?',
   LONG_DESCRIPTION:
     'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by Competitive Coding at Davidson (C-CAD). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
   LOGO: ccad_logo
