@@ -32,16 +32,16 @@ const Myinfo = () => {
       <div className="buttom-group">
         <a href={SOCIALS.SPONSOR_US_EMAIL}>
           {' '}
-          <Btn class="sponsor_btn" type="Sponsor us!" overlay="Fill the form" />
+          <Btn
+            class="register"
+            type="Sponsor us!"
+            overlay="See sponsor package"
+          />
         </a>
 
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
-          <Btn
-            class="register"
-            type="Register "
-            overlay="Hackers registration"
-          />
+          <Btn type="Register" overlay="Hackers registration" />
         </a>
       </div>
       <div className="join_dis">
@@ -52,7 +52,7 @@ const Myinfo = () => {
           href={SOCIALS.discord}
         >
           <Btn
-            ico="fab fa-2x fa-discord"
+            ico="fab fa-discord"
             class="join_disco"
             type="Join our discord"
             overlay="Click the link"

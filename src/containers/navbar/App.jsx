@@ -108,17 +108,17 @@ const NAVBAR = ({}) => {
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
+                  <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
+                  <span className="links">Sponsors </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
+                  <span className="links">Team </span>{' '}
                 </Link>
               </li>
               <img

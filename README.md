@@ -143,9 +143,9 @@ import boy from "./Assets/boy.png";
 const TOP_SECTION = {
   TITLE: "Join Hack@Davidson",
   // Typing effect
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  Typed_effect: ["48 hours of creation", "$5,000 worth of prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "Join us on 10th February 2023 for 48 hours of creation, innovation, & fun.",
   // This image will be used for top section right side image
   IMG_SRC:boy ,
   DISCORD_LINK: "",
@@ -281,7 +281,7 @@ Change meta tags content in `/public/index.html`
 <meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" />
 <meta
   property="og:description"
-  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
+  content="Join us on 10th February 2023 for 48 hours of creation, innovation, & fun."
 />
 ```
 
