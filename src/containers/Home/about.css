@@ -59,7 +59,9 @@ h1 {
   margin: 17vh 0vh 0 0vh;
   border-radius: 14px;
   margin-top: 4vh;
-  background-color: #f3effe;
+  border: 1px;
+  border-style: dotted;
+  /* background-color: #; */
 }
 
 .Prizes{
