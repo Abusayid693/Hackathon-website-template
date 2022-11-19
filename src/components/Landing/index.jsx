@@ -46,7 +46,7 @@ const Myinfo = () => {
       </div>
       <div className="join_dis">
         <a
-          style={{position: 'relative', left: '10%'}}
+          style={{position: 'relative', left: '0%'}}
           rel="noreferrer"
           target="_blank"
           href={SOCIALS.discord}
