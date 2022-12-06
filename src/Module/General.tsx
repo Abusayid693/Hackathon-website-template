@@ -308,7 +308,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Daniela Fabri',
-      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQHGbcVh4dVQvw/profile-displayphoto-shrink_200_200/0/1665960214058?e=1672272000&v=beta&t=I8le4BEURYpCgNcmH1RvPYMjvjkpAcO65XAFFSnfrcQ',
+      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQErZk8t-MMfpg/profile-displayphoto-shrink_200_200/0/1670249592573?e=1675900800&v=beta&t=64_AVh3lH2_9fWeFKMmSfCqx_Kj53ljfpuiVrz6wxN0',
       DESCRIPTION: 'Analista',
       COMPANY: 'Sebrae-MG',
       LINKEDIN:
@@ -440,6 +440,18 @@ const SUBSCRIPTION_SECTION = {
     'https://www.sympla.com.br/hackaton-de-inovacao-social-de-juiz-de-fora__1766078',
   TERMS_LINK:
     'https://docs.google.com/document/d/1KJT25ANYLSM8n4U1TAkmvh_qok8Ps_SYEfklffgKk_0/edit?usp=sharing'
+};
+
+const PRIZES_SECTION = {
+  TITLE: 'Premiação',
+  DESCRIPTION:
+    'Sendo um hackathon colaborativo, o maior objetivo é ajudar a cidade e a comunidade de forma geral! Mas, nem por isso deixaríamos de ter prêmios. Neste evento haverão dezenas de prêmios e quase todos poderão ser premiados.',
+  IMGS: [
+    {
+      SRC: 'https://i.imgur.com/0Z1Z1Zu.png',
+      ALT: '1º Lugar'
+    }
+  ]
 };
 
 const FOOTER = {

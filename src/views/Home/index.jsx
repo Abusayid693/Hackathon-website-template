@@ -9,7 +9,10 @@ import {
   LogoSectionAbout,
   SectionAgendaAbout
 } from '../../components/About/index.jsx';
-import {FirstPrize, PrizeHeading} from '../../components/Activities/index.jsx';
+import {
+  FirstActivity,
+  ActivityHeading
+} from '../../components/Activities/index.jsx';
 import {Banner} from '../../components/Banner/index.jsx';
 import Footer from '../../components/Footer/index.jsx';
 import Collapse from '../../components/Collapse/index.jsx';
@@ -34,19 +37,19 @@ const SponsorGroup = (props, index) => {
   );
 };
 
-// Prize group
-const PrizeGroup = (props, index) => {
+// Activity group
+const ActivityGroup = (props, index) => {
   return (
     <Row key={index}>
       {props.map((s, i) => (
         <Col key={i} className="center-block" sm={12} lg={4} md={4}>
-          <FirstPrize icon={s.icon} title={s.title} />
+          <FirstActivity icon={s.icon} title={s.title} />
         </Col>
       ))}
     </Row>
   );
 };
-// Prize group ending
+// Activity group ending
 
 export default function HomePage() {
   return (
@@ -113,12 +116,12 @@ export default function HomePage() {
 
       {/* ********Event here ***** */}
       <Container fluid className="limiter">
-        <Row className="prizesection" id="event">
-          <PrizeHeading
+        <Row className="activitiesection" id="event">
+          <ActivityHeading
             title={EVENT_SECTION.TITLE}
             description={EVENT_SECTION.DESCRIPTION}
           />
-          {EVENT_SECTION.ACTIVITIES.map(PrizeGroup)}
+          {EVENT_SECTION.ACTIVITIES.map(ActivityGroup)}
         </Row>
       </Container>
       {/* ********Event ending here ***** */}

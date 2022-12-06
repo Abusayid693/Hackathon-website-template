@@ -14,7 +14,7 @@ import '../styles/home.scss';
 import '../styles/landing.scss';
 import '../styles/nav.scss';
 import '../styles/partners.scss';
-import '../styles/prizes.scss';
+import '../styles/activities.scss';
 import '../styles/socials.scss';
 import '../styles/team.scss';
 import '../styles/typed.scss';
@@ -28,9 +28,7 @@ export default function MyApp({Component, pageProps}) {
   return (
     <div>
       <Head>
-        <title>
-          Hackathon de Inovação Social de Juiz de Fora, no Moinho
-        </title>
+        <title>Hackathon de Inovação Social de Juiz de Fora, no Moinho</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
