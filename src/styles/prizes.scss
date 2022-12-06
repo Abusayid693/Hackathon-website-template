@@ -1,0 +1,154 @@
+.prizesContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.prizes {
+  width: 100%;
+}
+
+.prizes-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prizes {
+  margin-bottom: 5rem;
+}
+
+.prizes-top {
+  margin-bottom: 10vh;
+}
+
+.prizes-group {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.prizes-item {
+  max-width: fit-content;
+  height: max-content;
+  padding: 1rem 0.5rem;
+  z-index: 1;
+}
+
+.prizes-item::before {
+  content: '';
+  position: absolute;
+  left: 50;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  border: 1px solid #b4f000;
+  z-index: -1;
+}
+
+.prizes-small-item {
+  min-width: min-content;
+  height: max-content;
+}
+
+.prize-img {
+  width: 170px;
+  height: 170px;
+  object-fit: scale-down;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.description p {
+  font-size: 1.5rem;
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.social-wrapper a {
+  font-size: 1.5rem;
+}
+
+.btn-prize {
+  padding: 0;
+  font-size: 1.3rem;
+  width: 20rem;
+  height: 4rem;
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #b4f000;
+  border-radius: 20px;
+
+  transition: ease-in-out 0.3s;
+}
+
+.btn-prize:hover {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid transparent;
+}
+
+.btn-volunteer {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  width: 20rem;
+  height: 4rem;
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #b4f000;
+  border-radius: 20px;
+
+  transition: ease-in-out 0.3s;
+}
+
+.btn-volunteer:hover {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+  .prize-img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+  }
+
+  .prizes-item::before {
+    content: '';
+    position: absolute;
+    left: 50;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid #b4f000;
+    z-index: -1;
+  }
+
+  .prizes-top {
+    margin-bottom: 2rem;
+  }
+}

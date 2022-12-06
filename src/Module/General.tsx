@@ -4,6 +4,14 @@ const hackathonLogo = '/Assets/hackthon_branco.png';
 // Camping
 const camping1 = '/Assets/Camping/camping_1.jpg';
 
+// Prizes
+const firstPrize = '/Assets/prizes/mouse.png';
+const secondPrize = '/Assets/prizes/cafeteira.png';
+const thirdPrize = '/Assets/prizes/teclado.png';
+const fourthPrize = '/Assets/prizes/headset.png';
+const fifthPrize = '/Assets/prizes/fone.png';
+const sixthPrize = '/Assets/prizes/mouse_pad.jpg';
+
 const lowCode = '/Assets/low_code.png';
 
 // Importing all sponsors logos from Assets
@@ -448,8 +456,28 @@ const PRIZES_SECTION = {
     'Sendo um hackathon colaborativo, o maior objetivo é ajudar a cidade e a comunidade de forma geral! Mas, nem por isso deixaríamos de ter prêmios. Neste evento haverão dezenas de prêmios e quase todos poderão ser premiados.',
   IMGS: [
     {
-      SRC: 'https://i.imgur.com/0Z1Z1Zu.png',
-      ALT: '1º Lugar'
+      SRC: firstPrize,
+      ALT: '1º prêmio'
+    },
+    {
+      SRC: secondPrize,
+      ALT: '2º prêmio'
+    },
+    {
+      SRC: thirdPrize,
+      ALT: '3º prêmio'
+    },
+    {
+      SRC: fourthPrize,
+      ALT: '4º prêmio'
+    },
+    {
+      SRC: fifthPrize,
+      ALT: '5º prêmio'
+    },
+    {
+      SRC: sixthPrize,
+      ALT: '6º prêmio'
     }
   ]
 };
@@ -498,5 +526,6 @@ export {
   NOT_PROGRAMMER_SECTION,
   sponsors,
   MENTORS_SECTION,
+  PRIZES_SECTION,
   FOOTER
 };

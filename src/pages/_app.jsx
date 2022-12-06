@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/about.scss';
 import '../styles/banner.scss';
 import '../styles/camping.scss';
+import '../styles/prizes.scss';
 import '../styles/enterprise.scss';
 import '../styles/footer.scss';
 import '../styles/form.scss';

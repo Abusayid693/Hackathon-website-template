@@ -23,6 +23,7 @@ import {EVENT_SECTION, sponsors} from '../../Module/General';
 import {Mentors, Supporters} from 'components/People/index.jsx';
 import LowCode from 'components/LowCode/index.jsx';
 import NotProgrammer from 'components/NotProgrammer/index.jsx';
+import {Prizes} from 'components/Prizes/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -101,6 +102,16 @@ export default function HomePage() {
       </Container>
 
       {/* Agenda ending */}
+
+      {/* Prizes */}
+      <div className="grey_white_section">
+        <Container fluid className="limiter" id="prizes">
+          <Row className="Row info2">
+            <Prizes />
+          </Row>
+        </Container>
+      </div>
+      {/* Prizes ending */}
 
       {/* Subscription */}
       <div className="black_section" id="subscription">
