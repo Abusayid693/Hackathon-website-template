@@ -486,8 +486,10 @@ const SUBSCRIPTION_SECTION = {
 
 const PRIZES_SECTION = {
   TITLE: 'Premiação',
-  DESCRIPTION:
-    'Sendo um hackathon colaborativo, o maior objetivo é ajudar a cidade e a comunidade de forma geral! Mas, nem por isso deixaríamos de ter prêmios. Neste evento haverão dezenas de prêmios e quase todos poderão ser premiados.',
+  LONG_DESCRIPTION:
+    'Sendo um hackathon colaborativo, o maior objetivo é ajudar a cidade e a comunidade de forma geral! ',
+  SHORT_DESCRIPTION:
+    'Mas, nem por isso deixaríamos de ter prêmios. Neste evento haverão dezenas de prêmios e quase todos poderão ser premiados.',
   IMGS: [
     {
       SRC: firstPrize,
