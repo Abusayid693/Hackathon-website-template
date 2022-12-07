@@ -94,6 +94,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
+              <a href={`#prizes`}>
+                <span className="links">Premiação </span>{' '}
+              </a>
+            </li>
+            <li>
               <a href={`#subscription`}>
                 <span className="links">Inscrição </span>{' '}
               </a>

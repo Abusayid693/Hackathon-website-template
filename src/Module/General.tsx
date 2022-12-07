@@ -4,6 +4,14 @@ const hackathonLogo = '/Assets/hackthon_branco.png';
 // Camping
 const camping1 = '/Assets/Camping/camping_1.jpg';
 
+// Prizes
+const firstPrize = '/Assets/prizes/mouse.png';
+const secondPrize = '/Assets/prizes/cafeteira.png';
+const thirdPrize = '/Assets/prizes/teclado.png';
+const fourthPrize = '/Assets/prizes/headset.png';
+const fifthPrize = '/Assets/prizes/fone.png';
+const sixthPrize = '/Assets/prizes/mouse_pad.jpg';
+
 const lowCode = '/Assets/low_code.png';
 
 // Importing all sponsors logos from Assets
@@ -308,7 +316,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Daniela Fabri',
-      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQHGbcVh4dVQvw/profile-displayphoto-shrink_200_200/0/1665960214058?e=1672272000&v=beta&t=I8le4BEURYpCgNcmH1RvPYMjvjkpAcO65XAFFSnfrcQ',
+      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQErZk8t-MMfpg/profile-displayphoto-shrink_200_200/0/1670249592573?e=1675900800&v=beta&t=64_AVh3lH2_9fWeFKMmSfCqx_Kj53ljfpuiVrz6wxN0',
       DESCRIPTION: 'Analista',
       COMPANY: 'Sebrae-MG',
       LINKEDIN:
@@ -442,6 +450,38 @@ const SUBSCRIPTION_SECTION = {
     'https://docs.google.com/document/d/1KJT25ANYLSM8n4U1TAkmvh_qok8Ps_SYEfklffgKk_0/edit?usp=sharing'
 };
 
+const PRIZES_SECTION = {
+  TITLE: 'Premiação',
+  DESCRIPTION:
+    'Sendo um hackathon colaborativo, o maior objetivo é ajudar a cidade e a comunidade de forma geral! Mas, nem por isso deixaríamos de ter prêmios. Neste evento haverão dezenas de prêmios e quase todos poderão ser premiados.',
+  IMGS: [
+    {
+      SRC: firstPrize,
+      ALT: '1º prêmio'
+    },
+    {
+      SRC: secondPrize,
+      ALT: '2º prêmio'
+    },
+    {
+      SRC: thirdPrize,
+      ALT: '3º prêmio'
+    },
+    {
+      SRC: fourthPrize,
+      ALT: '4º prêmio'
+    },
+    {
+      SRC: fifthPrize,
+      ALT: '5º prêmio'
+    },
+    {
+      SRC: sixthPrize,
+      ALT: '6º prêmio'
+    }
+  ]
+};
+
 const FOOTER = {
   PRE_FOOTER: {
     content: (
@@ -486,5 +526,6 @@ export {
   NOT_PROGRAMMER_SECTION,
   sponsors,
   MENTORS_SECTION,
+  PRIZES_SECTION,
   FOOTER
 };
