@@ -1,0 +1,36 @@
+// Activities
+.Activities {
+  width: 32rem;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.7rem;
+}
+
+.ActivityHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  max-width: 800px;
+}
+
+.ActivityHeading h1 {
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+}
+
+.ActivityHeading h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.Activities p {
+  color: rgb(145, 143, 143);
+}
+.Activities {
+  color: #010101;
+}

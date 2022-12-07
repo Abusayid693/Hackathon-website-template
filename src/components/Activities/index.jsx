@@ -1,8 +1,8 @@
 import {Col, Row} from 'react-bootstrap';
 
-function PrizeHeading(props) {
+function ActivityHeading(props) {
   return (
-    <Row className="PrizeHeading">
+    <Row className="ActivityHeading">
       <Col sm={6} md={6} lg={6}>
         <h1 className="title_default">{props.title}</h1>
       </Col>
@@ -13,13 +13,13 @@ function PrizeHeading(props) {
   );
 }
 
-function FirstPrize(props) {
+function FirstActivity(props) {
   return (
-    <div className="Prizes">
+    <div className="Activities">
       {props.icon}
       <h2>{props.title}</h2>
     </div>
   );
 }
 
-export {FirstPrize, PrizeHeading};
+export {FirstActivity, ActivityHeading};
