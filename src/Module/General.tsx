@@ -316,7 +316,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Daniela Fabri',
-      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQErZk8t-MMfpg/profile-displayphoto-shrink_200_200/0/1670249592573?e=1675900800&v=beta&t=64_AVh3lH2_9fWeFKMmSfCqx_Kj53ljfpuiVrz6wxN0',
+      SRC: 'https://media.licdn.com/dms/image/D4D03AQHKzu4m-qsjMQ/profile-displayphoto-shrink_200_200/0/1670406697933?e=1676505600&v=beta&t=VAIhDAO3zeRRCD939Ap559mVNmwwUGwP6qruGucWUmE',
       DESCRIPTION: 'Analista',
       COMPANY: 'Sebrae-MG',
       LINKEDIN:
