@@ -271,7 +271,7 @@ const MENTORS_SECTION = {
   MENTORS: [
     {
       NAME: 'Anderson Mattozinhos',
-      SRC: 'https://media-exp1.licdn.com/dms/image/D4E03AQF-tVtaJjir6Q/profile-displayphoto-shrink_200_200/0/1632371269187?e=1672272000&v=beta&t=pOQi7h9MNe1_PQTMr0A07Ya94W6E1AGYYCbyhnzF-gE',
+      SRC: '/Assets/People/anderson.jpeg',
       DESCRIPTION: 'Sócio Gerente',
       COMPANY: 'Ultrimagem Juiz de Fora',
       LINKEDIN: 'https://www.linkedin.com/in/mattozinhos/',
@@ -280,7 +280,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Roberto Fortuci',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQG7dJpTcJhIIg/profile-displayphoto-shrink_200_200/0/1538396064117?e=1672272000&v=beta&t=GTD2zJwkAvbBc8ZekWb-ex2M0Sphy6hfb_OupXD7x_U',
+      SRC: '/Assets/People/roberto.jpeg',
       DESCRIPTION: 'Coordenador de TI',
       COMPANY: 'Laboratório Côrtes Villela',
       LINKEDIN: 'https://www.linkedin.com/in/robertofortucilopes/',
@@ -289,7 +289,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Gustavo Oliveira',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQHjYitJmiuUzg/profile-displayphoto-shrink_200_200/0/1516279947889?e=1672272000&v=beta&t=Tlox70kS6xKRBHdKnxBF-0127_6jgDd71B5XZSnU34Y',
+      SRC: '/Assets/People/gustavo.jpeg',
       DESCRIPTION: 'Co-Founder',
       COMPANY: 'Smart Retail',
       LINKEDIN: 'https://www.linkedin.com/in/gugaoliveira/',
@@ -298,7 +298,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Leandro Simões',
-      SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQGP3cHBxlfxoA/profile-displayphoto-shrink_200_200/0/1663348110128?e=1672272000&v=beta&t=dvSiJDLpdCTD5mJQlO_w8ByGJfCowoCM4ZQ3jlyHkVI',
+      SRC: '/Assets/People/leandro.jpeg',
       DESCRIPTION: 'Professor and Software Developer',
       COMPANY: 'Driven Education',
       LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
@@ -307,7 +307,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Leandro Campos',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGq17_naGMkng/profile-displayphoto-shrink_200_200/0/1620149651761?e=1672272000&v=beta&t=_y_37oj3NyKpAMTFF6JNB3LqgkoFgH33r85ThuY9VwY',
+      SRC: '/Assets/People/leandro_campos.jpeg',
       DESCRIPTION: 'CEO',
       COMPANY: 'Nvoip',
       LINKEDIN: 'https://www.linkedin.com/in/leandro-campos/',
@@ -316,7 +316,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Daniela Fabri',
-      SRC: 'https://media.licdn.com/dms/image/D4D03AQHKzu4m-qsjMQ/profile-displayphoto-shrink_200_200/0/1670406697933?e=1676505600&v=beta&t=VAIhDAO3zeRRCD939Ap559mVNmwwUGwP6qruGucWUmE',
+      SRC: '/Assets/People/daniela.jpeg',
       DESCRIPTION: 'Analista',
       COMPANY: 'Sebrae-MG',
       LINKEDIN:
@@ -325,17 +325,8 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Débora Marques',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQG3EOeLpvruOg/profile-displayphoto-shrink_200_200/0/1618661428591?e=1672272000&v=beta&t=uENbAD7HanMSKEekcQp2PfLN-6RBjKEMfwxhuFZp79s',
-      DESCRIPTION: 'Planning and Management Manager',
-      COMPANY: 'UFJF',
-      LINKEDIN: 'https://www.linkedin.com/in/débora-marques-28786b49/',
-      GITHUB: '',
-      INSTAGRAM: ''
-    },
-    {
       NAME: 'Rodrigo Nunes',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF6xoT-B6JhrQ/profile-displayphoto-shrink_200_200/0/1530292900831?e=1672272000&v=beta&t=ud2KhJq_G9-jpODb4-TtBAFG3Kfp3BnZUanIvWzF4uw',
+      SRC: '/Assets/People/rodrigo.jpeg',
       DESCRIPTION: 'Co-Founder',
       COMPANY: 'Reportei.com',
       LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
@@ -344,7 +335,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Yuri Thielmann',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
+      SRC: '/Assets/People/yuri.jpeg',
       DESCRIPTION: 'Developer senior',
       COMPANY: 'CI&T',
       LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
@@ -353,7 +344,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Humberto Sales',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQHruN7VHESoVA/profile-displayphoto-shrink_200_200/0/1585834425185?e=1672272000&v=beta&t=GEqh3hkpgX2qAf3O-gUcBVaAfkPXDXj1f9LBI1MNYQI',
+      SRC: '/Assets/People/humberto.jpeg',
       DESCRIPTION: 'Head de Inovação',
       COMPANY: 'Quokka',
       LINKEDIN: 'https://www.linkedin.com/in/humbertosalesdealmeida/',
@@ -362,7 +353,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Chay Azevedo',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF9jkm2u4M8xQ/profile-displayphoto-shrink_200_200/0/1663622665654?e=1672272000&v=beta&t=i-XMMKyrxG3Nvt-2ZUVGPqMvcE36Aiz3FhtxZyHE6K0',
+      SRC: '/Assets/People/chay.jpeg',
       DESCRIPTION: 'Agente Local de Inovação',
       COMPANY: 'Sebrae',
       LINKEDIN: 'https://www.linkedin.com/in/chayazevedo/',
@@ -371,7 +362,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Kyro Caram',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFKm_M5wEOIjA/profile-displayphoto-shrink_200_200/0/1518697554572?e=1672272000&v=beta&t=LkrxPlY9Nw0f4clpvlYsbi0Qg7tn2BkA0E73CmmKIH8',
+      SRC: '/Assets/People/kyro.jpeg',
       DESCRIPTION: 'Fundador',
       COMPANY: 'Collision ',
       LINKEDIN: 'https://www.linkedin.com/in/kyrocaram/',
@@ -383,42 +374,42 @@ const MENTORS_SECTION = {
   PARTNERS: [
     {
       NAME: 'Carlos Alexandre',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFFRVZohEzSLQ/profile-displayphoto-shrink_200_200/0/1617742581518?e=1672272000&v=beta&t=J8IcWb7LfMdBbcVnGp9b5Zc2Xyj2oqzU4JvOq8tpnYQ',
+      SRC: '/Assets/People/carlos_alexandre.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/carlosalexandre94/',
       GITHUB: '',
       INSTAGRAM: ''
     },
     {
       NAME: 'Douglas Novato',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQH47ynuwrY_1g/profile-displayphoto-shrink_200_200/0/1578078703662?e=1672272000&v=beta&t=XuuVfvMrAhbfrbAEdgGK7FQUtQtj5g5grWPrJ0MtvHI',
+      SRC: '/Assets/People/douglas.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/douglasabnovato/',
       GITHUB: '',
       INSTAGRAM: ''
     },
     {
       NAME: 'Vinicius Carlos',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4E03AQFNcF05elAjDA/profile-displayphoto-shrink_200_200/0/1649509770307?e=1672272000&v=beta&t=gjdwopoYULfA12agHnDS1Q07-fmTzia3W3u05Ys-MZE',
+      SRC: '/Assets/People/vinicius.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/vinicius-carlos/',
       GITHUB: '',
       INSTAGRAM: ''
     },
     {
       NAME: 'Giordano Bruno',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFknLEtKZQ4Ig/profile-displayphoto-shrink_200_200/0/1516545273931?e=1672272000&v=beta&t=_owR0bgVPMB64wGqBENWZInmq7tHvaUbviIsenf0HCo',
-      LINKEDIN: 'https://www.linkedin.com/in/giordano-bruno-vieira-88699614/',
+      SRC: '/Assets/People/giordano.jpeg',
+      LINKEDIN: 'https://www.linkedin.com/in/giordano-bruno-da-rosa-vieira-88699614/',
       GITHUB: '',
       INSTAGRAM: ''
     },
     {
       NAME: 'Ramon Xavier',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQFu48_gAOb_Mg/profile-displayphoto-shrink_200_200/0/1596754239475?e=1672272000&v=beta&t=BzXAObIRccKTYMRBmRMEcnLz8GNTXqw2SBShsRpQZeE',
+      SRC: '/Assets/People/ramon.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/ramonxavier/',
       GITHUB: '',
       INSTAGRAM: ''
     },
     {
       NAME: 'Eduardo Alexandre',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGVXUq-4PE2dw/profile-displayphoto-shrink_200_200/0/1614789288094?e=1672272000&v=beta&t=BuamlTTQSV-TWMud3_Eu228zWMzKkZG6MO7dOiD412I',
+      SRC: '/Assets/People/eduardo.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/eduardotecnologo/',
       GITHUB: '',
       INSTAGRAM: ''
@@ -440,6 +431,7 @@ const SUBSCRIPTION_SECTION = {
   DRAW: 'Não perca essa oportunidade de conhecer gente nova, ficar imerso em cultura inovadora, se divertir, ajudar a cidade e fazer história!',
   CATEGORIES: [
     'Desenvolvedores',
+    'Designers',
     'Empreendedores',
     'Estudantes',
     'Entusiastas'
