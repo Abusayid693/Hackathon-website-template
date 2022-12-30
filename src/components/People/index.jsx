@@ -133,17 +133,17 @@ const Supporters = () => {
       <div className="pt-4">
         {AvatarGroup(MENTORS_SECTION.PARTNERS, 'small')}
       </div>
-      <div className="apply_supporters">
-        <a
-          href={MENTORS_SECTION.VOLUNTEER_ACTION.LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="btn btn-volunteer">
-            {MENTORS_SECTION.VOLUNTEER_ACTION.TEXT}
-          </button>
-        </a>
-      </div>
+      {/*<div className="apply_supporters">*/}
+      {/*  <a*/}
+      {/*    href={MENTORS_SECTION.VOLUNTEER_ACTION.LINK}*/}
+      {/*    target="_blank"*/}
+      {/*    rel="noopener noreferrer"*/}
+      {/*  >*/}
+      {/*    <button className="btn btn-volunteer">*/}
+      {/*      {MENTORS_SECTION.VOLUNTEER_ACTION.TEXT}*/}
+      {/*    </button>*/}
+      {/*  </a>*/}
+      {/*</div>*/}
     </div>
   );
 };

@@ -297,15 +297,6 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Leandro Simões',
-      SRC: '/Assets/People/leandro.jpeg',
-      DESCRIPTION: 'Professor and Software Developer',
-      COMPANY: 'Driven Education',
-      LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
-      GITHUB: '',
-      INSTAGRAM: ''
-    },
-    {
       NAME: 'Leandro Campos',
       SRC: '/Assets/People/leandro_campos.jpeg',
       DESCRIPTION: 'CEO',
@@ -321,15 +312,6 @@ const MENTORS_SECTION = {
       COMPANY: 'Sebrae-MG',
       LINKEDIN:
         'https://www.linkedin.com/in/daniela-fabri-ferreira-mba-a7603989/',
-      GITHUB: '',
-      INSTAGRAM: ''
-    },
-    {
-      NAME: 'Rodrigo Nunes',
-      SRC: '/Assets/People/rodrigo.jpeg',
-      DESCRIPTION: 'Co-Founder',
-      COMPANY: 'Reportei.com',
-      LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
       GITHUB: '',
       INSTAGRAM: ''
     },
@@ -371,7 +353,7 @@ const MENTORS_SECTION = {
     },
     {
       NAME: 'Lucas Mattos',
-      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQG1y3ebZSJsaA/profile-displayphoto-shrink_200_200/0/1596645248288?e=1674086400&v=beta&t=frc62abVENeCLTrwwNEgdbDHb1jx_e8rX4EDb5VXRE8',
+      SRC: '/Assets/People/lucas.jpeg',
       DESCRIPTION: 'Senior Product Manager',
       COMPANY: 'Loft',
       LINKEDIN: 'https://www.linkedin.com/in/luccmattos/',
@@ -387,7 +369,7 @@ const MENTORS_SECTION = {
     MENTORS: [
       {
         NAME: 'Leandro Simões',
-        SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQGP3cHBxlfxoA/profile-displayphoto-shrink_200_200/0/1663348110128?e=1672272000&v=beta&t=dvSiJDLpdCTD5mJQlO_w8ByGJfCowoCM4ZQ3jlyHkVI',
+        SRC: '/Assets/People/leandro.jpeg',
         DESCRIPTION: 'Professor and Software Developer',
         COMPANY: 'Driven Education',
         LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
@@ -396,7 +378,7 @@ const MENTORS_SECTION = {
       },
       {
         NAME: 'Rodrigo Nunes',
-        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF6xoT-B6JhrQ/profile-displayphoto-shrink_200_200/0/1530292900831?e=1672272000&v=beta&t=ud2KhJq_G9-jpODb4-TtBAFG3Kfp3BnZUanIvWzF4uw',
+        SRC: '/Assets/People/rodrigo.jpeg',
         DESCRIPTION: 'Co-Founder',
         COMPANY: 'Reportei.com',
         LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
@@ -405,7 +387,7 @@ const MENTORS_SECTION = {
       },
       {
         NAME: 'Yuri Thielmann',
-        SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
+        SRC: '/Assets/People/yuri.jpeg',
         DESCRIPTION: 'Developer senior',
         COMPANY: 'CI&T',
         LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
@@ -414,7 +396,7 @@ const MENTORS_SECTION = {
       },
       {
         NAME: 'Lesley Andreza',
-        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF981vMRtw6kg/profile-displayphoto-shrink_200_200/0/1529072872760?e=1674086400&v=beta&t=MDbJBf-OPvSxkKEyvhwZSHL6lRZY_MO0t3zz3MWH0lg',
+        SRC: '/Assets/People/lesley.jpeg',
         DESCRIPTION: 'Desenvolvedor Javascript',
         COMPANY: 'ProDoctor Software S/A',
         LINKEDIN: 'https://www.linkedin.com/in/lesley-andreza-a05b89bb/',
@@ -423,7 +405,7 @@ const MENTORS_SECTION = {
       },
       {
         NAME: 'Isabela Santos',
-        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGMuvDCUlr41w/profile-displayphoto-shrink_200_200/0/1659925731519?e=1674086400&v=beta&t=GbJa954AfqP_VsNUYLGhrhnKRFss8OP3QzU7FfMmI0c',
+        SRC: '/Assets/People/isabela.jpeg',
         DESCRIPTION: 'Desenvolvedora front-end',
         COMPANY: 'Globo',
         LINKEDIN: 'https://www.linkedin.com/in/isabela-santos-2b4058150/',
