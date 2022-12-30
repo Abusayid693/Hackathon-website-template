@@ -49,7 +49,6 @@ const Avatar = ({mentor}) => {
       <img
         src={mentor.SRC}
         className="rounded-circle shadow-4"
-        width="200px"
         alt={mentor.NAME}
         width="200px"
       />
