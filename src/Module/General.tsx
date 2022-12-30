@@ -364,13 +364,74 @@ const MENTORS_SECTION = {
       NAME: 'Kyro Caram',
       SRC: '/Assets/People/kyro.jpeg',
       DESCRIPTION: 'Fundador',
-      COMPANY: 'Collision ',
+      COMPANY: 'Collision',
       LINKEDIN: 'https://www.linkedin.com/in/kyrocaram/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Lucas Mattos',
+      SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQG1y3ebZSJsaA/profile-displayphoto-shrink_200_200/0/1596645248288?e=1674086400&v=beta&t=frc62abVENeCLTrwwNEgdbDHb1jx_e8rX4EDb5VXRE8',
+      DESCRIPTION: 'Senior Product Manager',
+      COMPANY: 'Loft',
+      LINKEDIN: 'https://www.linkedin.com/in/luccmattos/',
       GITHUB: '',
       INSTAGRAM: ''
     }
   ],
-  OTHER_MENTORS: [],
+
+  OTHER_MENTORS: {
+    TITLE: 'Mentores Desenvolvedores',
+    DESCRIPTION:
+      'Quando se trata de código, conte com alguns dos melhores devs da cidade',
+    MENTORS: [
+      {
+        NAME: 'Leandro Simões',
+        SRC: 'https://media-exp1.licdn.com/dms/image/D4D03AQGP3cHBxlfxoA/profile-displayphoto-shrink_200_200/0/1663348110128?e=1672272000&v=beta&t=dvSiJDLpdCTD5mJQlO_w8ByGJfCowoCM4ZQ3jlyHkVI',
+        DESCRIPTION: 'Professor and Software Developer',
+        COMPANY: 'Driven Education',
+        LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      },
+      {
+        NAME: 'Rodrigo Nunes',
+        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF6xoT-B6JhrQ/profile-displayphoto-shrink_200_200/0/1530292900831?e=1672272000&v=beta&t=ud2KhJq_G9-jpODb4-TtBAFG3Kfp3BnZUanIvWzF4uw',
+        DESCRIPTION: 'Co-Founder',
+        COMPANY: 'Reportei.com',
+        LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      },
+      {
+        NAME: 'Yuri Thielmann',
+        SRC: 'https://media-exp1.licdn.com/dms/image/C5603AQEU99bGnhmy_g/profile-displayphoto-shrink_200_200/0/1517037262843?e=1672272000&v=beta&t=aKmdIjOaeNyrqhsET-rgwFfapTHezC1ukWcnTQQm3xM',
+        DESCRIPTION: 'Developer senior',
+        COMPANY: 'CI&T',
+        LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      },
+      {
+        NAME: 'Lesley Andreza',
+        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQF981vMRtw6kg/profile-displayphoto-shrink_200_200/0/1529072872760?e=1674086400&v=beta&t=MDbJBf-OPvSxkKEyvhwZSHL6lRZY_MO0t3zz3MWH0lg',
+        DESCRIPTION: 'Desenvolvedor Javascript',
+        COMPANY: 'ProDoctor Software S/A',
+        LINKEDIN: 'https://www.linkedin.com/in/lesley-andreza-a05b89bb/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      },
+      {
+        NAME: 'Isabela Santos',
+        SRC: 'https://media-exp1.licdn.com/dms/image/C4D03AQGMuvDCUlr41w/profile-displayphoto-shrink_200_200/0/1659925731519?e=1674086400&v=beta&t=GbJa954AfqP_VsNUYLGhrhnKRFss8OP3QzU7FfMmI0c',
+        DESCRIPTION: 'Desenvolvedora front-end',
+        COMPANY: 'Globo',
+        LINKEDIN: 'https://www.linkedin.com/in/isabela-santos-2b4058150/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      }
+    ]
+  },
   PARTNERS: [
     {
       NAME: 'Carlos Alexandre',
