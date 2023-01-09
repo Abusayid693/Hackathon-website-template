@@ -439,7 +439,8 @@ const MENTORS_SECTION = {
     {
       NAME: 'Giordano Bruno',
       SRC: '/Assets/People/giordano.jpeg',
-      LINKEDIN: 'https://www.linkedin.com/in/giordano-bruno-da-rosa-vieira-88699614/',
+      LINKEDIN:
+        'https://www.linkedin.com/in/giordano-bruno-da-rosa-vieira-88699614/',
       GITHUB: '',
       INSTAGRAM: ''
     },
