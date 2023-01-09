@@ -21,7 +21,7 @@ const lowCode = '/Assets/low_code.png';
  */
 
 const gdgjf = '/Assets/sponsorsLogos/gdgjf.png';
-const pfj = '/Assets/sponsorsLogos/pjf.png';
+const pjf = '/Assets/sponsorsLogos/pjf.png';
 const zero40 = '/Assets/sponsorsLogos/zero40.png';
 const critt = '/Assets/sponsorsLogos/critt.jpeg';
 const sebrae = '/Assets/sponsorsLogos/sebrae.png';
@@ -232,7 +232,7 @@ const NOT_PROGRAMMER_SECTION = {
 const sponsors = [
   [
     {
-      src: pfj,
+      src: pjf,
       name: 'Prefeitura de Juiz de Fora',
       link: 'https://www.pjf.mg.gov.br/'
     },
@@ -439,7 +439,8 @@ const MENTORS_SECTION = {
     {
       NAME: 'Giordano Bruno',
       SRC: '/Assets/People/giordano.jpeg',
-      LINKEDIN: 'https://www.linkedin.com/in/giordano-bruno-da-rosa-vieira-88699614/',
+      LINKEDIN:
+        'https://www.linkedin.com/in/giordano-bruno-da-rosa-vieira-88699614/',
       GITHUB: '',
       INSTAGRAM: ''
     },
