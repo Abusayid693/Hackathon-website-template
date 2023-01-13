@@ -1,0 +1,38 @@
+const OnlineMeetings = () => {
+  return (
+    <div className="online-meetings-container">
+      <div className="section-top">
+        <h2 className="title_default">Semana de design thinking</h2>
+      </div>
+
+      <div className="objectives-container">
+        <div className="subtitle">
+          Entre os dias 16 e 20 de janeiro nosso discord estará aberto, e
+          acontecerão encontros online com os seguintes objetivos:
+        </div>
+        <ul className="objectives-list">
+          <li>Apresentar a metodologia do Design Thinking</li>
+          <li>Apresentar todos problemas (link)</li>
+          <li>
+            Discussão dos problemas, juntamente com outros inscritos e mentores
+          </li>
+          <li>
+            Proposição de soluções, sugestão de projetos e criação dos primeiros
+            times
+          </li>
+        </ul>
+      </div>
+
+      <div className="description">
+        Será um momento de você tomar conhecimento dos problemas, conhecer
+        alguns dos mentores e participantes, discutir suas ideias e se conectar.
+      </div>
+      <div className="description">
+        Quem não puder participar dos encontros, não tem problema! No dia 21 o
+        Hackathon começa a todo o vapor!
+      </div>
+    </div>
+  );
+};
+
+export {OnlineMeetings};
