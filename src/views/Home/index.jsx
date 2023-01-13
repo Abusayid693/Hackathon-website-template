@@ -115,7 +115,7 @@ export default function HomePage() {
       {/* Prizes ending */}
 
       {/* Team */}
-      <div className="grey_white_section">
+      <div className="black_section no-pb">
         <Container fluid className="limiter" id="team">
           <Row className="Row info2">
             <Team />
