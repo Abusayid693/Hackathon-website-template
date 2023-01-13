@@ -42,8 +42,20 @@ const TOP_SECTION = {
     '24 horas de tecnologia',
     '24 horas de inovação'
   ],
-  LONG_DESCRIPTION:
-    '24 horas de programação e inovação para projetar soluções para problemas de saúde e educação da nossa cidade',
+  LONG_DESCRIPTION: (
+    <>
+      24 horas de programação e inovação para projetar soluções para{' '}
+      <a
+        className="lime-link"
+        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        target="_blank"
+        rel="noreferrer"
+      >
+        problemas
+      </a>{' '}
+      de saúde e educação da nossa cidade
+    </>
+  ),
   SHORT_DESCRIPTION: 'Dias 21 e 22 de Janeiro no Moinho',
   ACTION_BTN: '#subscription',
   LOGO: hackathonLogo
@@ -61,15 +73,39 @@ const SOCIALS = {
 
 const MIDDLE_SECTION = {
   TITLE: 'O Hackathon',
-  LONG_DESCRIPTION:
-    'Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os problemas reais que serão apresentados no inicio do evento.',
+  LONG_DESCRIPTION: (
+    <>
+      Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os{' '}
+      <a
+        className="lime-link"
+        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        target="_blank"
+        rel="noreferrer"
+      >
+        problemas
+      </a>{' '}
+      reais que serão apresentados no inicio do evento.
+    </>
+  ),
   COLLAPSE_TITLE_PARAGRAPHS: [
     'O Hackathon contará com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas em demanda reais nas áreas de saúde e educação, que possam deixar um legado para a cidade. ',
     '“As equipes que mais se destacarem serão convidadas para compor a comunidade do Hub de Inovação do Moinho por seis meses, incluindo o acesso ao coworking, a eventos e a muito networking. O objetivo é que os projetos sejam validados no mundo real e, ao final deste período, poderão ser apresentados para possíveis investidores. '
   ],
   COLLAPSE_DESCRIPTION_PARAGRAPHS: [
     'Nos dias 3 e 4 de novembro acontecerá o **festival de inovação social de Juiz de Fora,** com foco nas áreas de **saúde** e **educação**. Neste evento serão apresentadas demandas e oportunidades da Zona Norte e cidade, bem como discutidas possíveis soluções, que servirão de insights para o Hackathon. ',
-    'Anteriormente ao  festival, jovens da Zona Norte farão um levantamento dos problemas da região. Durante o festival acontecerão mesas redondas com a participação de empresas, especialistas nas áreas e da prefeitura. ',
+    <>
+      Anteriormente ao festival, jovens da Zona Norte farão um levantamento dos{' '}
+      <a
+        className="lime-link"
+        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        target="_blank"
+        rel="noreferrer"
+      >
+        problemas
+      </a>{' '}
+      da região. Durante o festival acontecerão mesas redondas com a
+      participação de empresas, especialistas nas áreas e da prefeitura.
+    </>,
     'Na esteira das demandas e ideas, virá o Hackathon nos dias 21 e 22 de Janeiro, com equipes formadas por estudantes, profissionais e empreendedores, visando desenvolver projetos de tecnologia focadas nas demanda reais, que possam deixar um legado para a cidade. ',
     'As soluções desenvolvidas serão testadas nos meses seguintes ao hackathon pelas secretarias de saúde e educação juntamente com possíveis empresas interessadas, com objetivo de validar a ideia em campo, mostrando assim o seu valor. ',
     'Após o hackathon, as equipes que mais se destacarem poderão ser convidadas a ter acesso completo ao programa Moinho Lab por seis meses, incluindo coworking, eventos exclusivos e muito networking. Ao final deste período os projetos poderão ser apresentados para possíveis investidores. '
@@ -194,8 +230,22 @@ const CAMPING_PARTY_SECTION = {
 const LOW_CODE_SECTION = {
   TITLE: 'No-code e low-code',
   SRC: lowCode,
-  DESCRIPTION:
-    'Queremos te incentivar ao máximo a participar, se expressar e solucionar problemas com a tecnologia. Por isso permitiremos projetos desenvolvidos usando ferramentas no-code ou low-code. Ou seja, não é preciso ser programador para implementar algo realmente incrível!'
+  DESCRIPTION: (
+    <>
+      Queremos te incentivar ao máximo a participar, se expressar e solucionar{' '}
+      <a
+        className="lime-link"
+        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        target="_blank"
+        rel="noreferrer"
+      >
+        problemas
+      </a>{' '}
+      com a tecnologia. Por isso permitiremos projetos desenvolvidos usando
+      ferramentas no-code ou low-code. Ou seja, não é preciso ser programador
+      para implementar algo realmente incrível!
+    </>
+  )
 };
 
 const NOT_PROGRAMMER_SECTION = {

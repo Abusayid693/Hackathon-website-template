@@ -133,6 +133,14 @@ h1 {
   margin-top: -16vh;
 }
 
+.lime-link {
+  color: #b4f000;
+
+  &:hover {
+    color: #b4f000;
+  }
+}
+
 @media (max-width: 570px) {
   .mediaInfo {
     margin-top: 0;

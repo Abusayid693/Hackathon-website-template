@@ -12,9 +12,27 @@ const OnlineMeetings = () => {
         </div>
         <ul className="objectives-list">
           <li>Apresentar a metodologia do Design Thinking</li>
-          <li>Apresentar todos problemas (link)</li>
           <li>
-            Discussão dos problemas, juntamente com outros inscritos e mentores
+            Apresentar todos{' '}
+            <a
+              href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+              target="_blank"
+              rel="noreferrer"
+            >
+              problemas
+            </a>
+          </li>
+          <li>
+            Discussão dos{' '}
+            <a
+              className="lime-link"
+              href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+              target="_blank"
+              rel="noreferrer"
+            >
+              problemas
+            </a>
+            , juntamente com outros inscritos e mentores
           </li>
           <li>
             Proposição de soluções, sugestão de projetos e criação dos primeiros
@@ -24,8 +42,17 @@ const OnlineMeetings = () => {
       </div>
 
       <div className="description">
-        Será um momento de você tomar conhecimento dos problemas, conhecer
-        alguns dos mentores e participantes, discutir suas ideias e se conectar.
+        Será um momento de você tomar conhecimento dos{' '}
+        <a
+          className="lime-link"
+          href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+          target="_blank"
+          rel="noreferrer"
+        >
+          problemas
+        </a>
+        , conhecer alguns dos mentores e participantes, discutir suas ideias e
+        se conectar.
       </div>
       <div className="description">
         Quem não puder participar dos encontros, não tem problema! No dia 21 o
