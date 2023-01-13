@@ -24,6 +24,7 @@ import '../styles/subscription.scss';
 import '../styles/mentors.scss';
 import '../styles/low_code.scss';
 import '../styles/not_programmer.scss';
+import '../styles/online-meetings.scss';
 
 export default function MyApp({Component, pageProps}) {
   return (
