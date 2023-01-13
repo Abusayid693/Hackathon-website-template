@@ -24,6 +24,7 @@ import {Mentors, Supporters} from 'components/People/index.jsx';
 import LowCode from 'components/LowCode/index.jsx';
 import NotProgrammer from 'components/NotProgrammer/index.jsx';
 import {Prizes} from 'components/Prizes/index.jsx';
+import {Team} from 'components/Team/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -112,6 +113,16 @@ export default function HomePage() {
         </Container>
       </div>
       {/* Prizes ending */}
+
+      {/* Team */}
+      <div className="black_section no-pb">
+        <Container fluid className="limiter" id="team">
+          <Row className="Row info2">
+            <Team />
+          </Row>
+        </Container>
+      </div>
+      {/* Team ending */}
 
       {/* Subscription */}
       <div className="black_section" id="subscription">
