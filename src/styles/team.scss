@@ -55,6 +55,11 @@
   align-items: center;
   flex-direction: column;
   gap: 3rem;
+
+  > .description {
+    color: rgb(255, 255, 255, 0.75);
+    display: inline;
+  }
 }
 
 .team-top {

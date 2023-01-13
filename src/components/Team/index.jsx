@@ -26,6 +26,19 @@ const Team = () => {
           </li>
         </ul>
       </div>
+
+      <p className="description">
+        Se você tiver dois ou mais amigos para participar,{' '}
+        <a
+          className="pre-footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=5532988735683&text=Tenho%20alguns%20amigos%20e%20quero%20um%20ticket%20de%20desconto%20especial%20para%20inscrição%20agora"
+        >
+          <u>fale conosco</u>
+        </a>{' '}
+        para receber um ticket de desconto especial!
+      </p>
     </div>
   );
 };

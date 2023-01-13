@@ -471,7 +471,7 @@ const SUBSCRIPTION_SECTION = {
   DESCRIPTION:
     'Os ingressos serão liberados em dois ou três lotes para participação. O número de vagas é limitado em quatro categorias:',
   VALUE:
-    'O valor da inscrição no primeiro lote é de R$80,00 inteira e R$40,00 para estudantes. Neste valor estão inclusas as alimentações (biscoitos, frutas, pizza, sanduiches, café e agua).',
+    'O valor da inscrição no primeiro lote é de R$90,00 inteira e R$45,00 para estudantes. Neste valor estão inclusas as alimentações (biscoitos, frutas, pizza, sanduiches, café e agua).',
   DRAW: 'Não perca essa oportunidade de conhecer gente nova, ficar imerso em cultura inovadora, se divertir, ajudar a cidade e fazer história!',
   CATEGORIES: [
     'Desenvolvedores',
