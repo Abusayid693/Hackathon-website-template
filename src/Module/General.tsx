@@ -47,7 +47,7 @@ const TOP_SECTION = {
       24 horas de programação e inovação para projetar soluções para{' '}
       <a
         className="lime-link"
-        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
         target="_blank"
         rel="noreferrer"
       >
@@ -78,7 +78,7 @@ const MIDDLE_SECTION = {
       Nosso hackathon será colaborativo, onde todos juntos buscam solucionar os{' '}
       <a
         className="lime-link"
-        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
         target="_blank"
         rel="noreferrer"
       >
@@ -97,7 +97,7 @@ const MIDDLE_SECTION = {
       Anteriormente ao festival, jovens da Zona Norte farão um levantamento dos{' '}
       <a
         className="lime-link"
-        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
         target="_blank"
         rel="noreferrer"
       >
@@ -235,7 +235,7 @@ const LOW_CODE_SECTION = {
       Queremos te incentivar ao máximo a participar, se expressar e solucionar{' '}
       <a
         className="lime-link"
-        href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+        href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
         target="_blank"
         rel="noreferrer"
       >

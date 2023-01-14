@@ -15,7 +15,7 @@ const OnlineMeetings = () => {
           <li>
             Apresentar todos{' '}
             <a
-              href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+              href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
               target="_blank"
               rel="noreferrer"
             >
@@ -26,7 +26,7 @@ const OnlineMeetings = () => {
             Discussão dos{' '}
             <a
               className="lime-link"
-              href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+              href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
               target="_blank"
               rel="noreferrer"
             >
@@ -45,7 +45,7 @@ const OnlineMeetings = () => {
         Será um momento de você tomar conhecimento dos{' '}
         <a
           className="lime-link"
-          href="https://wakeful-tire-9cb.notion.site/85b8d765f1de4293946b0a0a54f73300?v=e3ff6d7f2e2d49fc9bb9736dcba67064"
+          href="https://hackathon-inovacao-social.notion.site/85b8d765f1de4293946b0a0a54f73300?v=332836713aad4d1fa131034ba89fa342"
           target="_blank"
           rel="noreferrer"
         >
