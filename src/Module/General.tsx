@@ -329,15 +329,6 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Roberto Fortuci',
-      SRC: '/Assets/People/roberto.jpeg',
-      DESCRIPTION: 'Coordenador de TI',
-      COMPANY: 'Laboratório Côrtes Villela',
-      LINKEDIN: 'https://www.linkedin.com/in/robertofortucilopes/',
-      GITHUB: '',
-      INSTAGRAM: ''
-    },
-    {
       NAME: 'Gustavo Oliveira',
       SRC: '/Assets/People/gustavo.jpeg',
       DESCRIPTION: 'Co-Founder',
@@ -459,6 +450,15 @@ const MENTORS_SECTION = {
         DESCRIPTION: 'Desenvolvedora front-end',
         COMPANY: 'Globo',
         LINKEDIN: 'https://www.linkedin.com/in/isabela-santos-2b4058150/',
+        GITHUB: '',
+        INSTAGRAM: ''
+      },
+      {
+        NAME: 'Patrick Barbosa',
+        SRC: '/Assets/People/patrick.jpeg',
+        DESCRIPTION: 'Tech Lead',
+        COMPANY: 'Flash',
+        LINKEDIN: 'https://www.linkedin.com/in/patrick-barbosa-16b92616a/',
         GITHUB: '',
         INSTAGRAM: ''
       }
