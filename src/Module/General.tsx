@@ -254,9 +254,9 @@ const NOT_PROGRAMMER_SECTION = {
   LONG_DESCRIPTION: (
     <>
       <p>
-        Os times serão formados por um desenvolvedor, um empreendedor e um
-        estudante ao menos, mas podem ter ainda outros 3 membros de outras áreas
-        quaisquer.
+        Os times serão formados por desenvolvedors, empreendedores, 
+        estudantes, designers, e também podem ter membros de outras áreas
+        quaisquer. A formação do time é livre e todos são bem vindos!
       </p>
       <p>
         Além disso, criamos a inscrição de &quot;entusiasta&quot; , que permite
