@@ -254,9 +254,9 @@ const NOT_PROGRAMMER_SECTION = {
   LONG_DESCRIPTION: (
     <>
       <p>
-        Os times serão formados por desenvolvedors, empreendedores, 
-        estudantes, designers, e também podem ter membros de outras áreas
-        quaisquer. A formação do time é livre e todos são bem vindos!
+        Os times serão formados por desenvolvedors, empreendedores, estudantes,
+        designers, e também podem ter membros de outras áreas quaisquer. A
+        formação do time é livre e todos são bem vindos!
       </p>
       <p>
         Além disso, criamos a inscrição de &quot;entusiasta&quot; , que permite
@@ -400,6 +400,24 @@ const MENTORS_SECTION = {
       LINKEDIN: 'https://www.linkedin.com/in/luccmattos/',
       GITHUB: '',
       INSTAGRAM: ''
+    },
+    {
+      NAME: 'Tiago Gouvêa',
+      SRC: '/Assets/People/tiago.jpeg',
+      DESCRIPTION: 'CEO',
+      COMPANY: 'App Masters',
+      LINKEDIN: 'https://www.linkedin.com/in/tiagogouvea/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Arthur Avelar',
+      SRC: '/Assets/People/arthur.jpeg',
+      DESCRIPTION: 'Expansão e Novos Negócios',
+      COMPANY: 'Rhizom Technology',
+      LINKEDIN: 'https://www.linkedin.com/in/arthur-avelar/',
+      GITHUB: '',
+      INSTAGRAM: ''
     }
   ],
 
@@ -505,6 +523,13 @@ const MENTORS_SECTION = {
       NAME: 'Eduardo Alexandre',
       SRC: '/Assets/People/eduardo.jpeg',
       LINKEDIN: 'https://www.linkedin.com/in/eduardotecnologo/',
+      GITHUB: '',
+      INSTAGRAM: ''
+    },
+    {
+      NAME: 'Luiz Filipe',
+      SRC: '/Assets/People/luiz.jpeg',
+      LINKEDIN: 'https://www.linkedin.com/in/luiz-filipe-4aa07b163/',
       GITHUB: '',
       INSTAGRAM: ''
     }
