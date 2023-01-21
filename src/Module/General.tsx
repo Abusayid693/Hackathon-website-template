@@ -25,7 +25,7 @@ import stack from './Assets/sponsorsLogos/stackoverflow.png';
 
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
-  Typed_effect: ['Over 3,000 worth of prizes', '48 hours of creation'],
+  Typed_effect: ['Over 2,000 worth of prizes', '48 hours of creation'],
   SHORT_DESCRIPTION:
     'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
@@ -150,41 +150,41 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: "First place / Judges' Favorite",
+      type: 'Best Finance Hack',
       content:
-        'To win this prize, just compete with any idea you had in mind and impress our judges!'
+        'Build or pitch a finance project you are passionate about. We will provide you with real financial data you could implement into your solution! (Sponsored by FinSiteful and Forest Systems)'
     },
     {
       icon: <i className=" second fas fa-4x fa-trophy"></i>,
-      type: 'Best Finance Hack',
+      type: 'Best No-Code Hack',
       content:
-        'Build or pitch a finance project you are passionate about! We will provide you with real financial data you could implement into your solution! (Sponsored by FinSiteful and Forest Systems)'
+        'At a hackathon and not a coder? No sweat! Show us you know how to build a product by designing a hypothetical product or service and show us your product market fit.'
     },
     {
       icon: <i className=" third fas fa-4x fa-trophy"></i>,
-      type: 'Most Unique Hack',
+      type: 'Best Use Of AI/Machine Learning',
       content:
-        'Build the project that is the most unique, and take home the prize!'
+        'AI is taking over the world! Show us how ChatGPT3 or any another public AI model can do be utilized or use your own models to amaze us!!'
     }
   ],
   [
     //Array 2
     {
       icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
-      type: 'Best No-Code Hack',
+      type: 'Best Tech for Good',
       content:
-        'At a hackathon and not a coder? No sweat! Show us you know how to build a product by designing a hypothetical product or service and show us your product market fit.'
+        'Build a project that takes into account cultural, societal, and human factors that will shape its use. Projects could include those that use technology to address social issues, improve accessibility, or promote empathy and understanding among different groups.'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Best Use Of AI/Machine Learning',
+      type: 'Best First Timer',
       content:
-        'AI is taking over the world! Show us how ChatGPT3 or any another public AI model can do be utilized or use your own models to amaze us!'
+        'Is this your first time competing in a hackathon? Well, this category is for you! To qualify, Hack@Davidson should be the first hackathon of everyone in your team.'
     },
     {
       icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
-      type: 'TBD',
-      content: ''
+      type: 'Most Unique',
+      content: 'Build any project that is out of the box, and just different!'
     }
   ]
   // [
