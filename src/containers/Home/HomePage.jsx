@@ -124,7 +124,7 @@ export default function HomePage() {
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
-          <PrizeHeading type="Over $5,000 worth of prizes!!!" />
+          <PrizeHeading type="$3,000 worth of prizes!!!" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}

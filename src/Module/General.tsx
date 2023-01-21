@@ -25,7 +25,7 @@ import stack from './Assets/sponsorsLogos/stackoverflow.png';
 
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
-  Typed_effect: ['Over $5,000 worth of prizes', '48 hours of creation'],
+  Typed_effect: ['Over 3,000 worth of prizes', '48 hours of creation'],
   SHORT_DESCRIPTION:
     'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
@@ -150,51 +150,56 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'TBD',
-      content: ''
+      type: "First place / Judges' Favorite",
+      content:
+        'To win this prize, just compete with any idea you had in mind and impress our judges!'
     },
     {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'TBD',
-      content: ''
+      icon: <i className=" second fas fa-4x fa-trophy"></i>,
+      type: 'Best Finance Hack',
+      content:
+        'Build or pitch a finance project you are passionate about! We will provide you with real financial data you could implement into your solution! (Sponsored by FinSiteful and Forest Systems)'
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'TBD',
-      content: ''
+      icon: <i className=" third fas fa-4x fa-trophy"></i>,
+      type: 'Most Unique Hack',
+      content:
+        'Build the project that is the most unique, and take home the prize!'
     }
   ],
   [
     //Array 2
     {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'TBD',
-      content: ''
+      icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
+      type: 'Best No-Code Hack',
+      content:
+        'At a hackathon and not a coder? No sweat! Show us you know how to build a product by designing a hypothetical product or service and show us your product market fit.'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'TBD',
-      content: ''
+      type: 'Best Use Of AI/Machine Learning',
+      content:
+        'AI is taking over the world! Show us how ChatGPT3 or any another public AI model can do be utilized or use your own models to amaze us!'
     },
     {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
+      icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
       type: 'TBD',
       content: ''
-    }
-  ],
-  [
-    //Array 3
-    {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'TBD',
-      content: ''
-    },
-    {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: 'More prizes',
-      content: 'More prizes will be revealed later'
     }
   ]
+  // [
+  //   //Array 3
+  //   {
+  //     icon: <i className="fas fa-4x fa-trophy"></i>,
+  //     type: 'TBD',
+  //     content: ''
+  //   },
+  //   {
+  //     icon: <i className="fas fas fa-4x fa-trophy "></i>,
+  //     type: 'More prizes',
+  //     content: 'More prizes will be revealed later'
+  //   }
+  // ]
 ];
 
 /** Instructions

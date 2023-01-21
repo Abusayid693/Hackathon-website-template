@@ -143,7 +143,7 @@ import boy from "./Assets/boy.png";
 const TOP_SECTION = {
   TITLE: "Join Hack@Davidson",
   // Typing effect
-  Typed_effect: ["48 hours of creation", "$5,000 worth of prizes"],
+  Typed_effect: ["48 hours of creation", "$3,000 worth of prizes"],
   SHORT_DESCRIPTION:
     "Join us on 10th February 2023 for 48 hours of creation, innovation, & fun.",
   // This image will be used for top section right side image
