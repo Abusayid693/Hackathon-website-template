@@ -9,10 +9,14 @@ import ccad_logo from './Assets/ccad-logo.jpeg';
 import boy from './Assets/boy.png';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
+import git from './Assets/sponsorsLogos/github.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
 import launch from './Assets/sponsorsLogos/launch.png';
+import mlh from './Assets/sponsorsLogos/mlhlogo.png';
 import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
 import quoin from './Assets/sponsorsLogos/quoin.png';
+import techdom from './Assets/sponsorsLogos/radixlogo.png';
+import stack from './Assets/sponsorsLogos/stackoverflow.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -251,7 +255,9 @@ const TeamInfo = [
 
 const sponsorLogos = [
   [{src: forest}, {src: hurthub}, {src: proctorfree}], //Array 1
-  [{src: davidson}, {src: launch}, {src: quoin}] //Array 2
+  [{src: davidson}, {src: launch}, {src: quoin}], //Array 2
+  [{src: mlh}, {src: stack}, {src: techdom}], //Array 3
+  [{src: git}]
 ];
 
 /** Instructions
