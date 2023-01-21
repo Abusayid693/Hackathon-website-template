@@ -177,7 +177,7 @@ const Prizeinfo = [
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Best First Timer',
+      type: 'Best First Time',
       content:
         'Is this your first time competing in a hackathon? Well, this category is for you! To qualify, Hack@Davidson should be the first hackathon of everyone in your team.'
     },
