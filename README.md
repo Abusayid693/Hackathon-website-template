@@ -158,7 +158,7 @@ const TOP_SECTION = {
 /* Add all your social media handels*/
 const SOCIALS = {
   instagram: "https://www.instagram.com/limbohacks/",
-  discord: "https://discord.com/invite/8XJSzmtWPp",
+  discord: "https://discord.gg/jStqwW4Ys8",
   linkedin: "https://www.linkedin.com/company/limbo-hacks/",
   twitter: "https://twitter.com/HacksLimbo",
   devpost: "https://limbo-hacks-12968.devpost.com/",
