@@ -152,7 +152,7 @@ const Prizeinfo = [
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Best Finance Hack',
       content:
-        'Build or pitch a finance project you are passionate about. We will provide you with real financial data you could implement into your solution! (Sponsored by FinSiteful and Forest Systems)'
+        'Build or pitch a finance project you are passionate about. We will provide you with real financial data you could implement into your solution! (Only for Undergraduate Students)(Sponsored by FinSiteful and Forest Systems)'
     },
     {
       icon: <i className=" second fas fa-4x fa-trophy"></i>,
