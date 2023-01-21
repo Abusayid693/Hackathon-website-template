@@ -29,14 +29,14 @@ const TOP_SECTION = {
   SHORT_DESCRIPTION:
     'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
-  DISCORD_LINK: '',
+  DISCORD_LINK: 'https://discord.gg/jStqwW4Ys8',
   HACKERS_REGISTRATION_FORM_LINK:
     'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
 };
 
 const SOCIALS = {
   instagram: 'https://www.instagram.com/hack_davidson/',
-  discord: '',
+  discord: 'https://discord.gg/jStqwW4Ys8',
   linkedin: 'https://www.linkedin.com/company/competitive-coding-at-davidson/',
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
@@ -218,14 +218,14 @@ const TeamInfo = [
       role: 'President',
       github: '',
       linkedin: 'https://www.linkedin.com/in/anhhoang1402/',
-      img: 'https://media-exp1.licdn.com/dms/image/C5603AQEGcJo-PT-Emg/profile-displayphoto-shrink_800_800/0/1655816605392?e=1674086400&v=beta&t=J0XiNd65wmyfWYUTxCmgiK_rmP08nFsnW7-xfNZEWWY'
+      img: 'https://i.imgur.com/XoeFQAO.jpg'
     },
     {
       name: 'Spencer',
       role: 'Sponsorship & Rewards Manager',
       github: '',
       linkedin: 'https://www.linkedin.com/in/spencer-hawkins-b12b9b1a4/',
-      img: 'https://media.licdn.com/dms/image/C4D03AQEW1D-tQySRkw/profile-displayphoto-shrink_400_400/0?e=1674086400&v=beta&t=72P0gdDRnRr0lO8mUdW5m2mMcoLmNr1s16aaUhi2utY'
+      img: 'https://i.imgur.com/afB8IDd.png'
     }
   ],
   [
@@ -235,14 +235,14 @@ const TeamInfo = [
       role: 'Marketing Manager',
       github: '',
       linkedin: 'https://www.linkedin.com/in/pauline-cha/',
-      img: 'https://media-exp1.licdn.com/dms/image/C4D03AQH1PLm6LokOuw/profile-displayphoto-shrink_800_800/0/1645562833359?e=1674086400&v=beta&t=ZhQSDc2dDViE-U5gzpMBqQE07jpPrbBPOggkV_nNTJw'
+      img: 'https://i.imgur.com/62MNEEU.jpg'
     },
     {
       name: 'Trey',
       role: 'Logistics Manager',
       github: '',
       linkedin: 'https://www.linkedin.com/in/trey-noe/',
-      img: 'https://media-exp1.licdn.com/dms/image/C5603AQFqW_PC1vAkdQ/profile-displayphoto-shrink_800_800/0/1598975212290?e=1674086400&v=beta&t=Cn_ZYjbhCAQhF6VrGFoZ81tDpKDDcbzBviDVELdAhmg'
+      img: 'https://i.imgur.com/eQ8v4DR.jpg'
     }
   ]
 ];
@@ -278,8 +278,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: 'Who can attend?',
-        content:
-          'Hack@Davidson is open to all undergraduate, high school students and middle school students from all schools.'
+        content: 'Hack@Davidson is open to everyone!'
       },
       {
         label: 'I am a first time hacker, what should I do?',
