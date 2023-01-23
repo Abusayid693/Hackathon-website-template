@@ -2,11 +2,9 @@ import {useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import {FORM_SECTION} from '../../Module/General';
 
-const baseUrl = process.env.NEXT_SERVER_URL;
-
-function SectionForm() {
+function SectionForm({title, description, successText}) {
   const [loading, setLoading] = useState(false);
-  const [sucess, setSucess] = useState(undefined);
+  const [success, setSuccess] = useState(undefined);
   const [error, setError] = useState(undefined);
 
   const handleSubmit = async e => {
@@ -29,12 +27,12 @@ function SectionForm() {
 
       const response = await fetch(`/api/form`, requestOptions);
       if (response.status === 200) {
-        setSucess(true);
+        setSuccess(true);
         setError(undefined);
       } else {
         const body = await response.json();
         console.log(body);
-        setSucess(false);
+        setSuccess(false);
         setError(body.error.message);
       }
       setLoading(false);
@@ -48,9 +46,10 @@ function SectionForm() {
     <div className="formSection">
       <Row className="flex-column justify-content-center align-items-center">
         <Col>
-          {!sucess && (
+          {!success && (
             <div className="formTitle">
-              <h2>{FORM_SECTION.TITLE}</h2>
+              <h3>{title || FORM_SECTION.TITLE}</h3>
+              {description && <p>{description}</p>}
             </div>
           )}
         </Col>
@@ -60,7 +59,7 @@ function SectionForm() {
           lg={5}
           md={5}
         >
-          {!sucess && (
+          {!success && (
             <div className="formContainer">
               <form className="form-horizontal" onSubmit={handleSubmit}>
                 <div className="form-group">
@@ -84,7 +83,7 @@ function SectionForm() {
                 <div className="form-group">
                   <input
                     className="form-control"
-                    placeholder="Whatsapp"
+                    placeholder="Telefone"
                     required
                     name="phone"
                     pattern="^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$"
@@ -94,7 +93,7 @@ function SectionForm() {
 
                 <div className="form-group formBtnContainer d-flex justify-content-center align-items-center">
                   <input
-                    className="btn formBtn"
+                    className="mainButton btn-primary btn"
                     type="submit"
                     disabled={loading}
                     value="Me avise"
@@ -109,10 +108,15 @@ function SectionForm() {
             </div>
           )}
           <div className="alert-container">
-            {!!sucess && (
+            {!!success && (
               <div className="d-flex flex-column text-center">
                 <h3 className="display-1 mb-5">
-                  <strong>Parabéns!</strong> Você foi cadastrado com sucesso.
+                  {successText || (
+                    <>
+                      <strong>Parabéns!</strong> Você foi cadastrado com
+                      successo.
+                    </>
+                  )}
                 </h3>
                 <a href="#home">
                   <p>Voltar ao topo</p>

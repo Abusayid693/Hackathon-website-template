@@ -21,6 +21,7 @@ import '../styles/team.scss';
 import '../styles/typed.scss';
 import '../styles/collapse.scss';
 import '../styles/subscription.scss';
+import '../styles/subscriptionClosed.scss';
 import '../styles/mentors.scss';
 import '../styles/low_code.scss';
 import '../styles/not_programmer.scss';

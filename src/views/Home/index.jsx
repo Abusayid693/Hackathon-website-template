@@ -1,7 +1,6 @@
 import React from 'react';
 import {SectionCamping} from 'components/Camping/index.jsx';
 import {SectionEnterprise} from 'components/Enterprise/index.jsx';
-import {SectionForm} from 'components/Form/index.jsx';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -26,6 +25,7 @@ import NotProgrammer from 'components/NotProgrammer/index.jsx';
 import {Prizes} from 'components/Prizes/index.jsx';
 import {Team} from 'components/Team/index.jsx';
 import {OnlineMeetings} from 'components/OnlineMeetings/index.jsx';
+import SubscriptionClosed from 'components/SubscriptionClosed/index.jsx';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -138,7 +138,8 @@ export default function HomePage() {
       {/* Team ending */}
 
       {/* Subscription */}
-      <div className="black_section" id="subscription">
+      {/* The event ended so let this section commented */}
+      {/* <div className="black_section" id="subscription">
         <Container fluid className="limiter">
           <Row className="Row info">
             <Col className="info-div">
@@ -146,8 +147,18 @@ export default function HomePage() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
       {/* Subscription ending */}
+
+      {/* Subscription closed */}
+      <div className="black_section" id="subscription">
+        <Container fluid className="limiter">
+          <Row className="Row info">
+            <SubscriptionClosed />
+          </Row>
+        </Container>
+      </div>
+      {/* Subscription closed ending */}
 
       {/* ********Event here ***** */}
       <Container fluid className="limiter">

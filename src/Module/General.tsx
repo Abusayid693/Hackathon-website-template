@@ -534,6 +534,17 @@ const SUBSCRIPTION_SECTION = {
     'https://docs.google.com/document/d/1KJT25ANYLSM8n4U1TAkmvh_qok8Ps_SYEfklffgKk_0/edit?usp=sharing'
 };
 
+const SUBSCRIPTION_CLOSED_SECTION = {
+  TITLE: 'Inscrições encerradas',
+  DESCRIPTION:
+    'O evento aconteceu e foi incrível! Outros poderão vir pela frente, que tal ser avisado?',
+  FORM_TITLE: 'Avise-me dos próximos eventos',
+  FORM_DESCRIPTION:
+    'Informe seus dados abaixo para saber dos próximos eventos com atencedência',
+  FORM_SUCCESS:
+    'Recebemos suas informações. Te manteremos informados dos próximos eventos como esse.'
+};
+
 const PRIZES_SECTION = {
   TITLE: 'Premiação',
   LONG_DESCRIPTION:
@@ -608,6 +619,7 @@ export {
   CAMPING_PARTY_SECTION,
   FORM_SECTION,
   SUBSCRIPTION_SECTION,
+  SUBSCRIPTION_CLOSED_SECTION,
   LOW_CODE_SECTION,
   NOT_PROGRAMMER_SECTION,
   sponsors,

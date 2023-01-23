@@ -98,6 +98,7 @@ const NavBar = () => {
                 <span className="links">Premiação </span>{' '}
               </a>
             </li>
+            {/* The event ended so let this section commented */}
             <li>
               <a href={`#subscription`}>
                 <span className="links">Inscrição </span>{' '}

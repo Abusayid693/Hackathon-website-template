@@ -27,24 +27,21 @@ export default async function handler(
     if (!name) return res.status(400).json({error: {message: 'Nome inválido'}});
 
     const sheetId = process.env.GOOGLE_SHEET_ID || '';
-    const sheetEmail = process.env.GOOGLE_SHEET_API_EMAIL || '';
-    const sheetPrivateKey = process.env.GOOGLE_SHEET_API_PRIVATE_KEY || '';
 
     const doc = new GoogleSpreadsheet(sheetId);
-    doc.useServiceAccountAuth({
-      client_email: sheetEmail,
-      private_key: sheetPrivateKey.replace(/\\n/g, '\n')
-    });
+    doc.useServiceAccountAuth(
+      JSON.parse(process.env.GOOGLE_SHEET_API_CONFIG || '{}')
+    );
 
     await doc.loadInfo();
 
     const sheet = doc.sheetsByIndex[0];
-    await sheet.setHeaderRow(['Nome', 'Email', 'Whatsapp', 'Label', 'Data']);
+    await sheet.setHeaderRow(['Nome', 'Email', 'Telefone', 'Label', 'Data']);
 
     await sheet.addRow({
       Nome: name,
       Email: parsedEmail,
-      Whatsapp: phone,
+      Telefone: phone,
       Label: 'Interessado',
       Data: new Date().toString()
     });
