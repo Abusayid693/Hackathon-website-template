@@ -357,15 +357,6 @@ const MENTORS_SECTION = {
       INSTAGRAM: ''
     },
     {
-      NAME: 'Yuri Thielmann',
-      SRC: '/Assets/People/yuri.jpeg',
-      DESCRIPTION: 'Developer senior',
-      COMPANY: 'CI&T',
-      LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
-      GITHUB: '',
-      INSTAGRAM: ''
-    },
-    {
       NAME: 'Humberto Sales',
       SRC: '/Assets/People/humberto.jpeg',
       DESCRIPTION: 'Head de Inovação',
@@ -432,24 +423,6 @@ const MENTORS_SECTION = {
         DESCRIPTION: 'Professor and Software Developer',
         COMPANY: 'Driven Education',
         LINKEDIN: 'https://www.linkedin.com/in/lesimoess/',
-        GITHUB: '',
-        INSTAGRAM: ''
-      },
-      {
-        NAME: 'Rodrigo Nunes',
-        SRC: '/Assets/People/rodrigo.jpeg',
-        DESCRIPTION: 'Co-Founder',
-        COMPANY: 'Reportei.com',
-        LINKEDIN: 'https://www.linkedin.com/in/fnnrodrigo/',
-        GITHUB: '',
-        INSTAGRAM: ''
-      },
-      {
-        NAME: 'Yuri Thielmann',
-        SRC: '/Assets/People/yuri.jpeg',
-        DESCRIPTION: 'Developer senior',
-        COMPANY: 'CI&T',
-        LINKEDIN: 'https://www.linkedin.com/in/yuri-duque/',
         GITHUB: '',
         INSTAGRAM: ''
       },
