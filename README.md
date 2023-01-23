@@ -79,13 +79,13 @@ git@2.17.1 or higher
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/Abusayid693/Type-writer.git
+git clone https://github.com/Abusayid693/Hackathon-website-template.git
 ```
 
 2.Starting the Client application.
 
 ```bash
-cd hackathon-templete
+cd Hackathon-website-template
 
 # install all packages
 
