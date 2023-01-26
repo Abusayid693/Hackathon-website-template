@@ -15,14 +15,14 @@ button {
   border-radius: 19px;
   font-size: 2rem;
   color: rgb(255, 255, 255);
-  background-color: #6A63B7;
+  background-color: #D98452;
   font-weight: 300;
   position: relative;
 }
 
 .join_disco {
   width: 25rem;
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
+  background: linear-gradient(90deg, #D98452 0%, #FBC7D4 100%);
 }
 
 .join_disco i {

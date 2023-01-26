@@ -1,4 +1,4 @@
-import hackathonLogo from './Assets/hackathonLogo.png';
+import ccad_logo from './Assets/ccad-logo.jpeg';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -7,71 +7,52 @@ import hackathonLogo from './Assets/hackathonLogo.png';
  */
 
 import boy from './Assets/boy.png';
-import pass from './Assets/sponsorsLogos/1pass.png';
-import ACF from './Assets/sponsorsLogos/ACF.png';
-import cfc from './Assets/sponsorsLogos/cfc.png';
-import echoAR from './Assets/sponsorsLogos/echoAR.png';
-import egg from './Assets/sponsorsLogos/egg.png';
-import glimpse from './Assets/sponsorsLogos/glimpse.png';
-import interviewC from './Assets/sponsorsLogos/interview-cake.jpg';
-import ll from './Assets/sponsorsLogos/ll.png';
-import qoom from './Assets/sponsorsLogos/qoom.svg';
-import Replit from './Assets/sponsorsLogos/replit.png';
-import sublime from './Assets/sponsorsLogos/sublime.png';
-import taskade from './Assets/sponsorsLogos/taskade.png';
-import lyin from './Assets/teami/lyin.jpg';
+import davidson from './Assets/sponsorsLogos/davidson.jpg';
+import forest from './Assets/sponsorsLogos/forest-systems.png';
+import git from './Assets/sponsorsLogos/github.png';
+import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
+import launch from './Assets/sponsorsLogos/launch.png';
+import mlh from './Assets/sponsorsLogos/mlhlogo.png';
+import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
+import quoin from './Assets/sponsorsLogos/quoin.png';
+import techdom from './Assets/sponsorsLogos/radixlogo.png';
+import stack from './Assets/sponsorsLogos/stackoverflow.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
  */
 
-// Importing all Team members images  from Assets
-
-import me from './Assets/teami/me.png';
-import moon from './Assets/teami/moon.png';
-import Ryah from './Assets/teami/Ryah.jpg';
-import zoha from './Assets/teami/zoha.png';
-
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  TITLE: 'Hack@Davidson',
+  Typed_effect: ['Over $5,000 worth of prizes', '48 hours of creation'],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
-  DISCORD_LINK: '',
-  JUDGES_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
+  DISCORD_LINK: 'https://discord.gg/jStqwW4Ys8',
   HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u'
+    'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
-  discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  instagram: 'https://www.instagram.com/hack_davidson/',
+  discord: 'https://discord.gg/jStqwW4Ys8',
+  linkedin: 'https://www.linkedin.com/company/competitive-coding-at-davidson/',
+  devpost: 'https://hackdavidson.devpost.com/',
+  email: 'mailto:hack@davidson.edu',
+  SPONSOR_US_EMAIL:
+    'https://drive.google.com/file/d/13198_fVN5rE2lgUc9HnbLT2UNN4MneyT/view?usp=sharing',
+  mail: 'hack@davidson.edu'
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
+  TITLE: 'What is Hack@Davidson?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
-  LOGO: hackathonLogo
+    'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by Competitive Coding at Davidson (C-CAD). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
+  LOGO: ccad_logo
 };
 
 const FOOTER = {
-  VOLUNTEERING_FORM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
-  },
-  JOIN_TEAM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
-  },
   Privacy_policy: {
     required: true,
     src: ''
@@ -169,48 +150,44 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'overall First',
-      content:
-        'First Overall prize will be given to a project that outstands all other submissions'
+      type: 'TBD',
+      content: ''
     },
     {
       icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'overall Second',
-      content:
-        'Second Overall prize will be given to the second best project of the hackathon'
+      type: 'TBD',
+      content: ''
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'Third Second',
-      content:
-        'Best third overall project of the hackathon will win some awesome prizes'
+      type: 'TBD',
+      content: ''
     }
   ],
   [
     //Array 2
     {
       icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'Best Solo',
-      content:
-        'You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team'
+      type: 'TBD',
+      content: ''
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
-      content: 'Your project will qualify for this category if atleast 50% '
+      type: 'TBD',
+      content: ''
     },
     {
       icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: 'Best UI/UX',
-      content: 'Project with most creative designs will be UI/UX track'
+      type: 'TBD',
+      content: ''
     }
   ],
   [
     //Array 3
     {
       icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'Best Web App with Qoom',
-      content: 'Must use qoom in your project to win this category'
+      type: 'TBD',
+      content: ''
     },
     {
       icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
@@ -230,86 +207,42 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
-      img: me
+      name: 'Olsen',
+      role: 'Founder & Advisor  ',
+      github: 'https://github.com/olsenbudanur',
+      linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
+      img: 'https://i.imgur.com/3zoARcK.png'
     },
     {
-      Name: 'Moon',
-      role: 'Organizer',
+      name: 'Anh',
+      role: 'President',
       github: '',
-      linkedin: '',
-      img: moon
+      linkedin: 'https://www.linkedin.com/in/anhhoang1402/',
+      img: 'https://i.imgur.com/XoeFQAO.jpg'
     },
     {
-      Name: 'Erika',
-      role: 'Organizer',
+      name: 'Spencer',
+      role: 'Sponsorship & Rewards Manager',
       github: '',
-      linkedin: '',
-      img: Ryah
+      linkedin: 'https://www.linkedin.com/in/spencer-hawkins-b12b9b1a4/',
+      img: 'https://i.imgur.com/afB8IDd.png'
     }
   ],
   [
     //Array 2
     {
-      Name: 'Lyanola',
-      role: 'Organizer',
+      name: 'Pauline',
+      role: 'Marketing Manager',
       github: '',
-      linkedin: '',
-      img: lyin
+      linkedin: 'https://www.linkedin.com/in/pauline-cha/',
+      img: 'https://i.imgur.com/62MNEEU.jpg'
     },
     {
-      Name: 'Zoheb',
-      role: 'Organizer',
+      name: 'Trey',
+      role: 'Logistics Manager',
       github: '',
-      linkedin: '',
-      img: zoha
-    }
-  ]
-];
-
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: me
-    },
-    {
-      Name: 'Moon',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: moon
-    },
-    {
-      Name: 'Ryah Garcia',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: Ryah
-    }
-  ],
-  [
-    //Array 2
-    {
-      Name: 'Lyanola',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: lyin
-    },
-    {
-      Name: 'Zoheb',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: zoha
+      linkedin: 'https://www.linkedin.com/in/trey-noe/',
+      img: 'https://i.imgur.com/eQ8v4DR.jpg'
     }
   ]
 ];
@@ -321,10 +254,10 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
-  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src: forest}, {src: hurthub}, {src: proctorfree}], //Array 1
+  [{src: davidson}, {src: launch}, {src: quoin}], //Array 2
+  [{src: mlh}, {src: stack}, {src: techdom}], //Array 3
+  [{src: git}]
 ];
 
 /** Instructions
@@ -334,24 +267,23 @@ const frequentlyAskedQuestions = [
   [
     [
       {
+        label: 'Do I have to know how to program?',
+        content:
+          'No!! Hack@Davidson welcomes people from all background to compete in our no-code categories where no code is requited, or even allowed!'
+      },
+      {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is event where "hackers" will collaborate on creating a functioning software and hardware or coming up with a bright idea by the end of the event.'
       },
       {
         label: 'Who can attend?',
-        content:
-          'Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+        content: 'Hack@Davidson is open to everyone!'
       },
       {
         label: 'I am a first time hacker, what should I do?',
         content:
           'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
-      },
-      {
-        label: 'How team formation works?',
-        content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
@@ -363,16 +295,17 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
-      },
-      {
-        label: 'Can i volunteer?',
-        content:
-          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
+          'Reach us directly at (hack@davidson.edu or olbudanur@davidson.edu) we would happy to help you.'
       },
       {
         label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing Limbo Hacks swag!.'
+        content:
+          'Yes! Participants will recieveing Hack@Davidson swag (T-shirts, stickers, etc.!).'
+      },
+      {
+        label: 'How team formation works?',
+        content:
+          "You can form team with 3 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
       }
     ]
   ]
@@ -386,7 +319,6 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate

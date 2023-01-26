@@ -15,19 +15,16 @@ import {
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import {Member} from '../../components/Team';
 import {
-  FOOTER,
   frequentlyAskedQuestions,
-  JudgesInfo,
   Prizeinfo,
   sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
+  TeamInfo
 } from '../../Module/General';
-import MyCalender from '../calender';
 import './about.css';
-import pattern from './assets/pattern4.png';
+// import pattern from './assets/pattern4.png';
+import logoDavidson from './assets/logoDavidson.png';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -85,15 +82,18 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div">
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
             <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
-            <Col className="d-image" sm={12} lg={5} md={5}>
+            {/* <Col className="d-image" sm={12} lg={5} md={5}>
               <MyCalender />
+            </Col> */}
+            <Col className="d-image" sm={12} lg={5} md={5}>
+              <img src={logoDavidson}></img>
             </Col>
           </Row>
 
@@ -124,14 +124,10 @@ export default function HomePage() {
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
+          <PrizeHeading type="Over $5,000 worth of prizes!!!" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
-
-        <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
-          <h2>coming soon</h2>
-        </Row>
 
         {/* ********Sponsors here ***** */}
 
@@ -145,28 +141,8 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={FOOTER.JOIN_TEAM}
-            content="Interested in joining our team"
-          />
-        )}
+        <h1 id="team">Leadership</h1>
         {TeamInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
-
-        {/* ********Judges here ***** */}
-
-        <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
-        {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

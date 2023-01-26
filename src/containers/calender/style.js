@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin: 20px 0;
 
   .card-top {
-    background-color: #b2b2b2;
+    background-color: #d98452;
     height: 80px;
     border-radius: 8px 8px 0 0;
     padding: 0 5%;
@@ -56,18 +56,18 @@ export const Container = styled.div`
       border-radius: 8px;
       margin: 10px 4px;
       background: #fff;
-      color: #e0e0e0;
+      color: #d98452;
       &__active {
         transition: 0.2s;
-        color: #241b5b;
+        color: #d98452;
         cursor: pointer;
         p {
           font-weight: 600;
           position: relative;
         }
         &:hover {
-          background: #ff4a6f;
-          box-shadow: 0px 1px 5px #ff4a6f;
+          background: #d98452;
+          box-shadow: 0px 1px 5px #d98452;
           color: white;
         }
         &__event {
@@ -76,7 +76,7 @@ export const Container = styled.div`
             content: '';
             width: 6px;
             height: 6px;
-            background-color: #ff4a6f;
+            background-color: #d98452;
             bottom: -5px;
             left: 0;
             right: 0;
@@ -154,7 +154,7 @@ export const EventLayout = styled.div`
 
   & button {
     display: block;
-    background-color: #ff4a6f;
+    background-color: #d98452;
     margin: 15px auto;
     border: none;
     padding: 12px 30px;
@@ -174,7 +174,7 @@ export const EventLayout = styled.div`
     width: 120px;
     border-radius: 5px;
     border: 2px solid #ff69ac;
-    box-shadow: 0px 2px 7px #ffd3cc;
+    box-shadow: 0px 2px 7px #d98452;
   }
 `;
 

@@ -28,28 +28,34 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="join_dis">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-          <Btn
-            ico="fab fa-2x fa-discord"
-            class="join_disco"
-            type="Join our discord"
-            overlay="Click the link"
-          />
-        </a>
-      </div>
+      <br></br>
       <div className="buttom-group">
-        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
+        <a href={SOCIALS.SPONSOR_US_EMAIL}>
           {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+          <Btn
+            class="register"
+            type="Sponsor us!"
+            overlay="See sponsor package"
+          />
         </a>
 
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
+          <Btn type="Register" overlay="Hackers registration" />
+        </a>
+      </div>
+      <div className="join_dis">
+        <a
+          style={{position: 'relative', left: '0%'}}
+          rel="noreferrer"
+          target="_blank"
+          href={SOCIALS.discord}
+        >
           <Btn
-            class="register"
-            type="Register "
-            overlay="Hackers registration"
+            ico="fab fa-discord"
+            class="join_disco"
+            type="Join our discord"
+            overlay="Click the link"
           />
         </a>
       </div>

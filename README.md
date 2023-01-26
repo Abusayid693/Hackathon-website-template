@@ -141,15 +141,14 @@ Personalize page content in `/src/Module/general.js` & modify it as per your nee
 import boy from "./Assets/boy.png";
 /* Change top section of the website  */
 const TOP_SECTION = {
-  TITLE: "Join Limbo Hacks",
+  TITLE: "Join Hack@Davidson",
   // Typing effect
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  Typed_effect: ["48 hours of creation", "$5,000 worth of prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "Join us on 10th February 2023 for 48 hours of creation, innovation, & fun.",
   // This image will be used for top section right side image
   IMG_SRC:boy ,
   DISCORD_LINK: "",
-  JUDGES_FORM_LINK:"",
   HACKERS_REGISTRATION_FORM_LINK:""
 };
 
@@ -159,7 +158,7 @@ const TOP_SECTION = {
 /* Add all your social media handels*/
 const SOCIALS = {
   instagram: "https://www.instagram.com/limbohacks/",
-  discord: "https://discord.com/invite/8XJSzmtWPp",
+  discord: "https://discord.gg/jStqwW4Ys8",
   linkedin: "https://www.linkedin.com/company/limbo-hacks/",
   twitter: "https://twitter.com/HacksLimbo",
   devpost: "https://limbo-hacks-12968.devpost.com/",
@@ -172,7 +171,7 @@ const SOCIALS = {
 
 /* Customize middle section of your website */
 const MIDDLE_SECTION = {
-  TITLE: "What is Limbo hacks?",
+  TITLE: "What is Hack@Davidson?",
   LONG_DESCRIPTION:
     "Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th ........",
   // keep LOGO_EFFECT to false
@@ -180,24 +179,6 @@ const MIDDLE_SECTION = {
   // Your hackathon logo src
   LOGO: ""
 };
-
-
-
-
-/* Customize footer section */
-const FOOTER = {
-  VOLUNTEERING_FORM: {
-    required: true,
-    src: ""
-  },
-  JOIN_TEAM: {
-    required: true,
-    src: ""
-  }
-  {........
-};
-
-
 
 
 /* Add your prize descriptions,
@@ -282,7 +263,7 @@ Change meta tags content in `/public/index.html`
   name="google-site-verification"
   content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E"
 />
-<meta property="og:title" content="Limbo Hacks 2021" />
+<meta property="og:title" content="Hack@Davidson 2023" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@limbohacks" />
@@ -291,7 +272,7 @@ Change meta tags content in `/public/index.html`
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="851" />
 <meta property="og:image:height" content="315" />
-<meta property="og:image:alt" content="Limbo hacks" />
+<meta property="og:image:alt" content="Hack@Davidson" />
 <meta property="og:image" content="https://i.imgur.com/bxP3Jz1.png" />
 <meta
   property="og:image:secure_url"
@@ -300,7 +281,7 @@ Change meta tags content in `/public/index.html`
 <meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" />
 <meta
   property="og:description"
-  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
+  content="Join us on 10th February 2023 for 48 hours of creation, innovation, & fun."
 />
 ```
 

@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 
 function Instagram() {
   useEffect(() => {
-    window.location.href = 'https://www.instagram.com/limbohacks/';
+    window.location.href = 'https://www.instagram.com/hack_davidson/';
   }, []);
   return <div></div>;
 }
