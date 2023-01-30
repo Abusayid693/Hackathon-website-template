@@ -248,6 +248,13 @@ const TeamInfo = [
       github: '',
       linkedin: 'https://www.linkedin.com/in/trey-noe/',
       img: 'https://i.imgur.com/eQ8v4DR.jpg'
+    },
+    {
+      name: 'Niya',
+      role: 'Junior Advisor  ',
+      github: '',
+      linkedin: '',
+      img: 'https://i.imgur.com/JmYXDM7.jpg'
     }
   ]
 ];
