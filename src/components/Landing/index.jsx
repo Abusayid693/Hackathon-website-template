@@ -1,16 +1,17 @@
 import {SOCIALS, TOP_SECTION} from '../../Module/General';
 import MytypedComponent from '../Typed/index.js';
+import {Button, Container} from './style';
 import './style.css';
 
 const Btn = props => {
   return (
-    <button className={props.class}>
+    <Button className={props.class} type={props.class}>
       <i className={props.ico}></i>
       {props.type}
       <div className="overlay">
         <div className="overlay-text">{props.overlay}</div>
       </div>
-    </button>
+    </Button>
   );
 };
 
@@ -25,7 +26,7 @@ const About = () => {
 
 const Myinfo = () => {
   return (
-    <div className="Myinfo">
+    <Container className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <div className="join_dis">
@@ -53,7 +54,7 @@ const Myinfo = () => {
           />
         </a>
       </div>
-    </div>
+    </Container>
   );
 };
 

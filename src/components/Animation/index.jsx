@@ -1,8 +1,8 @@
-import './style.scss';
+import {Container} from './style';
 
 export default function Waves(props) {
   return (
-    <div
+    <Container
       className={`container ${props.type}`}
       style={{top: props.top, left: props.left}}
     >
@@ -21,6 +21,6 @@ export default function Waves(props) {
       <div className="bird-container bird-container--four">
         <div className="bird bird--four"></div>
       </div>
-    </div>
+    </Container>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
+import {Accordion as AccordionStyles, Panel as PanelStyles} from './style';
 
 class Panel extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class Panel extends React.Component {
     };
 
     return (
-      <div className="panel" role="tabpanel" aria-expanded={isActive}>
+      <PanelStyles className="panel" role="tabpanel" aria-expanded={isActive}>
         <button className="panel__label" role="tab" onClick={activateTab}>
           {label}
         </button>
@@ -41,7 +41,7 @@ class Panel extends React.Component {
         >
           <p className="panel__content">{content}</p>
         </div>
-      </div>
+      </PanelStyles>
     );
   }
 }
@@ -67,7 +67,7 @@ class Accordion extends React.Component {
     const {panels} = this.props;
     const {activeTab} = this.state;
     return (
-      <div className="accordion" role="tablist">
+      <AccordionStyles className="accordion" role="tablist">
         {panels.map((panel, index) => (
           <Panel
             key={index}
@@ -77,7 +77,7 @@ class Accordion extends React.Component {
             activateTab={this.activateTab.bind(null, index)}
           />
         ))}
-      </div>
+      </AccordionStyles>
     );
   }
 }

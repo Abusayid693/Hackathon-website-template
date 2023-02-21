@@ -11,7 +11,7 @@ import Twitter from './assets/icons8-twitter.svg';
 import PrivacyPolicy from './assets/Privacy policy.pdf';
 import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
-import './style.scss';
+import {FooterContainer} from './style';
 
 const GithubTemplate = ({hideTemplate}) => {
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="footer">
+      <FooterContainer className="footer">
         <div className="social-icons-container">
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>
@@ -124,7 +124,7 @@ const Footer = () => {
         {template && viewTemplate && (
           <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
         )}
-      </div>
+      </FooterContainer>
     </div>
   );
 };

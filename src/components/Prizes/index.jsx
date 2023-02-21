@@ -1,21 +1,21 @@
-import './style.scss';
+import {PrizeHeadingContainer, PrizesContainer} from './style';
 
-function PrizeHeading(props) {
+const PrizeHeading = props => {
   return (
-    <div className="PrizeHeading">
+    <PrizeHeadingContainer>
       <h1>{props.type}</h1>
-    </div>
+    </PrizeHeadingContainer>
   );
-}
+};
 
-function FirstPrize(props) {
+const FirstPrize = props => {
   return (
-    <div className="Prizes">
+    <PrizesContainer>
       {props.icon}
       <h2>{props.type}</h2>
       <p>{props.content}</p>
-    </div>
+    </PrizesContainer>
   );
-}
+};
 
 export {FirstPrize, PrizeHeading};

@@ -1,32 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 .h1 {
   margin: 0;
-}
-
-button {
-  width: 22rem;
-  height: 6rem;
-  border: none;
-  border-radius: 19px;
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  background-color: #6A63B7;
-  font-weight: 300;
-  position: relative;
-}
-
-.join_disco {
-  width: 25rem;
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-}
-
-.join_disco i {
-  margin-right: 10px;
 }
 
 .join_dis {
@@ -38,12 +11,6 @@ button {
 .buttom-group{
   width: 100%;
   overflow: auto;
-}
-
-.register {
-  margin-left: 1rem;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: transparent;
 }
 
 .AboutMe h2 {
@@ -66,44 +33,6 @@ p {
   width: 70%;
 }
 
-/* Over lay effect */
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: white;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .3s ease;
-  border-radius: 12px;
-}
-
-.overlay-text {
-  font-weight: 300;
-  color: #2C4677;
-  font-size: 17px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-button:hover .overlay {
-  width: 100%;
-  left: 0;
-}
-
-@media (max-width: 1200px) {
-  .AboutMe h2 {
-    /* font-size: 6rem; */
-  }
-}
 
 /* main targer */
 
