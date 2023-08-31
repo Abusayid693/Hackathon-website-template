@@ -25,7 +25,11 @@ import stack from './Assets/sponsorsLogos/stackoverflow.png';
 
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
-  Typed_effect: ['Over 2,000 worth of prizes', '48 hours of creation'],
+  Typed_effect: [
+    'Over 2,000 worth of prizes',
+    '48 hours of creation',
+    'No coding needed'
+  ],
   SHORT_DESCRIPTION:
     'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
@@ -324,14 +328,14 @@ const frequentlyAskedQuestions = [
 ];
 
 export {
-  TOP_SECTION,
-  MIDDLE_SECTION,
-  SOCIALS,
   FOOTER,
+  MIDDLE_SECTION,
   Prizeinfo,
-  sponsorLogos,
+  SOCIALS,
+  TOP_SECTION,
   TeamInfo,
+  calenderStartingDate,
   frequentlyAskedQuestions,
   schedule,
-  calenderStartingDate
+  sponsorLogos
 };
