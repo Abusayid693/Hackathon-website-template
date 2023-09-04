@@ -31,7 +31,7 @@ const TOP_SECTION = {
     'No coding needed'
   ],
   SHORT_DESCRIPTION:
-    'Join us between 10 - 12th February 2023 for 48 hours of creation, innovation, & fun!',
+    'Join us between February 2nd-4th 2024 for 48 hours of creation, innovation, & fun!',
   IMG_SRC: boy,
   DISCORD_LINK: 'https://discord.gg/jStqwW4Ys8',
   HACKERS_REGISTRATION_FORM_LINK:
