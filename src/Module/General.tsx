@@ -41,7 +41,7 @@ const TOP_SECTION = {
 const SOCIALS = {
   instagram: 'https://www.instagram.com/hack_davidson/',
   discord: 'https://discord.gg/jStqwW4Ys8',
-  linkedin: 'https://www.linkedin.com/company/competitive-coding-at-davidson/',
+  linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
   SPONSOR_US_EMAIL:
