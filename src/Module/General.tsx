@@ -52,7 +52,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: 'What is Hack @ Davidson?',
   LONG_DESCRIPTION:
-    'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by Competitive Coding at Davidson (C-CAD). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
+    'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by the Hack@Davidson club (formerly Competitive Coding at Davidson (C-CAD)). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
   LOGO: ccad_logo
 };
 
@@ -283,7 +283,7 @@ const frequentlyAskedQuestions = [
   [
     [
       {
-        label: 'Do I have to know how to program?',
+        label: 'Do I have to know how to program/code?',
         content:
           'No!! Hack@Davidson welcomes people from all background to compete in our no-code categories where no code is requited, or even allowed!'
       },
@@ -311,7 +311,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (hack@davidson.edu or olbudanur@davidson.edu) we would happy to help you.'
+          'Reach us directly at (hack@davidson.edu or nima@davidson.edu) we would happy to help you.'
       },
       {
         label: 'Will there be swag?',
