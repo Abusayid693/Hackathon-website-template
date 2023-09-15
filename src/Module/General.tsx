@@ -35,7 +35,7 @@ const TOP_SECTION = {
   IMG_SRC: boy,
   DISCORD_LINK: 'https://discord.gg/jStqwW4Ys8',
   HACKERS_REGISTRATION_FORM_LINK:
-    'https://docs.google.com/forms/d/e/1FAIpQLSelJfCzPekj2Od_LkEK2IuhoiFa-OAcaJF7cPYQlyms4ICacw/viewform?usp=sf_link'
+    'https://docs.google.com/forms/d/e/1FAIpQLSeiZrFXX8HXdHiJmbFfq30vrAYCNkGTZi_WznwryH0YF1EnNQ/viewform?usp=sf_link'
 };
 
 const SOCIALS = {
