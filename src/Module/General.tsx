@@ -17,6 +17,10 @@ import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
 import quoin from './Assets/sponsorsLogos/quoin.png';
 import techdom from './Assets/sponsorsLogos/radixlogo.png';
 import stack from './Assets/sponsorsLogos/stackoverflow.png';
+import niya from './Assets/teami/Niya.jpg';
+import sky from './Assets/teami/Sky.jpg';
+import lorraine from './Assets/teami/lorraine.jpg';
+import sunny from './Assets/teami/sunny.jpg';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -216,49 +220,49 @@ const TeamInfo = [
   [
     //Array 1
     {
+      name: 'Niya',
+      role: 'President  ',
+      github: 'https://github.com/niya-ma-1/',
+      linkedin: 'https://www.linkedin.com/in/niya-ma/',
+      img: niya
+    },
+    {
+      name: 'Emilio',
+      role: 'Treasurer  ',
+      github: '',
+      linkedin: '',
+      img: ''
+    },
+    {
       name: 'Olsen',
       role: 'Founder & Advisor  ',
       github: 'https://github.com/olsenbudanur',
       linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
       img: 'https://i.imgur.com/3zoARcK.png'
-    },
-    {
-      name: 'Anh',
-      role: 'President',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/anhhoang1402/',
-      img: 'https://i.imgur.com/XoeFQAO.jpg'
-    },
-    {
-      name: 'Spencer',
-      role: 'Sponsorship & Rewards Manager',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/spencer-hawkins-b12b9b1a4/',
-      img: 'https://i.imgur.com/afB8IDd.png'
     }
   ],
   [
     //Array 2
     {
-      name: 'Pauline',
-      role: 'Marketing Manager',
+      name: 'Sunny',
+      role: 'Marketing Lead  ',
       github: '',
-      linkedin: 'https://www.linkedin.com/in/pauline-cha/',
-      img: 'https://i.imgur.com/62MNEEU.jpg'
+      linkedin: 'https://www.linkedin.com/in/sunny-baek-62bbb925b/',
+      img: sunny
     },
     {
-      name: 'Trey',
-      role: 'Logistics Manager',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/trey-noe/',
-      img: 'https://i.imgur.com/eQ8v4DR.jpg'
+      name: 'Sky',
+      role: 'Sponsorship Lead  ',
+      github: 'https://github.com/skyyylaw',
+      linkedin: 'https://www.linkedin.com/in/sunny-baek-62bbb925b/',
+      img: sky
     },
     {
-      name: 'Niya',
-      role: 'Junior Advisor  ',
+      name: 'Lorraine',
+      role: 'Logistics Lead  ',
       github: '',
-      linkedin: '',
-      img: 'https://i.imgur.com/JmYXDM7.jpg'
+      linkedin: 'https://www.linkedin.com/in/lorraine-xu-87a755243/',
+      img: lorraine
     }
   ]
 ];
