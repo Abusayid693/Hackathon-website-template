@@ -254,7 +254,7 @@ const TeamInfo = [
       name: 'Sky',
       role: 'Sponsorship Lead  ',
       github: 'https://github.com/skyyylaw',
-      linkedin: 'https://www.linkedin.com/in/sunny-baek-62bbb925b/',
+      linkedin: 'https://linkedin.com/in/skyluo24',
       img: sky
     },
     {
