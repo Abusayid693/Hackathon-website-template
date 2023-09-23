@@ -49,7 +49,7 @@ const SOCIALS = {
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
   SPONSOR_US_EMAIL:
-    'https://drive.google.com/file/d/13198_fVN5rE2lgUc9HnbLT2UNN4MneyT/view?usp=sharing',
+    'https://drive.google.com/file/d/1-UA4Kqqojg28PC5-rESw2vieDngKgMyn/view?ts=650f3409',
   mail: 'hack@davidson.edu'
 };
 
