@@ -19,6 +19,7 @@ import techdom from './Assets/sponsorsLogos/radixlogo.png';
 import stack from './Assets/sponsorsLogos/stackoverflow.png';
 import niya from './Assets/teami/Niya.jpg';
 import sky from './Assets/teami/Sky.jpg';
+import alp from './Assets/teami/alp.jpg';
 import lorraine from './Assets/teami/lorraine.jpg';
 import sunny from './Assets/teami/sunny.jpg';
 
@@ -49,7 +50,7 @@ const SOCIALS = {
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
   SPONSOR_US_EMAIL:
-    'https://drive.google.com/file/d/1-UA4Kqqojg28PC5-rESw2vieDngKgMyn/view?ts=650f3409',
+    'https://drive.google.com/file/d/1b0bCTHFRiKwNLjBHwaJfDBuNe6Grds3-/view?ts=65109f35',
   mail: 'hack@davidson.edu'
 };
 
@@ -263,6 +264,13 @@ const TeamInfo = [
       github: '',
       linkedin: 'https://www.linkedin.com/in/lorraine-xu-87a755243/',
       img: lorraine
+    },
+    {
+      name: 'Alp',
+      role: 'Web Designer  ',
+      github: 'https://github.com/alpnix',
+      linkedin: 'https://linkedin.com/in/alpniksarli/',
+      img: alp
     }
   ]
 ];
