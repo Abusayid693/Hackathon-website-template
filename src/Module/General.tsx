@@ -46,8 +46,8 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/hack_davidson/',
-  discord: 'https://discord.gg/jStqwW4Ys8',
+  instagram: 'https://www.instagram.com/hackatdavidson/',
+  discord: 'https://discord.gg/b9NCaddq',
   linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
   devpost: 'https://hackdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
