@@ -3,6 +3,12 @@ import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import {
+  Prizeinfo,
+  TeamInfo,
+  frequentlyAskedQuestions,
+  sponsorLogos
+} from '../../Module/General';
 import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
 import {Accordion} from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
@@ -12,16 +18,10 @@ import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
-  SponsorsHead,
-  SponsorUS
+  SponsorUS,
+  SponsorsHead
 } from '../../components/Sponsors/sponsors.jsx';
 import {Member} from '../../components/Team';
-import {
-  frequentlyAskedQuestions,
-  Prizeinfo,
-  sponsorLogos,
-  TeamInfo
-} from '../../Module/General';
 import './about.css';
 // import pattern from './assets/pattern4.png';
 import logoDavidson from './assets/logoDavidson.png';
@@ -57,7 +57,7 @@ const TeamMembers = (props, index) => {
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
+        <Col key={i} className="" sm={9} lg={3} md={3}>
           <Member info={s} />
         </Col>
       ))}
