@@ -157,16 +157,15 @@ const TOP_SECTION = {
 
 /* Add all your social media handels*/
 const SOCIALS = {
-  instagram: "https://www.instagram.com/limbohacks/",
-  discord: "https://discord.gg/jStqwW4Ys8",
-  linkedin: "https://www.linkedin.com/company/limbo-hacks/",
-  twitter: "https://twitter.com/HacksLimbo",
-  devpost: "https://limbo-hacks-12968.devpost.com/",
-  email: "mailto:hello@limbohacks.tech",
-  mail:"hello@limbohacks.tech"
+  instagram: 'https://www.instagram.com/hackatdavidson/',
+  discord: 'https://discord.gg/b9NCaddq',
+  linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
+  devpost: 'https://hackdavidson.devpost.com/',
+  email: 'mailto:hack@davidson.edu',
+  SPONSOR_US_EMAIL:
+    'https://drive.google.com/file/d/1b0bCTHFRiKwNLjBHwaJfDBuNe6Grds3-/view?ts=65109f35',
+  mail: 'hack@davidson.edu'
 };
-
-
 
 
 /* Customize middle section of your website */
