@@ -205,16 +205,7 @@ import Rehan from "./Assets/team/me.png";
 import moon from "./Assets/team/moon.png";
 
 
- const TeamInfo = [
-  [
-    //Array 1
-    {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Rehan
-    },
+ const TeamInfo = []
 
 
 

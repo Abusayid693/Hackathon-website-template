@@ -17,6 +17,8 @@ import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
 import quoin from './Assets/sponsorsLogos/quoin.png';
 import techdom from './Assets/sponsorsLogos/radixlogo.png';
 import stack from './Assets/sponsorsLogos/stackoverflow.png';
+import alice from './Assets/teami/Alice.jpg';
+import kate from './Assets/teami/Kate.jpg';
 import niya from './Assets/teami/Niya.jpg';
 import sky from './Assets/teami/Sky.jpg';
 import alp from './Assets/teami/alp.jpg';
@@ -228,23 +230,6 @@ const TeamInfo = [
       img: niya
     },
     {
-      name: 'Emilio',
-      role: 'Treasurer  ',
-      github: '',
-      linkedin: '',
-      img: ''
-    },
-    {
-      name: 'Olsen',
-      role: 'Founder & Advisor  ',
-      github: 'https://github.com/olsenbudanur',
-      linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
-      img: 'https://i.imgur.com/3zoARcK.png'
-    }
-  ],
-  [
-    //Array 2
-    {
       name: 'Sunny',
       role: 'Marketing Lead  ',
       github: '',
@@ -264,6 +249,23 @@ const TeamInfo = [
       github: '',
       linkedin: 'https://www.linkedin.com/in/lorraine-xu-87a755243/',
       img: lorraine
+    }
+  ],
+  [
+    //Array 2
+    {
+      name: 'Olsen',
+      role: 'Founder & Advisor  ',
+      github: 'https://github.com/olsenbudanur',
+      linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
+      img: 'https://i.imgur.com/3zoARcK.png'
+    },
+    {
+      name: 'Emilio',
+      role: 'Treasurer  ',
+      github: '',
+      linkedin: '',
+      img: ''
     },
     {
       name: 'Alp',
@@ -271,6 +273,36 @@ const TeamInfo = [
       github: 'https://github.com/alpnix',
       linkedin: 'https://linkedin.com/in/alpniksarli/',
       img: alp
+    },
+    {
+      name: 'Kate',
+      role: 'Graphic Designer  ',
+      github: 'https://github.com/katehynes',
+      linkedin: 'https://www.linkedin.com/in/kathleen-hynes/',
+      img: kate
+    }
+  ],
+  [
+    {
+      name: 'Alice',
+      role: 'Logistics Catering  ',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/aliceying114/',
+      img: alice
+    },
+    {
+      name: 'Luke',
+      role: 'Logistics Scheduling  ',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/lukeadamhorne/',
+      img: ''
+    },
+    {
+      name: 'Edwin',
+      role: 'Logistics Member  ',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/edwin-ojeda-herrera-37b91928b',
+      img: ''
     }
   ]
 ];
