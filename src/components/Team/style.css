@@ -2,8 +2,9 @@
   text-align: center;
   margin-top: 5rem;
   position: relative;
-  top:0px;
+  top: 0px;
   transition: top 0.2s linear;
+  padding: 0 3rem;
 }
 .member:hover{
     top: -5px;

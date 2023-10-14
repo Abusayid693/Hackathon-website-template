@@ -49,8 +49,11 @@ h1 {
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
-.members {
-  padding: 0vh 10vh 0 10vh;
+.horizontal-scroll-container {
+  display: flex;
+  padding: 0 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .prizesection {
   text-align: center;
@@ -94,7 +97,6 @@ h1 {
   }
   .members {
     margin: 0;
-    padding: 0;
   }
 
   .prizesection {

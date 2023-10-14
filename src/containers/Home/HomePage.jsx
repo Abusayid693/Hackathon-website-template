@@ -24,7 +24,7 @@ import {
 import {Member} from '../../components/Team';
 import './about.css';
 // import pattern from './assets/pattern4.png';
-import logoDavidson from './assets/logoDavidson.png';
+import logoDavidson from './assets/Hack@Davidson_logo_plain.jpg';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -53,15 +53,27 @@ const PrizeGroup = (props, index) => {
 };
 
 // Prize group ending
+// const TeamMembers = (props, index) => {
+//   return (
+//     <Row key={index} className="members">
+//       {props.map((s, i) => (
+//         <Col key={i} className="" sm={9} lg={3} md={3}>
+//           <Member info={s} />
+//         </Col>
+//       ))}
+//     </Row>
+//   );
+// };
+
 const TeamMembers = (props, index) => {
   return (
-    <Row key={index} className="members">
+    <div key={index} className="horizontal-scroll-container">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={9} lg={3} md={3}>
+        <div key={i} className="member-card">
           <Member info={s} />
-        </Col>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 };
 
@@ -123,7 +135,7 @@ export default function HomePage() {
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Prize section" />
+          <PrizeHeading type="Past Prizes" />
           <PrizeHeading type="Over $2,000 worth of prizes!!!" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
@@ -141,8 +153,9 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Leadership</h1>
+        <h1 id="team">Team</h1>
         {TeamInfo.map(TeamMembers)}
+
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

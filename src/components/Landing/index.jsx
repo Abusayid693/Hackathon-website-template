@@ -29,6 +29,7 @@ const Myinfo = () => {
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <br></br>
+      <br></br>
       <div className="buttom-group">
         <a href={SOCIALS.SPONSOR_US_EMAIL}>
           {' '}
@@ -44,7 +45,7 @@ const Myinfo = () => {
           <Btn type="Register" overlay="Hackers registration" />
         </a>
       </div>
-      <div className="join_dis">
+      {/* <div className="join_dis">
         <a
           style={{position: 'relative', left: '0%'}}
           rel="noreferrer"
@@ -58,7 +59,7 @@ const Myinfo = () => {
             overlay="Click the link"
           />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

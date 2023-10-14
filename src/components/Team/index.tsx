@@ -38,4 +38,4 @@ const Member = ({info}: {info: any}) => {
   );
 };
 
-export {Member, JoinTeam};
+export {JoinTeam, Member};
