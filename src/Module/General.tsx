@@ -1,12 +1,10 @@
-import ccad_logo from './Assets/ccad-logo.jpeg';
-
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
  * or you can provide a cloud link in src also
  */
 
-import boy from './Assets/boy.png';
+import hackathon_logo from './Assets/Hack@Davidson_logo_plain.jpg';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
 import git from './Assets/sponsorsLogos/github.png';
@@ -17,6 +15,7 @@ import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
 import quoin from './Assets/sponsorsLogos/quoin.png';
 import techdom from './Assets/sponsorsLogos/radixlogo.png';
 import stack from './Assets/sponsorsLogos/stackoverflow.png';
+import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
 import alice from './Assets/teami/Alice.jpg';
 import kate from './Assets/teami/Kate.jpg';
 import niya from './Assets/teami/Niya.jpg';
@@ -39,7 +38,6 @@ const TOP_SECTION = {
   ],
   SHORT_DESCRIPTION:
     'Join us between February 2nd-4th 2024 for 48 hours of creation, innovation, & fun!',
-  IMG_SRC: boy,
   DISCORD_LINK: 'https://discord.gg/jStqwW4Ys8',
   HACKERS_REGISTRATION_FORM_LINK:
     'https://docs.google.com/forms/d/e/1FAIpQLSeiZrFXX8HXdHiJmbFfq30vrAYCNkGTZi_WznwryH0YF1EnNQ/viewform?usp=sf_link'
@@ -60,7 +58,7 @@ const MIDDLE_SECTION = {
   TITLE: 'What is Hack @ Davidson?',
   LONG_DESCRIPTION:
     'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by the Hack@Davidson club (formerly Competitive Coding at Davidson (C-CAD)). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
-  LOGO: ccad_logo
+  LOGO: hackathon_logo
 };
 
 const FOOTER = {
@@ -224,52 +222,35 @@ const TeamInfo = [
     //Array 1
     {
       name: 'Niya',
-      role: 'President  ',
+      role: 'President',
       github: 'https://github.com/niya-ma-1/',
       linkedin: 'https://www.linkedin.com/in/niya-ma/',
       img: niya
     },
     {
       name: 'Sunny',
-      role: 'Marketing Lead  ',
+      role: 'Marketing Lead',
       github: '',
       linkedin: 'https://www.linkedin.com/in/sunny-baek-62bbb925b/',
       img: sunny
     },
     {
       name: 'Sky',
-      role: 'Sponsorship Lead  ',
+      role: 'Sponsorship Lead',
       github: 'https://github.com/skyyylaw',
       linkedin: 'https://linkedin.com/in/skyluo24',
       img: sky
     },
     {
       name: 'Lorraine',
-      role: 'Logistics Lead  ',
+      role: 'Logistics Lead',
       github: '',
       linkedin: 'https://www.linkedin.com/in/lorraine-xu-87a755243/',
       img: lorraine
-    }
-  ],
-  [
-    //Array 2
-    {
-      name: 'Olsen',
-      role: 'Founder & Advisor  ',
-      github: 'https://github.com/olsenbudanur',
-      linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
-      img: 'https://i.imgur.com/3zoARcK.png'
-    },
-    {
-      name: 'Emilio',
-      role: 'Treasurer  ',
-      github: '',
-      linkedin: '',
-      img: ''
     },
     {
       name: 'Alp',
-      role: 'Web Designer  ',
+      role: 'Web Designer',
       github: 'https://github.com/alpnix',
       linkedin: 'https://linkedin.com/in/alpniksarli/',
       img: alp
@@ -280,29 +261,41 @@ const TeamInfo = [
       github: 'https://github.com/katehynes',
       linkedin: 'https://www.linkedin.com/in/kathleen-hynes/',
       img: kate
-    }
-  ],
-  [
+    },
+    {
+      name: 'Olsen',
+      role: 'Founder & Advisor',
+      github: 'https://github.com/olsenbudanur',
+      linkedin: 'https://www.linkedin.com/in/olsenbudanur/',
+      img: 'https://i.imgur.com/3zoARcK.png'
+    },
     {
       name: 'Alice',
-      role: 'Logistics Catering  ',
+      role: 'Logistics Catering',
       github: '',
       linkedin: 'https://www.linkedin.com/in/aliceying114/',
       img: alice
     },
     {
       name: 'Luke',
-      role: 'Logistics Scheduling  ',
+      role: 'Logistics Scheduling',
       github: '',
       linkedin: 'https://www.linkedin.com/in/lukeadamhorne/',
-      img: ''
+      img: hackathon_logo
     },
     {
       name: 'Edwin',
-      role: 'Logistics Member  ',
+      role: 'Logistics Member',
       github: '',
       linkedin: 'https://www.linkedin.com/in/edwin-ojeda-herrera-37b91928b',
-      img: ''
+      img: hackathon_logo
+    },
+    {
+      name: 'Emilio',
+      role: 'Treasurer',
+      github: '',
+      linkedin: '',
+      img: hackathon_logo
     }
   ]
 ];
@@ -314,10 +307,10 @@ const TeamInfo = [
  */
 
 const sponsorLogos = [
-  [{src: forest}, {src: hurthub}, {src: proctorfree}], //Array 1
+  [{src: standoutstickers}, {src: forest}, {src: hurthub}], //Array 1
   [{src: davidson}, {src: launch}, {src: quoin}], //Array 2
-  [{src: mlh}, {src: stack}, {src: techdom}], //Array 3
-  [{src: git}]
+  [{src: mlh}, {src: proctorfree}, {src: stack}], //Array 3
+  [{src: git}, {src: techdom}]
 ];
 
 /** Instructions

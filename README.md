@@ -138,7 +138,6 @@ Personalize page content in `/src/Module/general.js` & modify it as per your nee
 ```javascript
 /* Change this file to get your hackthon Porfolio */
 
-import boy from "./Assets/boy.png";
 /* Change top section of the website  */
 const TOP_SECTION = {
   TITLE: "Join Hack@Davidson",
@@ -147,7 +146,6 @@ const TOP_SECTION = {
   SHORT_DESCRIPTION:
     "Join us on 10th February 2023 for 48 hours of creation, innovation, & fun.",
   // This image will be used for top section right side image
-  IMG_SRC:boy ,
   DISCORD_LINK: "",
   HACKERS_REGISTRATION_FORM_LINK:""
 };
