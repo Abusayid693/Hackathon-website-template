@@ -4,7 +4,7 @@
  * or you can provide a cloud link in src also
  */
 
-import hackathon_logo from './Assets/Hack@Davidson_logo_plain.jpg';
+import hackathon_logo from './Assets/(no BG) Hack@Davidson_LOGO_Robotic.png';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
 import git from './Assets/sponsorsLogos/github.png';
@@ -57,7 +57,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: 'What is Hack @ Davidson?',
   LONG_DESCRIPTION:
-    'Hack@Davidson is the first student-run, non-profit hackathon at Davidson College organized by the Hack@Davidson club (formerly Competitive Coding at Davidson (C-CAD)). We are excited to host Hack@Davidson in the Davidson area to connect hackers, mentors, and sponsors from all around the globe. In the span of 48 hours, the best and brightest students from the NC area will create, code, and collaborate to build the projects of their dreams. We want you to be a part of this incredible experience!',
+    'Hack@Davidson is the sole student-led hackathon at Davidson College and the only ongoing hackathon on Davidson campus. Initially created by computer science enthusiasts, it has grown to be inclusive, welcoming students regardless of their coding experience. ',
   LOGO: hackathon_logo
 };
 
@@ -160,20 +160,17 @@ const Prizeinfo = [
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Best Finance Hack',
-      content:
-        'Build or pitch a finance project you are passionate about. We will provide you with real financial data you could implement into your solution! (Only for Undergraduate Students)(Sponsored by FinSiteful and Forest Systems)'
+      content: '3x AirPods Pro 2nd Gen'
     },
     {
       icon: <i className=" second fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
-      content:
-        'At a hackathon and not a coder? No sweat! Show us you know how to build a product by designing a hypothetical product or service and show us your product market fit.'
+      content: '3x Kindle E-Reader'
     },
     {
       icon: <i className=" third fas fa-4x fa-trophy"></i>,
       type: 'Best Use Of AI/Machine Learning',
-      content:
-        'AI is taking over the world! Show us how ChatGPT3 or any another public AI model can do be utilized or use your own models to amaze us!!'
+      content: '3x AirPods 3rd Gen'
     }
   ],
   [
@@ -181,19 +178,17 @@ const Prizeinfo = [
     {
       icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
       type: 'Best Tech for Good',
-      content:
-        'Build a project that takes into account cultural, societal, and human factors that will shape its use. Projects could include those that use technology to address social issues, improve accessibility, or promote empathy and understanding among different groups.'
+      content: '3x Quadcopter Drone'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Best First Time',
-      content:
-        'Is this your first time competing in a hackathon? Well, this category is for you! To qualify, Hack@Davidson should be the first hackathon of everyone in your team.'
+      content: '3x Apple Airtag'
     },
     {
       icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
       type: 'Most Unique',
-      content: 'Build any project that is out of the box, and just different!'
+      content: '3x Echo Dot/Google Nest Mini'
     }
   ]
   // [

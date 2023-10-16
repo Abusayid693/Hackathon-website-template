@@ -24,7 +24,7 @@ import {
 import {Member} from '../../components/Team';
 import './about.css';
 // import pattern from './assets/pattern4.png';
-import logoDavidson from './assets/Hack@Davidson_logo_plain.jpg';
+import logoDavidson from './assets/Hack@Davidson_logo_plain.png';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -136,7 +136,13 @@ export default function HomePage() {
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Past Prizes" />
-          <PrizeHeading type="Over $2,000 worth of prizes!!!" />
+          <a
+            href="https://hackdavidson.devpost.com/project-gallery"
+            style={{textDecoration: 'underline', cursor: 'pointer'}}
+          >
+            <PrizeHeading type="Check out our 2023 Winners!" />
+          </a>
+
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
