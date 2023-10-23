@@ -62,11 +62,7 @@ const MIDDLE_SECTION = {
 };
 
 const FOOTER = {
-  Privacy_policy: {
-    required: true,
-    src: ''
-  },
-  Terms_of_use: {
+  Code_of_conduct: {
     required: true,
     src: ''
   }

@@ -1,13 +1,10 @@
 import {useEffect, useState} from 'react';
-import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
+import {FOOTER, SOCIALS} from '../../Module/General';
 import DevPost from './assets/icons8-dev-post.svg';
 import Dis from './assets/icons8-discord.svg';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
-import PrivacyPolicy from './assets/Privacy policy.pdf';
-import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
 import './style.scss';
 
@@ -68,24 +65,14 @@ const Footer = () => {
             </a>{' '}
           </p>
 
-          {FOOTER.Privacy_policy.required && (
+          {FOOTER.Code_of_conduct.required && (
             <a
-              href={PrivacyPolicy}
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               download
               target="blank"
               className="privacy-policy"
             >
-              <p>Privacy Policy</p>
-            </a>
-          )}
-          {FOOTER.Terms_of_use.required && (
-            <a
-              href={TermsOfUse}
-              download
-              target="blank"
-              className="privacy-policy"
-            >
-              <p>Terms of Use</p>
+              <p>MLH Code of Conduct</p>
             </a>
           )}
           <p>Made with ❤️</p>
