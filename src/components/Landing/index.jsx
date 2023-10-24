@@ -31,7 +31,7 @@ const Myinfo = () => {
       <br></br>
       <br></br>
       <div className="buttom-group">
-        <a href={SOCIALS.SPONSOR_US_EMAIL}>
+        <a href={SOCIALS.SPONSOR_US_EMAIL} target="_blank">
           {' '}
           <Btn
             class="register"
@@ -40,7 +40,7 @@ const Myinfo = () => {
           />
         </a>
 
-        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK} target="_blank">
           {' '}
           <Btn type="Register" overlay="Hackers registration" />
         </a>
