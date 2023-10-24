@@ -18,8 +18,32 @@
 }
 
 .sponsorUS {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; 
   margin-bottom: 7rem;
 }
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem; /* Adjust this value to control spacing between text and button */
+}
+
+.sponsorUS h3{
+  margin-right: 10rem;
+}
+
+.sponsorUs p{
+  font-size: 0.8em;
+  margin-right: 10rem;
+}
+
+.sponsorUS div {
+  margin: 0;
+}
+
 
 /* more smaller */
 @media  (max-width: 570px){

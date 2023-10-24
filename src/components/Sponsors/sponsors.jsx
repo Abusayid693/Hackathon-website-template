@@ -16,13 +16,18 @@ function Sponsor(props) {
 
 function SponsorUS() {
   return (
-    <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring?</h3>
-      <a href={SOCIALS.email}>
-        <Btn type="Sponsor us" overlay="Send a mail" />
-      </a>{' '}
+    <div className="sponsorUS">
+      <div>
+        <h3>Interested in Donating?</h3>
+        <p>
+          I Want to Support... -{'>'} Other -{'>'} Hack@Davidson
+        </p>
+      </div>
+      <a href={SOCIALS.donate} target="_blank">
+        <Btn type="Donate" overlay="Davidson College Gift" />
+      </a>
     </div>
   );
 }
 
-export {SponsorsHead, Sponsor, SponsorUS};
+export {Sponsor, SponsorUS, SponsorsHead};
