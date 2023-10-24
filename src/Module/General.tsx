@@ -51,7 +51,7 @@ const SOCIALS = {
   email: 'mailto:hack@davidson.edu',
   donate: 'https://community.davidson.edu/gift-form',
   SPONSOR_US_EMAIL:
-    'https://drive.google.com/file/d/1b0bCTHFRiKwNLjBHwaJfDBuNe6Grds3-/view?ts=65109f35',
+    'https://drive.google.com/file/d/1b0bCTHFRiKwNLjBHwaJfDBuNe6Grds3-/view?usp=sharing',
   mail: 'hack@davidson.edu'
 };
 
