@@ -69,7 +69,7 @@ const TeamMembers = (props, index) => {
   return (
     <div key={index} className="horizontal-scroll-container">
       {props.map((s, i) => (
-        <div key={i} className="member-card">
+        <div key={i}>
           <Member info={s} />
         </div>
       ))}
