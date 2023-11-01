@@ -49,11 +49,21 @@
 @media  (max-width: 570px){
   .shead{
     margin-top:0;
+    font-size: 2rem;
   }
   .Sponsor img{
+  margin-bottom: 1rem;
+  }
+  .sponsorUS h3{
+    margin-right: 2rem;
+    font-size: 1em;
+  }
+  
+  .sponsorUs p{
+    font-size: 0.4em;
+    margin-right: 2rem;
+  }
 
-  margin-bottom: 3rem;
-}
 }
   .Sponsor img{
  
@@ -68,3 +78,4 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
   }
+
