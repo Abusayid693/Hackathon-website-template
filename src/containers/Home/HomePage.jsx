@@ -23,7 +23,6 @@ import {
 } from '../../components/Sponsors/sponsors.jsx';
 import {Member} from '../../components/Team';
 import './about.css';
-// import pattern from './assets/pattern4.png';
 import logoDavidson from './assets/Hack@Davidson_logo_plain.png';
 
 const SponsorGroup = (props, index) => {

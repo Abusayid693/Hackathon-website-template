@@ -1,6 +1,8 @@
 .Sponsor{
   margin-bottom: 5rem;
   transition: 0.3s;
+  display: flex;
+  align-items: center; /* Vertically center the image within the row */
 }
 .Sponsor:hover{
   transform: scale(1.1);
@@ -14,7 +16,7 @@
 .shead{
     font-size: 6rem;
     margin-bottom: 6rem;
-   margin-top: -3rem;
+    margin-top: -3rem;
 }
 
 .sponsorUS {

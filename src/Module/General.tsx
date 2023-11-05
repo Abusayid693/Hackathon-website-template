@@ -7,19 +7,17 @@
 import hackathon_logo from './Assets/(no BG) Hack@Davidson_LOGO_Robotic.png';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
-import git from './Assets/sponsorsLogos/github.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
-import launch from './Assets/sponsorsLogos/launch.png';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
-import proctorfree from './Assets/sponsorsLogos/proctorfree.jpeg';
 import quoin from './Assets/sponsorsLogos/quoin.png';
-import techdom from './Assets/sponsorsLogos/radixlogo.png';
-import stack from './Assets/sponsorsLogos/stackoverflow.png';
 import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
 import alice from './Assets/teami/Alice.jpg';
+import dmytro from './Assets/teami/Dmytro.jpg';
 import kate from './Assets/teami/Kate.jpg';
+import luke from './Assets/teami/Luke.jpg';
 import niya from './Assets/teami/Niya.jpg';
 import sky from './Assets/teami/Sky.jpg';
+import wendy from './Assets/teami/Wendy.jpg';
 import alp from './Assets/teami/alp.jpg';
 import lorraine from './Assets/teami/lorraine.jpg';
 import sunny from './Assets/teami/sunny.jpg';
@@ -249,7 +247,7 @@ const TeamInfo = [
     },
     {
       name: 'Kate',
-      role: 'Graphic Designer  ',
+      role: 'Graphic Designer',
       github: 'https://github.com/katehynes',
       linkedin: 'https://www.linkedin.com/in/kathleen-hynes/',
       img: kate
@@ -263,28 +261,63 @@ const TeamInfo = [
     },
     {
       name: 'Alice',
-      role: 'Logistics Catering',
+      role: 'Catering',
       github: '',
       linkedin: 'https://www.linkedin.com/in/aliceying114/',
       img: alice
     },
     {
-      name: 'Luke',
-      role: 'Logistics Scheduling',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/lukeadamhorne/',
-      img: hackathon_logo
+      name: 'Wendy',
+      role: 'Influencer',
+      github: 'https://github.com/WendyXpenguin',
+      linkedin: 'https://www.linkedin.com/in/yuxin-xu-034345288',
+      img: wendy
     },
     {
-      name: 'Edwin',
-      role: 'Logistics Member',
+      name: 'Luke',
+      role: 'Scheduling',
       github: '',
-      linkedin: 'https://www.linkedin.com/in/edwin-ojeda-herrera-37b91928b',
+      linkedin: 'https://www.linkedin.com/in/lukeadamhorne/',
+      img: luke
+    },
+    {
+      name: 'Dmytro',
+      role: 'Logistics',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/dmytro-davydenko-061ab7246/',
+      img: dmytro
+    },
+    {
+      name: 'Daniel',
+      role: 'Sponsorship',
+      github: '',
+      linkedin: '',
       img: hackathon_logo
     },
     {
       name: 'Emilio',
       role: 'Treasurer',
+      github: '',
+      linkedin: '',
+      img: hackathon_logo
+    },
+    {
+      name: 'Edwin',
+      role: 'Logistics',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/edwin-ojeda-herrera-37b91928b',
+      img: hackathon_logo
+    },
+    {
+      name: 'Maria',
+      role: 'Web Designer',
+      github: '',
+      linkedin: '',
+      img: ''
+    },
+    {
+      name: 'Akshan',
+      role: 'Sponsorship',
       github: '',
       linkedin: '',
       img: hackathon_logo
@@ -300,9 +333,7 @@ const TeamInfo = [
 
 const sponsorLogos = [
   [{src: standoutstickers}, {src: forest}, {src: hurthub}], //Array 1
-  [{src: davidson}, {src: launch}, {src: quoin}], //Array 2
-  [{src: mlh}, {src: proctorfree}, {src: stack}], //Array 3
-  [{src: git}, {src: techdom}]
+  [{src: davidson}, {src: quoin}, {src: mlh}] //Array 2
 ];
 
 /** Instructions
