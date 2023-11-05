@@ -1,4 +1,6 @@
 .member {
+  width: 18rem;
+  height: 25rem;
   text-align: center;
   margin-top: 3rem;
   position: relative;
@@ -30,7 +32,7 @@
 }
 .joinT h3 {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 300;
   margin-right: 20px;
 }
 @media (max-width: 570px) {
