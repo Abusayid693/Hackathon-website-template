@@ -9,12 +9,14 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor">
-      <img
-        src={props.srcx}
-        alt="Hack@Davidson  "
-        // width={250}
-        // height={150}
-      ></img>
+      <a href={props.linkx}>
+        <img
+          src={props.srcx}
+          alt="Hack@Davidson  "
+          // width={250}
+          // height={150}
+        ></img>
+      </a>
     </div>
   );
 }
