@@ -9,8 +9,10 @@ import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
+import precisely from './Assets/sponsorsLogos/precisely.png';
 import quoin from './Assets/sponsorsLogos/quoin.png';
 import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
+import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
 import dmytro from './Assets/teami/Dmytro.jpg';
 import kate from './Assets/teami/Kate.jpg';
@@ -332,8 +334,26 @@ const TeamInfo = [
  */
 
 const sponsorLogos = [
-  [{src: standoutstickers}, {src: forest}, {src: hurthub}], //Array 1
-  [{src: davidson}, {src: quoin}, {src: mlh}] //Array 2
+  [
+    {
+      src: precisely,
+      link: 'https://www.precisely.com/?utm_source=Online-Advertising&utm_medium=CPC&utm_campaign=Corp_Global_Digital-Ads-Google-Brand_2022&gad_source=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzk5w7f9bYjGNwCYK6PZP03oZxyKmll7iQ5ce1hqKdB-82Ox-pszf0gaAoY3EALw_wcB'
+    },
+    {src: forest, link: 'https://forestsystems.com/'},
+    {src: hurthub, link: 'https://hurthub.davidson.edu/'}
+  ], //Array 1
+  [
+    {src: davidson, link: 'https://www.davidson.edu/'},
+    {src: quoin, link: 'https://quoininc.com/'},
+    {src: mlh, link: 'https://mlh.io/'}
+  ], //Array 2
+  [
+    {
+      src: standoutstickers,
+      link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
+    },
+    {src: summit, link: 'https://www.summitcoffee.com/'}
+  ]
 ];
 
 /** Instructions
