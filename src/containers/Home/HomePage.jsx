@@ -134,7 +134,7 @@ export default function HomePage() {
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Past Prizes" />
+          <PrizeHeading type="Prizes" />
           <a
             href="https://hackdavidson.devpost.com/project-gallery"
             style={{textDecoration: 'underline', cursor: 'pointer'}}

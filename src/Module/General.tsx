@@ -9,8 +9,8 @@ import davidson from './Assets/sponsorsLogos/davidson.jpg';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
+import p2 from './Assets/sponsorsLogos/p2.jpeg';
 import precisely from './Assets/sponsorsLogos/precisely.png';
-import quoin from './Assets/sponsorsLogos/quoin.png';
 import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
 import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
@@ -32,7 +32,7 @@ import sunny from './Assets/teami/sunny.jpg';
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
   Typed_effect: [
-    'Over 2,000 worth of prizes',
+    'Over 3,000 worth of prizes',
     '48 hours of creation',
     'No coding needed'
   ],
@@ -156,36 +156,36 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Best Finance Hack',
-      content: '3x AirPods Pro 2nd Gen'
+      type: 'Best Accessibility Tool',
+      content: '3x Apple Watch SE 2nd Gen'
     },
     {
       icon: <i className=" second fas fa-4x fa-trophy"></i>,
-      type: 'Best No-Code Hack',
-      content: '3x Kindle E-Reader'
+      type: 'Best Finance Hack',
+      content: '3x AirPods 3rd Gen'
     },
     {
       icon: <i className=" third fas fa-4x fa-trophy"></i>,
-      type: 'Best Use Of AI/Machine Learning',
-      content: '3x AirPods 3rd Gen'
+      type: 'Best First Time',
+      content: '3x JBL Flip 6 Speaker'
     }
   ],
   [
     //Array 2
     {
       icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
-      type: 'Best Tech for Good',
-      content: '3x Quadcopter Drone'
+      type: 'Best No-Code Hack',
+      content: '3x Apple AirTag'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Best First Time',
-      content: '3x Apple Airtag'
+      type: 'Best Hack For Social Justice',
+      content: '3x Logitech MX Master 3S Wireless Mouse'
     },
     {
       icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
-      type: 'Most Unique',
-      content: '3x Echo Dot/Google Nest Mini'
+      type: '4-6 MLH Categories',
+      content: 'Google Cloud Backpacks, Mechanical Keyboards, and more!'
     }
   ]
   // [
@@ -340,19 +340,20 @@ const sponsorLogos = [
       link: 'https://www.precisely.com/?utm_source=Online-Advertising&utm_medium=CPC&utm_campaign=Corp_Global_Digital-Ads-Google-Brand_2022&gad_source=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzk5w7f9bYjGNwCYK6PZP03oZxyKmll7iQ5ce1hqKdB-82Ox-pszf0gaAoY3EALw_wcB'
     },
     {src: forest, link: 'https://forestsystems.com/'},
-    {src: hurthub, link: 'https://hurthub.davidson.edu/'}
+    {src: p2, link: 'https://p2ibank.com/'}
   ], //Array 1
   [
-    {src: davidson, link: 'https://www.davidson.edu/'},
-    {src: quoin, link: 'https://quoininc.com/'},
-    {src: mlh, link: 'https://mlh.io/'}
+    {src: hurthub, link: 'https://hurthub.davidson.edu/'},
+    {src: mlh, link: 'https://mlh.io/'},
+    {src: summit, link: 'https://www.summitcoffee.com/'}
   ], //Array 2
   [
     {
       src: standoutstickers,
       link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
     },
-    {src: summit, link: 'https://www.summitcoffee.com/'}
+    {src: davidson, link: 'https://www.davidson.edu/'}
+    // {src: quoin, link: 'https://quoininc.com/'},
   ]
 ];
 
