@@ -158,7 +158,7 @@ const SOCIALS = {
   instagram: 'https://www.instagram.com/hackatdavidson/',
   discord: 'https://discord.gg/vhh4SrmJm9',
   linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
-  devpost: 'https://hackdavidson.devpost.com/',
+  devpost: 'https://hackatdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
   SPONSOR_US_EMAIL:
     'https://drive.google.com/file/d/1b0bCTHFRiKwNLjBHwaJfDBuNe6Grds3-/view?usp=sharing',
