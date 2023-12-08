@@ -392,7 +392,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (hack@davidson.edu or nima@davidson.edu) we would happy to help you.'
+          'Reach us directly at hack@davidson.edu, we would happy to help you.'
       },
       {
         label: 'Will there be swag?',
