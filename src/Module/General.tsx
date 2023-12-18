@@ -12,6 +12,7 @@ import mlh from './Assets/sponsorsLogos/mlhlogo.png';
 import p2 from './Assets/sponsorsLogos/p2.jpeg';
 import precisely from './Assets/sponsorsLogos/precisely.png';
 import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
+import stellar from './Assets/sponsorsLogos/stellar.jpeg';
 import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
 import dmytro from './Assets/teami/Dmytro.jpg';
@@ -156,6 +157,11 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
+      type: 'Best AI Project',
+      content: '3x Meta Oculus Quest 2'
+    },
+    {
+      icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Best Accessibility Tool',
       content: '3x Apple Watch SE 2nd Gen'
     },
@@ -163,15 +169,15 @@ const Prizeinfo = [
       icon: <i className=" second fas fa-4x fa-trophy"></i>,
       type: 'Best Finance Hack',
       content: '3x AirPods 3rd Gen'
-    },
-    {
-      icon: <i className=" third fas fa-4x fa-trophy"></i>,
-      type: 'Best First Time',
-      content: '3x JBL Flip 6 Speaker'
     }
   ],
   [
     //Array 2
+    {
+      icon: <i className=" third fas fa-4x fa-trophy"></i>,
+      type: 'Best First Time',
+      content: '3x JBL Flip 6 Speaker'
+    },
     {
       icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
@@ -181,26 +187,26 @@ const Prizeinfo = [
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Best Hack For Social Justice',
       content: '3x Logitech MX Master 3S Wireless Mouse'
-    },
+    }
+  ],
+  [
+    //Array 3
     {
       icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
       type: '4-6 MLH Categories',
       content: 'Google Cloud Backpacks, Mechanical Keyboards, and more!'
     }
+    //   {
+    //     icon: <i className="fas fa-4x fa-trophy"></i>,
+    //     type: 'TBD',
+    //     content: ''
+    //   },
+    //   {
+    //     icon: <i className="fas fas fa-4x fa-trophy "></i>,
+    //     type: 'More prizes',
+    //     content: 'More prizes will be revealed later'
+    //   }
   ]
-  // [
-  //   //Array 3
-  //   {
-  //     icon: <i className="fas fa-4x fa-trophy"></i>,
-  //     type: 'TBD',
-  //     content: ''
-  //   },
-  //   {
-  //     icon: <i className="fas fas fa-4x fa-trophy "></i>,
-  //     type: 'More prizes',
-  //     content: 'More prizes will be revealed later'
-  //   }
-  // ]
 ];
 
 /** Instructions
@@ -339,15 +345,34 @@ const sponsorLogos = [
       src: precisely,
       link: 'https://www.precisely.com/?utm_source=Online-Advertising&utm_medium=CPC&utm_campaign=Corp_Global_Digital-Ads-Google-Brand_2022&gad_source=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzk5w7f9bYjGNwCYK6PZP03oZxyKmll7iQ5ce1hqKdB-82Ox-pszf0gaAoY3EALw_wcB'
     },
-    {src: forest, link: 'https://forestsystems.com/'},
-    {src: p2, link: 'https://p2ibank.com/'}
+    {
+      src: forest,
+      link: 'https://forestsystems.com/'
+    },
+    {
+      src: p2,
+      link: 'https://p2ibank.com/'
+    }
   ], //Array 1
   [
-    {src: hurthub, link: 'https://hurthub.davidson.edu/'},
-    {src: mlh, link: 'https://mlh.io/'},
-    {src: summit, link: 'https://www.summitcoffee.com/'}
+    {
+      src: stellar,
+      link: 'https://www.getstellar.ai/'
+    },
+    {
+      src: hurthub,
+      link: 'https://hurthub.davidson.edu/'
+    },
+    {
+      src: mlh,
+      link: 'https://mlh.io/'
+    }
   ], //Array 2
   [
+    {
+      src: summit,
+      link: 'https://www.summitcoffee.com/'
+    },
     {
       src: standoutstickers,
       link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
