@@ -181,12 +181,12 @@ const Prizeinfo = [
     {
       icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
-      content: '3x Apple AirTag'
+      content: '3x Logitech MX Master 3S Wireless Mouse'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Best Hack For Social Justice',
-      content: '3x Logitech MX Master 3S Wireless Mouse'
+      type: 'Top Workshop Engagement (3 individuals)',
+      content: '3x Apple AirTag '
     }
   ],
   [
