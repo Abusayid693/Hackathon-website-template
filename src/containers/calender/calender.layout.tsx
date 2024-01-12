@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/logoDavidson.png';
+import logo from '../Home/assets/Hack@Davidson_logo_plain.png';
 
 interface actionTypes {
   type: string;
