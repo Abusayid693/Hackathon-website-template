@@ -5,22 +5,27 @@
  */
 
 import hackathon_logo from './Assets/(no BG) Hack@Davidson_LOGO_Robotic.png';
+import cloudflare from './Assets/sponsorsLogos/cloudflare.png';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
+import fidelity from './Assets/sponsorsLogos/fidelity.png';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
+import godaddy from './Assets/sponsorsLogos/godaddy.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
+import kintone from './Assets/sponsorsLogos/kintone.png';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
 import p2 from './Assets/sponsorsLogos/p2.jpeg';
 import precisely from './Assets/sponsorsLogos/precisely.png';
-import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
+import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.png';
+import starknet from './Assets/sponsorsLogos/starknet.png';
 import stellar from './Assets/sponsorsLogos/stellar.jpeg';
 import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
-import dmytro from './Assets/teami/Dmytro.jpg';
+import dmytro from './Assets/teami/Dmytro.png';
 import kate from './Assets/teami/Kate.jpg';
 import luke from './Assets/teami/Luke.jpg';
 import niya from './Assets/teami/Niya.jpg';
 import sky from './Assets/teami/Sky.jpg';
-import wendy from './Assets/teami/Wendy.jpg';
+import wendy from './Assets/teami/Wendy.png';
 import alp from './Assets/teami/alp.jpg';
 import lorraine from './Assets/teami/lorraine.jpg';
 import sunny from './Assets/teami/sunny.jpg';
@@ -161,12 +166,12 @@ const Prizeinfo = [
       content: '3x Meta Oculus Quest 2'
     },
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      icon: <i className="second fas fa-4x fa-trophy"></i>,
       type: 'Best Accessibility Tool',
       content: '3x Apple Watch SE 2nd Gen'
     },
     {
-      icon: <i className=" second fas fa-4x fa-trophy"></i>,
+      icon: <i className="third fas fa-4x fa-trophy"></i>,
       type: 'Best Finance Hack',
       content: '3x AirPods 3rd Gen'
     }
@@ -174,38 +179,51 @@ const Prizeinfo = [
   [
     //Array 2
     {
-      icon: <i className=" third fas fa-4x fa-trophy"></i>,
+      icon: <i className="fourth fas fa-4x fa-trophy"></i>,
       type: 'Best First Time',
       content: '3x JBL Flip 6 Speaker'
     },
     {
-      icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
+      icon: <i className="fifth fourth fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
       content: '3x Logitech MX Master 3S Wireless Mouse'
     },
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Top Workshop Engagement (3 individuals)',
-      content: '3x Apple AirTag '
+      icon: <i className="seventh solid fas fa-4x fa-trophy"></i>,
+      type: 'Best Domain Name from GoDaddy Registry',
+      content: 'Hack from Home Kit'
     }
   ],
   [
     //Array 3
     {
-      icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
-      type: '4-6 MLH Categories',
-      content: 'Google Cloud Backpacks, Mechanical Keyboards, and more!'
+      icon: <i className="second fas fa-4x fa-trophy"></i>,
+      type: 'Best DEI Hack',
+      content: 'Fidelity Branded Wireless Charger'
+    },
+    {
+      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      type: 'Best AI Application Built with Cloudflare',
+      content: 'Arduino Kit'
+    },
+    {
+      icon: <i className="eighth fas fa-4x fa-trophy"></i>,
+      type: 'Best Use of Kintone',
+      content: 'Breadboard IoT Kit'
     }
-    //   {
-    //     icon: <i className="fas fa-4x fa-trophy"></i>,
-    //     type: 'TBD',
-    //     content: ''
-    //   },
-    //   {
-    //     icon: <i className="fas fas fa-4x fa-trophy "></i>,
-    //     type: 'More prizes',
-    //     content: 'More prizes will be revealed later'
-    //   }
+  ],
+  [
+    {
+      icon: <i className="fourth fas fa-4x fa-trophy"></i>,
+      type: 'Best Use of Starknet',
+      content: 'Starknet Care Package for Coders'
+    },
+
+    {
+      icon: <i className="fifth fas fa-4x fa-trophy"></i>,
+      type: 'Top Workshop Engagement (3 individuals)',
+      content: '3x Apple AirTag '
+    }
   ]
 ];
 
@@ -364,8 +382,8 @@ const sponsorLogos = [
       link: 'https://hurthub.davidson.edu/'
     },
     {
-      src: mlh,
-      link: 'https://mlh.io/'
+      src: cloudflare,
+      link: ''
     }
   ], //Array 2
   [
@@ -374,11 +392,38 @@ const sponsorLogos = [
       link: 'https://www.summitcoffee.com/'
     },
     {
+      src: fidelity,
+      link: ''
+    },
+    {
+      src: starknet,
+      link: ''
+    }
+    // {src: quoin, link: 'https://quoininc.com/'},
+  ],
+  [
+    {
+      src: godaddy,
+      link: ''
+    },
+    {
+      src: kintone,
+      link: ''
+    },
+    {
       src: standoutstickers,
       link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
+    }
+  ],
+  [
+    {
+      src: mlh,
+      link: 'https://mlh.io/'
     },
-    {src: davidson, link: 'https://www.davidson.edu/'}
-    // {src: quoin, link: 'https://quoininc.com/'},
+    {
+      src: davidson,
+      link: 'https://www.davidson.edu/'
+    }
   ]
 ];
 
