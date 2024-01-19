@@ -156,7 +156,7 @@ const TOP_SECTION = {
 /* Add all your social media handels*/
 const SOCIALS = {
   instagram: 'https://www.instagram.com/hackatdavidson/',
-  discord: 'https://discord.gg/vhh4SrmJm9',
+  discord: 'https://discord.gg/jvaPqNssAa',
   linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
   devpost: 'https://hackatdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
