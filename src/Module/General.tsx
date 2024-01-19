@@ -44,14 +44,14 @@ const TOP_SECTION = {
   ],
   SHORT_DESCRIPTION:
     'Join us between February 2nd-4th 2024 for 48 hours of creation, innovation, & fun!',
-  DISCORD_LINK: 'https://discord.gg/vhh4SrmJm9',
+  DISCORD_LINK: 'https://discord.gg/jvaPqNssAa',
   HACKERS_REGISTRATION_FORM_LINK:
     'https://docs.google.com/forms/d/e/1FAIpQLSeiZrFXX8HXdHiJmbFfq30vrAYCNkGTZi_WznwryH0YF1EnNQ/viewform?usp=sf_link'
 };
 
 const SOCIALS = {
   instagram: 'https://www.instagram.com/hackatdavidson/',
-  discord: 'https://discord.gg/vhh4SrmJm9',
+  discord: 'https://discord.gg/jvaPqNssAa',
   linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
   devpost: 'https://hackatdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
