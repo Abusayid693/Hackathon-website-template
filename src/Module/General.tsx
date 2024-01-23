@@ -12,6 +12,7 @@ import forest from './Assets/sponsorsLogos/forest-systems.png';
 import godaddy from './Assets/sponsorsLogos/godaddy.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
 import kintone from './Assets/sponsorsLogos/kintone.png';
+import launchclt from './Assets/sponsorsLogos/launchclt.jpeg';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
 import nord from './Assets/sponsorsLogos/nord.png';
 import p2 from './Assets/sponsorsLogos/p2.jpeg';
@@ -388,7 +389,7 @@ const sponsorLogos = [
       link: 'https://hurthub.davidson.edu/'
     },
     {
-      src: cloudflare,
+      src: launchclt,
       link: ''
     }
   ], //Array 2
@@ -432,6 +433,12 @@ const sponsorLogos = [
     },
     {
       src: nord,
+      link: ''
+    }
+  ],
+  [
+    {
+      src: cloudflare,
       link: ''
     }
   ]
