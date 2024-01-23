@@ -13,6 +13,7 @@ import godaddy from './Assets/sponsorsLogos/godaddy.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
 import kintone from './Assets/sponsorsLogos/kintone.png';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
+import nord from './Assets/sponsorsLogos/nord.png';
 import p2 from './Assets/sponsorsLogos/p2.jpeg';
 import precisely from './Assets/sponsorsLogos/precisely.png';
 import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.png';
@@ -184,14 +185,14 @@ const Prizeinfo = [
       content: '3x JBL Flip 6 Speaker'
     },
     {
-      icon: <i className="fifth fourth fas fa-4x fa-trophy"></i>,
+      icon: <i className="fifth fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
       content: '3x Logitech MX Master 3S Wireless Mouse'
     },
     {
-      icon: <i className="seventh solid fas fa-4x fa-trophy"></i>,
-      type: 'Best Domain Name from GoDaddy Registry',
-      content: 'Hack from Home Kit'
+      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      type: 'Best Cybersecurity Hack (2)',
+      content: '6x 1 year subscriptions to NordVPN, NordPass and Incogni'
     }
   ],
   [
@@ -213,6 +214,11 @@ const Prizeinfo = [
     }
   ],
   [
+    {
+      icon: <i className="seventh solid fas fa-4x fa-trophy"></i>,
+      type: 'Best Domain Name from GoDaddy Registry',
+      content: 'Hack from Home Kit'
+    },
     {
       icon: <i className="fourth fas fa-4x fa-trophy"></i>,
       type: 'Best Use of Starknet',
@@ -423,6 +429,10 @@ const sponsorLogos = [
     {
       src: davidson,
       link: 'https://www.davidson.edu/'
+    },
+    {
+      src: nord,
+      link: ''
     }
   ]
 ];
