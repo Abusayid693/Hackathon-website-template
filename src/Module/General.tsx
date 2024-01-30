@@ -40,7 +40,7 @@ import sunny from './Assets/teami/sunny.jpg';
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
   Typed_effect: [
-    'Over 3,000 worth of prizes',
+    '$5,000 in prizes',
     '48 hours of creation',
     'No coding needed'
   ],
